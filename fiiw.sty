@@ -213,7 +213,7 @@
 			\endgroup	
 			\begingroup
 				\fontsize{10pt}{7pt}\selectfont 
-				Deze masterproefscriptie staat onder embargo tot \@embargo \\
+				This master thesis is under embargo until \@embargo \\
 			\endgroup	
 		\fi
 	\end{flushright}
@@ -246,7 +246,7 @@
 				\fi
 				\ifx \@promotorBname \@empty
 				\else
-					\item[ ]
+					%\item[ ]
 					\item[\@promotorBtype:\hfill] \@promotorBname
 				\fi
  				\ifx \@promotorCname \@empty
@@ -257,9 +257,9 @@
 		}
 		\ParallelRText{\noindent \vspace{1em}
 			\large\begin{flushright}
-				Masterproef ingediend tot het behalen van \\
-				de graad van master of Science in de\\
-				industri\"ele wetenschappen: \@opleiding\ \@afdeling
+				Master Thesis to obtain the degree of\\
+				Master of Science in Engineering Technology:\\
+				\@opleiding\ \@afdeling
 			\end{flushright}
 		}
 	\end{Parallel}
@@ -267,15 +267,15 @@
 	\setlength{\TPHorizModule}{1cm}
 	\setlength{\TPVertModule}{0.75cm}
 	\begin{flushright}
-		Academiejaar \@academicyear
+		Academic Year \@academicyear
 	\end{flushright}
 	\cleardoublepage
     \thispagestyle{empty}
 	\null
 	\vfill
 	\copyright Copyright KU Leuven \\\\
-	\printCopyRightInfo.\\\\	
-	Voorafgaande schriftelijke toestemming van de promotor(en) is eveneens vereist voor het aanwenden van de in deze masterproef beschreven (originele) methoden, producten, schakelingen en programma's voor industrieel of commercieel nut en voor de inzending van deze publicatie ter deelname aan wetenschappelijke prijzen of wedstrijden.
+	%\printCopyRightInfo.\\\\	
+	Without written permission of the supervisor(s) and the author(s) it is forbidden to reproduce or adapt in any form or by any means any part of this publication. Requests for obtaining the right to reproduce or utilise parts of this publication should be addressed to KU Leuven Campus Brugge, Spoorwegstraat 12, B-8000 Brugge, +32 50 66 48 00 or via e-mail iiw.brugge@kuleuven.be. \\\\
 	\cleardoublepage
 }
 
@@ -334,13 +334,13 @@
 	\titlep        
 
 	\ifacknowledgementspage 
-		\chapter*{Voorwoord} \@acknowledgementsfile
-		\addcontentsline{toc}{chapter}{Voorwoord}
+		\chapter*{Acknowledgements} \@acknowledgementsfile
+		\addcontentsline{toc}{chapter}{Acknowledgements}
 	\fi
 	
 	\ifsummarypage
-		\chapter*{Samenvatting} \@summaryfile
-		\addcontentsline{toc}{chapter}{Samenvatting}
+		\chapter*{Summary} \@summaryfile
+		\addcontentsline{toc}{chapter}{Summary}
 	\fi
 
 	\ifabstractpage 
@@ -350,16 +350,16 @@
 	
 
 	\tableofcontents
-	\addcontentsline{toc}{chapter}{Inhoud}
+	\addcontentsline{toc}{chapter}{Table of contents}
 
 	\iflistoffigurespage
 		\listoffigures
-		\addcontentsline{toc}{chapter}{Figurenlijst}
+		\addcontentsline{toc}{chapter}{List of figures}
 	\fi
 	
 	\iflistoftablespage
 		\listoftables
-		\addcontentsline{toc}{chapter}{Tabellenlijst}
+		\addcontentsline{toc}{chapter}{List of tables}
 	\fi
 
 	\iflistofsymbolspage
