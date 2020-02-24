@@ -6,20 +6,30 @@
 \BOOKMARK [0][-]{chapter*.6}{List of tables}{}% 6
 \BOOKMARK [0][-]{chapter*.7}{List of symbols}{}% 7
 \BOOKMARK [0][-]{chapter*.9}{List of abbreviations}{}% 8
-\BOOKMARK [0][-]{chapter.1}{Vormelijke richtlijnen van de scriptie}{}% 9
-\BOOKMARK [1][-]{section.1.1}{Verplichte onderdelen en volgorde in de scriptie}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.2}{Lay-out}{chapter.1}% 11
-\BOOKMARK [2][-]{subsection.1.2.1}{Papierformaat en bladspiegel}{section.1.2}% 12
-\BOOKMARK [2][-]{subsection.1.2.2}{Titelblad}{section.1.2}% 13
-\BOOKMARK [0][-]{chapter.2}{Structuur van de masterproeftekst}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Opdeling in hoofdstukken}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.2}{Verdere onderverdeling binnen een hoofdstuk}{chapter.2}% 16
-\BOOKMARK [1][-]{section.2.3}{Dit is een voorbeeld van een sectie}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.3.1}{Dit is een voorbeeld van een subsectie}{section.2.3}% 18
-\BOOKMARK [0][-]{chapter.3}{Figuren en tabellen}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Algemene richtlijnen}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Richtlijnen voor formules}{}% 21
-\BOOKMARK [0][-]{chapter.5}{Richtlijnen voor referenties}{}% 22
-\BOOKMARK [1][-]{section.5.1}{Inleiding}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.2}{Referentiestijl}{chapter.5}% 24
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 25
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
+\BOOKMARK [0][-]{chapter.2}{Introduction to bioinformatics and embedded systems}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduction to bioinformatics}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{Biology and DNA}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{Sequencing and the need for Bioinformatics}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{DNA sequence aligning}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.4}{Clinical applications}{section.2.1}% 15
+\BOOKMARK [1][-]{section.2.2}{Platforms for sequence alignment algorithms}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{CPU}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{GPU}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{FPGA}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.4}{ASIC}{section.2.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Problem definition}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Methods for genetic sequence alignment}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Local VS global alignment}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{commonly used algorithms}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Dynamic programming algorithms}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{Heuristic algorithms}{section.3.2}% 26
+\BOOKMARK [1][-]{section.3.3}{algorithm selection}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.1}{Smith Waterman}{section.3.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Reference mapping accelerated}{}% 29
+\BOOKMARK [1][-]{section.4.1}{problems with the direct approach}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{acceleration techniques}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{System implementation for reference genome mapping}{}% 32
+\BOOKMARK [0][-]{chapter.6}{implementation results and speedup}{}% 33
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future research}{}% 34
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 35
