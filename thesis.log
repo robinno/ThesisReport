@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  2 MAR 2020 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  2 MAR 2020 16:57
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -934,7 +934,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
 (Font)              scaled to size 9.85492pt on input line 17.
 [2
 
-]) (H3_Methods.tex [3] [4]
+] [3]) (H3_Methods.tex [4]
 Chapter 3.
 ) (H4_RMaccelerated.tex [5
 
@@ -967,7 +967,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=301, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=304, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf  used on input line 137.
@@ -988,7 +988,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=304, page=1, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=307, page=1, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf, page 1>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
@@ -1028,8 +1028,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
- 21335 strings out of 492484
- 371129 string characters out of 3131051
+ 21338 strings out of 492484
+ 371172 string characters out of 3131051
  614005 words of memory out of 3000000
  25320 multiletter control sequences out of 15000+200000
  570785 words of font info for 83 fonts, out of 3000000 for 9000
@@ -1043,9 +1043,9 @@ helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (23 pages, 237211 bytes).
+Output written on thesis.pdf (23 pages, 238704 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  306 words of extra memory for PDF output out of 10000 (max. 10000000)
 
