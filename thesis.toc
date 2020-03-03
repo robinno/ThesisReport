@@ -20,30 +20,32 @@
 \contentsline {subsection}{\numberline {2.1.2}The Human Genome Project and sequencing}{5}{subsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.2.1}The Human Genome Project}{5}{subsubsection.2.1.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.2.2}Sequencing}{6}{subsubsection.2.1.2.2}%
-\contentsline {subsection}{\numberline {2.1.3}DNA sequence aligning and Clinical applications}{6}{subsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}DNA sequence aligning}{6}{subsubsection.2.1.3.1}%
-\contentsline {subsubsection}{\numberline {2.1.3.2}Clinical application}{6}{subsubsection.2.1.3.2}%
-\contentsline {section}{\numberline {2.2}Platforms for sequence alignment algorithms}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}CPU}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}GPU}{6}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}FPGA}{6}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}ASIC}{6}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Problem definition}{6}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Methods for genetic sequence alignment}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Local VS global alignment}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}commonly used algorithms}{7}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Dynamic programming algorithms}{7}{subsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.1}Needleman-Wunsch}{7}{subsubsection.3.2.1.1}%
-\contentsline {subsubsection}{\numberline {3.2.1.2}Smith-Waterman}{7}{subsubsection.3.2.1.2}%
-\contentsline {subsection}{\numberline {3.2.2}Heuristic algorithms}{7}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}FASTA}{7}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}BLAST}{7}{subsubsection.3.2.2.2}%
-\contentsline {section}{\numberline {3.3}algorithm selection}{7}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Smith Waterman}{7}{subsection.3.3.1}%
-\contentsline {chapter}{\numberline {4}Reference mapping accelerated}{8}{chapter.4}%
-\contentsline {section}{\numberline {4.1}problems with the direct approach}{8}{section.4.1}%
-\contentsline {section}{\numberline {4.2}acceleration techniques}{8}{section.4.2}%
-\contentsline {chapter}{\numberline {5}System implementation for reference genome mapping}{9}{chapter.5}%
-\contentsline {chapter}{\numberline {6}implementation results and speedup}{10}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion and future research}{11}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{13}{appendix.A}%
+\contentsline {paragraph}{How NGS works}{6}{section*.18}%
+\contentsline {paragraph}{FASTQ file format}{8}{section*.22}%
+\contentsline {subsection}{\numberline {2.1.3}DNA sequence aligning and Clinical applications}{8}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}DNA sequence aligning}{8}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Clinical application}{8}{subsubsection.2.1.3.2}%
+\contentsline {section}{\numberline {2.2}Platforms for sequence alignment algorithms}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}CPU}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}GPU}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}FPGA}{8}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}ASIC}{8}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Problem definition}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Methods for genetic sequence alignment}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Local VS global alignment}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}commonly used algorithms}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Dynamic programming algorithms}{9}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Needleman-Wunsch}{9}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}Smith-Waterman}{9}{subsubsection.3.2.1.2}%
+\contentsline {subsection}{\numberline {3.2.2}Heuristic algorithms}{9}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}FASTA}{9}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}BLAST}{9}{subsubsection.3.2.2.2}%
+\contentsline {section}{\numberline {3.3}algorithm selection}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Smith Waterman}{9}{subsection.3.3.1}%
+\contentsline {chapter}{\numberline {4}Reference mapping accelerated}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}problems with the direct approach}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}acceleration techniques}{10}{section.4.2}%
+\contentsline {chapter}{\numberline {5}System implementation for reference genome mapping}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}implementation results and speedup}{12}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion and future research}{13}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{15}{appendix.A}%
