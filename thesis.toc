@@ -17,9 +17,12 @@
 \contentsline {paragraph}{Molecular biology}{2}{section*.12}%
 \contentsline {subsubsection}{\numberline {2.1.1.2}Structure of DNA}{3}{subsubsection.2.1.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.1.3}DNA in the human body}{5}{subsubsection.2.1.1.3}%
-\contentsline {subsection}{\numberline {2.1.2}Sequencing and the need for Bioinformatics}{6}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}DNA sequence aligning}{6}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Clinical applications}{6}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.2}The Human Genome Project and sequencing}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}The Human Genome Project}{5}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Sequencing}{6}{subsubsection.2.1.2.2}%
+\contentsline {subsection}{\numberline {2.1.3}DNA sequence aligning and Clinical applications}{6}{subsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}DNA sequence aligning}{6}{subsubsection.2.1.3.1}%
+\contentsline {subsubsection}{\numberline {2.1.3.2}Clinical application}{6}{subsubsection.2.1.3.2}%
 \contentsline {section}{\numberline {2.2}Platforms for sequence alignment algorithms}{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}CPU}{6}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}GPU}{6}{subsection.2.2.2}%
