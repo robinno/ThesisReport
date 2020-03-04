@@ -50,7 +50,7 @@ Each nucleotide consists of 3 parts:
 
 \begin{enumerate}
 	\item A carbon sugar molecule called \emph{Deoxyribose}.
-	\item A phosphate group to connect the Deoxyribose molecules with each other. 
+	\item A phosphate group to connect the Deoxyribose molecules. 
 	\item One of four possible nitrogen bases: Adenine ($A$), Thymine ($T$), Cytosine ($C$) or Guanine ($G$).
 \end{enumerate}
 
@@ -113,7 +113,7 @@ These 23 chromosome pairs are classified in:
 
 In the field of Bioinformatics, an important dataset is the \emph{Human Genome}. This is the full string of DNA found in the Nucleus, ordered from chromosome 1 to 22, followed by the X and Y chromosome.
 
-In October 1990, biologists in the relatively new field of molecular biology started the Human Genome Project. The goal of this project was to determine the sequence of the 3 billion base pairs that make up human DNA. This project was successfully completed in 2003, So nowadays we have a good idea of how the human genome is built up.
+In October 1990, biologists in the relatively new field of molecular biology started the Human Genome Project. The goal of this project was to determine the sequence of the 3 billion base pairs that make up human DNA. This project was completed in 2003, So nowadays we have a good idea of how the human genome is built up.
 
 The Human Genome is easily found on the internet since it is publically available. One of the most often used is \emph{HG19}, which was published in 2009. Since DNA has only 4 possible bases ($A$, $T$, $C$ or $G$), this can be encoded in a 2-bit representation. If this encoding is used, the Human Genome is approximately 750 megabytes.
 
@@ -147,7 +147,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 	
 	\item The full DNA sequence is now broken apart into small DNA molecules (100 to 1000 bases long). This is done with the use of high-frequency sound waves.
 	\item Now the sequencing can start: a \emph{flow cell} is used where these small DNA molecules can bind to a glass surface. 
-	\item Different enzymatic and chemical reactions can now be done on this flow cell by means of an automatic flow of reagents. The following steps are iterated until the full read has been filled in:
+	\item Different enzymatic and chemical reactions can now be done on this flow cell through an automatic flow of reagents. The following steps are iterated until the full read has been filled in:
 	\begin{enumerate}
 		\item The entire flowcell is filled with nucleotides, all with different nitrogen bases. Important is that at each of these nucleotides there is a fluorescent group attached to the phosphor group. This makes sure no other nucleotide can bind.
 		\item The fluorescent groups have a different color, dependent on the nitrogen base attached ($A$, $G$, $T$ of $C$). So, by taking a camera picture of the flowcell at this time and storing this.
@@ -161,8 +161,8 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 			\label{fig:NGS}
 		\end{figure}
 	\end{enumerate}
-
-	\item After the whole DNA snippets have been completely filled in, the machine deduces the sequence in the DNA snippet. The pictures taken during the operation are in order the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences in the flowcell. this is called the \emph{Primary processing}.
+	
+	\item After the whole DNA snippets have been filled in, the machine deduces the sequence in the DNA snippet. The pictures taken during the operation are in order the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences in the flowcell. this is called the \emph{Primary processing}.
 	
 	\begin{figure}[H]
 		%src: PPT van Howest
@@ -181,15 +181,15 @@ As a result of the NGS, we get a file in the FASTQ format.
 
 Since the color in the camera pictures in the primary processing can have a light shift, there is a specific "uncertainty" what the base is in that spot. This is called the \emph{quality} of the base.
 
-The \emph{FASTQ} file format has become the de facto standard as output from sequencing instruments. It is a text-based format for storing both the bases in the sequence and their corresponding quality. fastq has become the de facto standard for storing the output of sequencing machines.
+The \emph{FASTQ} file format has become the de-facto standard as output from sequencing instruments. It is a text-based format for storing both the bases in the sequence and their corresponding quality. FASTQ has become the de facto standard for storing the output of sequencing machines.
 
 A FASTQ file uses four lines per sequence:
 
 \begin{enumerate}
-	\item an '$@$' character follow by a sequence ID, plus an optional description.
-	\item \label{enumIt:fastqRaw} The sequence of letters identified by the machine. This is either $A$, $G$, $C$, $T$ or $n$ when the base cannot be identified with a specific treshold certainty.
+	\item a '$@$' character followed by a sequence ID, plus an optional description.
+	\item \label{enumIt:fastqRaw} The sequence of letters identified by the machine. This is either $A$, $G$, $C$, $T$ or $n$ when the base cannot be identified with a specific threshold certainty.
 	\item a '$+$' character, optionally followed by the sequence ID (again) and an optional description.
-	\item the quality values for each respective base in line \ref{enumIt:fastqRaw}. Obviously, the length of this line must be the same as the amount of bases in line \ref{enumIt:fastqRaw}
+	\item the quality values for each respective base in line \ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line \ref{enumIt:fastqRaw}
 \end{enumerate}
 
 The quality score in memory is a value in the range $0x21$ (lowest quality) to $0x7e$ (highest quality). Since this value is represented in ASCII in the file format, this ranges from the '$!$' character to the '$\mathtt{\sim}$' character. Hereunder is a complete list of the possible values of the quality score:
@@ -213,11 +213,13 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 !''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
 \end{lcverbatim}
 
-Keep in mind that most of the time a FASTQ file consists of multiple of these sequences, all stacked under eachother.
+Keep in mind that most of the time a FASTQ file consists of multiple of these sequences, all stacked under each other.
 
 \subsection{DNA sequence aligning and Clinical applications}
 
 \subsubsection{DNA sequence aligning}
+
+
 
 \subsubsection{Clinical application}
 
