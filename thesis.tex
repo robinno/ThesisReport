@@ -23,6 +23,7 @@
 \usepackage{lipsum}
 \usepackage{sectsty}					% aanpassen van de fonts van sections en chapters
 %\usepackage[nottoc,numbib]{tocbibind}	% Bibliography mee in de ToC
+\usepackage{fancyvrb,newverbs,xcolor}
 
 \allsectionsfont{\sffamily}
 \chapterfont{\raggedleft\sffamily}
@@ -42,6 +43,37 @@
 
 \usepackage{fiiw}
 %\usepackage{fiiw_eng} % For the english version (also change last page at the bottom of this file!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OWN ADDED CODE
+
+%for the grey background in codeblocks
+\definecolor{cverbbg}{gray}{0.93}        % <== COLOR FOR THE CODE BOX IN LCVERB
+\newenvironment{cverbatim}
+{\SaveVerbatim{cverb}}
+{\endSaveVerbatim
+	\flushleft\fboxrule=0pt\fboxsep=.5em
+	\colorbox{cverbbg}{\BUseVerbatim{cverb}}%
+	\endflushleft
+}
+\newenvironment{lcverbatim}
+{\SaveVerbatim{cverb}}
+{\endSaveVerbatim
+	\flushleft\fboxrule=0pt\fboxsep=.5em
+	\colorbox{cverbbg}{%
+		\makebox[\dimexpr\linewidth-2\fboxsep][l]{\BUseVerbatim{cverb}}%
+	}
+	\endflushleft
+}
+\newcommand{\ctexttt}[1]{\colorbox{cverbbg}{\texttt{#1}}}
+\newverbcommand{\cverb}
+{\setbox\verbbox\hbox\bgroup}
+{\egroup\colorbox{cverbbg}{\box\verbbox}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 %door onderstaande regels in commentaar te zetten, of op false, kan je pagina's weglaten
 %bijvoorbeeld het weglaten van een voorwoord, lijst met symbolen, ...

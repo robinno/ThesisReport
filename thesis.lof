@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces the DNA structure\relax }}{4}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces the human chromosomes\relax }}{5}{figure.caption.16}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces the order of the human genome\relax }}{6}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases\relax }}{6}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\relax }}{6}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\relax }}{7}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\relax }}{8}{figure.caption.21}%
 \addvspace {10\p@ }
