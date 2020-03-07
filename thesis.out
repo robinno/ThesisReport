@@ -26,16 +26,18 @@
 \BOOKMARK [1][-]{section.4.1}{Genetic sequence aligning}{chapter.4}% 26
 \BOOKMARK [2][-]{subsection.4.1.1}{Alignment in general}{section.4.1}% 27
 \BOOKMARK [1][-]{section.4.2}{Local VS global alignment}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{commonly used algorithms}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.3.1}{Dynamic programming algorithms}{section.4.3}% 30
-\BOOKMARK [2][-]{subsection.4.3.2}{Heuristic algorithms}{section.4.3}% 31
-\BOOKMARK [1][-]{section.4.4}{Problem definition and algorithm selection}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.4.1}{Mapping to a reference genome}{section.4.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.2}{Clinical application}{section.4.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Reference mapping accelerated}{}% 35
-\BOOKMARK [1][-]{section.5.1}{problems with the direct approach}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.2}{acceleration techniques}{chapter.5}% 37
-\BOOKMARK [0][-]{chapter.6}{System implementation for reference genome mapping}{}% 38
-\BOOKMARK [0][-]{chapter.7}{implementation results and speedup}{}% 39
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 41
+\BOOKMARK [1][-]{section.4.3}{Commonly used algorithms}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.3.1}{Needleman-Wunsch}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.2}{Smith-Waterman}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.3}{FASTA}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.4}{BLAST}{section.4.3}% 33
+\BOOKMARK [1][-]{section.4.4}{Problem definition and algorithm selection}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.1}{Mapping to a reference genome}{section.4.4}% 35
+\BOOKMARK [2][-]{subsection.4.4.2}{Clinical application}{section.4.4}% 36
+\BOOKMARK [0][-]{chapter.5}{Reference mapping accelerated}{}% 37
+\BOOKMARK [1][-]{section.5.1}{problems with the direct approach}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{acceleration techniques}{chapter.5}% 39
+\BOOKMARK [0][-]{chapter.6}{System implementation for reference genome mapping}{}% 40
+\BOOKMARK [0][-]{chapter.7}{implementation results and speedup}{}% 41
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 42
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 43

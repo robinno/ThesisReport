@@ -26,35 +26,78 @@ Inserts and deletions are often described by a single term, \emph{indel}. In lit
 
 For example: if we want to align the following sequences:
 \begin{lcverbatim}
-	Seq1: ATATCGGC
-	Seq2: ATCG
+Seq1: ATATCGGC
+Seq2: ATCG
 \end{lcverbatim}
 The alignment itself can now be done in different ways. Possible alignments are:
 \begin{lcverbatim}
-	Alignment 1
-	Seq1: AtaTCgGc
-	Seq2: A--TC-G-
-	Alignment 2
-	Seq1: atATCGgc
-	Seq2: --ATCG--
+Alignment 1
+Seq1: AtaTCgGc
+Seq2: A--TC-G-
+Alignment 2
+Seq1: atATCGgc
+Seq2: --ATCG--
 \end{lcverbatim}
-Which alignment that is the actual output, depends on the algorithm and the given parameters.
+Which alignment that is the actual output, depends on the algorithm and the given parameters.\\
 
 Keep in mind, there is no one "correct" alignment. The core of the alignment algorithms is the same each time, but the parameters of these algorithms are changed depending on the application.
 
 \section{Local VS global alignment}
 
+To explain the difference between local and global alignment, we can take a look at the following example:
+
+\begin{lcverbatim}
+The 2 DNA sequences:
+Seq1 : TCCCAGTTTGTGTCAGGGGACACGAG
+Seq2 : CGCCTCGTTTTCAGCAGTTATGTGCAGATC
+
+Alignment 1 :
+Seq1 : -----------tccCAGTT-TGTGTCAGgggacacgag
+Seq2 : cgcctcgttttcagCAGTTATGTG-CAGatc-------
+
+Alignment 2 :
+Seq1 : tcCCa-GTTTgt-GtCAGggg-acaC-GA-g
+Seq2 : cgCCtcGTTTtcaG-CAGttatgtgCaGAtc
+\end{lcverbatim}
+
+Both alignments are valid, but totally different. The first alignment is \emph{locally aligned}. This  means that the similarities are prioritized in the same region, with the similarity as high as possible. On the other hand, the second alignment is \emph{globally aligned}. Here the similarities over the full length of the sequences is used for the alignment. 
+
+In practice, the local alignment is used most often, since it can give you information of 2 sequences that do not have (approximately) the same length.
+
+\section{Commonly used algorithms}
+
+In this section we will take a look at some algorithms that are used most often for genetic sequence alignment.
 
 
-\section{commonly used algorithms}
+The algorithms that are used most often are categorised in 2 ways: 
 
-\subsection{Dynamic programming algorithms}
-\subsubsection{Needleman-Wunsch}
-\subsubsection{Smith-Waterman}
+\begin{itemize}
+	\item local alignment VS global alignments
+	\item dynamic algorithms VS heuristic algorithms: dynamic algorithms are exact but slow and computationally demanding, whereas heuristic algorithms are faster but are approximations and the best alignment is not guaranteed.
+\end{itemize}
 
-\subsection{Heuristic algorithms}
-\subsubsection{FASTA}
-\subsubsection{BLAST}
+Hereunder is a schematic view of the algorithms that will be covered in this section:
+
+\begin{table}[H]
+\begin{tabular}{lllll}
+	\cline{1-3}
+	\multicolumn{1}{|l|}{}                          & \multicolumn{1}{l|}{\textbf{Dynamic programming}} & \multicolumn{1}{l|}{\textbf{Heuristic programming}} &  &  \\ \cline{1-3}
+	\multicolumn{1}{|l|}{\textbf{Local alignment}}  & \multicolumn{1}{c|}{Smith-waterman}               & \multicolumn{1}{c|}{FASTA, BLAST}                   &  &  \\ \cline{1-3}
+	\multicolumn{1}{|l|}{\textbf{Global alignment}} & \multicolumn{1}{c|}{Needleman-Wunsch}             & \multicolumn{1}{c|}{X}                              &  &  \\ \cline{1-3}
+	&                                                   &                                                     &  & 
+\end{tabular}
+\caption{Classification of genetic alignment algorithms}
+\end{table}
+ 
+
+\subsection{Needleman-Wunsch}
+Needleman and Wunch proposed a new algorithm for genetic sequence alignment in 1970, now known as the \emph{Needleman-Wunsch (N-W)} algorithm. Since this algorithm is meant for global alignment, and global alignment is seldomly used in practice, further analysis of the algorithm will not be done. However, N-W has a lot of similarities with the Smith-waterman algorithm, discussed in the next section.
+
+\subsection{Smith-Waterman}
+
+\subsection{FASTA}
+
+\subsection{BLAST}
 
 \section{Problem definition and algorithm selection}
 
