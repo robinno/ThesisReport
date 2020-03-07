@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER                              %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\chapter{Methods for genetic sequence alignment}
+\label{ch:algoverzicht}
+
+
+\section{Genetic sequence aligning}
+
+The human genome (e.g. $HG19$) is used as a reference genome for all sequenced human DNA. However, The genetic code of all humans is slightly different. Genetic sequence alignment is the science where you try to align 2 sequences with each other so that the amount of differences is minimal. In this chapter, the most frequently used algorithms are examined.
+
+\subsection{Alignment in general}
+
+In genetic codes, there are 3 types of differences between the given sequence and the reference:
+
+\begin{itemize}
+	\item Insertion: one or more bases have been added in the genetic code in a specific spot.
+	\item Deletion: one or more bases have been removed from the genetic code in a specific spot.
+	\item Substitution: one or more bases have been substituted by other bases.
+\end{itemize}
+
+Inserts and deletions are often described by a single term, \emph{indel}. In literature, this is most often represented with a '$-$' character.\\
+
+For example: if we want to align the following sequences:
+\begin{lcverbatim}
+	Seq1: ATATCGGC
+	Seq2: ATCG
+\end{lcverbatim}
+The alignment itself can now be done in different ways. Possible alignments are:
+\begin{lcverbatim}
+	Alignment 1
+	Seq1: AtaTCgGc
+	Seq2: A--TC-G-
+	Alignment 2
+	Seq1: atATCGgc
+	Seq2: --ATCG--
+\end{lcverbatim}
+Which alignment that is the actual output, depends on the algorithm and the given parameters.
+
+Keep in mind, there is no one "correct" alignment. The core of the alignment algorithms is the same each time, but the parameters of these algorithms are changed depending on the application.
+
+\section{Local VS global alignment}
+
+
+
+\section{commonly used algorithms}
+
+\subsection{Dynamic programming algorithms}
+\subsubsection{Needleman-Wunsch}
+\subsubsection{Smith-Waterman}
+
+\subsection{Heuristic algorithms}
+\subsubsection{FASTA}
+\subsubsection{BLAST}
+
+\section{Problem definition and algorithm selection}
+
+\subsection{Mapping to a reference genome}
+
+\subsection{Clinical application}
