@@ -30,19 +30,19 @@
 \contentsline {subsection}{\numberline {3.3.2}Smith-Waterman}{12}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Problem definition}{16}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Mapping to a reference genome}{16}{subsection.3.4.1}%
-\contentsline {paragraph}{The sam and bam file format}{16}{section*.28}%
-\contentsline {subsection}{\numberline {3.4.2}Clinical application}{16}{subsection.3.4.2}%
-\contentsline {chapter}{\numberline {4}Platforms for sequence alignment algorithms}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview of possible hardware}{18}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}CPU}{18}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}GPU}{18}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}FPGA}{18}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}ASIC}{18}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Hardware selection}{18}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Reference mapping accelerated}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Problems with the direct approach}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Acceleration techniques}{19}{section.5.2}%
-\contentsline {chapter}{\numberline {6}System implementation for reference genome mapping}{20}{chapter.6}%
-\contentsline {chapter}{\numberline {7}implementation results and speedup}{21}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Conclusion and future research}{22}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{24}{appendix.A}%
+\contentsline {subsection}{\numberline {3.4.2}The sam and bam file format}{17}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Clinical application}{17}{subsection.3.4.3}%
+\contentsline {chapter}{\numberline {4}Platforms for sequence alignment algorithms}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview of possible hardware}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}CPU}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}GPU}{19}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}FPGA}{19}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}ASIC}{19}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Hardware selection}{19}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Reference mapping accelerated}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Problems with the direct approach}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Acceleration techniques}{20}{section.5.2}%
+\contentsline {chapter}{\numberline {6}System implementation for reference genome mapping}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}implementation results and speedup}{22}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Conclusion and future research}{23}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{25}{appendix.A}%
