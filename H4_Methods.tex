@@ -257,8 +257,56 @@ GTTGAC
 	
 \end{enumerate}
 
-\section{Problem definition and algorithm selection}
+\section{Problem definition}
 
 \subsection{Mapping to a reference genome}
 
+%HERSCHRIJF!!
+it should be determined where it is located on the human genome. 
+
+In most Bioinformatical analysises an mapping to a reference genome should be performed.
+
+\paragraph{The sam and bam file format}
+
 \subsection{Clinical application}
+
+We will discuss two clinical applications of mapping to a reference genome.
+
+\begin{enumerate}
+	\item \textbf{\emph{NIPT} (non-invasive prenatal testing), a test for detecting genetic defects in a foetus.}\newline
+	During or After conception, it can happen that DNA is lost or gained in the fertilized egg cell. This can result in a severe syndrome of the child. For example Down syndrome, which is caused by a trisomy of chromosome 21. Normally all chromosomes are present twice in each cell, one from the mother and the other from the father. In Down syndrome patients something went wrong during cell division at the very early stage of development, and the foetus has in its cells three times chromosome 21. 
+	Because chromosome 21 is quite small and does not contain that many genes, the child can survive, though with typical mental and clinical problems.
+	
+	\begin{figure}[H]
+		%src: http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png
+		\centering
+		\includegraphics[width=0.5\textwidth]{clinicalAppl/trisomy-21.png}
+		\caption{Trisomy 21 karyotype}
+		\label{fig:tri21}
+	\end{figure}
+	
+	
+	Before high throughput DNA sequencing technologies were available like they are today, testing if a fetus has a trisomy-21 could only be done by taking a small amount of amniotic fluid (fluid around the fetus). However, to obtain this fluit there was need for a riskful invasive procedure (called \emph{amniocentesis}) leading sometimes to termination of the pregnancy.
+	
+	It is known that small amounts of DNA of the fetus are present in the blood of the mother, in the cell-free DNA (\emph{cfDNA}) which we find in the blood plasma (the clear, aqueous part of the blood). The blood plasma is used by our body to transport 'waste', including DNA from cells that were broken down. When fetal cells die, which is a normal process, the building blocks of these cells are transported in the plasma of the blood from the mother, included small DNA fragments from the fetus.
+	
+	\emph{NIPT} (non-invasive prenatal testing) is used to analyze DNA derived from the mother's blood. A large number of short cfDNA's are sequenced at random.  Then, each sequence is mapped the whole human genome to find out where it comes from. Finally, the distribution of these reads is calculated. If we observed that a higher frequency of reads as compared to normal individuals coming from chromosome-21, it is almost certain that the fetus has Down's syndrome.
+	
+	\begin{figure}[H]
+		%src: https://geneton.sk/wp-content/uploads/2019/05/nipt_test_b-1024x763.png
+		\centering
+		\includegraphics[width=0.5\textwidth]{clinicalAppl/NIPTkadering.png}
+		\caption{DNA of the fetus in the mothers blood}
+		\label{fig:NIPT}
+	\end{figure}
+	
+	Using the same method, we can also find other defects in the amount of chromosomes. For example: trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome) or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome).
+	
+	\item \textbf{Shallow whole-genome sequencing of tumor DNA.}\newline
+	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be loss or gain of larger DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
+	
+	A new technique to detect all gains and losses of DNA material in one single experiment is \emph{sWGS} (shallow whole-genome sequencing). The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentize enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are.
+\end{enumerate}
+
+
+
