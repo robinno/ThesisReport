@@ -62,39 +62,40 @@
 \newlabel{fig:ImProc}{{2.8}{8}{From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\relax }{figure.caption.21}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{8}{subsection.2.3.2}\protected@file@percent }
 \newlabel{enumIt:fastqRaw}{{2}{8}{The FASTQ file format}{Item.15}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Platforms for sequence alignment algorithms}{10}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Methods for genetic sequence alignment}{10}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Overview of possible hardware}{10}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}CPU}{10}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}GPU}{10}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}FPGA}{10}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}ASIC}{10}{section.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Methods for genetic sequence alignment}{11}{chapter.4}\protected@file@percent }
+\newlabel{ch:algoverzicht}{{3}{10}{Methods for genetic sequence alignment}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Genetic sequence aligning}{10}{section.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Alignment in general}{10}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Local VS global alignment}{11}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Commonly used algorithms}{11}{section.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of genetic alignment algorithms\relax }}{12}{table.caption.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Needleman-Wunsch}{12}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Smith-Waterman}{12}{subsection.3.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces \centering  Similarity matrix example\relax }}{13}{table.caption.23}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces \centering  Example of the initialization of the scoring matrix\relax }}{13}{table.caption.24}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{14}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:DatDep}{{3.1}{14}{Data dependencies in the $H$ matrix\relax }{figure.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces \centering  Example of a populated scoring matrix\relax }}{15}{table.caption.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces \centering  Example of a traceback in S-W\relax }}{15}{table.caption.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Problem definition}{16}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Mapping to a reference genome}{16}{subsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The sam and bam file format}{16}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Clinical application}{16}{subsection.3.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Trisomy 21 karyotype\relax }}{16}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:tri21}{{3.2}{16}{Trisomy 21 karyotype\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces DNA of the fetus in the mothers blood\relax }}{17}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:NIPT}{{3.3}{17}{DNA of the fetus in the mothers blood\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Platforms for sequence alignment algorithms}{18}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{ch:algoverzicht}{{4}{11}{Methods for genetic sequence alignment}{chapter.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Genetic sequence aligning}{11}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Alignment in general}{11}{subsection.4.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Local VS global alignment}{12}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Commonly used algorithms}{12}{section.4.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Classification of genetic alignment algorithms\relax }}{13}{table.caption.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Needleman-Wunsch}{13}{subsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Smith-Waterman}{13}{subsection.4.3.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \centering  Similarity matrix example\relax }}{14}{table.caption.23}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces \centering  Example of the initialization of the scoring matrix\relax }}{14}{table.caption.24}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{15}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:DatDep}{{4.1}{15}{Data dependencies in the $H$ matrix\relax }{figure.caption.25}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.4}{\ignorespaces \centering  Example of a populated scoring matrix\relax }}{16}{table.caption.26}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.5}{\ignorespaces \centering  Example of a traceback in S-W\relax }}{16}{table.caption.27}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Problem definition}{17}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Mapping to a reference genome}{17}{subsection.4.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{The sam and bam file format}{17}{section*.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Clinical application}{17}{subsection.4.4.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Trisomy 21 karyotype\relax }}{17}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:tri21}{{4.2}{17}{Trisomy 21 karyotype\relax }{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces DNA of the fetus in the mothers blood\relax }}{18}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:NIPT}{{4.3}{18}{DNA of the fetus in the mothers blood\relax }{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Overview of possible hardware}{18}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}CPU}{18}{subsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}GPU}{18}{subsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}FPGA}{18}{subsection.4.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}ASIC}{18}{subsection.4.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Hardware selection}{18}{section.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\numberline {5}Reference mapping accelerated}{19}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
