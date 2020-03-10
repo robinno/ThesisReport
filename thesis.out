@@ -27,7 +27,7 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Mapping to a reference genome}{section.3.4}% 27
 \BOOKMARK [2][-]{subsection.3.4.2}{The sam and bam file format}{section.3.4}% 28
 \BOOKMARK [2][-]{subsection.3.4.3}{Clinical application}{section.3.4}% 29
-\BOOKMARK [0][-]{chapter.4}{Platforms for sequence alignment algorithms}{}% 30
+\BOOKMARK [0][-]{chapter.4}{Platforms for accelerating Smith-Waterman}{}% 30
 \BOOKMARK [1][-]{section.4.1}{Overview of possible hardware}{chapter.4}% 31
 \BOOKMARK [2][-]{subsection.4.1.1}{CPU}{section.4.1}% 32
 \BOOKMARK [2][-]{subsection.4.1.2}{GPU}{section.4.1}% 33
@@ -36,8 +36,9 @@
 \BOOKMARK [1][-]{section.4.2}{Hardware selection}{chapter.4}% 36
 \BOOKMARK [0][-]{chapter.5}{Reference mapping accelerated}{}% 37
 \BOOKMARK [1][-]{section.5.1}{Problems with the direct approach}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.2}{Acceleration techniques}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{System implementation for reference genome mapping}{}% 40
-\BOOKMARK [0][-]{chapter.7}{implementation results and speedup}{}% 41
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 42
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 43
+\BOOKMARK [1][-]{section.5.2}{Acceleration Idea: accelerating using the BFAST algorithm}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{BFAST algorithm}{section.5.2}% 40
+\BOOKMARK [0][-]{chapter.6}{System implementation for reference genome mapping}{}% 41
+\BOOKMARK [0][-]{chapter.7}{implementation results and speedup}{}% 42
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 43
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 44

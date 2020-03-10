@@ -4,10 +4,10 @@
 %                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\chapter{Platforms for sequence alignment algorithms}
+\chapter{Platforms for accelerating Smith-Waterman}
 \label{ch:Platforms}
 
-Most sequence alignment algorithms are heavily parallelisable. An overview of the most frequently used algorithms is given in chapter \ref{ch:algoverzicht}.
+As we saw in the analysis of the Smith-Waterman algorithm in \ref{expl:SWanalyse}, we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions which are better equipped for parrallellism than a normal CPU.
 
 \section{Overview of possible hardware}
 

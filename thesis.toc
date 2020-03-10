@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.4.1}Mapping to a reference genome}{16}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}The sam and bam file format}{17}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Clinical application}{17}{subsection.3.4.3}%
-\contentsline {chapter}{\numberline {4}Platforms for sequence alignment algorithms}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Platforms for accelerating Smith-Waterman}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Overview of possible hardware}{19}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}CPU}{19}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}GPU}{19}{subsection.4.1.2}%
@@ -41,7 +41,8 @@
 \contentsline {section}{\numberline {4.2}Hardware selection}{19}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Reference mapping accelerated}{20}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Problems with the direct approach}{20}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Acceleration techniques}{20}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Acceleration Idea: accelerating using the BFAST algorithm}{20}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}BFAST algorithm}{20}{subsection.5.2.1}%
 \contentsline {chapter}{\numberline {6}System implementation for reference genome mapping}{21}{chapter.6}%
 \contentsline {chapter}{\numberline {7}implementation results and speedup}{22}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Conclusion and future research}{23}{chapter.8}%

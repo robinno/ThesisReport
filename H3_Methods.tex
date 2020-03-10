@@ -261,7 +261,7 @@ GTTGAC
 
 \subsection{Mapping to a reference genome}
 
-From the sequencing machines, we get a big amount of reads. We should note that all these reads are worthless without a proper interpretation.
+From the sequencing machines, we get a big amount of reads in the FASTQ format. We should note that all these reads are worthless without a proper interpretation.
 
 In most cases, the first step in the analysis of the reads is knowing from which part of the genome it is from. Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
 
@@ -281,17 +281,16 @@ Since the read can be from the complementary DNA molecule in the double helix, t
 	\item The bases should be changed to their corresponding base in the base pair;
 	\item The sequence should be reversed.
 \end{enumerate}
-We have no way of knowing in which direction the read is taken, both should be compared with the reference and the best-aligned version should be outputted.
+We have no way of knowing in which direction the read is taken, both the forward and the backward possibility should be compared with the reference and the best-aligned version of these two should be chosen.
 
 Please note, in most normal cases we can assume the distribution of reads is practically uniform. Therefore, each base in the human genome will be covered by a statistically expected amount of reads. This amount is often referred to as the \emph{reading depth}.
 
 
 \subsection{The sam and bam file format}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. 
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exists a lot of tools transform a SAM to BAM file already, so in this thesis we will focus on the SAM format.
 
 %TODO
-EXPLAIN...
 
 \subsection{Clinical application}
 

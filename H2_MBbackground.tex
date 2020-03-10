@@ -133,7 +133,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 
 \begin{enumerate}
 	\item The DNA to sequence is isolated from the cells. Most often this is the whole genome.
-	\item The isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA, most often this is in the millions or billions of copies.
+	\item The isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA, usually this is in the millions or billions of copies.
 	
 	\begin{figure}[H]
 		%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
@@ -143,13 +143,13 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 		\label{fig:enzymCopying}
 	\end{figure}
 	
-	\item The full DNA sequence is now broken apart into small DNA molecules (100 to 1000 bases long). This is done with the use of high-frequency sound waves.
+	\item The full DNA sequence is now broken apart into small DNA molecules (100 to 1000 bases long). This is done using enzymes or high-frequency sound waves.
 	\item Now the sequencing can start: a \emph{flow cell} is used where these small DNA molecules can bind to a glass surface. 
 	\item Different enzymatic and chemical reactions can now be done on this flow cell through an automatic flow of reagents. The following steps are iterated until the full read has been filled in:
 	\begin{enumerate}
 		\item The entire flowcell is filled with nucleotides, all with different nitrogen bases. Important is that at each of these nucleotides there is a fluorescent group attached to the phosphor group. This makes sure no other nucleotide can bind.
 		\item The fluorescent groups have a different color, dependent on the nitrogen base attached ($A$, $G$, $T$ of $C$). At this time a camera picture of the flowcell is taken and stored.
-		\item after the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent now unbinds the fluorescent group from the phosphor group. Because of this, the fluorescent group splits of the phosphor group. In the next iteration, a new nucleotide group can bind with the read.
+		\item after the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent splits the fluorescent group from the phosphor group, so that in the next iteration a new nucleotide group can bind with the read.
 		
 		\begin{figure}[H]
 			%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
