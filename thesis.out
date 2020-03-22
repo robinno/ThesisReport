@@ -34,11 +34,20 @@
 \BOOKMARK [2][-]{subsection.4.1.3}{FPGA}{section.4.1}% 34
 \BOOKMARK [2][-]{subsection.4.1.4}{ASIC}{section.4.1}% 35
 \BOOKMARK [1][-]{section.4.2}{Hardware selection}{chapter.4}% 36
-\BOOKMARK [0][-]{chapter.5}{Reference mapping accelerated}{}% 37
-\BOOKMARK [1][-]{section.5.1}{Problems with the direct approach}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.2}{Acceleration Idea: accelerating using the BFAST algorithm}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.2.1}{BFAST algorithm}{section.5.2}% 40
-\BOOKMARK [0][-]{chapter.6}{System implementation for reference genome mapping}{}% 41
-\BOOKMARK [0][-]{chapter.7}{implementation results and speedup}{}% 42
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 43
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 44
+\BOOKMARK [2][-]{subsection.4.2.1}{Recent advances in High Level Synthesis}{section.4.2}% 37
+\BOOKMARK [1][-]{section.4.3}{Platform communication}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.3.1}{USB}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Ethernet}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.3}{Alternatives and selection}{section.4.3}% 41
+\BOOKMARK [0][-]{chapter.5}{Initial approach with pure Smith-Waterman}{}% 42
+\BOOKMARK [1][-]{section.5.1}{The concept}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{System implementation}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.3}{Possible initial speedups}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.4}{Problems with this initial approach}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter.6}{Acceleration idea: BFAST algorithm}{}% 47
+\BOOKMARK [1][-]{section.6.1}{BFAST algorithm}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.2}{System implementation}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.3}{Speedups}{chapter.6}% 50
+\BOOKMARK [0][-]{chapter.7}{Implementation results}{}% 51
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 52
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 53
