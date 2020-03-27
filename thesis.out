@@ -39,15 +39,18 @@
 \BOOKMARK [2][-]{subsection.4.3.1}{USB}{section.4.3}% 39
 \BOOKMARK [2][-]{subsection.4.3.2}{Ethernet}{section.4.3}% 40
 \BOOKMARK [2][-]{subsection.4.3.3}{Alternatives and selection}{section.4.3}% 41
-\BOOKMARK [0][-]{chapter.5}{Initial approach with pure Smith-Waterman}{}% 42
-\BOOKMARK [1][-]{section.5.1}{The concept}{chapter.5}% 43
-\BOOKMARK [1][-]{section.5.2}{System implementation}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.3}{Possible initial speedups}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.4}{Problems with this initial approach}{chapter.5}% 46
-\BOOKMARK [0][-]{chapter.6}{Acceleration idea: BFAST algorithm}{}% 47
-\BOOKMARK [1][-]{section.6.1}{BFAST algorithm}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.2}{System implementation}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.3}{Speedups}{chapter.6}% 50
-\BOOKMARK [0][-]{chapter.7}{Implementation results}{}% 51
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 53
+\BOOKMARK [0][-]{chapter.5}{Initial Difficulties during the implementation}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Using Vivado HLS and Xilinx SDK}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{SDSoC}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{Initial approach with pure Smith-Waterman}{}% 45
+\BOOKMARK [1][-]{section.6.1}{The concept}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{System implementation}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.3}{Possible initial speedups}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.4}{Problems with this initial approach}{chapter.6}% 49
+\BOOKMARK [0][-]{chapter.7}{Acceleration idea: BFAST algorithm}{}% 50
+\BOOKMARK [1][-]{section.7.1}{BFAST algorithm}{chapter.7}% 51
+\BOOKMARK [1][-]{section.7.2}{System implementation}{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.3}{Speedups}{chapter.7}% 53
+\BOOKMARK [0][-]{chapter.8}{Implementation results}{}% 54
+\BOOKMARK [0][-]{chapter.9}{Conclusion and future research}{}% 55
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 56
