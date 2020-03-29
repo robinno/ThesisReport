@@ -10,15 +10,52 @@ Disclaimer: This chapter is for amount of work :)
 
 \section{Using Vivado HLS and Xilinx SDK}
 
+\subsection{learning HLS in examples}
+
 Ik moet nog starten met HLS, nog nooit gedaan.
+
+learning HLS
+
+lab1: BASIC WORKFLOW: How to make project, difference between sources and test bench, GUI and it's components, simulation, synthesis (=> estimate and Gantt chart), viewing resulting VHDL code, co-simulation, view simulation waveforms, IP Core export, creating multiple solutions and comparing, setting a directive (like unroll a loop).
+
+lab2: DATA TYPES adhv FIR filter: floating point VS fixed point, saturation with fixed point, fixed point with larger internal bit-width (LSB laten vallen), 
+
+lab3: INTERFACES:
+- basic argument-level interfaces (ap\_vld, ap\_none, ap\_hs)
+- block-level interface of pipelined component (pipeline on the top function)
+
+lab4: ARRAYS: Sequential, pipelining internal loop, rewind parameter, top function pipelining, array map, array partition (cyclic and complete), array reshape technique
+
+\subsection{Learning how to program target board}
 
 hello world via Xilinx SDK => baremetal 
 -> zelf kiezen waar uitgevoerd + dataverplaatsingen zelf implementeren
+
 
 \section{SDSoC}
 
 Op een Linuxdistributie.
 
-Snel functie verplaatsen van PS naar PL
+Snel functie verplaatsen van PS naar PL.
+
+gebruikt ook delen van HLS
+
+\subsection{learning process on matrix multiplication example in SDSoC}
 
 Eerste test: matrixmultiplicatie
+
+lab1: INTRODUCTION: basic workflow, working with hardware accelerators, running the project, ...
+
+lab2: performance estimation: rescource utilization, comparing software and hardware implementations, overall speedup comparison (all using LINUX hosted)
+
+lab3: 
+
+lab4:
+
+lab5:
+
+lab6:
+
+lab7:
+
+lab8:

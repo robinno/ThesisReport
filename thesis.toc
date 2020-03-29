@@ -46,16 +46,19 @@
 \contentsline {subsection}{\numberline {4.3.3}Alternatives and selection}{19}{subsection.4.3.3}%
 \contentsline {chapter}{\numberline {5}Initial Difficulties during the implementation}{20}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{20}{section.5.1}%
-\contentsline {section}{\numberline {5.2}SDSoC}{20}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Initial approach with pure Smith-Waterman}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The concept}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}System implementation}{21}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Possible initial speedups}{21}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Problems with this initial approach}{21}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Acceleration idea: BFAST algorithm}{22}{chapter.7}%
-\contentsline {section}{\numberline {7.1}BFAST algorithm}{22}{section.7.1}%
-\contentsline {section}{\numberline {7.2}System implementation}{22}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Speedups}{22}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Implementation results}{23}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and future research}{24}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{26}{appendix.A}%
+\contentsline {subsection}{\numberline {5.1.1}learning HLS in examples}{20}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{20}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}SDSoC}{21}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}learning process on matrix multiplication example in SDSoC}{21}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}Initial approach with pure Smith-Waterman}{22}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The concept}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}System implementation}{22}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Possible initial speedups}{22}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Problems with this initial approach}{22}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Acceleration idea: BFAST algorithm}{23}{chapter.7}%
+\contentsline {section}{\numberline {7.1}BFAST algorithm}{23}{section.7.1}%
+\contentsline {section}{\numberline {7.2}System implementation}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Speedups}{23}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Implementation results}{24}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and future research}{25}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{27}{appendix.A}%
