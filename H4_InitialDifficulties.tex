@@ -6,7 +6,7 @@
 
 \chapter{Initial Difficulties during the implementation}
 
-Disclaimer: This chapter is for amount of work :)
+\textit{Disclaimer: The purpose of this chapter is more to show the learning process I had to go through in order to achieve a suitable implementation for the genome mapping problem. I had to learn some new programming techniques such as HLS, SDSoC \dots especially for this thesis, since I did not have any experience in it yet. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
 
 \section{Using Vivado HLS and Xilinx SDK}
 
@@ -46,16 +46,22 @@ Eerste test: matrixmultiplicatie
 
 lab1: INTRODUCTION: basic workflow, working with hardware accelerators, running the project, ...
 
-lab2: performance estimation: rescource utilization, comparing software and hardware implementations, overall speedup comparison (all using LINUX hosted)
+lab2: PERFORMANCE ESTIMATION: rescource utilization, comparing software and hardware implementations, overall speedup comparison (all using LINUX hosted)
 
-lab3: 
+lab3: diff between ACP, AFI and GP
+	ACP	Hardware functions have cache coherent access to DDR via the PS L2 cache.
+	AFI (HP)	Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
+	GP	Processor directly writes/reads data to/from hardware function. Inefficient for large data transfers.
++ error reporting (opening log files to see more information).
+Additional: the hardware functions and DMAs can only access the physical address space (not virtual) => DMA that can handle a list of pages for a single array is known as Scatter-Gather DMA. (malloc(), sds\_alloc()) Typically sds\_alloc = best (area and performance) but uses physical memory (minder van beschikbaar dan virtueel).
 
-lab4:
+lab4: directives to optimize the accelerator
 
-lab5:
+lab5: task level pipelining
+	=> speedup x3 theoretical, probably I make some mistakes
 
-lab6:
+lab6: DEBUG
 
-lab7:
+lab7: HARDWARE DEBUG: trace feature: what is the application doing? (software, hardware, transfer, recieve)
 
-lab8:
+lab8: EMULATION

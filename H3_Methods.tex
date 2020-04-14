@@ -288,10 +288,52 @@ Please note, in most normal cases we can assume the distribution of reads is pra
 
 \subsection{The sam and bam file format}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exists a lot of tools transform a SAM to BAM file already, so in this thesis we will focus on the SAM format.
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exists a lot of tools transform a SAM to BAM file already, so in this thesis we will focus on the SAM format. A SAM file constist of two sections, a header and an alignment section. 
 
+%src:http://samtools.github.io/hts-specs/SAMv1.pdf
+
+\subsubsection{Header}
+The header is used for information which is independent of the alignments, such as name of the used algorithm, reference genome, used commands during generation and many more.
+The header must be in the beginning of the file, before 
+the alignment section. Each line of the header field must start with an '@' character, so these lines are easily distinguished from lines the alignment section.
+
+\subsubsection{Alignment Section}
+Each line in the alignment section represents one mapped sequence, and consists of 11 mandatory and some optional fields, which are seperated with a tab.
+
+The 11 mandatory fields are:
+\begin{enumerate}
+	
+	\item \textbf{Qname}: this is the name of the query (the sequence to match) and can be found on the first line of the FASTQ file, which is the input to the mapping algorithm.
+	
+	\item \textbf{FLAG}: a combination of bitwise flags where each bit has a specific interpretation. It consists of 11 bits, but for basic alignments only 2 fields are important:
+	\begin{itemize}
+		\item bit 2 (binary: $00000000X00$, integer value 4) is set to $1$ if the sequence is unmapped or the map is not found
+		\item bit 4 (binary: $000000X0000$, integer value 16) is set to $1$ if the sequence has been mapped as it's reverse complement.
+	\end{itemize}
+
+	\item \textbf{Rname}: the name of the reference genome. This can be found on the first line of the FASTA file, where the reference genome is stored. If the read is unmapped, this field contains a '*' character
+	
+	\item \textbf{Pos}: the position of the leftmost base in the alignment. Keep in mind that the indexing of the reference starts with 1 for the first base.
+	
+	\item \textbf{MapQ}: the mapping quality, which indicates how good the sequence fits in the specific position. This can be any value between 0 and 254. Value 255 is a reserved value to represent an unavailable quality.
+	
+	\item \textbf{CIGAR}, which stands for \textit{Concise Idiosyncratic Gapped Alignment Report}. It is a string which indicates where the matches (M), insertions (I) and deletions (I). For example, if the CIGAR states $3M1I6M2D10M$ this means from left to right: 3 matches, then an insertion, followed by 2 matches, 2 deletions an finally 10 matches. Keep in mind that the sum of the numbers in this string must be equal to the length of the sequence. In case the sequence is unmapped, this field should be filled with a '*' character
+	
+	\item \textbf{Rnext}: reference sequence name of the primary alignment of the text read in the template. For this thesis we will fill this field with a '*' character. 
+	
+	\item \textbf{Pnext}: position of the primary alignment of the next read in the template. For this thesis we will fill this field with a '0' character.
+	
+	\item \textbf{Tlen}: the observed template length, from the first till last mapped base. For this thesis we will fill this field with a '*' character.
+	
+	\item \textbf{Seq}: the full sequence. This can be found in the FASTQ file on the second line.
+	
+	\item \textbf{Qual}: the qualities of the sequence, also given by the FASTQ file on the fourth line.
+	
+\end{enumerate}
+
+
+//TODO voorbeeldje
 %TODO
-//TODO
 
 \subsection{Clinical application}
 
