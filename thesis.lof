@@ -4,21 +4,21 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The structure of one nucleotide\relax }}{3}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The famous double helix\relax }}{3}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces the DNA structure\relax }}{4}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces the human chromosomes\relax }}{5}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces the order of the human genome\relax }}{6}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\relax }}{6}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\relax }}{7}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A short part of a DNA molecule containing a $$[5' - ACGT - 3']$$ (left) and a complementary strand of $$[3' - TGCA - 5']$$ (right). These 2 strands are interconnected by hydrogen bonds\relax }}{4}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces the 46 human chromosomes\relax }}{5}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The order of the human genome as depicted in the IGV software\relax }}{6}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\relax }}{7}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\relax }}{8}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\relax }}{8}{figure.caption.21}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{14}{figure.caption.25}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{16}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype\relax }}{18}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces DNA of the fetus in the mothers blood\relax }}{19}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow\relax }}{19}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A schematic overview of the NIPT test\relax }}{20}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces an organisation chart of the split up functionalities\relax }}{26}{figure.caption.34}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces an organisation chart of the split up functionalities\relax }}{27}{figure.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

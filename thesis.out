@@ -7,7 +7,7 @@
 \BOOKMARK [0][-]{chapter*.7}{List of symbols}{}% 7
 \BOOKMARK [0][-]{chapter*.9}{List of abbreviations}{}% 8
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
-\BOOKMARK [0][-]{chapter.2}{Background information in molecular biology}{}% 10
+\BOOKMARK [0][-]{chapter.2}{Background information on DNA and DNA sequencing}{}% 10
 \BOOKMARK [1][-]{section.2.1}{Biology and DNA}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.1.1}{History of genetics and DNA}{section.2.1}% 12
 \BOOKMARK [2][-]{subsection.2.1.2}{Structure of DNA}{section.2.1}% 13
@@ -16,10 +16,10 @@
 \BOOKMARK [1][-]{section.2.3}{Sequencing}{chapter.2}% 16
 \BOOKMARK [2][-]{subsection.2.3.1}{The sequencing technology}{section.2.3}% 17
 \BOOKMARK [2][-]{subsection.2.3.2}{The FASTQ file format}{section.2.3}% 18
-\BOOKMARK [0][-]{chapter.3}{Methods for genetic sequence alignment}{}% 19
-\BOOKMARK [1][-]{section.3.1}{Genetic sequence aligning}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.3}{Methods for DNA sequence alignment}{}% 19
+\BOOKMARK [1][-]{section.3.1}{DNA sequence aligning}{chapter.3}% 20
 \BOOKMARK [2][-]{subsection.3.1.1}{Alignment in general}{section.3.1}% 21
-\BOOKMARK [1][-]{section.3.2}{Local VS global alignment}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Local versus global alignment}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.3}{Commonly used algorithms}{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.3.1}{Needleman-Wunsch}{section.3.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.2}{Smith-Waterman}{section.3.3}% 25

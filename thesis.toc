@@ -9,22 +9,22 @@
 \contentsline {chapter}{List of symbols}{xi}{chapter*.7}%
 \contentsline {chapter}{List of abbreviations}{xii}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Background information in molecular biology}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Background information on DNA and DNA sequencing}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Biology and DNA}{2}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}History of genetics and DNA}{2}{subsection.2.1.1}%
 \contentsline {paragraph}{Genetics}{2}{figure.caption.11}%
-\contentsline {paragraph}{Molecular biology}{2}{section*.12}%
-\contentsline {subsection}{\numberline {2.1.2}Structure of DNA}{3}{subsection.2.1.2}%
+\contentsline {paragraph}{DNA}{2}{section*.12}%
+\contentsline {subsection}{\numberline {2.1.2}Structure of DNA}{2}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}DNA in the human body}{5}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}The Human Genome Project}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.2}The Human Genome Project}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Sequencing}{6}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The sequencing technology}{6}{subsection.2.3.1}%
-\contentsline {paragraph}{How NGS works}{6}{section*.18}%
-\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{8}{subsection.2.3.2}%
-\contentsline {chapter}{\numberline {3}Methods for genetic sequence alignment}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Genetic sequence aligning}{10}{section.3.1}%
+\contentsline {paragraph}{How whole genome NGS works}{6}{section*.18}%
+\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{9}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Methods for DNA sequence alignment}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}DNA sequence aligning}{10}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Alignment in general}{10}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Local VS global alignment}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Local versus global alignment}{11}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Commonly used algorithms}{11}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Needleman-Wunsch}{12}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Smith-Waterman}{12}{subsection.3.3.2}%
@@ -46,27 +46,27 @@
 \contentsline {subsection}{\numberline {4.3.1}USB}{21}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Ethernet}{21}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Alternatives and selection}{21}{subsection.4.3.3}%
-\contentsline {chapter}{\numberline {5}Initial Difficulties during the implementation}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{22}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}learning HLS in examples}{22}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{23}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}SDSoC}{23}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}learning process on matrix multiplication example in SDSoC}{23}{subsection.5.2.1}%
-\contentsline {chapter}{\numberline {6}Software implementation with pure Smith-Waterman}{24}{chapter.6}%
-\contentsline {section}{\numberline {6.1}The concept}{24}{section.6.1}%
-\contentsline {section}{\numberline {6.2}General overview of the implementation}{24}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Parameters and Types}{24}{subsection.6.2.1}%
-\contentsline {paragraph}{Nucleotide base}{24}{section*.31}%
-\contentsline {paragraph}{DNA sequence type}{25}{section*.33}%
-\contentsline {subsection}{\numberline {6.2.2}The code structure}{25}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Details of the implementation}{25}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}File Interfaces}{26}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Memory Management}{26}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}The alignment}{26}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Implementation results}{26}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Sample data}{26}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Results}{27}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Acccelerating the software implementation using HLS}{28}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Implementation results}{29}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and future research}{30}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{32}{appendix.A}%
+\contentsline {chapter}{\numberline {5}Initial Difficulties during the implementation}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{23}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}learning HLS in examples}{23}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{24}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}SDSoC}{24}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}learning process on matrix multiplication example in SDSoC}{24}{subsection.5.2.1}%
+\contentsline {chapter}{\numberline {6}Software implementation with pure Smith-Waterman}{25}{chapter.6}%
+\contentsline {section}{\numberline {6.1}The concept}{25}{section.6.1}%
+\contentsline {section}{\numberline {6.2}General overview of the implementation}{25}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Parameters and Types}{25}{subsection.6.2.1}%
+\contentsline {paragraph}{Nucleotide base}{25}{section*.31}%
+\contentsline {paragraph}{DNA sequence type}{26}{section*.33}%
+\contentsline {subsection}{\numberline {6.2.2}The code structure}{26}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Details of the implementation}{26}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}File Interfaces}{27}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Memory Management}{27}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}The alignment}{27}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Implementation results}{27}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Sample data}{27}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Results}{28}{subsection.6.4.2}%
+\contentsline {chapter}{\numberline {7}Acccelerating the software implementation using HLS}{29}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Implementation results}{30}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and future research}{31}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{33}{appendix.A}%
