@@ -45,15 +45,19 @@
 \BOOKMARK [2][-]{subsection.5.1.2}{Learning how to program target board}{section.5.1}% 45
 \BOOKMARK [1][-]{section.5.2}{SDSoC}{chapter.5}% 46
 \BOOKMARK [2][-]{subsection.5.2.1}{learning process on matrix multiplication example in SDSoC}{section.5.2}% 47
-\BOOKMARK [0][-]{chapter.6}{Initial approach with pure Smith-Waterman}{}% 48
+\BOOKMARK [0][-]{chapter.6}{Software implementation with pure Smith-Waterman}{}% 48
 \BOOKMARK [1][-]{section.6.1}{The concept}{chapter.6}% 49
-\BOOKMARK [1][-]{section.6.2}{System implementation}{chapter.6}% 50
-\BOOKMARK [1][-]{section.6.3}{Possible initial speedups}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.4}{Problems with this initial approach}{chapter.6}% 52
-\BOOKMARK [0][-]{chapter.7}{Acceleration idea: BFAST algorithm}{}% 53
-\BOOKMARK [1][-]{section.7.1}{BFAST algorithm}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.2}{System implementation}{chapter.7}% 55
-\BOOKMARK [1][-]{section.7.3}{Speedups}{chapter.7}% 56
-\BOOKMARK [0][-]{chapter.8}{Implementation results}{}% 57
-\BOOKMARK [0][-]{chapter.9}{Conclusion and future research}{}% 58
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 59
+\BOOKMARK [1][-]{section.6.2}{General overview of the implementation}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.2.1}{Parameters and Types}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.2}{The code structure}{section.6.2}% 52
+\BOOKMARK [1][-]{section.6.3}{Details of the implementation}{chapter.6}% 53
+\BOOKMARK [2][-]{subsection.6.3.1}{File Interfaces}{section.6.3}% 54
+\BOOKMARK [2][-]{subsection.6.3.2}{Memory Management}{section.6.3}% 55
+\BOOKMARK [2][-]{subsection.6.3.3}{The alignment}{section.6.3}% 56
+\BOOKMARK [1][-]{section.6.4}{Implementation results}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.4.1}{Sample data}{section.6.4}% 58
+\BOOKMARK [2][-]{subsection.6.4.2}{Results}{section.6.4}% 59
+\BOOKMARK [0][-]{chapter.7}{Acccelerating the software implementation using HLS}{}% 60
+\BOOKMARK [0][-]{chapter.8}{Implementation results}{}% 61
+\BOOKMARK [0][-]{chapter.9}{Conclusion and future research}{}% 62
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 63
