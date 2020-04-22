@@ -51,8 +51,8 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Parameters and Types}{section.6.2}% 51
 \BOOKMARK [2][-]{subsection.6.2.2}{The code structure}{section.6.2}% 52
 \BOOKMARK [1][-]{section.6.3}{Details of the implementation}{chapter.6}% 53
-\BOOKMARK [2][-]{subsection.6.3.1}{File Interfaces}{section.6.3}% 54
-\BOOKMARK [2][-]{subsection.6.3.2}{Memory Management}{section.6.3}% 55
+\BOOKMARK [2][-]{subsection.6.3.1}{File interfaces}{section.6.3}% 54
+\BOOKMARK [2][-]{subsection.6.3.2}{Memory management}{section.6.3}% 55
 \BOOKMARK [2][-]{subsection.6.3.3}{The alignment}{section.6.3}% 56
 \BOOKMARK [1][-]{section.6.4}{Implementation results}{chapter.6}% 57
 \BOOKMARK [2][-]{subsection.6.4.1}{Sample data}{section.6.4}% 58

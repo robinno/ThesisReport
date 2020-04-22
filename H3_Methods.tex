@@ -38,7 +38,7 @@ The alignment itself can now be done in different ways. Possible alignments are:
 	Seq1: atATCGgc
 	Seq2: --ATCG--
 \end{lcverbatim}
-Which alignment that is the actual output, depends on the algorithm and the given parameters. The '-' character represents a base which is not present.
+Which alignment that is the actual output, depends on the algorithm and the given parameters. The '-' character represents a base that is not present.
 
 Keep in mind, there is no one "correct" alignment. The core of the alignment algorithms is the same each time, but the parameters of these algorithms are changed depending on the application.
 
@@ -105,7 +105,7 @@ The core of the algorithm is a matrix fillup, with data dependencies on the prev
 \begin{enumerate}
 	\item Symbols used in the analysis:
 	
-	Let sequences $A = a_1 a_2 a_3 \dots a_n$ and $B = b_1 b_2 b_3 \dots b_m$ be the sequences that need to be locally aligned. Here $n$ and $m$ are the lengths of sequence $A$ and $B$
+	Let sequences $A = a_1 a_2 a_3 \dots a_n$ and $B = b_1 b_2 b_3 \dots b_m$ be the sequences that need to be locally aligned. Here $n$ and $m$ are the lengths of the sequences $A$ and $B$
 	
 	\item Define the parameters: 
 	
@@ -142,7 +142,7 @@ The core of the algorithm is a matrix fillup, with data dependencies on the prev
 		
 		\begin{itemize}
 			\item \emph{Linear}: The penalty is constant. So, in this case, it doesn't matter e.g. the previous was also a gap.
-			\item \emph{Affine}: An affine gap penalty considers gap opening and extension separately. For the sake of simplicity, my further implmentation will not include this refinement of the algorithm. The algorithm can be extended to include this affine gap penalty, but this would make the algorithm more complex and we would limit our ability to develop possible accelerations.
+			\item \emph{Affine}: An affine gap penalty considers gap opening and extension separately. For the sake of simplicity, my further implementation will not include this refinement of the algorithm. The algorithm can be extended to include this affine gap penalty, but this would make the algorithm more complex and we would limit our ability to develop possible accelerations.
 		\end{itemize}
 		
 		
@@ -248,11 +248,11 @@ The core of the algorithm is a matrix fillup, with data dependencies on the prev
 	
 	From this traceback we can now deduce the following alignment:
 	
-\begin{lcverbatim}
-GTT-AC
-||||||
-GTTGAC
-\end{lcverbatim}
+	\begin{lcverbatim}
+		GTT-AC
+		||||||
+		GTTGAC
+	\end{lcverbatim}
 	
 	This alignment is the output of our algorithm.
 	
@@ -264,7 +264,7 @@ GTTGAC
 
 From the DNA sequencing machines, we get a big amount of reads in the FASTQ format. We should note that all these reads are worthless without a proper interpretation.
 
-In most cases, the first step in the analysis of the reads is knowing from which part of the genome it is derived. Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
+In most cases, the first step in the analysis of the reads is knowing from which part of the genome it's derived. Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
 
 Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in \ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in chapter \ref{ch:Platforms}) since S-W is heavily parallelizable.
 
@@ -288,18 +288,18 @@ Please note, in most normal cases we can assume the distribution of reads is pra
 
 
 \subsection{The sam and bam file format}
+\label{expl:SAM}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exists a lot of tools transform a SAM to BAM file already, so in this thesis we will focus on the SAM format. A SAM file constist of two sections, a header and an alignment section. 
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section. 
 
 %src:http://samtools.github.io/hts-specs/SAMv1.pdf
 
 \subsubsection{Header}
-The header is used for information which is independent of the alignments, such as name of the used algorithm, reference genome, used commands during generation and many more.
-The header must be in the beginning of the file, before 
-the alignment section. Each line of the header field must start with an '@' character, so these lines are easily distinguished from lines the alignment section.
+The header is used for information that is independent of the alignments, such as the name of the used algorithm, reference genome, used commands during generation, etc.
+The header must be at the beginning of the file, before the alignment section. Each line of the header field must start with an '@' character, so these lines are easily distinguished from lines the alignment section.
 
 \subsubsection{Alignment Section}
-Each line in the alignment section represents one mapped sequence, and consists of 11 mandatory and some optional fields, which are seperated with a tab.
+Each line in the alignment section represents one mapped sequence and consists of 11 mandatory and some optional fields, which are separated with a tab.
 
 The 11 mandatory fields are:
 \begin{enumerate}
@@ -309,22 +309,22 @@ The 11 mandatory fields are:
 	\item \textbf{FLAG}: a combination of bitwise flags where each bit has a specific interpretation. It consists of 11 bits, but for basic alignments only 2 fields are important:
 	\begin{itemize}
 		\item bit 2 (binary: $00000000X00$, integer value 4) is set to $1$ if the sequence is unmapped or the map is not found
-		\item bit 4 (binary: $000000X0000$, integer value 16) is set to $1$ if the sequence has been mapped as it's reverse complement.
+		\item bit 4 (binary: $000000X0000$, integer value 16) is set to $1$ if the sequence has been mapped as its reverse complement.
 	\end{itemize}
-
+	
 	\item \textbf{Rname}: the name of the reference genome. This can be found on the first line of the FASTA file, where the reference genome is stored. If the read is unmapped, this field contains a '*' character
 	
 	\item \textbf{Pos}: the position of the leftmost base in the alignment. Keep in mind that the indexing of the reference starts with 1 for the first base.
 	
 	\item \textbf{MapQ}: the mapping quality, which indicates how good the sequence fits in the specific position. This can be any value between 0 and 254. Value 255 is a reserved value to represent an unavailable quality.
 	
-	\item \textbf{CIGAR}, which stands for \textit{Concise Idiosyncratic Gapped Alignment Report}. It is a string which indicates where the matches (M), insertions (I) and deletions (I). For example, if the CIGAR states $3M1I6M2D10M$ this means from left to right: 3 matches, then an insertion, followed by 2 matches, 2 deletions an finally 10 matches. Keep in mind that the sum of the numbers in this string must be equal to the length of the sequence. In case the sequence is unmapped, this field should be filled with a '*' character
+	\item \textbf{CIGAR}, which stands for \textit{Concise Idiosyncratic Gapped Alignment Report}. It is a string that indicates where the matches (M), insertions (I), and deletions (D) occur. For example, if the CIGAR states $3M1I6M2D10M$ this means from left to right: 3 matches, then an insertion, followed by 6 matches, 2 deletions, and finally 10 matches. In case the sequence is unmapped, this field should be filled with a '*' character
 	
-	\item \textbf{Rnext}: reference sequence name of the primary alignment of the text read in the template. For this thesis we will fill this field with a '*' character. 
+	\item \textbf{Rnext}: reference sequence name of the primary alignment of the text read in the template. For this thesis, we will fill this field with a '*' character. 
 	
-	\item \textbf{Pnext}: position of the primary alignment of the next read in the template. For this thesis we will fill this field with a '0' character.
+	\item \textbf{Pnext}: the position of the primary alignment of the next read in the template. For this thesis, we will fill this field with a '0' character.
 	
-	\item \textbf{Tlen}: the observed template length, from the first till last mapped base. For this thesis we will fill this field with a '0' character.
+	\item \textbf{Tlen}: the observed template length, from the first till last mapped base. For this thesis, we will fill this field with a '0' character.
 	
 	\item \textbf{Seq}: the full sequence. This can be found in the FASTQ file on the second line.
 	
@@ -332,9 +332,19 @@ The 11 mandatory fields are:
 	
 \end{enumerate}
 
-
-//TODO voorbeeldje
-%TODO
+An example of one line in a SAM file:
+\begin{lcverbatim}
+	SRR11   0   MN98   25   254   7M   0   0   GTTAAAG   BBBBBCB
+\end{lcverbatim}
+In this example:
+\begin{itemize}
+	\item The name of the sequence is $SRR11$
+	\item The read is matched in the $[5' -> 3']$ direction
+	\item The match is found at the 25th base of the reference genome
+	\item The mapping quality is 254
+	\item CIGAR = $7M$, so a perfect match
+	\item The sequence is $GTTAAAG$ with quality $BBBBBCB$
+\end{itemize}
 
 \subsection{Clinical application}
 
@@ -368,13 +378,10 @@ We will discuss as examples two clinical applications of mapping to a reference 
 		\label{fig:NIPT}
 	\end{figure}
 	
-	Using the same method, we can also find other defects in the number of chromosomes. For example trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome) or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome).
+	Using the same method, we can also find other defects in the number of chromosomes. For example trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome).
 	
 	\item \textbf{Shallow whole-genome sequencing of tumor DNA.}\newline
 	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be loss or gain of large DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
 	
 	A relatively new technique to detect all gains and losses of DNA material in one single experiment is \emph{sWGS} (shallow whole-genome sequencing). The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are.
 \end{enumerate}
-
-
-

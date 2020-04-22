@@ -33,7 +33,7 @@ The full structure of DNA was discovered by Francis Crick and James Watson at th
 
 \subsection{Structure of DNA}
 
-DNA, or Deoxyribonucleic Acid, is the molecule which stores the genetic information of all living organisms. It is the information that programs all of the activities in a cell.
+DNA, or Deoxyribonucleic Acid, is the molecule that stores the genetic information of all living organisms. It is the information that programs all of the activities in a cell.
 
 Structurally, DNA is a polymer, which means each molecule is built up out of small repeating molecular units. In DNA, these units are called \emph{nucleotides}.
 
@@ -70,7 +70,7 @@ The first phosphate group, at the start of the molecule, connects to the sugar g
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DNA_chemical_structure.svg/800px-DNA_chemical_structure.svg.png
 	\centering
 	\includegraphics[width=0.5\linewidth]{background/DNAstructure.png}
-	\caption{A short part of a DNA molecule containing a $$[5' - ACGT - 3']$$ (left) and a complementary strand of $$[3' - TGCA - 5']$$ (right). These 2 strands are interconnected by hydrogen bonds}
+	\caption{A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds}
 	\label{fig:DNAstructure}
 \end{figure}
 
@@ -109,7 +109,7 @@ The 23 chromosome pairs are classified in:
 
 \section{The Human Genome Project}
 
-In the field of Bioinformatics, an important dataset is the \emph{Human Genome}. This is the full string of DNA sequence found in the Nucleus, ordered from chromosome 1 to 22, followed by the X and Y chromosome.
+In the field of Bioinformatics, an important dataset is the \emph{Human Genome}. This is the full DNA sequence found in the Nucleus, ordered from chromosome 1 to 22, followed by the X and Y chromosome.
 
 In October 1990, biologists in the relatively new field of molecular biology started the Human Genome Project. The goal of this project was to determine the sequence of the 3 billion base pairs that make up human DNA. This project was completed and published in 2003, So nowadays we have a good idea of how the human genome is built up.
 
@@ -129,11 +129,11 @@ The Human Genome is easily found on the internet since it is publically availabl
 
 The term \emph{Sequencing} is used for all techniques to read and decipher the DNA code from a given snippet of DNA. During the last years, the techniques that sequence human DNA has changed quite a lot. For about 15 years the \emph{Next Generation Sequencing (NGS)} is the technique most often used. The biggest advantage of NGS, in comparison with other techniques, is the speed of the sequencing since it can sequence billions of short DNA molecules in parallel. In practice, this sequencing is most often done by the instruments of the company Illumina, which dominates the market (around 90\% market share).
 
-\paragraph{How whole genome NGS works}
+\paragraph{How whole-genome NGS works}
 
 \begin{enumerate}
 	\item The DNA to sequence is isolated from the cells. Most often this is the whole genome.
-	\item  In some cases, The isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA, usually this is in the millions or billions of copies.
+	\item  In some cases, The isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA. Usually, this is in the millions or billions of copies.
 	
 	\begin{figure}[H]
 		%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
@@ -149,7 +149,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 	\begin{enumerate}
 		\item The entire flowcell is filled with nucleotides, all with different nitrogen bases. Important is that at each of these nucleotides there is a fluorescent group attached to the phosphor group. This makes sure no other nucleotide can bind.
 		\item The fluorescent groups have a different color, dependent on the nitrogen base attached ($A$, $G$, $T$ of $C$). At this time a camera picture of the flowcell is taken and stored.
-		\item after the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent splits the fluorescent group from the phosphor group, so that in the next iteration a new nucleotide group can bind with the read.
+		\item after the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent splits the fluorescent group from the phosphor group so that in the next iteration a new nucleotide group can bind with the read.
 		
 		\begin{figure}[H]
 			%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
@@ -160,7 +160,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 		\end{figure}
 	\end{enumerate}
 	
-	\item After the whole DNA snippets have been filled in, the machine deduces the sequence in the DNA snippet. The pictures taken during the operation shows in order the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences from all the molecules bound on the flowcell. this is called the \emph{Primary processing}.
+	\item After the whole DNA snippets have been filled in, the machine deduces the sequence in the DNA snippet. The pictures that were taken in order during the operation show the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences from all the molecules bound on the flowcell. this is called the \emph{Primary processing}.
 	
 	\begin{figure}[H]
 		%src: PPT van Howest
@@ -176,16 +176,17 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 As a result of the NGS, we get a (large) file in the FASTQ format.
 
 \subsection{The FASTQ file format}
+\label{expl:FASTQ}
 
-Since the color of each spot observed in the camera pictures in the primary processing can have a light shift, there is a specific "uncertainty" what the correct base is in that spot. This is called the \emph{quality} of the base.
+Since the color of each spot observed in the camera pictures in the primary processing can have a light shift, there is a specific "uncertainty" about the correct base is in that spot. This is called the \emph{quality} of the base.
 
 The \emph{FASTQ} file format has become the de-facto standard as output from sequencing instruments. It is a text-based format for storing both the bases in the sequence and their corresponding quality.
 
 A FASTQ file uses four lines per sequenced DNA fragment:
 
 \begin{enumerate}
-	\item a '$@$' character followed by a sequence ID, plus an optional description. This description mostly containes the coordinate of the spot on the flowcell.
-	\item \label{enumIt:fastqRaw} The sequence of DNA bases identified by the machine. This is either $A$, $G$, $C$, $T$ or $n$ when the base cannot be identified with a specific threshold certainty.
+	\item a '$@$' character followed by a sequence ID, plus an optional description. This description mostly contains the coordinate of the spot on the flowcell.
+	\item \label{enumIt:fastqRaw} The sequence of DNA bases identified by the machine. This is either $A$, $G$, $C$, $T$, or $n$ when the base cannot be identified with a specific threshold certainty.
 	\item a '$+$' character, optionally followed by the sequence ID (again) and an optional description.
 	\item the quality values for each respective base in line \ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line \ref{enumIt:fastqRaw}
 \end{enumerate}
@@ -200,17 +201,14 @@ The quality score in memory is a value in the range $0x21$ (lowest quality) to $
 
 Important to note is that this quality score is logarithmic. Also, the '$@$' and '$+$' character is a possible value for the quality, so this will be something to look out for when implementing the interpreter for this file.\\
 
-
+	
 A FASTQ file containing a single sequence of a DNA framgent of 60 bases might look like this:
 
 
 \begin{lcverbatim}
-@SEQ_ID
-GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
-+
-!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+@*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
 \end{lcverbatim}
 
 Keep in mind that a FASTQ file consists of multiple of these sequences, all stacked under each other.
-
-
+	
+	
