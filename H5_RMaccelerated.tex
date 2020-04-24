@@ -47,8 +47,6 @@ Since the genome can have a length of more than 3 billion bases, and the sequenc
 
 To index these "arrays" of bases, a new type was created for both the sequence indexing (\emph{SEQ\_INDEX}) and the reference indexing (\emph{REF\_INDEX}). Since an index to the sequence can be as high as the $length - 1$, it made sense to make the length attribute out of these newly created index types.
 
-Since the //TODO echte types
-
 \subsection{The code structure}
 
 \begin{enumerate}
@@ -161,19 +159,81 @@ Then, to write the line in the output SAM file, a function was created which acc
 
 \subsection{Memory management}
 
-sdsalloc VS malloc
-choosing sdsalloc so that hardware can also get it easily
+\subsubsection{malloc and sds\_alloc}
+The allocation of memory in a C program is usually done using the "malloc" function. However, on the used SoC, a distribution of linux is running. Like in most operating system, this linux distribution uses a virtual address space to enlarge the available RAM memory virtually. 
+
+The original idea for the project was to be able to accelerate certain functions using the programmable hardware available in the SoC chip. Since this hardware should be able to access the data in the memory, there two options:
+\begin{enumerate}
+	\item Build a copy of the address translator on the hardware. This would require a lot of work and would slow the whole process of looking things up in memory down.
+	\item Let the software interface the physical memory, so that we don't use the virtual addresses. This solution was used in the final implementation
+\end{enumerate}
+
+Luckily, Xilinx has published a library with an \emph{sds\_alloc} function. This does the same as malloc in the C language, but in physical memory instead of the virtual memory.
+
+\subsubsection{Allocating memory}
+To allocate memory, the following formula was used:
+
+\begin{lcverbatim}
+	memory_pointer = (TYPE*) sds_alloc( length * sizeof(TYPE) );
+\end{lcverbatim}
+
+The sds\_alloc function returns a pointer to the first address in memory that has been reserved. It turns out that this pointer should be casted explicitly to the type used.
+
+\begin{itemize}
+	\item In case of reserving space for the sequence and the reference, the "TYPE" part in the formula should be filled in by the BASE type. For the length part of the formula, parameters were created named seqMax and refMax respectively.
+	\item When space for the alignment matrix will be reserved, the "TYPE" part in the formula should be filled in by the CELL type (for more explanation on the CELL-type, see \ref{expl:AlignmentParams}). As for the length of the space to reserve, this should be equal to refMax times seqMax.
+\end{itemize}
 
 \subsection{The alignment}
 \label{expl:alignment}
 
 \subsubsection{Parameters and types}
+\label{expl:AlignmentParams}
 
-types!
+A naive approach to implementing the S-W algorithm might be to have the alignment matrix filled in by the values only. If we would use this approach, it would quickly become clear that the backtracking is impossible, since we also need to know where the value originates from. Also, when generating the CIGAR-string, it is good to know which direction it originates from, as it implies a match (M), insertion (I), or a deletion (D). Since all this information should be stored in the alignment matrix, it seemed a good idea to create a new type. This type was called \emph{CELL}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.35\textwidth]{systemImplementation/CellType.png}
+	\caption{The type created to store the information for every cell in the alignment matrix}
+	\label{fig:CellType}
+\end{figure}
+
+The cell stores the place it originates from, using a \emph{DIRECTION} attribute. There are 4 possible directions a value can originate from: zero (coded as 0), diagonal (1), up (2), left (3).
+
+Furthermore, it stores the value using a special type \emph{CELL\_VALUE}. The size of values this type can store should be greater than the length of the sequence times the similarity score. Keep in mind that in order to calculate the maximum, this value-type should be able to go negative.
 
 \subsubsection{Code structure}
 
-computational complexity: O(mn)
+\paragraph{The alignment layer}
+
+The alignment layer does everything in the alignment of the sequence that has nothing to do with the matrix fillin. That functionality is outsourced to a separate function.
+
+Also, for the CIGAR string, a certain threshold was programmed in. The CIGAR string of a matched read consists of multiple parts. For example: $6M1I7M$ consists of 3 parts; $6M$, $1I$ and $7M$. By limiting the amount of parts that are allowed we can define a threshold by which a sequence is considered as "aligned". If both the forward and reverse sequence go over this limit, the sequence will be mapped as "unmatched".
+
+\begin{enumerate}
+	\item Fill in the matrix using the forward direction of the sequence.
+	\item Store the maximum value of the matrix.
+	\item Generate the CIGAR string for this forward direction. We have to do this so early because you need the full matrix for the CIGAR generation, and we want to reuse the memory for the matrix according to the reverse sequence.
+	\item Check if CIGAR limit has been exceeded. If not, then store the position of the map. 
+	\item Reverse the sequence
+	\item Repeat for the reverse sequence.
+	\item Check for the limit of the CIGAR. If it was exceeded in both forward and reverse sequence, mark it as unmatched.
+	\item Check which read fit best (the forward or reverse one) by comparing the maximum values in the mapping. Assign the best one to the MAPPED\_READ type.
+\end{enumerate}
+
+\paragraph{The fillIn layer}
+This is probably the easiest layer of them all, but will also be one of the most computationally demanding ones. It skims over every cell in the matrix, except for the first row and first column, and uses the cell generation layer to generate the cell on that specific spot. Also, while having an iteration that goes over every cell, it became a good idea to use this iteration to find the maximum cell in the matrix, which is the starting point for the backtracking.
+
+\paragraph{The cell generation layer}
+This layer consists of 3 parts:
+\begin{enumerate}
+	\item Generate the 3 values originating from diagonal, up and left cells, using the formulas described by the S-W algorithm. For this step, the parameters $s$ (for the similarity score) and $gp$ (for the gap penalty) were created. By means of testing, These were mostly kept on $s=3$ and $gp=2$, but can be easily changed according to ones needs.
+	\item Determine which of these three values is the greatest. If all negative, choose 0.
+	\item Assign the correct value and direction the the newly generated cell.
+\end{enumerate}
+
+It is important that this layer is efficiently coded. Since it runs for every cell (and there are a lot of cells), it can be expected to be the core of the program.
 
 \section{Implementation results}
 

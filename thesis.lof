@@ -23,6 +23,7 @@
 \contentsline {figure}{\numberline {6.3}{\ignorespaces The type created to store the genome information.\relax }}{28}{figure.caption.36}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the read information\relax }}{28}{figure.caption.37}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{28}{figure.caption.38}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{31}{figure.caption.42}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
