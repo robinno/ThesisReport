@@ -18,15 +18,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The created types to store the sequence and the reference\relax }}{26}{figure.caption.34}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces an organisation chart of the split up functionalities\relax }}{27}{figure.caption.35}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The type created to store the genome information.\relax }}{28}{figure.caption.36}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the read information\relax }}{28}{figure.caption.37}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{28}{figure.caption.38}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{31}{figure.caption.42}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces The layout of the IGV analysing software\relax }}{33}{figure.caption.46}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions\relax }}{33}{figure.caption.47}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter\relax }}{34}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The concept of the implementation: the sequences is mapped to the whole genome\relax }}{25}{figure.caption.31}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The created types to store the sequence and the reference\relax }}{26}{figure.caption.35}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces an organisation chart of the split up functionalities\relax }}{28}{figure.caption.36}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the genome information.\relax }}{28}{figure.caption.37}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the read information\relax }}{28}{figure.caption.38}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{29}{figure.caption.39}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{31}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{33}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions\relax }}{33}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter\relax }}{35}{figure.caption.49}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
