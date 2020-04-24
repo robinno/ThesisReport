@@ -4,10 +4,10 @@
 \contentsline {chapter}{Summary}{iv}{chapter*.2}%
 \contentsline {chapter}{Abstract}{v}{chapter*.3}%
 \contentsline {chapter}{Table of contents}{viii}{chapter*.4}%
-\contentsline {chapter}{List of figures}{ix}{chapter*.5}%
-\contentsline {chapter}{List of tables}{x}{chapter*.6}%
-\contentsline {chapter}{List of symbols}{xi}{chapter*.7}%
-\contentsline {chapter}{List of abbreviations}{xii}{chapter*.9}%
+\contentsline {chapter}{List of figures}{x}{chapter*.5}%
+\contentsline {chapter}{List of tables}{xi}{chapter*.6}%
+\contentsline {chapter}{List of symbols}{xii}{chapter*.7}%
+\contentsline {chapter}{List of abbreviations}{xiii}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background information on DNA and DNA sequencing}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Biology and DNA}{2}{section.2.1}%
@@ -76,9 +76,11 @@
 \contentsline {paragraph}{The fillIn layer}{32}{section*.44}%
 \contentsline {paragraph}{The cell generation layer}{32}{section*.45}%
 \contentsline {section}{\numberline {6.4}Implementation results}{32}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Sample data}{32}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Results}{32}{subsection.6.4.2}%
-\contentsline {chapter}{\numberline {7}Acccelerating the software implementation using HLS}{33}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Implementation results}{34}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and future research}{35}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{37}{appendix.A}%
+\contentsline {subsection}{\numberline {6.4.1}The IGV software}{32}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Sample data}{33}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Results}{34}{subsection.6.4.3}%
+\contentsline {paragraph}{The implications for the coronavirus data}{35}{section*.49}%
+\contentsline {chapter}{\numberline {7}Acccelerating the software implementation using HLS}{36}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Implementation results}{37}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusion and future research}{38}{chapter.9}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{40}{appendix.A}%

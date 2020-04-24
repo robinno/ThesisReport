@@ -237,17 +237,66 @@ It is important that this layer is efficiently coded. Since it runs for every ce
 
 \section{Implementation results}
 
+\subsection{The IGV software}
+
+The free and easy to download program IGV (or Integrative Genomics Viewer) is a visualisation tool for exploring genomic dataset, such as mapped reads. In practice, it is used quite often to examine the results from mapped reads.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{softwareResults/IGVlayout.png}
+	\caption{The layout of the IGV analysing software}
+	\label{fig:IGVlayout}
+\end{figure}
+
+The most important functions for this thesis are: 
+\begin{itemize}
+	\item It colorcodes insertion, deletions or substitutions, so it is easy to see "from a distance";
+	\item It can display the read depth for every base in the genome;
+	\item If the read depth is sufficient, it can also determine if an indel or substitution is part of the read, or is consistent enough throughout all the reads to show it in the full genome;
+	\item The sequence direction is indicated by an arrow when examining a specific read.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{softwareResults/IGVcloseup.jpg}
+	\caption{A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions}
+	\label{fig:IGVcloseup}
+\end{figure}
+
 \subsection{Sample data}
 
-PhiX 
-galaxy
-FASTQ: https://github.com/Illumina/Isaac3/tree/master/src/data/examples/PhiX/Fastq
-coronavirus
+To try the implementation on the human genome directly seemed way to ambitious. Therefore, it seemed appropriate to try the implementation first on an organism which has a DNA of only a few thousand bases in length.
+Since this thesis is performed around the spring of 2020, the "coronavirus" (or SARS-CoV-2) seemed like an appropriate candidate. After a quick google search, it turned out that this virus had a genome consisting of merely 29 thousand bases.
 
-//figuurtje IGV
-uitleggen reading depth + sequence direction
-desired result
+The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.
+
+The FASTQ files for the coronavirus used in this theses were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
+%src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
+
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is certainly correct. Appareantly, there consists an online tool called galaxy where a lot of existing bioinformatical algorithms and programs can be performed on given sample data by ways of cloud computing. 
+%src ook zetten naar galaxy
+
+So, by passing the fastq files given by the SRA of the NCBI through one of these available applications, we can get a pretty good reference to match our results against. As the applacation to compare to, the Bowtie algorithm was chosen, since it is commonly used for reference genome mapping in practice.
 
 \subsection{Results}
 
-//figuurtje + bespreking
+We will compare the results from the sample data using the online bowtie application and the implemention described in this chapter.
+
+After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure \ref{fig:IGVcomparison}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{softwareResults/comparison.jpg}
+	\caption{A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter}
+	\label{fig:IGVcomparison}
+\end{figure}
+
+It is immediatly obvious that the implementation is working correctly, since the reading depth graphs are approximatly the same. Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
+
+If you look closely to figure, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different.
+
+
+\paragraph{The implications for the coronavirus data}
+The coronavirus is constantly changing because of the mutations of some bases in the genome over time, just like the flu. In this way, it is possible to trace where infections originate. For example, the corona in China can have slightly different bases than from Italy or Spain. We can identify these changes by sequencing the whole genome, and looking for consistent substitutions or indels over the whole dataset.
+
+From these results shown by IGV \ref{fig:IGVcomparison}, some mutations are shown, so we can assume theat the coronavirus which was sequenced in Washington (taken from a US patient) has some slight differences with the original chinese sequenced genome.

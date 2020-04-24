@@ -55,9 +55,10 @@
 \BOOKMARK [2][-]{subsection.6.3.2}{Memory management}{section.6.3}% 55
 \BOOKMARK [2][-]{subsection.6.3.3}{The alignment}{section.6.3}% 56
 \BOOKMARK [1][-]{section.6.4}{Implementation results}{chapter.6}% 57
-\BOOKMARK [2][-]{subsection.6.4.1}{Sample data}{section.6.4}% 58
-\BOOKMARK [2][-]{subsection.6.4.2}{Results}{section.6.4}% 59
-\BOOKMARK [0][-]{chapter.7}{Acccelerating the software implementation using HLS}{}% 60
-\BOOKMARK [0][-]{chapter.8}{Implementation results}{}% 61
-\BOOKMARK [0][-]{chapter.9}{Conclusion and future research}{}% 62
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 63
+\BOOKMARK [2][-]{subsection.6.4.1}{The IGV software}{section.6.4}% 58
+\BOOKMARK [2][-]{subsection.6.4.2}{Sample data}{section.6.4}% 59
+\BOOKMARK [2][-]{subsection.6.4.3}{Results}{section.6.4}% 60
+\BOOKMARK [0][-]{chapter.7}{Acccelerating the software implementation using HLS}{}% 61
+\BOOKMARK [0][-]{chapter.8}{Implementation results}{}% 62
+\BOOKMARK [0][-]{chapter.9}{Conclusion and future research}{}% 63
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 64
