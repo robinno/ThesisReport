@@ -37,15 +37,11 @@
 \contentsline {chapter}{\numberline {4}Platforms for accelerating Smith-Waterman}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Overview of possible hardware}{21}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}CPU}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}GPU}{21}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}FPGA}{21}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}ASIC}{21}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Hardware selection}{21}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Recent advances in High Level Synthesis}{21}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Platform communication}{21}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}USB}{21}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Ethernet}{21}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Alternatives and selection}{21}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.1.2}GPU}{22}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}FPGA}{22}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Hardware selection}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Recent advances in High Level Synthesis}{22}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Platform communication}{22}{subsection.4.2.2}%
 \contentsline {chapter}{\numberline {5}Initial Difficulties during the implementation}{23}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{23}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}learning HLS in examples}{23}{subsection.5.1.1}%
@@ -56,31 +52,34 @@
 \contentsline {section}{\numberline {6.1}The concept}{25}{section.6.1}%
 \contentsline {section}{\numberline {6.2}General overview of the implementation}{26}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Parameters and Types}{26}{subsection.6.2.1}%
-\contentsline {paragraph}{Nucleotide base}{26}{section*.32}%
-\contentsline {paragraph}{DNA sequence type}{26}{section*.34}%
+\contentsline {paragraph}{Nucleotide base}{26}{section*.33}%
+\contentsline {paragraph}{DNA sequence type}{26}{section*.35}%
 \contentsline {subsection}{\numberline {6.2.2}The code structure}{26}{subsection.6.2.2}%
 \contentsline {section}{\numberline {6.3}Details of the implementation}{27}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}File interfaces}{28}{subsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.1}Parameters and types}{28}{subsubsection.6.3.1.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.2}Code structure}{29}{subsubsection.6.3.1.2}%
-\contentsline {paragraph}{FASTA interface}{29}{section*.40}%
-\contentsline {paragraph}{FASTQ interface}{29}{section*.41}%
-\contentsline {paragraph}{SAM interface}{30}{section*.42}%
+\contentsline {paragraph}{FASTA interface}{29}{section*.41}%
+\contentsline {paragraph}{FASTQ interface}{29}{section*.42}%
+\contentsline {paragraph}{SAM interface}{30}{section*.43}%
 \contentsline {subsection}{\numberline {6.3.2}Memory management}{30}{subsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.2.1}malloc and sds\_alloc}{30}{subsubsection.6.3.2.1}%
 \contentsline {subsubsection}{\numberline {6.3.2.2}Allocating memory}{30}{subsubsection.6.3.2.2}%
 \contentsline {subsection}{\numberline {6.3.3}The alignment}{31}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {6.3.3.1}Parameters and types}{31}{subsubsection.6.3.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.3.2}Code structure}{31}{subsubsection.6.3.3.2}%
-\contentsline {paragraph}{The alignment layer}{31}{section*.44}%
-\contentsline {paragraph}{The fill in layer}{32}{section*.45}%
-\contentsline {paragraph}{The cell generation layer}{32}{section*.46}%
+\contentsline {paragraph}{The alignment layer}{31}{section*.45}%
+\contentsline {paragraph}{The fill in layer}{32}{section*.46}%
+\contentsline {paragraph}{The cell generation layer}{32}{section*.47}%
 \contentsline {section}{\numberline {6.4}Implementation results}{33}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}The IGV software}{33}{subsection.6.4.1}%
 \contentsline {subsection}{\numberline {6.4.2}Sample data}{34}{subsection.6.4.2}%
 \contentsline {subsection}{\numberline {6.4.3}Results}{34}{subsection.6.4.3}%
-\contentsline {paragraph}{The implications for the coronavirus data}{35}{section*.50}%
+\contentsline {paragraph}{The implications for the coronavirus data}{35}{section*.51}%
 \contentsline {chapter}{\numberline {7}Acccelerating the software implementation using HLS}{36}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Implementation results}{37}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusion and future research}{38}{chapter.9}%
+\contentsline {section}{\numberline {7.1}Analysing software performance}{36}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Recoding parts of the software to be more hardware friendly}{36}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Hardware acceleration}{37}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Comparison with the software}{37}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Conclusion and future research}{38}{chapter.8}%
 \contentsline {chapter}{\numberline {A}Uitleg over de appendices}{40}{appendix.A}%
