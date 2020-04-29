@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Platform communication}{section.4.2}% 37
 \BOOKMARK [0][-]{chapter.5}{Initial Difficulties during the implementation}{}% 38
 \BOOKMARK [1][-]{section.5.1}{Using Vivado HLS and Xilinx SDK}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.1.1}{learning HLS in examples}{section.5.1}% 40
+\BOOKMARK [2][-]{subsection.5.1.1}{Learning HLS in examples}{section.5.1}% 40
 \BOOKMARK [2][-]{subsection.5.1.2}{Learning how to program target board}{section.5.1}% 41
 \BOOKMARK [1][-]{section.5.2}{SDSoC}{chapter.5}% 42
 \BOOKMARK [2][-]{subsection.5.2.1}{learning process on matrix multiplication example in SDSoC}{section.5.2}% 43

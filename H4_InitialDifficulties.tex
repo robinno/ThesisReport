@@ -10,27 +10,53 @@
 
 \section{Using Vivado HLS and Xilinx SDK}
 
-\subsection{learning HLS in examples}
+\subsection{Learning HLS in examples}
 
-Ik moet nog starten met HLS, nog nooit gedaan.
+As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section will go through the learning process. I've received all the materials I needed to have a rough understanding in HLS from Mr. Martinek, who teaches HLS at the Brno University of Technology. After working through the theory, I figured the labs I made are worth exploring in this thesis, since they contain most concepts of HLS.
 
-learning HLS
+\paragraph{Lab1: BASIC WORKFLOW} 
+\begin{itemize}
+	\item How to start a new project;
+	\item What the difference is between a source and a test bench;
+	\item The properties of the available IDE when designing in HLS;
+	\item How to simulate the sources using the test benches;
+	\item Generate Gantt charts and how to analyse them;
+	\item Where to fiend the resulting VHDL code;
+	\item What the co-simulation is and why it is used;
+	\item Where to view the resulting simulation waveforms;
+	\item How to export your design as an IP;
+	\item It is possible to compare multiple solutions for a problem;
+	\item How to set a directive (such as unrolling a loop).
+\end{itemize}
 
-lab1: BASIC WORKFLOW: How to make project, difference between sources and test bench, GUI and it's components, simulation, synthesis (=> estimate and Gantt chart), viewing resulting VHDL code, co-simulation, view simulation waveforms, IP Core export, creating multiple solutions and comparing, setting a directive (like unroll a loop).
+\paragraph{lab2: EXPLORING DATA TYPES using an FIR filter}
+\begin{itemize}
+	\item When to use the floating point or fixed point representation;
+	\item How to enable saturation when using fixed point;
+	\item How to do calculations that normally would result in an overflow using fixed point. This can be done by lowering the resolution (dropping LSBs) so the result can still be stored in the same bit width.
+\end{itemize}
 
-lab2: DATA TYPES adhv FIR filter: floating point VS fixed point, saturation with fixed point, fixed point with larger internal bit-width (LSB laten vallen), 
+\paragraph{lab3: INTERFACES} 
+\begin{itemize}
+	\item The basic argument-level interfaces and their differences, such as ap\_vld, ap\_none, and ap\_hs;
+	\item A block-level interface of a pipelined component (pipeline in the top function).
+\end{itemize}
 
-lab3: INTERFACES:
-- basic argument-level interfaces (ap\_vld, ap\_none, ap\_hs)
-- block-level interface of pipelined component (pipeline on the top function)
 
-lab4: ARRAYS: Sequential, pipelining internal loop, rewind parameter, top function pipelining, array map, array partition (cyclic and complete), array reshape technique
+\paragraph{lab4: ARRAYS}
+\begin{itemize}
+	\item Sequential running of a design;
+	\item How to pipeline an internal loop;
+	\item What a rewind parameter is;
+	\item How to do top-function pipelining;
+	\item The array-map technique;
+	\item How to partition arrays (cyclic and complete);
+	\item How to reshape arrays
+\end{itemize}
 
 \subsection{Learning how to program target board}
 
-hello world via Xilinx SDK => baremetal 
--> zelf kiezen waar uitgevoerd + dataverplaatsingen zelf implementeren
-
+At first, before knowing the existence of the SDSoC IDE, the best way to program the board seemed by using the Xilinx SDK. I got as far as programming a hello world program, but in the end I switched to SDSoC when I discovered its easyness. The Xilinx SDK was just too unpractical to use, and the application would be baremetal, which would mean I would need to implement a FAT or Ethernet stack myself.
 
 \section{SDSoC}
 
