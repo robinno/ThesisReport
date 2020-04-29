@@ -7,11 +7,11 @@
 \chapter{Platforms for accelerating Smith-Waterman}
 \label{ch:Platforms}
 
-As we saw in the analysis of the Smith-Waterman algorithm in \ref{expl:SWanalyse}, we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions which are better equipped for parrallellism than a normal CPU.
+As we saw in the analysis of the Smith-Waterman algorithm in \ref{expl:SWanalyse}, we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions that are better equipped for parallelism than a normal CPU.
 
 \section{Overview of possible hardware}
 
-When designing a processing unit based on semiconductor technologies, it is always a tradeoff between efficiency and flexibility. For example, the CPU in a PC should be flexible so that it can run any set of instructions without a lot of intervention between changes. On the other hand, if a certain algorithm or instructionset should be executed as fast as possible, the FPGA's and ASICs are the best choice. At the extreme, an ASIC or \emph{Application Specific Integrated Circuit} can be chosen, but this means a complete chip should be designed from the ground up just for this specific application. This means that an ASIC is extremely expensive to design and build, especially for small production quantities. In figure \ref{fig:effVSflex} an overview of the different options can be found.
+When designing a processing unit based on semiconductor technologies, it is always a tradeoff between efficiency and flexibility. For example, the CPU in a PC should be flexible so that it can run any set of instructions without a lot of intervention between changes. On the other hand, if a certain algorithm or instruction set should be executed as fast as possible, the FPGA's and ASICs are the best choices. At the extreme, an ASIC or \emph{Application Specific Integrated Circuit} can be chosen, but this means a complete chip should be designed from the ground up just for this specific application. However, an ASIC is extremely expensive to design and build, especially for small production quantities. In figure \ref{fig:effVSflex} an overview of the different options can be found.
 
 \begin{figure}[H]
 	%src=https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png
@@ -23,7 +23,7 @@ When designing a processing unit based on semiconductor technologies, it is alwa
 
 \subsection{CPU}
 
-The power of the CPU is it's flexibility: it can very easily be programmed with new instructions in very few time. However, if the CPU would only run one specific algorithm for its whole lifetime, it would be terribly inefficient. Also, CPU's work sequentially, which is less suitable for algorithms which demand a large amount of computations which could be done in parallel.
+The power of the CPU is its flexibility: it can be very easily programmed with new instructions in a short time. However, if the CPU would only run one specific algorithm for its whole lifetime, it would be terribly inefficient. Also, CPUs work sequentially, which is less suitable for algorithms that demand a large number of computations which could be done in parallel.
 
 \begin{figure}[H]
 	%src=http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png
@@ -33,27 +33,27 @@ The power of the CPU is it's flexibility: it can very easily be programmed with 
 	\label{fig:cpu}
 \end{figure}
 
-Since the original implementations on CPU, it became clear that a CPU was not the most suitable platform for the S-W algorithm, since it consists of a lot of operations which can be done in parallel. However, since the rise SIMD, CPU's have made a comeback. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with one single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialised in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x.
+Since the original implementations on CPU, it became clear that a CPU was not the most suitable platform for the S-W algorithm since it consists of a lot of operations that can be done in parallel. However, since the rise SIMD, CPU's have made a comeback. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x.
 %src:https://web.archive.org/web/20070811101052/http://www.clccell.com/download.html
 
-Nowadays, MIT has published \emph{diagonalsw}, which an implementation of S-W using the SIMD instruction set, and is licensed under the open-source MIT license.
+Nowadays, MIT has published \emph{diagonalsw}, which is an implementation of S-W using the SIMD instruction set and is licensed under the open-source MIT license.
 
 \subsection{GPU}
 
-a GPU, or \emph{Graphical Processing Unit} is a semiconductor technology that is specialized in video encoding and decoding, which means it is especially built for matrix manipulations. Since the Smith-Waterman algorithm is basically a big matrix manipulation, it lead researchers to believe that it could be accelerated on a GPU. In 1997, an implementation of S-W on a GPU was published %src:  https://archive.org/details/computationalsci0000iccs_y9o8/page/230
+a GPU or \emph{Graphical Processing Unit} is a semiconductor technology that is specialized in video encoding and decoding. Since video encoding and decoding are actually glorified matrix manipulations, a GPU could also be used to manipulate matrices. Since the Smith-Waterman algorithm is a big matrix fill in, it leads researchers to believe that it could be accelerated on a GPU. In 1997, an implementation of S-W on a GPU was published %src:  https://archive.org/details/computationalsci0000iccs_y9o8/page/230
 which achieved a speedup of 2x over all previous software implementations.
 
-At the time of writing, 11 different implementations for Smith Waterman have been reported, 3 of which reporting a speedup over 30 times.
+At the time of writing, 11 different implementations for Smith-Waterman have been reported, 3 of which reporting a speedup over 30 times.
 
 \subsection{FPGA}
 
-an FPGA, or \emph{Field Programmable Gate Array}, is an integrated circuit consisting of programmable logic components. These logic components can be programmed as any logic function, such as AND, XOR, etc. In most FPGA other elements are also found, such as memory blocks, DSP blocks, etc.
+an FPGA, or \emph{Field Programmable Gate Array}, is an integrated circuit consisting of programmable logic components. These logic components can be programmed as any logic function, such as an AND, XOR, etc. In most FPGA other elements are also found, such as memory blocks, DSP blocks, etc.
 
-In the most basic FPGA's, the following items are definitely present:
+In the most basic FPGA's, the following items are present:
 \begin{enumerate}
 	\item CLB's, or \emph{Complex Logic Blocks}, consisting of a \emph{LookUp Table} (LUT) and a flipflop. A LUT can be programmable so that it contains any type of logic function.
 	\item Programmable Interconnects have to connect the CLB's into a bigger circuit, which is also called \emph{routing}. This routing has the most influence on delays, and are also responsible for most errors.
-	\item I/O blocks, which connect the internal logic inside with the outside pins of the FPGA. Most can be configured as input, output or bidirectional.
+	\item I/O blocks, which connect the internal logic inside with the outside pins of the FPGA. Most can be configured as input, output, or bidirectional.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -64,10 +64,10 @@ In the most basic FPGA's, the following items are definitely present:
 	\label{fig:fpga}
 \end{figure}
 
-For an implementation or design of a circuit which should be loaded in an FPGA, a \emph{Hardware Description Language} (HDL) is often the only practical choise to implement such a system, since drawing the circuits with a CAD program or by hand would take a very long time.
+For an implementation or design of a circuit which should be loaded in an FPGA, a \emph{Hardware Description Language} (HDL) is often the only practical choice to implement such a system, since drawing the circuits with a CAD program or by hand would take a very long time.
 
-In a paper form 2007, an implementation of S-W with an FPGA (virtex-4) achieved a speedup up to 100x in comparison with a 2.2GHz Opteron processor. %src https://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf
-A few companies also have made some implementations of FPGA in the past, e.g. Cray Inc., TimeLogics, ...
+In a paper from 2007, an implementation of S-W with an FPGA (Virtex-4) achieved a speedup of up to 100x in comparison with a 2.2GHz Opteron processor. %src https://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf
+A few companies have also made some implementations on FPGA in the past, e.g. Cray Inc., TimeLogics, ...
 %cray: https://www.cray.com/
 %timelogics: http://www.timelogic.com/
 
@@ -75,13 +75,34 @@ A master's thesis from 2011 by Vermij E. has a detailed analysis of an FPGA base
 
 \section{Hardware selection}
 
-\subsection{Recent advances in High Level Synthesis}
+As the hardware the ZCU 104 evaluation kit was selected, which has an MPSoC onboard. An MPSoC (or \emph{Multi-Processor System on Chip}) is an integrated circuit that contains multiple microprocessors. This means that both a processor and a part programmable hardware is available.
+
+\begin{figure}[H]
+	%src=https://evergreen.loyola.edu/dhhoe/www/FPGA_diagram.png
+	\centering
+	\includegraphics[width=0.75\textwidth]{elBackground/hardware.jpg}
+	\caption{An overview of the hardware available on the ZCU 104 MPSoC evaluation kit}
+	\label{fig:hardware}
+\end{figure}
+
+Reasons for choosing the ZCU 104 evaluation kit:
+\begin{enumerate}
+	\item An MPSoC is present, which will be used the host the application;
+	\item Both a USB and Ethernet interface is available, which makes it easy to communicate with the target board;
+	\item An operating system can be run on the board (a Red Hat Linux distribution). This means we won't have to worry about implementing FAT or Ethernet stacks;
+	\item 16 times 2 gigabytes of RAM is available, which can come in handy when implementing big structures, like the alignment matrix;
+	\item It was available at the university
+\end{enumerate}
+
+\subsection{Recent advances in High-Level Synthesis}
+
+When programming an FPGA, an HDL is often used. However, if a specific implementation already exists in a programming language, it often has to be reimplemented from scratch in HDL to load it on the FPGA. Therefore people have been trying to make a compiler that compiles normal C code into HDL. This "compiler" is called HLS, or \emph{ High-Level Synthesis}. In recent years, HLS became popular as an alternative for designing and implementing a complex system that should be run on an FPGA.
+
+When researching in the known literature, no implementation using HLS for the Smith-Waterman algorithm was found. This leads us to believe that this is still an unexplored area.
 
 \subsection{Platform communication}
-niet belangrijk
-via SD
-ev. Ethernet: FTP
 
-reading from sd card so not a lot of information exchange needed
-if necessary => FTP if needed
+Initially, it seemed important that there is good communication between the board and the host to load and unload sequences since we didn't want the communication to become the bottleneck. However, when using S-W for genome mapping, this won't be an issue since the time it takes to map a read takes a lot longer than to transfer it.
+
+In the end, no direct communication with the board was even implemented. It seemed sufficient to just load the reads with the genome on an SD card, and insert this in the board. After the mapping process, the mapped reads are available on the same SD card. However, if this program would be used in practice, it doesn't seem practical to constantly need to change out the SD card. Therefore, another solution should be thought out. For example, since we have an Ethernet stack available as part of the OS, we could easily use FTP for on and offloading from and to the board.
 
