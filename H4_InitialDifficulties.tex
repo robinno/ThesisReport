@@ -6,14 +6,14 @@
 
 \chapter{Initial Difficulties during the implementation}
 
-\textit{Disclaimer: The purpose of this chapter is more to show the learning process I had to go through in order to achieve a suitable implementation for the genome mapping problem. I had to learn some new programming techniques such as HLS, SDSoC \dots especially for this thesis, since I did not have any experience in it yet. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
+\textit{Disclaimer: The purpose of this chapter is more to show the learning process I had to go through to achieve a suitable implementation for the genome mapping problem. I had to learn some new programming techniques such as HLS, SDSoC \dots especially for this thesis since I did not have any experience in it yet. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
 
 \section{Using Vivado HLS and Xilinx SDK}
 
 \subsection{Learning HLS in examples}
 \label{HLS}
 
-As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section will go through the learning process. I've received all the materials I needed to have a rough understanding in HLS from Mr. Martinek, who teaches HLS at the Brno University of Technology. After working through the theory, I figured the labs I made are worth exploring in this thesis, since they contain most concepts of HLS.
+As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section will go through the learning process. To get a rough understanding of HLS I received a few learning materials from Mr. Martinek, who teaches HLS at the Brno University of Technology. Following the theory part,  there are also hands-on lab examples. I figure these labs are worth exploring in this thesis since they contain most concepts of HLS.
 
 \paragraph{Lab1: BASIC WORKFLOW} 
 \begin{itemize}
@@ -21,7 +21,7 @@ As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section 
 	\item What the difference is between a source and a test bench;
 	\item The properties of the available IDE when designing in HLS;
 	\item How to simulate the sources using the test benches;
-	\item Generate Gantt charts and how to analyse them;
+	\item Generate Gantt charts and how to analyze them;
 	\item Where to fiend the resulting VHDL code;
 	\item What the co-simulation is and why it is used;
 	\item Where to view the resulting simulation waveforms;
@@ -34,7 +34,7 @@ As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section 
 \begin{itemize}
 	\item When to use the floating point or fixed point representation;
 	\item How to enable saturation when using fixed point;
-	\item How to do calculations that normally would result in an overflow using fixed point. This can be done by lowering the resolution (dropping LSBs) so the result can still be stored in the same bit width.
+	\item How to do calculations that normally would result in an overflow using a fixed point. This can be done by lowering the resolution (dropping LSBs) so the result can still be stored in the same bit width.
 \end{itemize}
 
 \paragraph{lab3: INTERFACES} 
@@ -57,19 +57,19 @@ As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section 
 
 \subsection{Learning how to program target board}
 
-At first, before knowing the existence of the SDSoC IDE, the best way to program the board seemed by using the Xilinx SDK. I got as far as programming a hello world program, but in the end I switched to SDSoC when I discovered its easyness. The Xilinx SDK was just too unpractical to use, and the application would be baremetal, which would mean I would need to implement a FAT or Ethernet stack myself.
+At first, before knowing the existence of the SDSoC IDE, the best way to program the board seemed by using the Xilinx SDK. I got as far as programming a hello world program, but in the end, I switched to SDSoC when I discovered its ease. The Xilinx SDK was just too unpractical to use, and the application would be bare-metal, which would mean I would need to implement a FAT or Ethernet stack myself.
 
 \section{SDSoC}
 
-SDSoC is an IDE delevelopped by Xilinx that is specialized in programming MPSoCs. It is based on the eclipse IDE, so most of its features are familiar to most programmers. 
+SDSoC is an IDE developed by Xilinx that is specialized in programming MPSoCs. It is based on the Eclipse IDE, so most of its features are familiar to most programmers. 
 
-The power of SDSoC lays in the easyness to transfer functions from software to programmable logic. It can be done with just the click of a button. Then, the functions marked for hardware (written in C) will be fitted in the programmable logic using the HLS compiler. This means that the syntax is not always accepted, since HLS cannot implement every possible programming technique in C yet.
+The power of SDSoC lays in the ability to transfer functions from software to programmable logic easily. It can be done with just the click of a button. Then, the functions marked for hardware (written in C) will be fitted in the programmable logic using the HLS compiler. However, the syntax is not always accepted since HLS cannot implement every possible programming technique in C yet.
 
-As metioned earlier, in this implementation we will work on a Linux distribution.
+As mentioned earlier, in this implementation we will work on a Linux distribution.
 
 \subsection{learning process on matrix multiplication example in SDSoC}
 
-Just as HLS, I am fairly new to MPSoC and the SDSoC IDE. Therefore, this section will go through the learning process. Xilinx provided materials for learning SDSoC by hands-on assignments, using a github page. I figure they might be worth to explore in this thesis, since I put a lot of time in them. The assignments use a matrix multiplication example, preinstalled with SDSoC.
+Just as HLS, I am fairly new to MPSoC and the SDSoC IDE. Therefore, this section will go through the learning process. Xilinx provided materials for learning SDSoC by hands-on assignments, using a GitHub page. I figure they might be worth to explore in this thesis since I put a lot of time in them. The assignments use a matrix multiplication example, preinstalled with SDSoC.
 
 \paragraph{lab1: INTRODUCTION}
 \begin{itemize}
@@ -87,24 +87,24 @@ Just as HLS, I am fairly new to MPSoC and the SDSoC IDE. Therefore, this section
 
 \paragraph{lab3: DMA}
 \begin{itemize}
-	\item There are directives to configure the way data is transfered between the software processor and the programmable logic:
+	\item There are directives to configure the way data is transferred between the software processor and the programmable logic:
 	\begin{enumerate}
-		\item ACP: Hardware functions have cache coherent access to DDR via the PS L2 cache.
-		\item AFI (HP):	Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
-		\item GP: Processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
+		\item ACP: Hardware functions have cache-coherent access to DDR via the PS L2 cache.
+		\item AFI (HP):    Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
+		\item GP: The processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
 	\end{enumerate}
 	This lab also covers how to set these directives.
 	
 	\item How to find more info on errors by using the log files
 	
-	\item the difference between the malloc() and sds\_alloc() functions. The hardware functions can only access the physical address space, and not the virtual one used by the software. Therefore, the sds\_alloc() function was created to skip this virtual memory translation in software.
+	\item the difference between the malloc() and sds\_alloc() functions. The hardware functions can only access the physical address space and not the virtual one used by the software. Therefore, the sds\_alloc() function was created to skip this virtual memory translation in software.
 \end{itemize}
 
-\paragraph{lab4: DIRECTIVES} This lab covers how to set directives to speedup the hardware functions. Which directives to set and what they do, was already covered in the HLS labs at \ref{HLS}.
+\paragraph{lab4: DIRECTIVES} This lab covers how to set directives to speed up the hardware functions. Which directives to set and what they do, was already covered in the HLS labs at \ref{HLS}.
 
-\paragraph{lab5: TASK LEVEL PIPELINING} By using task level pipelining I was able to achieve a x3 speedup of a 32x32 matrix multiplication.
+\paragraph{lab5: TASK-LEVEL PIPELINING} By using task-level pipelining I was able to achieve a speedup of 3 times with a 32x32 matrix multiplication.
 
 \paragraph{lab6: DEBUG} In this lab the onboard debugging is covered.
 
 \paragraph{lab7: HARDWARE DEBUG} 
-Using the trace feature in the SDSoC, it is possible to analyse what the application is doing? (software, hardware, transfer, or recieve).
+Using the trace feature in the SDSoC, it is possible to analyze what the application is doing? (software, hardware, transfer, or receive).
