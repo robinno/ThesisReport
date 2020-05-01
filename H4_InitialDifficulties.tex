@@ -11,6 +11,7 @@
 \section{Using Vivado HLS and Xilinx SDK}
 
 \subsection{Learning HLS in examples}
+\label{HLS}
 
 As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section will go through the learning process. I've received all the materials I needed to have a rough understanding in HLS from Mr. Martinek, who teaches HLS at the Brno University of Technology. After working through the theory, I figured the labs I made are worth exploring in this thesis, since they contain most concepts of HLS.
 
@@ -60,34 +61,50 @@ At first, before knowing the existence of the SDSoC IDE, the best way to program
 
 \section{SDSoC}
 
-Op een Linuxdistributie.
+SDSoC is an IDE delevelopped by Xilinx that is specialized in programming MPSoCs. It is based on the eclipse IDE, so most of its features are familiar to most programmers. 
 
-Snel functie verplaatsen van PS naar PL.
+The power of SDSoC lays in the easyness to transfer functions from software to programmable logic. It can be done with just the click of a button. Then, the functions marked for hardware (written in C) will be fitted in the programmable logic using the HLS compiler. This means that the syntax is not always accepted, since HLS cannot implement every possible programming technique in C yet.
 
-gebruikt ook delen van HLS
+As metioned earlier, in this implementation we will work on a Linux distribution.
 
 \subsection{learning process on matrix multiplication example in SDSoC}
 
-Eerste test: matrixmultiplicatie
+Just as HLS, I am fairly new to MPSoC and the SDSoC IDE. Therefore, this section will go through the learning process. Xilinx provided materials for learning SDSoC by hands-on assignments, using a github page. I figure they might be worth to explore in this thesis, since I put a lot of time in them. The assignments use a matrix multiplication example, preinstalled with SDSoC.
 
-lab1: INTRODUCTION: basic workflow, working with hardware accelerators, running the project, ...
+\paragraph{lab1: INTRODUCTION}
+\begin{itemize}
+	\item Basic workflow: how to create a project, select platform, configure bare-metal or using an operating system, loading the examples;
+	\item Working with hardware accelerators: mark a function for hardware, data motion network report;
+	\item How to run the project
+\end{itemize}
 
-lab2: PERFORMANCE ESTIMATION: rescource utilization, comparing software and hardware implementations, overall speedup comparison (all using LINUX hosted)
+\paragraph{lab2: PERFORMANCE ESTIMATION} 
+\begin{itemize}
+	\item Analyse the software solutions;
+	\item How to view rescource utilization after comilation; 
+	\item Comparing software and hardware implementations
+\end{itemize}
 
-lab3: diff between ACP, AFI and GP
-	ACP	Hardware functions have cache coherent access to DDR via the PS L2 cache.
-	AFI (HP)	Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
-	GP	Processor directly writes/reads data to/from hardware function. Inefficient for large data transfers.
-+ error reporting (opening log files to see more information).
-Additional: the hardware functions and DMAs can only access the physical address space (not virtual) => DMA that can handle a list of pages for a single array is known as Scatter-Gather DMA. (malloc(), sds\_alloc()) Typically sds\_alloc = best (area and performance) but uses physical memory (minder van beschikbaar dan virtueel).
+\paragraph{lab3: DMA}
+\begin{itemize}
+	\item There are directives to configure the way data is transfered between the software processor and the programmable logic:
+	\begin{enumerate}
+		\item ACP: Hardware functions have cache coherent access to DDR via the PS L2 cache.
+		\item AFI (HP):	Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
+		\item GP: Processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
+	\end{enumerate}
+	This lab also covers how to set these directives.
+	
+	\item How to find more info on errors by using the log files
+	
+	\item the difference between the malloc() and sds\_alloc() functions. The hardware functions can only access the physical address space, and not the virtual one used by the software. Therefore, the sds\_alloc() function was created to skip this virtual memory translation in software.
+\end{itemize}
 
-lab4: directives to optimize the accelerator
+\paragraph{lab4: DIRECTIVES} This lab covers how to set directives to speedup the hardware functions. Which directives to set and what they do, was already covered in the HLS labs at \ref{HLS}.
 
-lab5: task level pipelining
-	=> speedup x3 theoretical, probably I make some mistakes
+\paragraph{lab5: TASK LEVEL PIPELINING} By using task level pipelining I was able to achieve a x3 speedup of a 32x32 matrix multiplication.
 
-lab6: DEBUG
+\paragraph{lab6: DEBUG} In this lab the onboard debugging is covered.
 
-lab7: HARDWARE DEBUG: trace feature: what is the application doing? (software, hardware, transfer, recieve)
-
-lab8: EMULATION
+\paragraph{lab7: HARDWARE DEBUG} 
+Using the trace feature in the SDSoC, it is possible to analyse what the application is doing? (software, hardware, transfer, or recieve).
