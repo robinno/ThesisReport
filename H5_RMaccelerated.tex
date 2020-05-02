@@ -7,12 +7,12 @@
 \chapter{Software implementation with pure Smith-Waterman}
 \label{ch:SoftwareImpl}
 
-This chapter will cover an approach to reference genome mapping using pure smith-waterman. This is a computationally very demanding task, but is more precise than heuristic methods such as FASTA, ...
+This chapter will cover an approach to genome mapping using pure smith-waterman. This is a computationally very demanding task, but is more precise than heuristic methods such as FASTA and BLAST.
 
 \section{The concept}
-For reference genome mapping a sequence of 75 to 300 bases in length should be mapped to the reference genome. The idea behind this mapping and the applications is thoroughly described in \ref{ch:algoverzicht}.
+For genome mapping a sequence of 75 to 300 bases in length should be mapped to the reference genome. The idea behind this mapping and the applications is thoroughly described in chapter \ref{ch:algoverzicht}.
 
-In this implementation, a mapping with "pure" Smith-Waterman was chosen. Commonly, an algorithm is used to select candidate locations where a small local smith-waterman is performed, or no smith waterman is performed at all. These methods are often less precise but computationally less demanding. Here, the alignment of the sequence is done with the full reference genome.
+In this implementation, a mapping with "pure" Smith-Waterman was chosen. Commonly, an algorithm is used to select candidate locations where a small local S-W is performed, or no S-W is performed at all. These methods are often less precise but computationally less demanding. Here, the alignment of the sequence is done with the full reference genome.
 
 \begin{figure}[H]
 	\centering
@@ -39,7 +39,7 @@ First of all, It seemed important to define the nucleotide bases. There are only
 	\caption{\centering Encoding for the nucleotide bases}
 \end{table}
 
-To store these bases the uint8\_t type from the stdint library was used. it is 1 byte in size which is the smallest available type in the C language. If more time would have been available, and an implementation with the full human genome would have been made, it might be a good idea to define a specific type consisting of only 2 bits, which would be a lot more memory efficient.
+To store these bases the uint8\_t type from the stdint library was used. It is 1 byte in size which is the smallest available type in the C language. If more time would have been available, and an implementation with the full human genome would have been made, it might be a good idea to define a specific type consisting of only 2 bits, which would be a lot more memory efficient.
 
 \paragraph{DNA sequence type} To easily keep track of a sequence in the program, a type was created which can hold a sequence of DNA. It consists of 2 parts: the length of the sequence and a pointer to the first base in memory. 
 Since the genome can have a length of more than 3 billion bases, and the sequence is only a maximum of 300 bases in length, it made sense to use a separate type for the reference and the sequence.\\
@@ -245,7 +245,7 @@ This layer must be efficiently coded, and since it runs for every cell (and ther
 
 \subsection{The IGV software}
 
-The free and easy to download program IGV (or Integrative Genomics Viewer) is a visualization tool for exploring the genomic dataset, such as mapped reads. In practice, it is used quite often to examine the results from mapped reads.
+The free and easy to download program IGV (or Integrative Genomics Viewer) is a visualization tool for exploring the genomic dataset. In practice, it is used quite often to examine the results from mapped reads.
 
 \begin{figure}[H]
 	\centering
@@ -276,13 +276,13 @@ Since this thesis is performed around the spring of 2020, the "coronavirus" (or 
 
 The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.
 
-The FASTQ files for the coronavirus used in this theses were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
+The FASTQ files for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
 %src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
 
-Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is certainly correct. There consists an online tool called galaxy where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing. 
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is certainly correct. There consists an online tool (galaxy) where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing. 
 %src ook zetten naar galaxy
 
-So, by converting the fastQ files given by the SRA of the NCBI using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie algorithm was chosen, since it is commonly used for reference genome mapping in practice.
+So, by converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie algorithm was chosen, as it is a commonly used algorithm for genome mapping in practice.
 
 \subsection{Results}
 
@@ -293,13 +293,13 @@ After running the software implementation overnight with the unmapped sequences 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{softwareResults/comparison.jpg}
-	\caption{A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter}
+	\caption{A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)}
 	\label{fig:IGVcomparison}
 \end{figure}
 
 It is immediately obvious that the implementation is working correctly since the reading depth graphs are approximately the same. Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
 
-If you look closely to figure, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different.
+If you look closely to figure \ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, The important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome.
 
 
 \paragraph{The implications for the coronavirus data}
