@@ -2,38 +2,38 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The structure of one nucleotide\relax }}{4}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The famous double helix\relax }}{4}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds\relax }}{5}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces the 46 human chromosomes\relax }}{6}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The order of the human genome as depicted in the IGV software\relax }}{7}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\relax }}{7}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\relax }}{8}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\relax }}{9}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The structure of one nucleotide\relax }}{4}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The famous double helix\relax }}{4}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds\relax }}{5}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces the 46 human chromosomes\relax }}{6}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The order of the human genome as depicted in the IGV software\relax }}{7}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\relax }}{7}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\relax }}{8}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\relax }}{9}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{15}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{17}{figure.caption.33}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow\relax }}{20}{figure.caption.34}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A schematic overview of the NIPT test\relax }}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{15}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{17}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow\relax }}{20}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A schematic overview of the NIPT test\relax }}{21}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces An overview of the different semiconductor technologies\relax }}{22}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle\relax }}{23}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The basic layout of an FPGA\relax }}{24}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces An overview of the hardware available on the ZCU 104 MPSoC evaluation kit\relax }}{25}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces An overview of the different semiconductor technologies\relax }}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle\relax }}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The basic layout of an FPGA\relax }}{24}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces An overview of the hardware available on the ZCU 104 MPSoC evaluation kit\relax }}{25}{figure.caption.40}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The concept of the implementation: the sequences is mapped to the whole genome\relax }}{31}{figure.caption.51}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The created types to store the sequence and the reference\relax }}{32}{figure.caption.55}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces an organisation chart of the split up functionalities\relax }}{34}{figure.caption.56}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the genome information.\relax }}{34}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the read information\relax }}{34}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{35}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{37}{figure.caption.63}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{39}{figure.caption.67}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions. Moreover, a gap and insertion is also visible\relax }}{39}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter\relax }}{41}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The concept of the implementation: the sequences is mapped to the whole genome\relax }}{31}{figure.caption.52}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The created types to store the sequence and the reference\relax }}{32}{figure.caption.56}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces An organisation chart of the split up functionalities\relax }}{34}{figure.caption.57}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the genome information.\relax }}{34}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the read information\relax }}{34}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{35}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{37}{figure.caption.64}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{39}{figure.caption.68}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions. Moreover, a gap and insertion is also visible\relax }}{39}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{41}{figure.caption.70}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{42}{figure.caption.71}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found in the thesis from Vermij E.\relax }}{43}{figure.caption.72}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{42}{figure.caption.72}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found in the thesis from Vermij E.\relax }}{43}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
