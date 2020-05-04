@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Mapping to a reference genome}{section.3.4}% 26
 \BOOKMARK [2][-]{subsection.3.4.2}{The sam and bam file format}{section.3.4}% 27
 \BOOKMARK [2][-]{subsection.3.4.3}{Clinical application}{section.3.4}% 28
-\BOOKMARK [0][-]{chapter.4}{Platforms for accelerating Smith-Waterman}{}% 29
+\BOOKMARK [0][-]{chapter.4}{Platforms for accelerating the Smith-Waterman algorithm}{}% 29
 \BOOKMARK [1][-]{section.4.1}{Overview of possible hardware}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.1.1}{CPU}{section.4.1}% 31
 \BOOKMARK [2][-]{subsection.4.1.2}{GPU}{section.4.1}% 32
@@ -34,7 +34,7 @@
 \BOOKMARK [1][-]{section.4.2}{Hardware selection}{chapter.4}% 34
 \BOOKMARK [2][-]{subsection.4.2.1}{Recent advances in High-Level Synthesis}{section.4.2}% 35
 \BOOKMARK [2][-]{subsection.4.2.2}{Platform communication}{section.4.2}% 36
-\BOOKMARK [0][-]{chapter.5}{Initial Difficulties during the implementation}{}% 37
+\BOOKMARK [0][-]{chapter.5}{HLS and SDSoC learning tools}{}% 37
 \BOOKMARK [1][-]{section.5.1}{Using Vivado HLS and Xilinx SDK}{chapter.5}% 38
 \BOOKMARK [2][-]{subsection.5.1.1}{Learning HLS in examples}{section.5.1}% 39
 \BOOKMARK [2][-]{subsection.5.1.2}{Learning how to program target board}{section.5.1}% 40

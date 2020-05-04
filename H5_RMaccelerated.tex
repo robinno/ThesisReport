@@ -4,15 +4,15 @@
 %                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\chapter{Software implementation with pure Smith-Waterman}
+\chapter{Software implementation of the Smith-Waterman algorithm}
 \label{ch:SoftwareImpl}
 
-This chapter will cover an approach to genome mapping using pure smith-waterman. This is a computationally very demanding task, but is more precise than heuristic methods such as FASTA and BLAST.
+This chapter will cover an approach to genome mapping using the Smith-Waterman algorithm. This is a computationally very demanding task, but is more precise than heuristic methods such as FASTA and BLAST.
 
 \section{The concept}
 For genome mapping a sequence of 75 to 300 bases in length should be mapped to the reference genome. The idea behind this mapping and the applications is thoroughly described in chapter \ref{ch:algoverzicht}.
 
-In this implementation, a mapping with "pure" Smith-Waterman was chosen. Commonly, an algorithm is used to select candidate locations where a small local S-W is performed, or no S-W is performed at all. These methods are often less precise but computationally less demanding. Here, the alignment of the sequence is done with the full reference genome.
+In this implementation, a mapping with "pure" Smith-Waterman was chosen. For sequencing applications where only a small part of the genome is sequenced, the read should only be mapped to these small candidate locations. The most computationally demanding task is when the alignment should be done with the whole genome. In this thesis, the alignment of the sequence is done with the whole genome. However, the concept is also applicable for read alignment to a selected region of a genome or a set of genomes from different organisms.
 
 \begin{figure}[H]
 	\centering
@@ -27,7 +27,7 @@ In this implementation, a mapping with "pure" Smith-Waterman was chosen. Commonl
 \subsection{Parameters and Types}
 
 \paragraph{Nucleotide base}
-First of all, It seemed important to define the nucleotide bases. There are only 4 possible bases ($A$, $C$, $G$ and $T$), so 2 bits are enough. The following coding was chosen:
+First of all, it seemed important to define the nucleotide bases. There are only 4 possible bases ($A$, $C$, $G$ and $T$), so 2 bits are enough. The following coding was chosen:
 
 \begin{table}[H]
 	\centering
@@ -63,7 +63,7 @@ To index these "arrays" of bases, a new type was created for both the sequence i
 		\item reverse complementary of current read;
 		\item matrix for during the alignment. The amount of memory that should be allocated to this matrix is equal to the size of the sequence times the size of the reference.
 	\end{enumerate}
-	\item Initialize the first row and first column of the matrix on $0$, as it should be to perform the Smith-Waterman Algorithm;
+	\item Initialize the first row and first column of the matrix on $0$, to prevent edge cases when performing the Smith-Waterman Algorithm;
 	\item Load the reference genome from the fasta file;
 	\item Open the FASTQ file for loading unmapped reads, and the SAM file to store the reads once they are mapped;
 	\item For every read in the FASTQ file, we perform the following operations:
@@ -139,12 +139,12 @@ For better code readability, the genome loading is split into 2 functions that a
 	\item loading the genome into the REFERENCE type. 
 \end{enumerate}
 
-\paragraph{FASTQ interface} this part of the program is responsible for loading the next read as a stream. The buildup of a FASTA file is thoroughly described in \ref{expl:FASTQ}.
+\paragraph{FASTQ interface} this part of the program is responsible for loading the next read as a stream. The buildup of a FASTQ file is thoroughly described in \ref{expl:FASTQ}.
 
 In this case, the code was also split up into functions for better readability:
 \begin{enumerate}
 	\item Loading the QName, which is found on the first line for every read, behind a '@' character
-	\item Loading the sequence, which is stored in a text-based format in the FASTQ file, so it should be transformed to the SEQUENCE type. In a sequence, a base may be suddenly marked with an 'N' character, which means after the primary processing the process was unable to identify the base. Because of the way the sequencing machines work, this only happens at the end of the sequence. So, it was decided to only cut the sequence short at the moment an 'N' character is registered.
+	\item Loading the sequence, which is stored in a text-based format in the FASTQ file, so it should be transformed to the SEQUENCE type. In a sequence, a base may be suddenly marked with an 'N' character, which means after the primary processing the process was unable to identify the base. Because of the way the sequencing machines work, this mostly happens at the end of the sequence. So, it was decided to only cut the sequence short at the moment an 'N' character is registered.
 	
 	For example, if the sequence were $ACGGCGCATTACNNAN$, the interface will only store $ACGGCGCATTAC$. This is justified by the fact that we are statistically certain that this sequence will be matched correctly from the moment the read is more than 15-20 bases long. The statistical proof itself will not be covered in this thesis.
 	\item loading the qualities. Found on the fourth line for each read, the qualities for each base are stored. The information is stored in an array with the same length as the sequence.
@@ -245,7 +245,7 @@ This layer must be efficiently coded, and since it runs for every cell (and ther
 
 \subsection{The IGV software}
 
-The free and easy to download program IGV (or Integrative Genomics Viewer) is a visualization tool for exploring the genomic dataset. In practice, it is used quite often to examine the results from mapped reads.
+The free and easy to download program IGV (or Integrative Genomics Viewer) is a visualization tool for exploring genomic datasets. In practice, it is used to examine the results from mapped reads.
 
 \begin{figure}[H]
 	\centering
@@ -265,7 +265,7 @@ The most important functions in IGV for this thesis are:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{softwareResults/IGVcloseup.jpg}
-	\caption{A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions. Moreover, a gap and insertion is also visible}
+	\caption{Close-up of a few reads in the IGV analysing software. Notice how the color coded bases are substitutions, whereas the matched bases are not shown. Moreover, a gap and insertion is also visible}
 	\label{fig:IGVcloseup}
 \end{figure}
 
@@ -275,18 +275,17 @@ To try the implementation on the human genome directly seemed way too ambitious.
 Since this thesis is performed around the spring of 2020, the "coronavirus" (or SARS-CoV-2) seemed like an appropriate candidate. After a quick google search, it turned out that this virus had a genome consisting of merely 29 thousand bases.
 
 The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.
+%TODO ref:
 
-The FASTQ files for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
+The FASTQ files obtained from a DNA sequence for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
 %src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
 
-Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is certainly correct. There consists an online tool (galaxy) where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing. 
-%src ook zetten naar galaxy
-
-So, by converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie algorithm was chosen, as it is a commonly used algorithm for genome mapping in practice.
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing. %src ook zetten naar galaxy
+By converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie 2 algorithm was chosen, which is based on the S-W algorithm.
 
 \subsection{Results}
 
-We will compare the results from the sample data using the online bowtie application and the implementation described in this chapter.
+We will compare the results from the sample data using the online Bowtie application and the implementation described in this chapter.
 
 After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure \ref{fig:IGVcomparison}
 
@@ -297,12 +296,12 @@ After running the software implementation overnight with the unmapped sequences 
 	\label{fig:IGVcomparison}
 \end{figure}
 
-It is immediately obvious that the implementation is working correctly since the reading depth graphs are approximately the same. Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
+It can be observed that the implementation is working correctly since the reading depth graphs are approximately the same (indicated by an arrow). Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
 
-If you look closely to figure \ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, The important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome.
+If you look closely to figure \ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
 
 
 \paragraph{The implications for the coronavirus data}
 The coronavirus is constantly changing because of the mutations of some bases in the genome over time, just like the flu. In this way, it is possible to trace where infections originate. For example, the corona in China can have slightly different bases than from Italy or Spain. We can identify these changes by sequencing the whole genome and looking for consistent substitutions or indels over the whole dataset.
 
-From these results shown by IGV \ref{fig:IGVcomparison}, some mutations are shown, so we can assume that the coronavirus which was sequenced in Washington (taken from a US patient) has some slight differences with the original Chinese sequenced genome.
+From these results shown by IGV \ref{fig:IGVcomparison}, some mutations are shown, so we can assume that the coronavirus which was sequenced in Washington (taken from a US patient, the FASTQ file used) has some slight differences with the original Chinese sequenced genome (the reference sequence).

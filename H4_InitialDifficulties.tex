@@ -4,17 +4,17 @@
 %                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-\chapter{Initial Difficulties during the implementation}
+\chapter{HLS and SDSoC learning tools}
 \label{ch:InitDiff}
 
-\textit{Disclaimer: The purpose of this chapter is more to show the learning process I had to go through to achieve a suitable implementation for the genome mapping problem. I had to learn some new programming techniques such as HLS, SDSoC \dots especially for this thesis since I did not have any experience in it yet. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
+\textit{Disclaimer: The purpose of this chapter is to show the learning tools I used to achieve a suitable implementation for the genome mapping problem. New programming techniques such as HLS, SDSoC \dots were familiarized. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
 
 \section{Using Vivado HLS and Xilinx SDK}
 
 \subsection{Learning HLS in examples}
 \label{HLS}
 
-As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section will go through the learning process. To get a rough understanding of HLS I received a few learning materials from Mr. Martinek, who teaches HLS at the Brno University of Technology. Following the theory part,  there are also hands-on lab examples. I figure these labs are worth exploring in this thesis since they contain most concepts of HLS.
+To learn HLS, I used learning materials from Mr. Martinek, who teaches HLS at the Brno University of Technology. It contains a theory part,  and also hands-on lab examples. These labs were worth exploring in this thesis since they contain most concepts of HLS.
 
 \paragraph{Lab1: BASIC WORKFLOW} 
 \begin{itemize}
@@ -58,19 +58,21 @@ As mentioned in the disclaimer, I am fairly new to HLS. Therefore, this section 
 
 \subsection{Learning how to program target board}
 
-At first, before knowing the existence of the SDSoC IDE, the best way to program the board seemed by using the Xilinx SDK. I got as far as programming a hello world program, but in the end, I switched to SDSoC when I discovered its ease. The Xilinx SDK was just too unpractical to use, and the application would be bare-metal, which would mean I would need to implement a FAT or Ethernet stack myself.
+At first, the Xilinx SDK was used to program the board. However, it was found to be unpractical to use, because after programming a "Hello World" application it became clear that it would be bare-metal. This would mean there would be a need to implement a FAT or Ethernet stack ourselves.
+Therefore the SDSoC IDE was used for programming the target board, which structures the application on top of an operating system. This operating system takes care of the Ethernet and FAT stacks.
 
 \section{SDSoC}
 
-SDSoC is an IDE developed by Xilinx that is specialized in programming MPSoCs. It is based on the Eclipse IDE, so most of its features are familiar to most programmers. 
+SDSoC is an IDE developed by Xilinx which is specialized in programming MPSoCs. It is based on the Eclipse IDE, so most of its features are familiar to most programmers. 
 
 The power of SDSoC lays in the ability to transfer functions from software to programmable logic easily. It can be done with just the click of a button. Then, the functions marked for hardware (written in C) will be fitted in the programmable logic using the HLS compiler. However, the syntax is not always accepted since HLS cannot implement every possible programming technique in C yet.
 
 As mentioned earlier, in this implementation we will work on a Linux distribution.
 
-\subsection{learning process on matrix multiplication example in SDSoC}
+\subsection{Learning process on matrix multiplication example in SDSoC}
 
-Just as HLS, I am fairly new to MPSoC and the SDSoC IDE. Therefore, this section will go through the learning process. Xilinx provided materials for learning SDSoC by hands-on assignments, using a GitHub page. I figure they might be worth to explore in this thesis since I put a lot of time in them. The assignments use a matrix multiplication example, preinstalled with SDSoC.
+To learn MPSoC and the SDSoC IDE, Xilinx' online available materials were used available at their GitHub page, which includes some hands-on assignments. The assignments use a matrix multiplication example, preinstalled with SDSoC.
+%TODO: link github page
 
 \paragraph{lab1: INTRODUCTION}
 \begin{itemize}

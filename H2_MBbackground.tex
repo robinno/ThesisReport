@@ -65,7 +65,7 @@ It is important to note that in most living organisms DNA does not exist as a si
 
 Like in any good structure, there is a need for the main support. In DNA, the sugars and phosphates bond together to form twin backbones. These sugar-phosphate bonds run down each side of the helix, but chemically in opposite directions. 
 
-The first phosphate group, at the start of the molecule, connects to the sugar group's 5th carbon. At the end of the structure, the 3rd carbon of the sugar group is unconnected. This makes a pattern typically noted as $[5' \rightarrow 3']$. Now, since the other molecule in the helix goes in the opposite direction, the pattern of the other backbone is typically noted as $[3' \rightarrow 5']$.
+The first phosphate group, at the start of the molecule, connects to the sugar group's 5th carbon ($5'$). At the end of the structure, the 3rd carbon ($3'$) of the sugar group is unconnected. This makes a pattern typically noted as $[5' \rightarrow 3']$. Now, since the other molecule in the helix goes in the opposite direction, the pattern of the other backbone is typically noted as $[3' \rightarrow 5']$.
 
 \begin{figure}[H]
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DNA_chemical_structure.svg/800px-DNA_chemical_structure.svg.png
@@ -88,9 +88,9 @@ $$[3' - TCCAGGC - 5']$$
 
 \subsection{DNA in the human body}
 
-In human cells, DNA molecules can be found in the nucleus of all cells in the body. It consists of 46 very long molecules, which during cell division condense in what we call \emph{chromosomes}. The only exception is in reproductive cells (the egg cell and the sperm cell), which only have 23 chromosomes. These chromosomes are packed tightly together in the nucleus of the cell. If all of these 46 chromosomes are put together, this makes about two times 3 billion base pairs. These 3 billion base pairs provide the assembly instructions for pretty much everything inside the cell.
+In human cells, DNA molecules can be found in the nucleus of all cells in the body. It consists of 46 very long molecules, which during cell division condense in what we call \emph{chromosomes}. The only exception is in reproductive cells (the egg cell and the sperm cell), which only have 23 chromosomes. 
 
-These 46 chromosomes, which make up our whole DNA, are always present in pairs in the cells. Each time, the pair consists of one chromosome from the father and the other one from the mother. 
+The 23 chromosomes, which make up our whole DNA, are always present in pairs in the cells, making a total of 46 chromosomes. Each time, the pair consists of one chromosome from the father and the other one from the mother. 
 
 The 23 chromosome pairs are classified in:
 \begin{itemize}
@@ -107,20 +107,22 @@ The 23 chromosome pairs are classified in:
 	\label{fig:karyotype}
 \end{figure}
 
+These chromosomes are packed tightly together in the nucleus of the cell. If all of these 46 chromosomes are put together, this makes about two times 3 billion base pairs. These 3 billion base pairs provide the assembly instructions for pretty much everything inside the cell.
+
 
 \section{The Human Genome Project}
 
 In the field of Bioinformatics, an important dataset is the \emph{Human Genome}. This is the full DNA sequence found in the Nucleus, ordered from chromosome 1 to 22, followed by the X and Y chromosome.
 
-In October 1990, biologists in the relatively new field of molecular biology started the Human Genome Project. The goal of this project was to determine the sequence of the 3 billion base pairs that make up human DNA. This project was completed and published in 2003, So nowadays we have a good idea of how the human genome is built up.
+In October 1990, biologists in the relatively new field of molecular biology started the Human Genome Project. The goal of this project was to determine the sequence of the 3 billion base pairs that make up human DNA. This project was completed and published in 2003. So, nowadays we have a good idea of how the human genome is built up.
 
-The Human Genome is easily found on the internet since it is publically available. One of the most often used is \emph{hg19}, which was published in 2009. Since DNA has only 4 possible bases ($A$, $T$, $C$ or $G$), this can be encoded in a 2-bit representation. If this encoding is used, the Human Genome is approximately 750 megabytes.
+The Human Genome is easily found on the internet since it is publically available. One of the most often used assembly is \emph{hg19}, which was published in 2009. Since DNA has only 4 possible bases ($A$, $T$, $C$ or $G$), this can be encoded in a 2-bit representation. If this encoding is used, ideally the Human Genome is approximately 750 megabytes.
 
 \begin{figure}[H]
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png
 	\centering
 	\includegraphics[width=\linewidth]{background/HG.png}
-	\caption{The order of the human genome as depicted in the IGV software}
+	\caption{The order and the sizes of the chromosomes of the human genome as depicted in the IGV software}
 	\label{fig:HG}
 \end{figure}
 
@@ -148,20 +150,20 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 	\item Now the sequencing can start: a \emph{flow cell} is used where these small DNA molecules can bind to a glass surface. 
 	\item Different enzymatic and chemical reactions can now be done on this flow cell through an automatic flow of reagents. The following steps are iterated until the full read has been filled in:
 	\begin{enumerate}
-		\item The entire flowcell is filled with nucleotides, all with different nitrogen bases. Important is that at each of these nucleotides there is a fluorescent group attached to the phosphor group. This makes sure no other nucleotide can bind.
+		\item The entire flowcell is filled with nucleotides, all with different nitrogen bases. Important is that at each of these nucleotides there is a fluorescent group attached. This also makes sure no other nucleotide can bind.
 		\item The fluorescent groups have a different color, dependent on the nitrogen base attached ($A$, $G$, $T$ of $C$). At this time a camera picture of the flowcell is taken and stored.
-		\item after the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent splits the fluorescent group from the phosphor group so that in the next iteration a new nucleotide group can bind with the read.
+		\item After the flowcell is emptied of the loose nucleotides, another reagent flows in this flowcell. This reagent splits the fluorescent group so that in the next iteration a new nucleotide group can bind with the read.
 		
 		\begin{figure}[H]
 			%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
 			\centering
 			\includegraphics[width=0.5\linewidth]{background/NGS.png}
-			\caption{Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, captures a picture the read to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.}
+			\caption{Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.}
 			\label{fig:NGS}
 		\end{figure}
 	\end{enumerate}
 	
-	\item After the whole DNA snippets have been filled in, the machine deduces the sequence in the DNA snippet. The pictures that were taken in order during the operation show the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences from all the molecules bound on the flowcell. this is called the \emph{Primary processing}.
+	\item After the whole DNA snippets have been filled in, the machine deduces the sequence in the DNA snippet. The pictures that were taken in order during the operation show the colors released in a specific spot, and by extent the attached nitrogen base. By the means of some image processing techniques, it is quite easy to get all the sequences from all the molecules bound on the flowcell. This is called the \emph{Primary processing}.
 	
 	\begin{figure}[H]
 		%src: PPT van Howest
@@ -203,7 +205,7 @@ The quality score in memory is a value in the range $0x21$ (lowest quality) to $
 Important to note is that this quality score is logarithmic. Also, the '$@$' and '$+$' character is a possible value for the quality, so this will be something to look out for when implementing the interpreter for this file.\\
 
 	
-A FASTQ file containing a single sequence of a DNA framgent of 60 bases might look like this:
+A FASTQ file containing a single sequence of a DNA fragment of 60 bases might look like this:
 
 
 \begin{lcverbatim}

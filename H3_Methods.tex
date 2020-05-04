@@ -10,7 +10,7 @@
 
 \section{DNA sequence aligning}
 
-The human genome (e.g. $hg19$) is used as a reference genome for all sequenced human DNA. However, the genetic code of all humans is slightly different. Genetic sequence alignment is the science where you try to align 2 sequences with each other so that the amount of differences is minimal. In this chapter, the most frequently used algorithms are discussed.
+The human genome (e.g. $hg19$) is used as a reference genome for all sequenced human DNA. However, the genetic code of all humans is slightly different, which also holds true for all other organisms. Genetic sequence alignment is the science where you try to align 2 sequences with each other so that the amount of differences is minimal. In this chapter, the most frequently used algorithms are discussed.
 
 \subsection{Alignment in general}
 
@@ -38,7 +38,7 @@ The alignment itself can now be done in different ways. Possible alignments are:
 	Seq1: atATCGgc
 	Seq2: --ATCG--
 \end{lcverbatim}
-Which alignment that is the actual output, depends on the algorithm and the given parameters. The '-' character represents a base that is not present.
+Which alignment that is the actual output, depends on the algorithm and the given parameters (penalty and similarity scores). The '-' character represents a base that is not present.
 
 Keep in mind, there is no one "correct" alignment. The core of the alignment algorithms is the same each time, but the parameters of these algorithms are changed depending on the application.
 
@@ -141,8 +141,8 @@ The core of the algorithm is a matrix fillup, with data dependencies on the prev
 		\item Define $d$ as the \emph{gap penalty} which regulates the score for an insertion or a deletion. This parameter can be:
 		
 		\begin{itemize}
-			\item \emph{Linear}: The penalty is constant. So, in this case, it doesn't matter e.g. the previous was also a gap.
-			\item \emph{Affine}: An affine gap penalty considers gap opening and extension separately. For the sake of simplicity, my further implementation will not include this refinement of the algorithm. The algorithm can be extended to include this affine gap penalty, but this would make the algorithm more complex and we would limit our ability to develop possible accelerations.
+			\item \emph{Linear}: The penalty is constant. So, in this case, it doesn't matter if the previous was also a gap or not.
+			\item \emph{Affine}: An affine gap penalty considers gap opening and extension separately. For the sake of simplicity, my further implementation will not include this refinement of the algorithm. The algorithm can be extended to include this affine gap penalty, but this would make the algorithm more complex and we would limit our ability to develop possible accelerations. It is also expected to affect the DNA mapping on a reference genome. However, if we assume the size of the gaps as small, there won't be much difference in result in comparison with the linear penalty score.
 		\end{itemize}
 		
 		
@@ -268,7 +268,7 @@ In most cases, the first step in the analysis of the reads is knowing from which
 
 Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in \ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in chapter \ref{ch:Platforms}) since S-W is heavily parallelizable.
 
-In most clinical applications where mapping to a reference genome is used, the number of reads to be compared with the genome is in the millions.
+In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions.
 
 \begin{figure}[H]
 	\centering
@@ -348,6 +348,8 @@ In this example:
 
 \subsection{Clinical application}
 
+In virtually all sequencing applications DNA alignment and reference mapping is needed. Applications which involve whole genome sequencing are particullarly hampered by a long computational analysis time.
+
 We will discuss as examples two clinical applications of mapping to a reference genome.
 
 \begin{enumerate}
@@ -368,7 +370,7 @@ We will discuss as examples two clinical applications of mapping to a reference 
 	
 	It is known that small amounts of DNA of the fetus are present in the blood of the mother, in the cell-free DNA (\emph{cfDNA}) which we find in the blood plasma (the clear, aqueous part of the blood). The blood plasma is used by our body to transport 'waste', including DNA from cells that were broken down. When fetal cells die, which is a normal process, the building blocks of these cells are transported in the plasma of the blood from the mother, included small DNA fragments from the fetus.
 	
-	\emph{NIPT} (non-invasive prenatal testing) is used to analyze DNA derived from the mother's blood. A large number of short cfDNA fragments are sequenced at random.  Then, each sequence is mapped to the whole human genome to find out where it comes from. Finally, the distribution of these reads is calculated. If we observed that a higher frequency of reads as compared to normal individuals coming from chromosome-21, it is almost certain that the fetus has Down's syndrome.
+	\emph{NIPT} (non-invasive prenatal testing) is used to analyze DNA derived from the mother's blood. A large number of short cfDNA fragments are sequenced at random.  Then, each sequence is mapped to the whole human genome to find out where it comes from. Finally, the distribution of these reads is calculated. If we observe a higher frequency of reads as compared to normal individuals coming from chromosome-21, it is almost certain that the fetus has Down's syndrome.
 	
 	\begin{figure}[H]
 		%src: https://mail.google.com/mail/u/0/#search/nipt/FMfcgxwHMsQcgsbNLGvDkDqXLjxnNdWR?projector=1&messagePartId=0.1
@@ -383,5 +385,5 @@ We will discuss as examples two clinical applications of mapping to a reference 
 	\item \textbf{Shallow whole-genome sequencing of tumor DNA.}\newline
 	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be loss or gain of large DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
 	
-	A relatively new technique to detect all gains and losses of DNA material in one single experiment is \emph{sWGS} (shallow whole-genome sequencing). The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are.
+	A relatively new technique to detect all gains and losses of DNA material in one single experiment is shallow whole-genome sequencing. The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are.
 \end{enumerate}

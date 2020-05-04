@@ -8,8 +8,8 @@
 \contentsline {chapter}{List of tables}{xi}{chapter*.7}%
 \contentsline {chapter}{List of abbreviations}{xii}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {paragraph}{chapter \ref {ch:MBbackground}:}{1}{section*.9}%
-\contentsline {paragraph}{chapter \ref {ch:algoverzicht}:}{1}{section*.10}%
+\contentsline {paragraph}{chapter \ref {ch:MBbackground}:}{2}{section*.9}%
+\contentsline {paragraph}{chapter \ref {ch:algoverzicht}:}{2}{section*.10}%
 \contentsline {paragraph}{chapter \ref {ch:Platforms}:}{2}{section*.11}%
 \contentsline {paragraph}{chapter \ref {ch:InitDiff}:}{2}{section*.12}%
 \contentsline {paragraph}{chapter \ref {ch:SoftwareImpl}:}{2}{section*.13}%
@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {2.3}Sequencing}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The sequencing technology}{7}{subsection.2.3.1}%
 \contentsline {paragraph}{How whole-genome NGS works}{7}{section*.24}%
-\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{10}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Methods for DNA sequence alignment}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}DNA sequence aligning}{11}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Alignment in general}{11}{subsection.3.1.1}%
@@ -40,7 +40,7 @@
 \contentsline {subsubsection}{\numberline {3.4.2.1}Header}{18}{subsubsection.3.4.2.1}%
 \contentsline {subsubsection}{\numberline {3.4.2.2}Alignment Section}{18}{subsubsection.3.4.2.2}%
 \contentsline {subsection}{\numberline {3.4.3}Clinical application}{19}{subsection.3.4.3}%
-\contentsline {chapter}{\numberline {4}Platforms for accelerating Smith-Waterman}{22}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Platforms for accelerating the Smith-Waterman algorithm}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Overview of possible hardware}{22}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}CPU}{23}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}GPU}{23}{subsection.4.1.2}%
@@ -48,19 +48,19 @@
 \contentsline {section}{\numberline {4.2}Hardware selection}{25}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Recent advances in High-Level Synthesis}{25}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Platform communication}{26}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Initial Difficulties during the implementation}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {5}HLS and SDSoC learning tools}{27}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{27}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Learning HLS in examples}{27}{subsection.5.1.1}%
 \contentsline {paragraph}{Lab1: BASIC WORKFLOW}{27}{section*.41}%
 \contentsline {paragraph}{lab2: EXPLORING DATA TYPES using an FIR filter}{28}{section*.42}%
 \contentsline {paragraph}{lab3: INTERFACES}{28}{section*.43}%
 \contentsline {paragraph}{lab4: ARRAYS}{28}{section*.44}%
-\contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{29}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{28}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}SDSoC}{29}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}learning process on matrix multiplication example in SDSoC}{29}{subsection.5.2.1}%
 \contentsline {paragraph}{lab1: INTRODUCTION}{29}{section*.45}%
 \contentsline {paragraph}{lab2: PERFORMANCE ESTIMATION}{29}{section*.46}%
-\contentsline {paragraph}{lab3: DMA}{30}{section*.47}%
+\contentsline {paragraph}{lab3: DMA}{29}{section*.47}%
 \contentsline {paragraph}{lab4: DIRECTIVES}{30}{section*.48}%
 \contentsline {paragraph}{lab5: TASK-LEVEL PIPELINING}{30}{section*.49}%
 \contentsline {paragraph}{lab6: DEBUG}{30}{section*.50}%
