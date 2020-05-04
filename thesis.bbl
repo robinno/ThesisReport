@@ -1,2 +1,108 @@
 \begin{thebibliography}{}
+
+\bibitem[1, ]{1}
+Bioinformatics company.
+\newblock http://www.clccell.com/download.html.
+
+\bibitem[2, ]{2}
+Bioinformatics company.
+\newblock https://www.cray.com/.
+
+\bibitem[3, ]{3}
+Bioinformatics company.
+\newblock http://www.timelogic.com/.
+
+\bibitem[fpg, a]{fpgacomparison}
+figure: azure machine learning fpga comparison.
+\newblock \newline
+  https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
+
+\bibitem[dna, a]{dnachemical}
+figure: Dna chemical structure.
+\newblock figure: DNA chemical structure.
+
+\bibitem[dna, b]{dna}
+figure: Double stranded dna with coloured bases.
+\newblock \newline
+  https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double\_stranded\_DNA\_with\_coloured\_bases.png/1024px-Double\_stranded\_DNA\_with\_coloured\_bases.png.
+
+\bibitem[fpg, b]{fpgaworkings}
+figure: fpga diagram.
+\newblock https://evergreen.loyola.edu/dhhoe/www/FPGA\_diagram.png.
+
+\bibitem[8, ]{8}
+figure: Karyotype.
+\newblock \newline
+  https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
+
+\bibitem[9, ]{9}
+figure: sequential working of microprocessor.
+\newblock \newline
+  http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png.
+
+\bibitem[10, ]{10}
+figure: Trisomy 21 male.
+\newblock \newline
+  http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png.
+
+\bibitem[11, ]{11}
+Genome of coronavirus, ncbi.
+\newblock https://www.ncbi.nlm.nih.gov/sra/SRX7852918.
+
+\bibitem[12, ]{12}
+Igv download page.
+\newblock \newline http://software.broadinstitute.org/software/igv/.
+
+\bibitem[13, ]{13}
+Online bioinformatics tools.
+\newblock \newline https://usegalaxy.org/.
+
+\bibitem[SAM, 2020]{SAM}
+ (2020).
+\newblock {\em Sequence Alignment/Map Format Specification}.
+\newblock The SAM/BAM Format Specification Working Group.
+
+\bibitem[Alexandrov, 2006]{gpuImpl}
+Alexandrov, V. (2006).
+\newblock General purpose computations on graphics hardware: methods,
+  algorithms and applications.
+\newblock In {\em Computational science - ICCS 2006 : 6th international
+  conference, Reading, UK, May 28-31, 2006 ; proceedings}. Berlin: Springer.
+
+\bibitem[Nollet, 2019]{pptHowest}
+Nollet, F. (2019).
+\newblock powerpoint: Howest 2019-2020 sanger and ngs.
+
+\bibitem[Olson, 2011]{fpgaImpl}
+Olson, C.~B. (2011).
+\newblock An fpga acceleration of short read human genome mapping.
+\newblock Master's thesis, University of Washington.
+
+\bibitem[O.O.~Storaasli, 2011]{fpga100x}
+O.O.~Storaasli, D.~S. (2011).
+\newblock Accelerating genome sequencing 100x with fpgas.
+\newblock \newline http://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf.
+
+\bibitem[S.~Drury, 2016]{NIPT}
+S.~Drury, M.~Hill, L.~C. (2016).
+\newblock {\em Cell-Free Fetal DNA Testing for Prenatal Diagnosis}.
+\newblock Elsevier, Inc.
+
+\bibitem[Smith and Waterman, 1981]{SW}
+Smith, T.~F. and Waterman, M.~S. (1981).
+\newblock Identification of common molecular subsequences.
+\newblock {\em Journal of Molecular Biology}, 147:195--197.
+
+\bibitem[Vergel, 2018]{sdsoc}
+Vergel, R. (2018).
+\newblock {\em Getting started with SDSoC}.
+\newblock Xilinx Inc.
+\newblock \newline
+  https://github.com/Xilinx/SDSoC-Tutorials/tree/master/getting-started-tutorial.
+
+\bibitem[Vermij, 2011]{Vermij}
+Vermij, E. (2011).
+\newblock Genetic sequence alignment on a supercomputing platform.
+\newblock Master's thesis, Delft university of technology.
+
 \end{thebibliography}

@@ -245,7 +245,7 @@ This layer must be efficiently coded, and since it runs for every cell (and ther
 
 \subsection{The IGV software}
 
-The free and easy to download program IGV %cit
+The free and easy to download program IGV\cite{12} %cit
 (or Integrative Genomics Viewer) is a visualization tool for exploring genomic datasets. In practice, it is used to examine the results from mapped reads.
 
 \begin{figure}[H]
@@ -275,13 +275,12 @@ The most important functions in IGV for this thesis are:
 To try the implementation on the human genome directly seemed way too ambitious. Therefore, it seemed appropriate to try the implementation first on an organism that has a genome of only a few thousand bases in length.
 Since this thesis is performed around the spring of 2020, the "coronavirus" (or SARS-CoV-2) seemed like an appropriate candidate. After a quick google search, it turned out that this virus had a genome consisting of merely 29 thousand bases.
 
-The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.
-%TODO ref:
+The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.\cite{11}
 
-The FASTQ files obtained from a DNA sequence for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.
+The FASTQ files obtained from a DNA sequence for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.\cite{NCBI}
 %src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
 
-Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing. %src ook zetten naar galaxy
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing.\cite{13} %src ook zetten naar galaxy
 By converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie 2 algorithm was chosen, which is based on the S-W algorithm.
 
 \subsection{Results}

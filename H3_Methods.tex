@@ -98,8 +98,7 @@ Needleman and Wunch proposed a new algorithm for genetic sequence alignment in 1
 
 \subsection{Smith-Waterman}
 \label{expl:SWanalyse}
-The \emph{Smith-Waterman} (S-W) algorithm was first proposed by Temple F. Smith and Michael S. Waterman in 1981  %cit
-. It is a variation on the N-W algorithm, adapted for local alignment. It is a dynamic programming technique, so an optimal local alignment is guaranteed. \\
+The \emph{Smith-Waterman} (S-W) algorithm was first proposed by Temple F. Smith and Michael S. Waterman in 1981\cite{SW}. It is a variation on the N-W algorithm, adapted for local alignment. It is a dynamic programming technique, so an optimal local alignment is guaranteed. \\
 
 The core of the algorithm is a matrix fillup, with data dependencies on the previous cells. Hereunder an analysis of the algorithm:
 
@@ -291,7 +290,7 @@ Please note, in most normal cases we can assume the distribution of reads is pra
 \subsection{The sam and bam file format}
 \label{expl:SAM}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section. 
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section.\cite{SAM}
 
 %src:http://samtools.github.io/hts-specs/SAMv1.pdf
 
@@ -362,7 +361,7 @@ We will discuss as examples two clinical applications of mapping to a reference 
 		%src: http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png
 		\centering
 		\includegraphics[width=0.5\textwidth]{clinicalAppl/trisomy-21.png}
-		\caption{Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow}
+		\caption{Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow.\cite{10}}
 		\label{fig:tri21}
 	\end{figure}
 	
@@ -377,7 +376,7 @@ We will discuss as examples two clinical applications of mapping to a reference 
 		%src: https://mail.google.com/mail/u/0/#search/nipt/FMfcgxwHMsQcgsbNLGvDkDqXLjxnNdWR?projector=1&messagePartId=0.1
 		\centering
 		\includegraphics[width=0.5\textwidth]{clinicalAppl/NIPTkadering.jpg}
-		\caption{A schematic overview of the NIPT test}
+		\caption{A schematic overview of the NIPT test.\cite{NIPT}}
 		\label{fig:NIPT}
 	\end{figure}
 	

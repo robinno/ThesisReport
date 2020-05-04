@@ -1,10 +1,32 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: apalike.bst
-I found no \citation commands---while reading file thesis.aux
 Database file #1: bibliografie.bib
-I was expecting a `,' or a `}'---line 36 of file bibliografie.bib
- :  
- :  organization = {Xilinx Inc.}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-(There were 2 error messages)
+Warning--I didn't find a database entry for "NCBI"
+Warning--to sort, need author or key in dna
+Warning--to sort, need author or key in dnachemical
+Warning--to sort, need author or key in 8
+Warning--to sort, need author or key in 10
+Warning--to sort, need author or key in fpgacomparison
+Warning--to sort, need author or key in 9
+Warning--to sort, need author or key in fpgaworkings
+Warning--to sort, need author or key in SAM
+Warning--to sort, need author or key in 1
+Warning--to sort, need author or key in 2
+Warning--to sort, need author or key in 3
+Warning--to sort, need author or key in 12
+Warning--to sort, need author or key in 11
+Warning--to sort, need author or key in 13
+Warning--empty year in 1
+Warning--empty year in 2
+Warning--empty year in 3
+Warning--empty year in fpgacomparison
+Warning--empty year in dnachemical
+Warning--empty year in dna
+Warning--empty year in fpgaworkings
+Warning--empty year in 8
+Warning--empty year in 9
+Warning--empty year in 10
+Warning--empty year in 11
+Warning--empty year in 12
+Warning--empty year in 13
+(There were 28 warnings)
