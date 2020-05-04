@@ -39,8 +39,8 @@
 \BOOKMARK [2][-]{subsection.5.1.1}{Learning HLS in examples}{section.5.1}% 39
 \BOOKMARK [2][-]{subsection.5.1.2}{Learning how to program target board}{section.5.1}% 40
 \BOOKMARK [1][-]{section.5.2}{SDSoC}{chapter.5}% 41
-\BOOKMARK [2][-]{subsection.5.2.1}{learning process on matrix multiplication example in SDSoC}{section.5.2}% 42
-\BOOKMARK [0][-]{chapter.6}{Software implementation with pure Smith-Waterman}{}% 43
+\BOOKMARK [2][-]{subsection.5.2.1}{Learning process on matrix multiplication example in SDSoC}{section.5.2}% 42
+\BOOKMARK [0][-]{chapter.6}{Software implementation of the Smith-Waterman algorithm}{}% 43
 \BOOKMARK [1][-]{section.6.1}{The concept}{chapter.6}% 44
 \BOOKMARK [1][-]{section.6.2}{General overview of the implementation}{chapter.6}% 45
 \BOOKMARK [2][-]{subsection.6.2.1}{Parameters and Types}{section.6.2}% 46

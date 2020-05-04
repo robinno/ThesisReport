@@ -57,7 +57,7 @@
 \contentsline {paragraph}{lab4: ARRAYS}{28}{section*.44}%
 \contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{28}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}SDSoC}{29}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}learning process on matrix multiplication example in SDSoC}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Learning process on matrix multiplication example in SDSoC}{29}{subsection.5.2.1}%
 \contentsline {paragraph}{lab1: INTRODUCTION}{29}{section*.45}%
 \contentsline {paragraph}{lab2: PERFORMANCE ESTIMATION}{29}{section*.46}%
 \contentsline {paragraph}{lab3: DMA}{29}{section*.47}%
@@ -65,7 +65,7 @@
 \contentsline {paragraph}{lab5: TASK-LEVEL PIPELINING}{30}{section*.49}%
 \contentsline {paragraph}{lab6: DEBUG}{30}{section*.50}%
 \contentsline {paragraph}{lab7: HARDWARE DEBUG}{30}{section*.51}%
-\contentsline {chapter}{\numberline {6}Software implementation with pure Smith-Waterman}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Software implementation of the Smith-Waterman algorithm}{31}{chapter.6}%
 \contentsline {section}{\numberline {6.1}The concept}{31}{section.6.1}%
 \contentsline {section}{\numberline {6.2}General overview of the implementation}{32}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Parameters and Types}{32}{subsection.6.2.1}%

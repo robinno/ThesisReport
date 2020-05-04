@@ -30,7 +30,7 @@
 \contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{35}{figure.caption.60}%
 \contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{37}{figure.caption.64}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{39}{figure.caption.68}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces A few reads up close in the IGV analysing software. Notice how the color coded bases are substitutions. Moreover, a gap and insertion is also visible\relax }}{39}{figure.caption.69}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Close-up of a few reads in the IGV analysing software. Notice how the color coded bases are substitutions, whereas the matched bases are not shown. Moreover, a gap and insertion is also visible\relax }}{39}{figure.caption.69}%
 \contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{41}{figure.caption.70}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{42}{figure.caption.72}%
