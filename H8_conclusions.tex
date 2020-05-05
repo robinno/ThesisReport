@@ -30,40 +30,6 @@ Before, during, and after implementing, some optimizations which could improve t
 
 \subsection{Recommendations for re-evaluating the alignment method}
 
-In the field of alignment algorithms, a few alternatives exist to S-W since it takes a lot of computing power. In most cases, these algorithms will use a transformation or a lookup table to determine possible candidate locations, where a small regional S-W will be performed on a part of the genome. For example, The BFAST algorithm uses a hash table where candidate locations are stored for every sequence. As a second example, in the Bowtie application, the candidate locations are determined using the Burrows-Wheeler Transform.
-
-As future work, one of these more sophisticated algorithms can be selected. Some candidate locations can then be determined in a way defined by the algorithm. These candidate locations can then be mapped using the implementation of this thesis.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%                                                                 %
-%                            CHAPTER                              %
-%                                                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
-\chapter{Conclusion and future research}
-\label{ch:Conclusions}
-
-This chapter will contain some finals words on the problem definition and the proposed implementation, as well as some recommendations for future research.
-
-\section{Conclusion}
-
-//TODO
-
-\section{Recommendations for future work}
-
-Naturally, we have several recommendations for the continuation of this research. They will be classified in improvements of the current implementation and re-evaluation of the used algorithm.
-
-\subsection{Recommendations for improving the current implementation}
-
-Before, during, and after implementing, some optimizations which could improve the proposed implementation came up. However, we did not have time to implement them, so hereunder they will be mentioned:
-
-\begin{itemize}
-	\item Treat the gap opening and extension separately. In the current implementation, the gap penalty is treated linearly. However, the S-W algorithm could be refined to include an affine gap penalty. More info on the gap penalty can be found at \ref{expl:SWanalyse}.
-	\item In a sequence, a base may be suddenly marked with an 'N' character, Which represents a base that was unidentified in the primary processing. In this thesis, it was decided to cut the sequence short at the moment an 'N' character is registered. However, a possible improvement might be to keep these unidentified bases in the alignment as a "generic" base and in this way improve the accuracy of the alignment. More info on the current implementation can be found at \ref{codeStructure}.
-	\item Make some types more memory efficient, such as the BASE and the SEQ\_INDEX type. Firstly, the BASE type only has 4 possible values (the 4 nucleotide bases). However, it is defined as 1 byte in the current implementation, since it is the smallest type that C supports. However, storing a base in 1 byte is memory inefficient. Improvements could be made by defining an own type, by stacking 4 bases in 1 byte. Secondly, the SEQ\_INDEX type is stored as 2 bytes in the current implementation, even though it only contains values up to 300, which makes it memory inefficient. This could also be improved.
-	\item If this implementation would be used in practice, there would be a need to find an easier way to on and offload data to board. Currently,  this is accomplished by changing out the SD card, which could easily be improved using FTP since an Ethernet stack is present due to the operating system. The speed the data would be transferred at, is not important since we can assume the time it takes to map the sequence takes far longer. 
-\end{itemize}
-
-\subsection{Recommendations for re-evaluating the alignment method}
-
-In the field of alignment algorithms, a few alternatives exist to S-W since it takes a lot of computing power. In most cases, these algorithms will use a transformation or a lookup table to determine possible candidate locations, where a small regional S-W will be performed on a part of the genome. For example, The BFAST algorithm uses a hash table where candidate locations are stored for every sequence. As a second example, in the Bowtie application, the candidate locations are determined using the Burrows-Wheeler Transform.
+In the field of alignment algorithms, a few alternatives exist to S-W since it takes a lot of computing power. In most cases, these algorithms will use a transformation or a lookup table to determine possible candidate locations, where a small regional S-W will be performed on a part of the genome. For example, The BFAST algorithm uses a hash table where candidate locations are stored for every sequence \cite{fpgaImpl}. As a second example, in the Bowtie application, the candidate locations are determined using the Burrows-Wheeler Transform.
 
 As future work, one of these more sophisticated algorithms can be selected. Some candidate locations can then be determined in a way defined by the algorithm. These candidate locations can then be mapped using the implementation of this thesis.
