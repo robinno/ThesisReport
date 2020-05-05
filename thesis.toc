@@ -100,5 +100,7 @@
 \contentsline {section}{\numberline {7.4}Comparison with the software}{44}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Conclusion and future research}{45}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Conclusion}{45}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Future work}{45}{section.8.2}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{48}{appendix.A}%
+\contentsline {section}{\numberline {8.2}Recommendations for future work}{45}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Recommendations for improving the current implementation}{45}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Recommendations for re-evaluating the alignment method}{46}{subsection.8.2.2}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{49}{appendix.A}%
