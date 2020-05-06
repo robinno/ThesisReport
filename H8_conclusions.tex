@@ -13,6 +13,26 @@ This chapter will contain some finals words on the problem definition and the pr
 
 //TODO
 
+\paragraph{Problem definition} 
+
+The first step in analysing DNA, is to sequence it. This will determine which bases and in which order they are occuring in the DNA. However, the technology of DNA sequencing machines limit us to reads of 75-300 bases long. Therefore, the DNA is multiplied and cut into short pieces before sequencing. If we want to make assumptions about the whole genome, we will need to input a lot of these reads. 
+
+Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
+
+Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in \ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (as discussed in \ref{ch:Platforms}) since S-W is heavily parallelizable.
+
+In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions, which further increases the demand to speedup the process of mapping the reads in the genome, to decrease the time-to-result.
+
+The idea of this thesis was to implement the Smith-Waterman alignment algorithm on an MPSoC, which contains both programmable hardware and an ARM processor. As a target board, the ZCU 104 evaluation kit was chosen.
+
+\paragraph{Proposed solution and implementation}
+
+As a starting point, a software implementation was implemented on the target board.
+
+\paragraph{Speedup}
+
+
+
 \section{Recommendations for future work}
 
 Naturally, we have several recommendations for the continuation of this research. They will be classified in improvements of the current implementation and re-evaluation of the used algorithm.

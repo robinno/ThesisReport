@@ -216,7 +216,7 @@ Furthermore, it stores the value using a special type \emph{CELL\_VALUE}. The si
 
 The alignment layer does everything in the alignment of the sequence that has nothing to do with the matrix fill in. That functionality is outsourced to a separate function.
 
-Also, for the CIGAR string, a certain threshold was programmed in. The CIGAR string of a matched read consists of multiple parts. For example: $6M1I7M$ consists of 3 parts; $6M$, $1I$ and $7M$. By limiting the number of parts that are allowed we can define a threshold by which a sequence is considered as "aligned". If both the forward and reverse sequences go over this limit, the sequence will be mapped as "unmatched".
+Also, for the CIGAR string, a certain threshold was programmed in. The CIGAR string of a matched read consists of multiple parts. For example: $6M1I7M$ consists of 3 parts; $6M$, $1I$ and $7M$. By limiting the number of parts that are allowed we can define a threshold by which a sequence is considered as "aligned". If both the forward and reverse sequences go over this limit, the sequence will be marked as "unmatched".
 
 \begin{enumerate}
 	\item Fill in the matrix using the forward direction of the sequence.
@@ -230,7 +230,7 @@ Also, for the CIGAR string, a certain threshold was programmed in. The CIGAR str
 \end{enumerate}
 
 \paragraph{The fill in layer}
-This is probably the easiest layer of them all, but will also be one of the most computationally demanding ones. It skims over every cell in the matrix, except for the first row and first column, and uses the cell generation layer to generate the cell on that specific spot. Also, while having an iteration that goes over every cell, it became a good idea to use this iteration to find the maximum cell in the matrix, which is the starting point for the backtracking.
+This is probably the easiest layer of them all, but will also be one of the most computationally demanding ones. It skims over every cell in the matrix, except for the first row and first column, and uses the cell generation layer to generate the cell on that specific spot. Also, while having an iteration that goes over every cell, it is a good idea to use this iteration to find the maximum cell in the matrix, which is the starting point for the backtracking.
 
 \paragraph{The cell generation layer}
 This layer consists of 3 parts:

@@ -22,6 +22,8 @@ When examining this analysis, we should keep in mind that the generateCell, coor
 
 \section{Recoding parts of the software to be more hardware friendly}
 
+\subsection{Recoding the Cell generation layer}
+
 Back in 2011, Vermij E. did a thesis\cite{Vermij} on RVE (recursive variable expansion). He discusses the most efficient ways to program a processing element to generate one value in the alignment matrix. His results can be found in figure \ref{fig:PE}. 
 
 \begin{figure}[H]
@@ -35,35 +37,39 @@ Back in 2011, Vermij E. did a thesis\cite{Vermij} on RVE (recursive variable exp
 It seemed like a good idea to reimplement the generatecell function, using this newly found scheme. However, it is also important to keep track of where the value comes from. Therefore, the following (new) code was adopted for generating a cell:
 
 \begin{lcverbatim}
-	//calculate the possible  values
-	CELL diagonalCELL = { diagonal.value + sim(refVal, seqVal), 1 };
-	CELL leftCELL = { left.value - gp, 2 };
-	CELL upCELL = { up.value - gp, 3 };
-	CELL zeroCELL = { 0, 0 };
-	
-	CELL upstreamA = (leftCELL.value > upCELL.value) ? leftCELL : upCELL;
-	CELL upstreamB = (diagonalCELL.value > zeroCELL.value) ? 
-	diagonalCELL : zeroCELL;
-	
-	CELL newCell = (upstreamA.value > upstreamB.value) ? upstreamA : upstreamB;
-	
-	//Return the cell:
-	return newCell;
+//calculate the possible  values
+CELL diagonalCELL = { diagonal.value + sim(refVal, seqVal), 1 };
+CELL leftCELL = { left.value - gp, 2 };
+CELL upCELL = { up.value - gp, 3 };
+CELL zeroCELL = { 0, 0 };
+
+CELL upstreamA = (leftCELL.value > upCELL.value) ? leftCELL : upCELL;
+CELL upstreamB = (diagonalCELL.value > zeroCELL.value) ? 
+diagonalCELL : zeroCELL;
+
+CELL newCell = (upstreamA.value > upstreamB.value) ? upstreamA : upstreamB;
+
+//Return the cell:
+return newCell;
 \end{lcverbatim}
 
 Where the second attribute in the CELL type is the direction.
+
+\subsection{Recoding the FillIn layer}
+
+//TODO (nog aan bezig)
 
 \section{Hardware acceleration}
 
 //TODO
 
-It turns out, HLS does not support an in/out matrix to memory yet.
+- It turns out, HLS does not support an in/out matrix to memory yet.
 
-slices
+- slices (turns out: bad idea)
 
-direction of matrix (first column then row).
+- direction of matrix (first column then row).
 
-Bitwidth of (packed) data on axi master must be power of 2. => change the int to int16\_t and direction to uint16\_t (really wastefull towards memory) but no other choice without major remodel.
+- Bitwidth of (packed) data on axi master must be power of 2. => change the int to int16\_t and direction to uint16\_t (really wastefull towards memory) but no other choice without major remodel. (maybe do if enough time)
 
 \section{Comparison with the software}
 
