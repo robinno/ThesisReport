@@ -26,17 +26,17 @@ Inserts and deletions are often described by a single term, \emph{indel}.
 
 For example: if we want to align the following sequences:
 \begin{lcverbatim}
-	Seq1: ATATCGGC
-	Seq2: ATCG
+Seq1: ATATCGGC
+Seq2: ATCG
 \end{lcverbatim}
 The alignment itself can now be done in different ways. Possible alignments are:
 \begin{lcverbatim}
-	Alignment 1
-	Seq1: AtaTCgGc
-	Seq2: A--TC-G-
-	Alignment 2
-	Seq1: atATCGgc
-	Seq2: --ATCG--
+Alignment 1
+Seq1: AtaTCgGc
+Seq2: A--TC-G-
+Alignment 2
+Seq1: atATCGgc
+Seq2: --ATCG--
 \end{lcverbatim}
 Which alignment that is the actual output, depends on the algorithm and the given parameters (penalty and similarity scores). The '-' character represents a base that is not present.
 
@@ -48,17 +48,17 @@ Keep in mind, there is no one "correct" alignment. The core of the alignment alg
 To explain the difference between local and global alignment, we can take a look at the following example:
 
 \begin{lcverbatim}
-	The 2 DNA sequences:
-	Seq1: TCCCAGTTTGTGTCAGGGGACACGAG
-	Seq2: CGCCTCGTTTTCAGCAGTTATGTGCAGATC
-	
-	Alignment 1 :
-	Seq1: -----------tccCAGTT-TGTGTCAGgggacacgag
-	Seq2: cgcctcgttttcagCAGTTATGTG-CAGatc-------
-	
-	Alignment 2 :
-	Seq1 : tcCCa-GTTTgt-GtCAGggg-acaC-GA-g
-	Seq2 : cgCCtcGTTTtcaG-CAGttatgtgCaGAtc
+The 2 DNA sequences:
+Seq1: TCCCAGTTTGTGTCAGGGGACACGAG
+Seq2: CGCCTCGTTTTCAGCAGTTATGTGCAGATC
+
+Alignment 1 :
+Seq1: -----------tccCAGTT-TGTGTCAGgggacacgag
+Seq2: cgcctcgttttcagCAGTTATGTG-CAGatc-------
+
+Alignment 2 :
+Seq1 : tcCCa-GTTTgt-GtCAGggg-acaC-GA-g
+Seq2 : cgCCtcGTTTtcaG-CAGttatgtgCaGAtc
 \end{lcverbatim}
 
 Both alignments are valid but different. The first alignment is \emph{locally aligned}. This means that the similarities are prioritized in the same region, with the similarity as high as possible. On the other hand, the second alignment is \emph{globally aligned}. Here the similarities over the full length of the sequences are used for the alignment. 
@@ -334,7 +334,7 @@ The 11 mandatory fields are:
 
 An example of one line in a SAM file:
 \begin{lcverbatim}
-	SRR11   0   MN98   25   254   7M   0   0   GTTAAAG   BBBBBCB
+SRR11   0   MN98   25   254   7M   *   0   0   GTTAAAG   BBBBBCB
 \end{lcverbatim}
 In this example:
 \begin{itemize}

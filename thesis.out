@@ -59,10 +59,11 @@
 \BOOKMARK [2][-]{subsection.7.2.1}{Recoding the Cell generation layer}{section.7.2}% 59
 \BOOKMARK [2][-]{subsection.7.2.2}{Recoding the FillIn layer}{section.7.2}% 60
 \BOOKMARK [1][-]{section.7.3}{Hardware acceleration}{chapter.7}% 61
-\BOOKMARK [1][-]{section.7.4}{Comparison with the software}{chapter.7}% 62
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 63
-\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 64
-\BOOKMARK [1][-]{section.8.2}{Recommendations for future work}{chapter.8}% 65
-\BOOKMARK [2][-]{subsection.8.2.1}{Recommendations for improving the current implementation}{section.8.2}% 66
-\BOOKMARK [2][-]{subsection.8.2.2}{Recommendations for re-evaluating the alignment method}{section.8.2}% 67
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 68
+\BOOKMARK [2][-]{subsection.7.3.1}{Acceleration}{section.7.3}% 62
+\BOOKMARK [2][-]{subsection.7.3.2}{Comparison with the software}{section.7.3}% 63
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 64
+\BOOKMARK [1][-]{section.8.1}{Conclusion}{chapter.8}% 65
+\BOOKMARK [1][-]{section.8.2}{Recommendations for future work}{chapter.8}% 66
+\BOOKMARK [2][-]{subsection.8.2.1}{Recommendations for improving the current implementation}{section.8.2}% 67
+\BOOKMARK [2][-]{subsection.8.2.2}{Recommendations for re-evaluating the alignment method}{section.8.2}% 68
+\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 69
