@@ -21,17 +21,33 @@ Since the reads from DNA sequencing machines are 75 to 300 bases long, and the w
 
 In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions, which further increases the demand to speedup the process of mapping the reads in the genome, to decrease the time-to-result.
 
-The idea of this thesis was to implement the Smith-Waterman alignment algorithm on an MPSoC, which contains both programmable hardware and an ARM processor. As a target board, the ZCU 104 evaluation kit was chosen.
+The idea of this thesis was to implement the Smith-Waterman alignment algorithm on an MPSoC, which contains both programmable FPGA hardware and an ARM processor in 1 chip. As a target board, the ZCU 104 evaluation kit was chosen.
 
 \paragraph{Proposed solution and implementation}
 
-As a starting point, a software implementation was implemented on the target board.
+As a starting point, a software implementation was implemented on the ARM processor. After running the software implementation overnight with the unmapped sequences from the coronavirus as a sample set, we obtained a dataset of mapped reads. The reads were also mapped by using the Galaxy online tool \cite{13} and both were imported into the IGV analyzing software for comparison, which can be seen in figure \ref{fig:IGVcomparisonConcl}
 
-//TODO
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{softwareResults/comparison.jpg}
+	\caption{A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)}
+	\label{fig:IGVcomparisonConcl}
+\end{figure}
+
+It can be observed that the implementation is working correctly since the reading depth graphs are approximately the same (indicated by an arrow). Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
+
+If you look closely to figure \ref{fig:IGVcomparisonConcl}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
 
 \paragraph{Hardware speedup}
 
-//TODO
+After implementing the matrix fillIn in the FPGA hardware, we can examine execution time (using the built-in latency analyzers in SDSoC). The estimated achieved speedup that is 4.41. This means the hardware variant of the implementation runs 4.41 times faster than the software variant.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{speedup/speedup.jpg}
+	\caption{The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture}
+	\label{fig:speedup}
+\end{figure}
 
 
 

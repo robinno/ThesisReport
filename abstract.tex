@@ -1,5 +1,19 @@
-Het extended abstract of de wetenschappelijke samenvatting wordt in het Engels geschreven en bevat {\bf 500 tot 1.500 woorden}. Dit abstract moet {\bf niet} in KU Loket opgeladen worden (vanwege de beperkte beschikbare ruimte daar).
+One fundamental application in genomics is short read genome mapping, which attempts to locate a short read of DNA on the full genome. If enough of such short reads are mapped, some interesting results can be achieved. For example, if enough reads are mapped, we can extrapolate the full genome of the organism. Even the amount of reads in one place (referred to as the reading depth) can give useful information, e.g. the presence of trisomy of chromosome-21 in Down syndrome patients.
 
-\textbf{Keywords}: Voeg een vijftal keywords in (bv: Latex-template, thesis, ...)
+Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
 
-//TODO
+A full genome cannot be determined immediately, because the machines that determine this sequence can only handle short reads consisting of a few hundred bases. These sequencing machines are currently capable of producing millions of reads per day, and their throughput is growing at an exponential rate. This exponential growth should be accompanied by an improvement in genome mapping techniques, to keep up with the throughput of these machines. However, most of the current software tools used for genome mapping are run on traditional CPUs. 
+
+If we analyze the S-W algorithm, we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA since S-W is heavily parallelizable.
+
+In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions, which further increases the demand to speedup the process of mapping the reads in the genome, to decrease the time-to-result.
+
+The idea of this thesis was to implement the Smith-Waterman alignment algorithm on an MPSoC, which contains both programmable FPGA hardware and an ARM processor in 1 chip. As a target board, the ZCU 104 evaluation kit was chosen.
+
+As a starting point, a software implementation was implemented on the ARM processor. After running the software implementation overnight with the unmapped sequences from the SARS-CoV-2 (coronavirus) as a sample set, we obtained a dataset of mapped reads. The reads were also mapped by using the Galaxy online tool. We observed that our implementation is working correctly since the reading depth graphs are approximately the same (indicated by an arrow). Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
+
+The exact results of the Galaxy online tool were not achieved, but this will probably be because the parameters are a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome that were detected.
+
+After implementing the Smith-waterman matrix fill-in in the FPGA hardware, we achieved speedup of 4.41 in comparison with an implementation running fully on the ARM processor.
+
+\textbf{Keywords}: Smith-Waterman algorithm, short read genome mapping, accelerator, MPSoC, FPGA, HLS

@@ -180,7 +180,7 @@ Luckily, Xilinx has published a library with an \emph{sds\_alloc} function. This
 To allocate memory, the following formula was used:
 
 \begin{lcverbatim}
-	memory_pointer = (TYPE*) sds_alloc( length * sizeof(TYPE) );
+memory_pointer = (TYPE*) sds_alloc( length * sizeof(TYPE) );
 \end{lcverbatim}
 
 The sds\_alloc function returns a pointer to the first address in memory that has been reserved. It turns out that this pointer should be cast explicitly to the type used.
