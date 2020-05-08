@@ -116,4 +116,3 @@
 \contentsline {section}{\numberline {8.2}Recommendations for future work}{51}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Recommendations for improving the current implementation}{51}{subsection.8.2.1}%
 \contentsline {subsection}{\numberline {8.2.2}Recommendations for re-evaluating the alignment method}{52}{subsection.8.2.2}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{55}{appendix.A}%
