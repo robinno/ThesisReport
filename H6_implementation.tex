@@ -4,10 +4,17 @@
 %                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER                              %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
 \chapter{Accelerating the software implementation using HLS}
 \label{ch:HardwareImpl}
 
 \section{Analysing software performance}
+\label{swAnalyse}
 
 In the SDSoC environment, it is possible to analyze the software running on the SoC chip using a TCF profiler. After running this analysis, the TCF profiler returns an overview of the functions, sorted on the amount of time spent when running. The analysis is shown in figure \ref{fig:softwareFunctionUsage}
 
@@ -52,7 +59,6 @@ CELL newCell = (upstreamA.value > upstreamB.value) ? upstreamA : upstreamB;
 //Return the cell:
 return newCell;
 \end{lcverbatim}
-
 Where the second attribute in the CELL type is the direction.
 
 \subsection{Recoding the FillIn layer}
@@ -84,7 +90,7 @@ Since the current cell only depends on the left-up 3 cells, we can compute every
 	\label{tbl:arraytable}
 \end{table}
 
-Also keep note that the FillIn layer should also keep track of the maximum location in the matrix. Having gained this new information, we can recode the FillInlayer as follows:
+Also, keep note that the FillIn layer should keep track of the maximum location in the matrix. Having gained this new information, we can recode the FillInlayer as follows:
 
 \begin{enumerate}
 	\item Create the arrays $ppD$, $pD$ and $cD$. They should be the length of the sequence. All are initialized on zeros.
@@ -101,13 +107,109 @@ Also keep note that the FillIn layer should also keep track of the maximum locat
 	\item Return the position of the maximum to the alignment level.
 \end{enumerate}
 
+Note that by programming the Fill in Layer this way, there is no need to read cells from memory, since they can be generated using the arrays. Only the reference and read sequences should be read from memory. 
+
 \section{Hardware acceleration}
 
-\subsection{Acceleration}
-//TODO bespreek pragmas used and speedup
+When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see \ref{swAnalyse}). Therefore, They were merged into 1 convenient function, which will be transferred to the programmable hardware. 
 
-- Bitwidth of (packed) data on axi master must be power of 2. => change the int to int16\_t and direction to uint16\_t (really wastefull towards memory) but no other choice without major remodel. (maybe do if enough time)
+\subsection{DMA}
+
+DMA or \text{Direct Memory Access} allows certain hardware systems in the computer to access the main system memory independent of the CPU. This can be of importance to the performance since the hardware system requires a lot of data movement between to and from the memory. The arrays (ref, seq, and matrix) are available in the memory, which means the programmable hardware should be able to access these arrays using DMA. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.25\textwidth]{speedup/dma.png}
+	\caption{Schematic of a system using DMA}
+	\label{fig:DMA}
+\end{figure}
+
+The following pragmas were used for the DMA:
+\begin{lcverbatim}
+#pragma SDS data access_pattern(ref:SEQUENTIAL, seq:SEQUENTIAL, 
+	matrix:SEQUENTIAL)
+#pragma SDS data sys_port(ref:AFI, seq:AFI, matrix:AFI)
+#pragma SDS data mem_attribute(ref:PHYSICAL_CONTIGUOUS, 
+	seq:PHYSICAL_CONTIGUOUS, matrix:PHYSICAL_CONTIGUOUS)
+#pragma SDS data zero_copy(ref[0:refMax], seq[0:seqMax], 
+	matrix[0:refMax*seqMax])
+\end{lcverbatim}
+\begin{itemize}
+	\item \textbf{access\_pattern} can be either SEQUENTIAL or RANDOM. It specifies the data access pattern by the hardware to the memory. If SEQUENTIAL is used, the interface will be a stream (e.g. ap\_fifo). On the other hand, when RANDOM is used, a RAM interface will be generated.
+	\item \textbf{sys\_port} can be ACP, AFI, GP or MIG. It specifies on which level the memory is interfaces. 
+	\begin{itemize}
+		\item ACP: Lets hardware functions have cache-coherent access to DDR using the PS L2 cache.
+		\item AFI: Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
+		\item GP: The processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
+		\item MIG: Hardware functions access DDR from PL via a MIG IP memory controller.
+	\end{itemize}
+	We have quite a large amount of data, so GP doesn't seem like a good option. Likewise, the memory will be accessed uniform, we have no use for a cache as this would just slow it down. Therefore the AFI was selected.
+	\item \textbf{mem\_attribute} can be either PHYSICAL\_CONTIGUOUS or NON\_PHYSICAL\_CONTIGUOUS. The default value is NON\_PHYSICAL\_CONTIGUOUS. PHYSICAL\_CONTIGUOUS is used for memory allocated with sds\_alloc. Likewise, NON\_PHYSICAL\_CONTIGUOUS is used with memory allocated using malloc.
+	\item \textbf{zero\_copy} means that the hardware function accesses the data directly from shared memory through an AXI master bus interface.
+\end{itemize}
+
+\paragraph{The data\_pack pragma} The data\_pack pragma is used on the matrix since it is an array of structs (CELL type). This packs the data fields of a struct into a single scalar. The bitwidth of the packed struct is the sum of its attributes.
+
+Note, The bitwidth of (packed) data on the AXI but must be a power of 2, to interface with the memory. Therefore, A choice was made to change the CELL\_VALUE type to an int16\_t and the direction to uint16\_t. However, this is quite wasteful towards memory usage. It can be optimized by remodeling some of the code, but due to time constraints, this was not implemented.
+
+\subsection{Unrolling pragmas}
+Which loops are unrolled and how, is best described in pseudocode, which is found hereunder:
+
+\begin{lcverbatim}
+Create the current maximum (=0) and the position of the maximum;
+Create the 3 arrays (pD, ppD, and cD) of size seqMax;
+
+for i from 0 to seqMax: //initializing the arrays
+   #pragma HLS UNROLL
+   pD[i] = ppD[i] = cD[i] = 0;
+
+for currentColumn from 2 to (refLength + seqLength): //The fillIn loop
+   #pragma HLS loop_tripcount min=5000 avg=5150 max=5700
+   #pragma HLS PIPELINE
+	
+   for i from 0 to seqMax: //the diagonal loop
+      #pragma HLS UNROLL
+      row = i;
+      col = currentColumn - i;
+      
+      //edge cases
+      if (i < seqLength && col != 0 && col <= refLength):
+         generateCell(  //cell generation layer
+         	diagonal value = ppD[i-1], 
+         	left value = pD[i], 
+         	up value = pD[i-1],
+         	reference value = ref[col],
+         	sequence value = seq[row]
+         );
+         store the current cell at cD[i];
+         store the current cell in memory;
+         if (value of cell bigger than maximum):
+            replace current max position with this cell;
+	
+	
+   for i from 0 to seqMax: //the shifting loop
+      #pragma HLS UNROLL
+      ppD[i] = pD[i];
+      pD[i] = cD[i];
+
+return the position of the maximum;
+\end{lcverbatim}
+
+\paragraph{The unroll pragma} transforms the loop to multiples copies of the loop body in the FPGA hardware, which allows the loop iterations to be executed in parallel. Since no parameters are given to this pragma, the loops will be unrolled fully, so the whole loop will be executed in parallel. Note that the number of iterations of the loop should be known at compile time.
+
+In the code, all loops are unrolled fully, except for the loop that runs over every diagonal (the fill-in loop). Unrolling this loop would not affect execution speed since all elements in the loop are dependent on the previous iteration of this loop.
+
+\paragraph{The loop\_tripcount pragma} is applied to a loop to manually specify the total number of iterations performed by a loop. In our code, this is applied to the fill-in loop since the number of iterations is not known at compile time (refLength and seqLength are variables).
+
+\paragraph{The pipeline pragma} will try to transform the body of the loop to a pipeline, where every iteration of the loop has a given II or \emph{Initialization Interval}. If no II is given, the default is 1. This means it will try to run one iteration of the loop body for every clock cycle. 
 
 \subsection{Comparison with the software}
 
-//TODO
+If we examine execution time (using the built-in latency analyzers in SDSoC), we can see we achieved a speedup of 4.41. This means the hardware variant of the implementation runs 4.41 times faster than the software variant.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{speedup/speedup.jpg}
+	\caption{The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture}
+	\label{fig:speedup}
+\end{figure}

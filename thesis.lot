@@ -3,16 +3,16 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of DNA alignment algorithms\relax }}{13}{table.caption.28}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces \centering Similarity matrix example\relax }}{14}{table.caption.29}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces \centering Example of the initialization of the scoring matrix\relax }}{14}{table.caption.30}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces \centering Example of a populated scoring matrix\relax }}{16}{table.caption.32}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces \centering Example of a traceback in S-W\relax }}{16}{table.caption.33}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of DNA alignment algorithms\relax }}{13}{table.caption.29}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces \centering Similarity matrix example\relax }}{14}{table.caption.30}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces \centering Example of the initialization of the scoring matrix\relax }}{14}{table.caption.31}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces \centering Example of a populated scoring matrix\relax }}{16}{table.caption.33}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces \centering Example of a traceback in S-W\relax }}{16}{table.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces \centering Encoding for the nucleotide bases\relax }}{32}{table.caption.54}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces \centering Encoding for the nucleotide bases\relax }}{32}{table.caption.55}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces The 3 newly created arrays to house the data needed for generating the next diagonal of cells. The '?' in the cD array (red) is represents cells that are currently being generated. Notice that all the information needed to generate the new cell is present in the other 2 arrays\relax }}{44}{table.caption.75}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces The 3 newly created arrays to house the data needed for generating the next diagonal of cells. The '?' in the cD array (red) is represents cells that are currently being generated. Notice that all the information needed to generate the new cell is present in the other 2 arrays\relax }}{44}{table.caption.76}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

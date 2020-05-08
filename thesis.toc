@@ -8,24 +8,26 @@
 \contentsline {chapter}{List of tables}{xi}{chapter*.7}%
 \contentsline {chapter}{List of abbreviations}{xii}{chapter*.8}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {paragraph}{chapter \ref {ch:MBbackground}:}{1}{section*.9}%
-\contentsline {paragraph}{chapter \ref {ch:algoverzicht}:}{2}{section*.10}%
-\contentsline {paragraph}{chapter \ref {ch:Platforms}:}{2}{section*.11}%
-\contentsline {paragraph}{chapter \ref {ch:InitDiff}:}{2}{section*.12}%
-\contentsline {paragraph}{chapter \ref {ch:SoftwareImpl}:}{2}{section*.13}%
-\contentsline {paragraph}{chapter \ref {ch:HardwareImpl}:}{2}{section*.14}%
-\contentsline {paragraph}{chapter \ref {ch:Conclusions}:}{2}{section*.15}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Organization of the chapters}{2}{section.1.2}%
+\contentsline {paragraph}{chapter \ref {ch:MBbackground}:}{2}{section*.10}%
+\contentsline {paragraph}{chapter \ref {ch:algoverzicht}:}{2}{section*.11}%
+\contentsline {paragraph}{chapter \ref {ch:Platforms}:}{2}{section*.12}%
+\contentsline {paragraph}{chapter \ref {ch:InitDiff}:}{2}{section*.13}%
+\contentsline {paragraph}{chapter \ref {ch:SoftwareImpl}:}{2}{section*.14}%
+\contentsline {paragraph}{chapter \ref {ch:HardwareImpl}:}{2}{section*.15}%
+\contentsline {paragraph}{chapter \ref {ch:Conclusions}:}{2}{section*.16}%
 \contentsline {chapter}{\numberline {2}Background information on DNA and DNA sequencing}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Biology and DNA}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}History of genetics and DNA}{3}{subsection.2.1.1}%
-\contentsline {paragraph}{Genetics}{3}{figure.caption.17}%
-\contentsline {paragraph}{DNA}{3}{section*.18}%
+\contentsline {paragraph}{Genetics}{3}{figure.caption.18}%
+\contentsline {paragraph}{DNA}{3}{section*.19}%
 \contentsline {subsection}{\numberline {2.1.2}Structure of DNA}{3}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}DNA in the human body}{5}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}The Human Genome Project}{6}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Sequencing}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}The sequencing technology}{7}{subsection.2.3.1}%
-\contentsline {paragraph}{How whole-genome NGS works}{7}{section*.24}%
+\contentsline {paragraph}{How whole-genome NGS works}{7}{section*.25}%
 \contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{10}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}Methods for DNA sequence alignment}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}DNA sequence aligning}{11}{section.3.1}%
@@ -51,62 +53,67 @@
 \contentsline {chapter}{\numberline {5}HLS and SDSoC learning tools}{27}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Using Vivado HLS and Xilinx SDK}{27}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Learning HLS in examples}{27}{subsection.5.1.1}%
-\contentsline {paragraph}{Lab1: BASIC WORKFLOW}{27}{section*.41}%
-\contentsline {paragraph}{lab2: EXPLORING DATA TYPES using an FIR filter}{28}{section*.42}%
-\contentsline {paragraph}{lab3: INTERFACES}{28}{section*.43}%
-\contentsline {paragraph}{lab4: ARRAYS}{28}{section*.44}%
+\contentsline {paragraph}{Lab1: BASIC WORKFLOW}{27}{section*.42}%
+\contentsline {paragraph}{lab2: EXPLORING DATA TYPES using an FIR filter}{28}{section*.43}%
+\contentsline {paragraph}{lab3: INTERFACES}{28}{section*.44}%
+\contentsline {paragraph}{lab4: ARRAYS}{28}{section*.45}%
 \contentsline {subsection}{\numberline {5.1.2}Learning how to program target board}{28}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}SDSoC}{29}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Learning process on matrix multiplication example in SDSoC}{29}{subsection.5.2.1}%
-\contentsline {paragraph}{lab1: INTRODUCTION}{29}{section*.45}%
-\contentsline {paragraph}{lab2: PERFORMANCE ESTIMATION}{29}{section*.46}%
-\contentsline {paragraph}{lab3: DMA}{29}{section*.47}%
-\contentsline {paragraph}{lab4: DIRECTIVES}{30}{section*.48}%
-\contentsline {paragraph}{lab5: TASK-LEVEL PIPELINING}{30}{section*.49}%
-\contentsline {paragraph}{lab6: DEBUG}{30}{section*.50}%
-\contentsline {paragraph}{lab7: HARDWARE DEBUG}{30}{section*.51}%
+\contentsline {paragraph}{lab1: INTRODUCTION}{29}{section*.46}%
+\contentsline {paragraph}{lab2: PERFORMANCE ESTIMATION}{29}{section*.47}%
+\contentsline {paragraph}{lab3: DMA}{29}{section*.48}%
+\contentsline {paragraph}{lab4: DIRECTIVES}{30}{section*.49}%
+\contentsline {paragraph}{lab5: TASK-LEVEL PIPELINING}{30}{section*.50}%
+\contentsline {paragraph}{lab6: DEBUG}{30}{section*.51}%
+\contentsline {paragraph}{lab7: HARDWARE DEBUG}{30}{section*.52}%
 \contentsline {chapter}{\numberline {6}Software implementation of the Smith-Waterman algorithm}{31}{chapter.6}%
 \contentsline {section}{\numberline {6.1}The concept}{31}{section.6.1}%
 \contentsline {section}{\numberline {6.2}General overview of the implementation}{32}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Parameters and Types}{32}{subsection.6.2.1}%
-\contentsline {paragraph}{Nucleotide base}{32}{section*.53}%
-\contentsline {paragraph}{DNA sequence type}{32}{section*.55}%
+\contentsline {paragraph}{Nucleotide base}{32}{section*.54}%
+\contentsline {paragraph}{DNA sequence type}{32}{section*.56}%
 \contentsline {subsection}{\numberline {6.2.2}The code structure}{32}{subsection.6.2.2}%
 \contentsline {section}{\numberline {6.3}Details of the implementation}{33}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}File interfaces}{34}{subsection.6.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.1}Parameters and types}{34}{subsubsection.6.3.1.1}%
 \contentsline {subsubsection}{\numberline {6.3.1.2}Code structure}{35}{subsubsection.6.3.1.2}%
-\contentsline {paragraph}{FASTA interface}{35}{section*.61}%
-\contentsline {paragraph}{FASTQ interface}{35}{section*.62}%
-\contentsline {paragraph}{SAM interface}{36}{section*.63}%
+\contentsline {paragraph}{FASTA interface}{35}{section*.62}%
+\contentsline {paragraph}{FASTQ interface}{35}{section*.63}%
+\contentsline {paragraph}{SAM interface}{36}{section*.64}%
 \contentsline {subsection}{\numberline {6.3.2}Memory management}{36}{subsection.6.3.2}%
 \contentsline {subsubsection}{\numberline {6.3.2.1}malloc and sds\_alloc}{36}{subsubsection.6.3.2.1}%
 \contentsline {subsubsection}{\numberline {6.3.2.2}Allocating memory}{36}{subsubsection.6.3.2.2}%
 \contentsline {subsection}{\numberline {6.3.3}The alignment}{37}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {6.3.3.1}Parameters and types}{37}{subsubsection.6.3.3.1}%
 \contentsline {subsubsection}{\numberline {6.3.3.2}Code structure}{37}{subsubsection.6.3.3.2}%
-\contentsline {paragraph}{The alignment layer}{37}{section*.65}%
-\contentsline {paragraph}{The fill in layer}{38}{section*.66}%
-\contentsline {paragraph}{The cell generation layer}{38}{section*.67}%
+\contentsline {paragraph}{The alignment layer}{37}{section*.66}%
+\contentsline {paragraph}{The fill in layer}{38}{section*.67}%
+\contentsline {paragraph}{The cell generation layer}{38}{section*.68}%
 \contentsline {section}{\numberline {6.4}Implementation results}{39}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}The IGV software}{39}{subsection.6.4.1}%
 \contentsline {subsection}{\numberline {6.4.2}Sample data}{40}{subsection.6.4.2}%
 \contentsline {subsection}{\numberline {6.4.3}Results}{40}{subsection.6.4.3}%
-\contentsline {paragraph}{The implications for the coronavirus data}{41}{section*.71}%
+\contentsline {paragraph}{The implications for the coronavirus data}{41}{section*.72}%
 \contentsline {chapter}{\numberline {7}Accelerating the software implementation using HLS}{42}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Analysing software performance}{42}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Recoding parts of the software to be more hardware friendly}{42}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Recoding the Cell generation layer}{42}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Recoding the FillIn layer}{43}{subsection.7.2.2}%
 \contentsline {section}{\numberline {7.3}Hardware acceleration}{45}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Acceleration}{45}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Comparison with the software}{45}{subsection.7.3.2}%
-\contentsline {chapter}{\numberline {8}Conclusion and future research}{46}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Conclusion}{46}{section.8.1}%
-\contentsline {paragraph}{Problem definition}{46}{section*.76}%
-\contentsline {paragraph}{Proposed solution and implementation}{47}{section*.77}%
-\contentsline {paragraph}{Speedup}{47}{section*.78}%
-\contentsline {section}{\numberline {8.2}Recommendations for future work}{47}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Recommendations for improving the current implementation}{47}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Recommendations for re-evaluating the alignment method}{48}{subsection.8.2.2}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{51}{appendix.A}%
+\contentsline {subsection}{\numberline {7.3.1}DMA}{45}{subsection.7.3.1}%
+\contentsline {paragraph}{The data\_pack pragma}{46}{section*.78}%
+\contentsline {subsection}{\numberline {7.3.2}Unrolling pragmas}{47}{subsection.7.3.2}%
+\contentsline {paragraph}{The unroll pragma}{48}{section*.79}%
+\contentsline {paragraph}{The loop\_tripcount pragma}{48}{section*.80}%
+\contentsline {paragraph}{The pipeline pragma}{48}{section*.81}%
+\contentsline {subsection}{\numberline {7.3.3}Comparison with the software}{48}{subsection.7.3.3}%
+\contentsline {chapter}{\numberline {8}Conclusion and future research}{49}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Conclusion}{49}{section.8.1}%
+\contentsline {paragraph}{Problem definition}{49}{section*.83}%
+\contentsline {paragraph}{Proposed solution and implementation}{50}{section*.84}%
+\contentsline {paragraph}{Hardware speedup}{50}{section*.85}%
+\contentsline {section}{\numberline {8.2}Recommendations for future work}{50}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Recommendations for improving the current implementation}{50}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Recommendations for re-evaluating the alignment method}{51}{subsection.8.2.2}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{54}{appendix.A}%
