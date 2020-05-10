@@ -1,32 +1,34 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: apalike.bst
 Database file #1: bibliografie.bib
+Repeated entry---line 125 of file bibliografie.bib
+ : @misc{11
+ :         ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "12"
 Warning--I didn't find a database entry for "NCBI"
+Warning--I didn't find a database entry for "13"
 Warning--to sort, need author or key in dna
 Warning--to sort, need author or key in dnachemical
 Warning--to sort, need author or key in 8
-Warning--to sort, need author or key in 10
+Warning--to sort, need author or key in 11
 Warning--to sort, need author or key in fpgacomparison
-Warning--to sort, need author or key in 9
+Warning--to sort, need author or key in 10
 Warning--to sort, need author or key in fpgaworkings
 Warning--to sort, need author or key in SAM
-Warning--to sort, need author or key in 1
 Warning--to sort, need author or key in 2
 Warning--to sort, need author or key in 3
-Warning--to sort, need author or key in 12
-Warning--to sort, need author or key in 11
-Warning--to sort, need author or key in 13
-Warning--empty year in 1
+Warning--to sort, need author or key in 4
+Warning--to sort, need author or key in 9
+Warning--empty year in fpgacomparison
 Warning--empty year in 2
 Warning--empty year in 3
-Warning--empty year in fpgacomparison
+Warning--empty year in 4
 Warning--empty year in dnachemical
 Warning--empty year in dna
 Warning--empty year in fpgaworkings
+Warning--empty year in 11
 Warning--empty year in 8
 Warning--empty year in 9
 Warning--empty year in 10
-Warning--empty year in 11
-Warning--empty year in 12
-Warning--empty year in 13
-(There were 28 warnings)
+(There was 1 error message)

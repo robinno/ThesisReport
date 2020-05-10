@@ -29,11 +29,11 @@ The power of the CPU lies in its flexibility: it can be very easily programmed w
 	%src=http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png
 	\centering
 	\includegraphics[width=0.75\textwidth]{elBackground/CPU.png}
-	\caption{A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle.\cite{9}}
+	\caption{A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle.\cite{10}}
 	\label{fig:cpu}
 \end{figure}
 
-Since the original implementations of the S-W algorithm on CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x.\cite{1}
+Since the original implementations of the S-W algorithm on CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x.\cite{2}
 %src:https://web.archive.org/web/20070811101052/http://www.clccell.com/download.html
 
 Nowadays, MIT has published \emph{diagonalsw}, which is an implementation of S-W using the SIMD instruction set and is licensed under the open-source MIT license.
@@ -67,7 +67,7 @@ In the most basic FPGA's, the following items are present:
 For an implementation or design of a circuit which should be loaded in an FPGA, a \emph{Hardware Description Language} (HDL) is often the only practical choice to implement such a system, since drawing the circuits with a CAD program or by hand would take a very long time.
 
 In a paper from 2007, an implementation of S-W with an FPGA (Virtex-4) achieved a speedup of up to 100x in comparison with a 2.2GHz Opteron processor\cite{fpga100x}.%src https://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf
-A few companies have also made some implementations on FPGA in the past, e.g. Cray Inc.\cite{2}, TimeLogics\cite{3}, ...
+A few companies have also made some implementations on FPGA in the past, e.g. Cray Inc.\cite{3}, TimeLogics\cite{4}, ...
 %cray: https://www.cray.com/
 %timelogics: http://www.timelogic.com/
 

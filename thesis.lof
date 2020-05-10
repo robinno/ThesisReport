@@ -14,11 +14,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{15}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{17}{figure.caption.35}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow.\cite {10}\relax }}{20}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow.\cite {11}\relax }}{20}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces A schematic overview of the NIPT test.\cite {NIPT}\relax }}{21}{figure.caption.37}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces An overview of the different semiconductor technologies.\cite {fpgacomparison}\relax }}{22}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle.\cite {9}\relax }}{23}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle.\cite {10}\relax }}{23}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces The basic layout of an FPGA.\cite {fpgaworkings}\relax }}{24}{figure.caption.40}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces An overview of the hardware available on the ZCU 104 MPSoC evaluation kit\relax }}{25}{figure.caption.41}%
 \addvspace {10\p@ }
@@ -35,10 +35,10 @@
 \contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{41}{figure.caption.71}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{42}{figure.caption.73}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found in the thesis from Vermij E.\cite {Vermij}\relax }}{43}{figure.caption.74}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found by Vermij E.\cite {Vermij}\relax }}{43}{figure.caption.74}%
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Data dependencies for generating a cell in the alignment matrix\relax }}{44}{figure.caption.75}%
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Schematic of a system using DMA\relax }}{45}{figure.caption.77}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{48}{figure.caption.82}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{48}{figure.caption.82}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {8.1}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{50}{figure.caption.85}%
 \contentsline {figure}{\numberline {8.2}{\ignorespaces The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{51}{figure.caption.87}%

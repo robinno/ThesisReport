@@ -4,12 +4,6 @@
 %                                                                 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%                                                                 %
-%                            CHAPTER                              %
-%                                                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-
 \chapter{Accelerating the software implementation using HLS}
 \label{ch:HardwareImpl}
 
@@ -31,13 +25,13 @@ When examining this analysis, we should keep in mind that the generateCell, coor
 
 \subsection{Recoding the Cell generation layer}
 
-Back in 2011, Vermij E. did a thesis\cite{Vermij} on RVE (recursive variable expansion). He discusses the most efficient ways to program a processing element to generate one value in the alignment matrix. His results can be found in figure \ref{fig:PE}. 
+In 2011, Vermij E. (Delft University of Technology, The Netherlands) studied RVE (recursive variable expansion) \cite{Vermij}. He discusses the most efficient ways to program a processing element to generate one value in the alignment matrix. His results can be found in figure \ref{fig:PE}. 
 
 \begin{figure}[H]
 	%src=file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20Smith-Waterman%20op%20FPGA%20(TU%20Delft).pdf
 	\centering
 	\includegraphics[width=0.75\textwidth]{speedup/PE.jpg}
-	\caption{The optimal processing found in the thesis from Vermij E.\cite{Vermij}}
+	\caption{The optimal processing found by Vermij E.\cite{Vermij}}
 	\label{fig:PE}
 \end{figure}
 
@@ -63,7 +57,7 @@ Where the second attribute in the CELL type is the direction.
 
 \subsection{Recoding the FillIn layer}
 
-HLS does not support input and output from the same memory locations in hardware, therefore, the Fillin layer also has to be recoded. We will take a look at the data dependencies again:
+HLS does not support input and output from the same memory locations in hardware. Therefore, the Fillin layer also has to be recoded. We will take a look at the data dependencies again:
 
 \begin{figure}[H]
 	\centering
@@ -86,7 +80,7 @@ Since the current cell only depends on the left-up 3 cells, we can compute every
 		\textbf{T}                      & 0                                 & \cellcolor[HTML]{9AFF99}3       & \cellcolor[HTML]{96FFFB}1       & \cellcolor[HTML]{FFCCC9}?       &                                 &                                 &                                 &                                 &                                 &                 &           & \cellcolor[HTML]{9AFF99}3 & \cellcolor[HTML]{96FFFB}1 & \cellcolor[HTML]{FFCCC9}? \\ \cline{1-1} \cline{13-15} 
 		\textbf{G}                      & \cellcolor[HTML]{9AFF99}0         & \cellcolor[HTML]{96FFFB}1       & \cellcolor[HTML]{FFCCC9}?       &                                 &                                 &                                 &                                 &                                 &                                 &                 &           & \cellcolor[HTML]{9AFF99}0 & \cellcolor[HTML]{96FFFB}1 & \cellcolor[HTML]{FFCCC9}? \\ \cline{1-1} \cline{13-15} 
 	\end{tabular}
-	\caption{The 3 newly created arrays to house the data needed for generating the next diagonal of cells. The '?' in the cD array (red) is represents cells that are currently being generated. Notice that all the information needed to generate the new cell is present in the other 2 arrays}
+	\caption{The 3 newly created arrays to house the data needed for generating the next diagonal of cells. The '?' in the cD array (red) represents cells currently being generated. Notice that all the information needed to generate the new cell is present in the other 2 arrays}
 	\label{tbl:arraytable}
 \end{table}
 
@@ -111,7 +105,7 @@ Note that by programming the Fill in Layer this way, there is no need to read ce
 
 \section{Hardware acceleration}
 
-When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see \ref{swAnalyse}). Therefore, They were merged into 1 convenient function, which will be transferred to the programmable hardware. 
+When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see \ref{swAnalyse}). Therefore, they were merged into 1 convenient function, which will be transferred to the programmable hardware. 
 
 \subsection{DMA}
 
@@ -150,7 +144,7 @@ The following pragmas were used for the DMA:
 
 \paragraph{The data\_pack pragma} The data\_pack pragma is used on the matrix since it is an array of structs (CELL type). This packs the data fields of a struct into a single scalar. The bitwidth of the packed struct is the sum of its attributes.
 
-Note, The bitwidth of (packed) data on the AXI but must be a power of 2, to interface with the memory. Therefore, A choice was made to change the CELL\_VALUE type to an int16\_t and the direction to uint16\_t. However, this is quite wasteful towards memory usage. It can be optimized by remodeling some of the code, but due to time constraints, this was not implemented.
+The bitwidth of (packed) data on the AXI but must be a power of 2, to interface with the memory. Therefore, it was chosen to change the CELL\_VALUE type to an int16\_t and the direction to uint16\_t. This is however quite wasteful towards memory usage. It can be optimized by remodeling some of the code, but due to time constraints, this was not implemented.
 
 \subsection{Unrolling pragmas}
 Which loops are unrolled and how, is best described in pseudocode, which is found hereunder:
@@ -210,6 +204,6 @@ If we examine execution time (using the built-in latency analyzers in SDSoC), we
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{speedup/speedup.jpg}
-	\caption{The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture}
+	\caption{Latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture}
 	\label{fig:speedup}
 \end{figure}
