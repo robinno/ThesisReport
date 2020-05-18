@@ -38,6 +38,10 @@ Human karyotype.
 \newblock
   https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
 
+\bibitem[, ]{}
+Igv download page.
+\newblock http://software.broadinstitute.org/software/igv/.
+
 \bibitem[9, ]{9}
 Online bioinformatics tools.
 \newblock https://usegalaxy.org/.
@@ -62,6 +66,11 @@ Alexandrov, V. (2006).
 \bibitem[James~Arram, 2015]{FPGAacc}
 James~Arram, e.~a. (2015).
 \newblock Leveraging fpgas for accelerating short read alignment.
+
+\bibitem[Mardis, 2006]{SeqCost}
+Mardis, E.~R. (2006).
+\newblock Anticipating the 1,000 dollar genome.
+\newblock {\em Genome Biology}, 7:112.
 
 \bibitem[Nathaniel~McVicar, 2012]{FPGAacc2}
 Nathaniel~McVicar, e.~a. (2012).
