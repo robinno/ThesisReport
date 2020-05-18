@@ -24,13 +24,13 @@
 
 For thousands of years, humans have observed the effects of heredity and implemented their knowledge to domesticate plants and animals. However, the science behind heredity was only started to be understood since 1859 with the publication of \emph{on the origin of species} by Charles Darwin. 
 
-Around 1865, an Austrian monk and botanist Gregor Mendel, who studied at the university in Brno in the current Czech Republic, published his results on the hybridization studies of pea plants. He is often credited as being the father of modern genetics. In his findings, he implemented the role of \emph{factors} that influence the expression of traits. These factors later became known as \emph{genes}.
+Around 1865, an Austrian monk and botanist Gregor Mendel, who studied at the university in Brno in the current Czech Republic, published his results on the hybridization studies of pea plants. He is often credited as being the father of modern genetics. In his findings, he implemented the role of \emph{factors} that influence the expression of traits. These factors later became known as \emph{genes}~\cite{Mendel}.
 
 \paragraph{DNA}
 
-In 1869, Swiss physician Friedrich Miescher discovered a microscopic substance in the pus of discarded surgical bandages. Later, in 1909, Phoebus Levene named this substance DeoxyriboNucleic Acid (DNA) since it is found in the nucleus of a cell and has acidic properties.
+In 1869, Swiss physician Friedrich Miescher discovered a microscopic substance in the pus of discarded surgical bandages. Later, in 1909, Phoebus Levene named this substance DeoxyriboNucleic Acid (DNA) since it is found in the nucleus of a cell and has acidic properties~\cite{Miescher}.
 
-The full structure of DNA was discovered by Francis Crick and James Watson at the Cavendish Laboratory at the University of Cambridge.
+The full structure of DNA was discovered by Francis Crick and James Watson at the Cavendish Laboratory at the University of Cambridge~\cite{Crick}.
 
 \subsection{Structure of DNA}
 
@@ -41,7 +41,7 @@ Structurally, DNA is a polymer, which means each molecule is built up out of sma
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{background/Nucleotide.png}
-	\caption{The structure of one nucleotide}
+	\caption{The structure of one nucleotide~\cite{Nucleotide}(modified from source).}
 	\label{fig:nucleotide}
 \end{figure}
 
@@ -86,6 +86,8 @@ $$[5' - AGGTCCG - 3']$$
 we can deduce the sequence in the other direction as
 $$[3' - TCCAGGC - 5']$$
 
+//TODO einde zin = punt?
+
 \subsection{DNA in the human body}
 
 In human cells, DNA molecules can be found in the nucleus of all cells in the body. It consists of 46 very long molecules, which during cell division condense in what we call \emph{chromosomes}. The only exception is in reproductive cells (the egg cell and the sperm cell), which only have 23 chromosomes. 
@@ -121,7 +123,7 @@ The Human Genome is easily found on the internet since it is publically availabl
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{background/HG.png}
-	\caption{The order and the sizes of the chromosomes of the human genome as depicted in the IGV software}
+	\caption{The order and the sizes of the chromosomes of the human genome as depicted in the IGV software~\cite{IGV}.}
 	\label{fig:HG}
 \end{figure}
 
@@ -135,17 +137,17 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 
 \begin{enumerate}
 	\item The DNA to sequence is isolated from the cells. Most often this is the whole genome.
-	\item  In some cases, The isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA. Usually, this is in the millions or billions of copies.
+	\item  In some cases, the isolated DNA can now be copied enzymatically. This step is repeated until there are enough copies of the same DNA. Usually, this is in the millions or billions of copies.
 	
 	\begin{figure}[H]
 		%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
 		\centering
 		\includegraphics[width=0.3\linewidth]{background/enzymCopying.png}
-		\caption{the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases~\cite{}.}
+		\caption{The enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases~\cite{}.}
 		\label{fig:enzymCopying}
 	\end{figure}
 	
-	\item the full DNA sequence is now broken apart into small DNA molecules (100 to 1000 bases long). This is done using enzymes or high-frequency sound waves.
+	\item The full DNA sequence is now broken apart into small DNA molecules (100 to 1000 bases long). This is done using enzymes or high-frequency sound waves.
 	\item Now the sequencing can start: a \emph{flow cell} is used where these small DNA molecules can bind to a glass surface. 
 	\item Different enzymatic and chemical reactions can now be done on this flow cell through an automatic flow of reagents. The following steps are iterated until the full read has been filled in:
 	\begin{enumerate}
@@ -168,7 +170,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 		%src: PPT van Howest
 		\centering
 		\includegraphics[angle= -90, width=\linewidth]{background/ImProc.png}
-		\caption{From left to right is the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite{pptHowest}.}
+		\caption{From left to right are the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite{pptHowest}.}
 		\label{fig:ImProc}
 	\end{figure}
 	
@@ -187,10 +189,10 @@ The \emph{FASTQ} file format has become the de-facto standard as output from seq
 A FASTQ file uses four lines per sequenced DNA fragment:
 
 \begin{enumerate}
-	\item a '$@$' character followed by a sequence ID, plus an optional description. This description mostly contains the coordinate of the spot on the flowcell.
+	\item A '$@$' character followed by a sequence ID, plus an optional description. This description mostly contains the coordinate of the spot on the flowcell.
 	\item \label{enumIt:fastqRaw} The sequence of DNA bases identified by the machine. This is either $A$, $G$, $C$, $T$, or $n$ when the base cannot be identified with a specific threshold certainty.
-	\item a '$+$' character, optionally followed by the sequence ID (again) and an optional description.
-	\item the quality values for each respective base in line~\ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line~\ref{enumIt:fastqRaw}
+	\item A '$+$' character, optionally followed by the sequence ID (again) and an optional description.
+	\item The quality values for each respective base in line~\ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line~\ref{enumIt:fastqRaw}.
 \end{enumerate}
 
 The quality score in memory is a value in the range $0x21$ (lowest quality) to $0x7e$ (highest quality). Since this value is represented in ASCII in the file format, this ranges from the '$!$' character to the '$\mathtt{\sim}$' character. Hereunder is a complete list of the possible values of the quality score:
@@ -201,14 +203,17 @@ The quality score in memory is a value in the range $0x21$ (lowest quality) to $
 \end{lcverbatim}
 
 
-Important to note is that this quality score is logarithmic. Also, the '$@$' and '$+$' character is a possible value for the quality, so this will be something to look out for when implementing the interpreter for this file.\\
+Important to note is that this quality score is logarithmic. Also, the '$@$' and '$+$' character are a possible value for the quality, so this will be something to look out for when implementing the interpreter for this file.\\
 
 	
-A FASTQ file containing a single sequence of a DNA fragment of 60 bases might look like this:
+A FASTQ file containing a single sequence of a DNA fragment of 55 bases might look like this:
 
 
 \begin{lcverbatim}
-	FIX
+@P3018:1114
+GCTACTTCCCAAGAAGCTGTTCAGAATCAGAATGAGCCGCAACTTCGGGATGAAA
++
+AAAAAEEEEEEEEEEEEEEEEEEEEEEFFFFFFGGGGGIIIJJKKKKLLLLLMMM
 \end{lcverbatim}
 
 Keep in mind that a FASTQ file consists of multiple of these sequences, all stacked under each other.

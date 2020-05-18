@@ -2,11 +2,16 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: apalike.bst
 Database file #1: bibliografie.bib
 Repeated entry---line 134 of file bibliografie.bib
+ : @misc{mendel
+ :             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 166 of file bibliografie.bib
  : @misc{11
  :         ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "12"
 Warning--I didn't find a database entry for "NCBI"
+Warning--to sort, need author or key in Nucleotide
 Warning--to sort, need author or key in dna
 Warning--to sort, need author or key in dnachemical
 Warning--to sort, need author or key in 8
@@ -30,6 +35,7 @@ Warning--empty year in fpgaworkings
 Warning--empty year in 11
 Warning--empty year in 8
 Warning--empty year in 
+Warning--empty year in Nucleotide
 Warning--empty year in 9
 Warning--empty year in 10
-(There was 1 error message)
+(There were 2 error messages)

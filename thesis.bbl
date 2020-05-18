@@ -42,6 +42,11 @@ Human karyotype.
 Igv download page.
 \newblock http://software.broadinstitute.org/software/igv/.
 
+\bibitem[Nuc, ]{Nucleotide}
+Nucleotide chemical structure (modified).
+\newblock
+  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP_chemical_structure.png/1024px-DAMP_chemical_structure.png.
+
 \bibitem[9, ]{9}
 Online bioinformatics tools.
 \newblock https://usegalaxy.org/.
@@ -63,9 +68,21 @@ Alexandrov, V. (2006).
 \newblock In {\em Computational science - ICCS 2006 : 6th international
   conference, Reading, UK, May 28-31, 2006 ; proceedings}. Berlin: Springer.
 
+\bibitem[Dahm, 2008]{Miescher}
+Dahm, R. (2008).
+\newblock Discovering dna: Friedrich miescher and the early years of nucleic
+  acid research.
+\newblock {\em Human Genetics}, 122:565--81.
+
 \bibitem[James~Arram, 2015]{FPGAacc}
 James~Arram, e.~a. (2015).
 \newblock Leveraging fpgas for accelerating short read alignment.
+
+\bibitem[L.~Pauling, 1953]{Crick}
+L.~Pauling, R.~C. (1953).
+\newblock A proposed structure for the nucleic acids.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 39:84--97.
 
 \bibitem[Mardis, 2006]{SeqCost}
 Mardis, E.~R. (2006).
@@ -90,6 +107,11 @@ Olson, C.~B. (2011).
 O.O.~Storaasli, D.~S. (2011).
 \newblock Accelerating genome sequencing 100x with fpgas.
 \newblock http://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf.
+
+\bibitem[Ross, 2011]{Mendel}
+Ross, J. R.~J. (2011).
+\newblock Mendel's genes: towards a full molecular characterization.
+\newblock {\em Genetics}, 189:3--10.
 
 \bibitem[S.~Drury, 2016]{NIPT}
 S.~Drury, M.~Hill, L.~C. (2016).

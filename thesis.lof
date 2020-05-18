@@ -3,14 +3,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Megabase means 1 million nucleotide bases. In this graph we can see that the cost of sequencing decreases significantly overtime, hence the demand of sequencing increases. This increases is more than Moore's law, which is the reason we that mapping techniques should improve to keep up with the demand~\cite {SeqCost}.\relax }}{2}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The structure of one nucleotide\relax }}{5}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The structure of one nucleotide~\cite {Nucleotide}(modified from source).\relax }}{5}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The famous double helix~\cite {dna}.\relax }}{5}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds~\cite {dnachemical}.\relax }}{6}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces the 46 human chromosomes~\cite {8}.\relax }}{7}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The order and the sizes of the chromosomes of the human genome as depicted in the IGV software\relax }}{8}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases~\cite {}.\relax }}{9}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The order and the sizes of the chromosomes of the human genome as depicted in the IGV software~\cite {IGV}.\relax }}{8}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases~\cite {}.\relax }}{9}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration~\cite {}.\relax }}{10}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right is the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite {pptHowest}.\relax }}{10}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right are the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite {pptHowest}.\relax }}{10}{figure.caption.28}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{16}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{18}{figure.caption.35}%
