@@ -7,17 +7,17 @@
 \chapter{Platforms for accelerating the Smith-Waterman algorithm}
 \label{ch:Platforms}
 
-As we have discussed in \ref{expl:SWanalyse} (analysis of the Smith-Waterman algorithm) the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions that are better equipped for parallelism than a normal CPU.
+As we have discussed in Subsection~\ref{expl:SWanalyse} (analysis of the Smith-Waterman algorithm) the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions that are better equipped for parallelism than a normal CPU.
 
 \section{Overview of possible hardware}
 
-When designing a processing unit based on the semiconductor technology, it is always a tradeoff between efficiency and flexibility. For example, the CPU in a PC is highly flexible so that it can run any set of instructions without a lot of intervention between context changes. On the other hand, if a certain algorithm or instruction set should be executed as fast as possible, the FPGA's and ASICs are the best choices. At the extreme, an ASIC or \emph{Application Specific Integrated Circuit} can be chosen, but this means a complete chip should be designed from the ground up just for this specific application. However, an ASIC is extremely expensive to design and build, especially for small production quantities. In figure \ref{fig:effVSflex} an overview of the different options can be found.
+When designing a processing unit based on the semiconductor technology, it is always a tradeoff between efficiency and flexibility. For example, the CPU in a PC is highly flexible so that it can run any set of instructions without a lot of intervention between context changes. On the other hand, if a certain algorithm or instruction set should be executed as fast as possible, the FPGA's and ASICs are the best choices. At the extreme, an ASIC or \emph{Application Specific Integrated Circuit} can be chosen, but this means a complete chip should be designed from the ground up just for this specific application. However, an ASIC is extremely expensive to design and build, especially for small production quantities. In figure~\ref{fig:effVSflex} an overview of the different options can be found.
 
 \begin{figure}[H]
 	%src=https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png
 	\centering
 	\includegraphics[width=0.75\textwidth]{elBackground/effVSflex.jpg}
-	\caption{An overview of the different semiconductor technologies.\cite{fpgacomparison}}
+	\caption{An overview of the different semiconductor technologies~\cite{fpgacomparison}.}
 	\label{fig:effVSflex}
 \end{figure}
 
@@ -29,19 +29,19 @@ The power of the CPU lies in its flexibility: it can be very easily programmed w
 	%src=http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png
 	\centering
 	\includegraphics[width=0.75\textwidth]{elBackground/CPU.png}
-	\caption{A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle.\cite{10}}
+	\caption{A cpu processes instructions sequentially. It could be accelerated using pipelining, but the maximum stays 1 instruction per clock cycle~\cite{10}.}
 	\label{fig:cpu}
 \end{figure}
 
-Since the original implementations of the S-W algorithm on CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x.\cite{2}
+Since the original implementations of the S-W algorithm on CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x~\cite{2}.
 %src:https://web.archive.org/web/20070811101052/http://www.clccell.com/download.html
 
 Nowadays, MIT has published \emph{diagonalsw}, which is an implementation of S-W using the SIMD instruction set and is licensed under the open-source MIT license.
 
 \subsection{GPU}
 
-A GPU or \emph{Graphical Processing Unit} is a semiconductor technology which is specialized in video encoding and decoding. Since video encoding and decoding are actually glorified matrix manipulations, a GPU could also be used to manipulate all kinds of matrices. Since the Smith-Waterman algorithm is a big matrix fill in, it leads researchers to believe that it could be accelerated on a GPU. In 1997, an implementation of S-W on a GPU was published \cite{gpuImpl}%src:  https://archive.org/details/computationalsci0000iccs_y9o8/page/230
-which achieved a speedup of 2x over all previous software implementations.
+A GPU or \emph{Graphical Processing Unit} is a semiconductor technology which is specialized in video encoding and decoding. Since video encoding and decoding are actually glorified matrix manipulations, a GPU could also be used to manipulate all kinds of matrices. Since the Smith-Waterman algorithm is a big matrix fill in, it leads researchers to believe that it could be accelerated on a GPU. In 1997, an implementation of S-W on a GPU was published which achieved a speedup of 2x over all previous software implementations~\cite{gpuImpl}.
+%src:  https://archive.org/details/computationalsci0000iccs_y9o8/page/230
 
 At the time of writing, 11 different implementations for Smith-Waterman have been reported, 3 of which reporting a speedup over 30 times.
 
@@ -60,18 +60,18 @@ In the most basic FPGA's, the following items are present:
 	%src=https://evergreen.loyola.edu/dhhoe/www/FPGA_diagram.png
 	\centering
 	\includegraphics[width=0.75\textwidth]{elBackground/FPGA.png}
-	\caption{The basic layout of an FPGA.\cite{fpgaworkings}}
+	\caption{The basic layout of an FPGA~\cite{fpgaworkings}.}
 	\label{fig:fpga}
 \end{figure}
 
 For an implementation or design of a circuit which should be loaded in an FPGA, a \emph{Hardware Description Language} (HDL) is often the only practical choice to implement such a system, since drawing the circuits with a CAD program or by hand would take a very long time.
 
-In a paper from 2007, an implementation of S-W with an FPGA (Virtex-4) achieved a speedup of up to 100x in comparison with a 2.2GHz Opteron processor\cite{fpga100x}.%src https://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf
-A few companies have also made some implementations on FPGA in the past, e.g. Cray Inc.\cite{3}, TimeLogics\cite{4}, ...
+In a paper from 2007, an implementation of S-W with an FPGA (Virtex-4) achieved a speedup of up to 100x in comparison with a 2.2GHz Opteron processor~\cite{fpga100x}.%src https://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf
+A few companies have also made some implementations on FPGA in the past, e.g. Cray Inc.~\cite{3}, TimeLogics~\cite{4}, ...
 %cray: https://www.cray.com/
 %timelogics: http://www.timelogic.com/
 
-A master's thesis from 2011 by Vermij E.\cite{Vermij} %cit
+A master's thesis from 2011 by Vermij E.~\cite{Vermij} %cit
  has a detailed analysis of an FPGA based Smith-Waterman implementation. In other papers, it was found that the performance per Watt level for an FPGA implementation is better than a GPU or CPU by a factor of 12-21 times.
 
 \section{Hardware selection}

@@ -69,7 +69,7 @@ To index these "arrays" of bases, a new type was created for both the sequence i
 	\item For every read in the FASTQ file, we perform the following operations:
 	\begin{enumerate}
 		\item Load the next read from FASTQ file;
-		\item Perform the alignment. (see \ref{expl:alignment});
+		\item Perform the alignment. (see Subsection~\ref{expl:alignment});
 		\item write the mapped read to the SAM file;
 	\end{enumerate}
 	\item Close the FASTQ and SAM files;
@@ -140,7 +140,7 @@ For better code readability, the genome loading is split into 2 functions that a
 	\item loading the genome into the REFERENCE type. 
 \end{enumerate}
 
-\paragraph{FASTQ interface} this part of the program is responsible for loading the next read as a stream. The buildup of a FASTQ file is thoroughly described in \ref{expl:FASTQ}.
+\paragraph{FASTQ interface} this part of the program is responsible for loading the next read as a stream. The buildup of a FASTQ file is thoroughly described in Subsection~\ref{expl:FASTQ}.
 
 In this case, the code was also split up into functions for better readability:
 \begin{enumerate}
@@ -152,7 +152,7 @@ In this case, the code was also split up into functions for better readability:
 \end{enumerate}
 
 
-\paragraph{SAM interface} The SAM interface will write the current mapped read to a SAM file, one line for one read. The buildup of a SAM file is thoroughly described in \ref{expl:SAM}.
+\paragraph{SAM interface} The SAM interface will write the current mapped read to a SAM file, one line for one read. The buildup of a SAM file is thoroughly described in Subsection~\ref{expl:SAM}.
 
 For this implementation, some values of the SAM format are not important and should be set to a default value. So it came naturally to create an "init" function, in which these default values are assigned. 
 \begin{itemize}
@@ -187,7 +187,7 @@ The sds\_alloc function returns a pointer to the first address in memory that ha
 
 \begin{itemize}
 	\item In case of reserving space for the sequence and the reference, the "TYPE" part in the formula should be filled in by the BASE type. For the length part of the formula, parameters were created named seqMax and refMax respectively.
-	\item When space for the alignment matrix will be reserved, the "TYPE" part in the formula should be filled in by the CELL type (for more explanation on the CELL-type, see \ref{expl:AlignmentParams}). As for the length of the space to reserve, this should be equal to refMax times seqMax.
+	\item When space for the alignment matrix will be reserved, the "TYPE" part in the formula should be filled in by the CELL type (for more explanation on the CELL-type, see Subsection~\ref{expl:AlignmentParams}). As for the length of the space to reserve, this should be equal to refMax times seqMax.
 \end{itemize}
 
 \subsection{The alignment}
@@ -275,19 +275,19 @@ The most important functions in IGV for this thesis are:
 To try the implementation on the human genome directly seemed way too ambitious. Therefore, it seemed appropriate to try the implementation first on an organism that has a genome of only a few thousand bases in length.
 Since this thesis is performed around the spring of 2020, the "coronavirus" (or SARS-CoV-2) seemed like an appropriate candidate. After a quick google search, it turned out that this virus had a genome consisting of merely 29 thousand bases.
 
-The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI.\cite{8}
+The genome of the coronavirus was found easily online with reference number MN988668.1 in the genome bank of NCBI~\cite{8}.
 
 The FASTQ files obtained from a DNA sequence for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.\cite{NCBI}
 %src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
 
-Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing.\cite{9} %src ook zetten naar galaxy
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing~\cite{9}. %src ook zetten naar galaxy
 By converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie 2 algorithm was chosen, which is based on the S-W algorithm.
 
 \subsection{Results}
 
 We will compare the results from the sample data using the online Bowtie application and the implementation described in this chapter.
 
-After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure \ref{fig:IGVcomparison}
+After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure~\ref{fig:IGVcomparison}
 
 \begin{figure}[H]
 	\centering
@@ -298,10 +298,10 @@ After running the software implementation overnight with the unmapped sequences 
 
 It can be observed that the implementation is working correctly since the reading depth graphs are approximately the same (indicated by an arrow). Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
 
-If you look closely to figure \ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
+If you look closely to figure~\ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
 
 
 \paragraph{The implications for the coronavirus data}
 The coronavirus is constantly changing because of the mutations of some bases in the genome over time, just like the flu. In this way, it is possible to trace where infections originate. For example, the corona in China can have slightly different bases than from Italy or Spain. We can identify these changes by sequencing the whole genome and looking for consistent substitutions or indels over the whole dataset.
 
-From these results shown by IGV \ref{fig:IGVcomparison}, some mutations are shown, so we can assume that the coronavirus which was sequenced in Washington (taken from a US patient, the FASTQ file used) has some slight differences with the original Chinese sequenced genome (the reference sequence).
+From these results shown by IGV~\ref{fig:IGVcomparison}, some mutations are shown, so we can assume that the coronavirus which was sequenced in Washington (taken from a US patient, the FASTQ file used) has some slight differences with the original Chinese sequenced genome (the reference sequence).

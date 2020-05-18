@@ -73,7 +73,7 @@ In this section, we will take a look at some algorithms that are used most often
 The most used algorithms are often categorized in 2 ways: 
 
 \begin{itemize}
-	\item local alignment versus global alignments (see \ref{S:localVSglobalAlignment})
+	\item local alignment versus global alignments (see Section~\ref{S:localVSglobalAlignment})
 	\item dynamic algorithms versus heuristic algorithms: dynamic algorithms are exact but slow and computationally demanding, whereas heuristic algorithms are faster but are approximations and the best alignment is not guaranteed.
 \end{itemize}
 
@@ -266,7 +266,7 @@ From the DNA sequencing machines, we get a big amount of reads in the FASTQ form
 
 In most cases, the first step in the analysis of the reads is knowing from which part of the genome it's derived. Typically, the read is compared with the whole genome in a local alignment, for example with the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
 
-Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in \ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in chapter \ref{ch:Platforms}) since S-W is heavily parallelizable.
+Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in Subsection~\ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in Chapter~\ref{ch:Platforms}) since S-W is heavily parallelizable.
 
 In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions.
 
@@ -290,7 +290,7 @@ Please note, in most normal cases we can assume the distribution of reads is pra
 \subsection{The sam and bam file format}
 \label{expl:SAM}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section.\cite{SAM}
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section~\cite{SAM}.
 
 %src:http://samtools.github.io/hts-specs/SAMv1.pdf
 
@@ -361,7 +361,7 @@ We will discuss as examples two clinical applications of mapping to a reference 
 		%src: http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png
 		\centering
 		\includegraphics[width=0.5\textwidth]{clinicalAppl/trisomy-21.png}
-		\caption{Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow.\cite{11}}
+		\caption{Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow~\cite{11}.}
 		\label{fig:tri21}
 	\end{figure}
 	
@@ -376,7 +376,7 @@ We will discuss as examples two clinical applications of mapping to a reference 
 		%src: https://mail.google.com/mail/u/0/#search/nipt/FMfcgxwHMsQcgsbNLGvDkDqXLjxnNdWR?projector=1&messagePartId=0.1
 		\centering
 		\includegraphics[width=0.5\textwidth]{clinicalAppl/NIPTkadering.jpg}
-		\caption{A schematic overview of the NIPT test.\cite{NIPT}}
+		\caption{A schematic overview of the NIPT test~\cite{NIPT}.}
 		\label{fig:NIPT}
 	\end{figure}
 	

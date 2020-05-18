@@ -10,7 +10,7 @@
 \section{Analysing software performance}
 \label{swAnalyse}
 
-In the SDSoC environment, it is possible to analyze the software running on the SoC chip using a TCF profiler. After running this analysis, the TCF profiler returns an overview of the functions, sorted on the amount of time spent when running. The analysis is shown in figure \ref{fig:softwareFunctionUsage}
+In the SDSoC environment, it is possible to analyze the software running on the SoC chip using a TCF profiler. After running this analysis, the TCF profiler returns an overview of the functions, sorted on the amount of time spent when running. The analysis is shown in figure~\ref{fig:softwareFunctionUsage}
 
 \begin{figure}[H]
 	\centering
@@ -25,13 +25,13 @@ When examining this analysis, we should keep in mind that the generateCell, coor
 
 \subsection{Recoding the Cell generation layer}
 
-In 2011, Vermij E. (Delft University of Technology, The Netherlands) studied RVE (recursive variable expansion) \cite{Vermij}. He discusses the most efficient ways to program a processing element to generate one value in the alignment matrix. His results can be found in figure \ref{fig:PE}. 
+In 2011, Vermij E. (Delft University of Technology, The Netherlands) studied RVE (recursive variable expansion)~\cite{Vermij}. He discusses the most efficient ways to program a processing element to generate one value in the alignment matrix. His results can be found in figure~\ref{fig:PE}. 
 
 \begin{figure}[H]
 	%src=file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20Smith-Waterman%20op%20FPGA%20(TU%20Delft).pdf
 	\centering
 	\includegraphics[width=0.75\textwidth]{speedup/PE.jpg}
-	\caption{The optimal processing found by Vermij E.\cite{Vermij}}
+	\caption{The optimal processing found by Vermij E.~\cite{Vermij}}
 	\label{fig:PE}
 \end{figure}
 
@@ -66,7 +66,7 @@ HLS does not support input and output from the same memory locations in hardware
 	\label{fig:DatDep2}
 \end{figure}
 
-Since the current cell only depends on the left-up 3 cells, we can compute every cell on the diagonal in parallel. Therefore, 3 arrays where created: one contains the current diagonal being generated, one contains the previous diagonal for the cell above and the cell to the left of the current generated cell, and one for the diagonal before that. This last array will house the left-up cell also needed for the new cell generation. A schematic of the data structures used can be found in table \ref{tbl:arraytable}
+Since the current cell only depends on the left-up 3 cells, we can compute every cell on the diagonal in parallel. Therefore, 3 arrays where created: one contains the current diagonal being generated, one contains the previous diagonal for the cell above and the cell to the left of the current generated cell, and one for the diagonal before that. This last array will house the left-up cell also needed for the new cell generation. A schematic of the data structures used can be found in table~\ref{tbl:arraytable}
 
 \begin{table}[H]
 	\centering
@@ -97,7 +97,7 @@ Also, keep note that the FillIn layer should keep track of the maximum location 
 		\item Check if it is bigger than the current maximum. If so, the current maximum should be this new cell. 
 	\end{enumerate}
 	\item Set current diagonal to the next one.
-	\item Shift the values ($cD \rightarrow pD$ and $pD \rightarrow ppD$) and repeat from step \ref{everyCell}, until the full matrix is filled.
+	\item Shift the values ($cD \rightarrow pD$ and $pD \rightarrow ppD$) and repeat from step~\ref{everyCell}, until the full matrix is filled.
 	\item Return the position of the maximum to the alignment level.
 \end{enumerate}
 
@@ -105,7 +105,7 @@ Note that by programming the Fill in Layer this way, there is no need to read ce
 
 \section{Hardware acceleration}
 
-When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see \ref{swAnalyse}). Therefore, they were merged into 1 convenient function, which will be transferred to the programmable hardware. 
+When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see Section~\ref{swAnalyse}). Therefore, they were merged into 1 convenient function, which will be transferred to the programmable hardware. 
 
 \subsection{DMA}
 

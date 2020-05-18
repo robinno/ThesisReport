@@ -59,7 +59,7 @@ It is important to note that in most living organisms DNA does not exist as a si
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double_stranded_DNA_with_coloured_bases.png/1024px-Double_stranded_DNA_with_coloured_bases.png
 	\centering
 	\includegraphics[width=0.3\linewidth]{background/DoubleHelix.png}
-	\caption{The famous double helix. (\cite{dna})}
+	\caption{The famous double helix~\cite{dna}.}
 	\label{fig:doubleHelix}
 \end{figure}
 
@@ -71,7 +71,7 @@ The first phosphate group, at the start of the molecule, connects to the sugar g
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/DNA_chemical_structure.svg/800px-DNA_chemical_structure.svg.png
 	\centering
 	\includegraphics[width=0.5\linewidth]{background/DNAstructure.png}
-	\caption{A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds.  (\cite{dnachemical})}
+	\caption{A short part of a DNA molecule containing a $[5' - ACTG - 3']$ (left) and a complementary strand of $[3' - TGAC - 5']$ (right). These 2 strands are interconnected by hydrogen bonds~\cite{dnachemical}.}
 	\label{fig:DNAstructure}
 \end{figure}
 
@@ -103,7 +103,7 @@ The 23 chromosome pairs are classified in:
 	%src: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png
 	\centering
 	\includegraphics[width=0.5\linewidth]{background/karyotype.png}
-	\caption{the 46 human chromosomes. (\cite{8})}
+	\caption{the 46 human chromosomes~\cite{8}.}
 	\label{fig:karyotype}
 \end{figure}
 
@@ -141,7 +141,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 		%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
 		\centering
 		\includegraphics[width=0.3\linewidth]{background/enzymCopying.png}
-		\caption{the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases.\cite{fpgaImpl}}
+		\caption{the enzymatic copying of a string of DNA. The original is unzipped, thus allowing new nucleotide bases to attach to the exposed bases~\cite{}.}
 		\label{fig:enzymCopying}
 	\end{figure}
 	
@@ -157,7 +157,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 			%src: file:///D:/Erasmus/thesis/interessante%20papers/masterthesis%20BFAST%20op%20FPGA.pdf
 			\centering
 			\includegraphics[width=0.5\linewidth]{background/NGS.png}
-			\caption{Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration.\cite{fpgaImpl}}
+			\caption{Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration~\cite{}.}
 			\label{fig:NGS}
 		\end{figure}
 	\end{enumerate}
@@ -168,7 +168,7 @@ The term \emph{Sequencing} is used for all techniques to read and decipher the D
 		%src: PPT van Howest
 		\centering
 		\includegraphics[angle= -90, width=\linewidth]{background/ImProc.png}
-		\caption{From left to right is the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified.\cite{pptHowest}}
+		\caption{From left to right is the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite{pptHowest}.}
 		\label{fig:ImProc}
 	\end{figure}
 	
@@ -190,7 +190,7 @@ A FASTQ file uses four lines per sequenced DNA fragment:
 	\item a '$@$' character followed by a sequence ID, plus an optional description. This description mostly contains the coordinate of the spot on the flowcell.
 	\item \label{enumIt:fastqRaw} The sequence of DNA bases identified by the machine. This is either $A$, $G$, $C$, $T$, or $n$ when the base cannot be identified with a specific threshold certainty.
 	\item a '$+$' character, optionally followed by the sequence ID (again) and an optional description.
-	\item the quality values for each respective base in line \ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line \ref{enumIt:fastqRaw}
+	\item the quality values for each respective base in line~\ref{enumIt:fastqRaw}. The length of this line must be the same as the number of bases in line~\ref{enumIt:fastqRaw}
 \end{enumerate}
 
 The quality score in memory is a value in the range $0x21$ (lowest quality) to $0x7e$ (highest quality). Since this value is represented in ASCII in the file format, this ranges from the '$!$' character to the '$\mathtt{\sim}$' character. Hereunder is a complete list of the possible values of the quality score:
@@ -208,7 +208,7 @@ A FASTQ file containing a single sequence of a DNA fragment of 60 bases might lo
 
 
 \begin{lcverbatim}
-@*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+	FIX
 \end{lcverbatim}
 
 Keep in mind that a FASTQ file consists of multiple of these sequences, all stacked under each other.

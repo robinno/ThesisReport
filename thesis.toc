@@ -10,13 +10,13 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Organization of the chapters}{2}{section.1.2}%
-\contentsline {paragraph}{chapter \ref {ch:MBbackground}:}{2}{section*.10}%
-\contentsline {paragraph}{chapter \ref {ch:algoverzicht}:}{2}{section*.11}%
-\contentsline {paragraph}{chapter \ref {ch:Platforms}:}{2}{section*.12}%
-\contentsline {paragraph}{chapter \ref {ch:InitDiff}:}{2}{section*.13}%
-\contentsline {paragraph}{chapter \ref {ch:SoftwareImpl}:}{2}{section*.14}%
-\contentsline {paragraph}{chapter \ref {ch:HardwareImpl}:}{2}{section*.15}%
-\contentsline {paragraph}{chapter \ref {ch:Conclusions}:}{2}{section*.16}%
+\contentsline {paragraph}{chapter~\ref {ch:MBbackground}:}{2}{section*.10}%
+\contentsline {paragraph}{chapter~\ref {ch:algoverzicht}:}{2}{section*.11}%
+\contentsline {paragraph}{chapter~\ref {ch:Platforms}:}{2}{section*.12}%
+\contentsline {paragraph}{chapter~\ref {ch:InitDiff}:}{2}{section*.13}%
+\contentsline {paragraph}{chapter~\ref {ch:SoftwareImpl}:}{2}{section*.14}%
+\contentsline {paragraph}{chapter~\ref {ch:HardwareImpl}:}{2}{section*.15}%
+\contentsline {paragraph}{chapter~\ref {ch:Conclusions}:}{2}{section*.16}%
 \contentsline {chapter}{\numberline {2}Background information on DNA and DNA sequencing}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Biology and DNA}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}History of genetics and DNA}{3}{subsection.2.1.1}%
