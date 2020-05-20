@@ -7,7 +7,7 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces \centering Similarity matrix example\relax }}{15}{table.caption.30}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces \centering Example of the initialization of the scoring matrix\relax }}{15}{table.caption.31}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces \centering Example of a populated scoring matrix\relax }}{17}{table.caption.33}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces \centering Example of a traceback in S-W\relax }}{17}{table.caption.34}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces \centering A traceback in S-W. For example, the 13 in the blue colored cell is based on the cell with value 10 in on the left-up diagonal (match). Therefore, the path will jump to the cell with value 10. This is repeated until a 0 cell is hit.\relax }}{17}{table.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

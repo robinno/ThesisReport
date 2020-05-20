@@ -108,8 +108,8 @@
 \citation{pptHowest}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration~\cite  {}.\relax }}{10}{figure.caption.27}\protected@file@percent }
 \newlabel{fig:NGS}{{2.7}{10}{Sequencing technology used by Illumina attaches a nucleotide with a fluorescent tag to the next base in the read, then it captures a picture to determine the base, and removes the fluorescent tag so a new nucleotide group can bind in the next iteration~\cite {}.\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right are the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite  {pptHowest}.\relax }}{10}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:ImProc}{{2.8}{10}{From left to right are the pictures taken at each iteration in the flowcell. The sequence determined in the picture is from the lower circled nucleotide sequence. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite {pptHowest}.\relax }{figure.caption.28}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces From left to right are the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite  {pptHowest}.\relax }}{10}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:ImProc}{{2.8}{10}{From left to right are the pictures taken at each iteration in the flowcell. The color at that specific spot marks which nucleotide has been bound. With the use of some image processing techniques the exact sequence in that spot can be identified~\cite {pptHowest}.\relax }{figure.caption.28}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}The FASTQ file format}{11}{subsection.2.3.2}\protected@file@percent }
 \newlabel{expl:FASTQ}{{2.3.2}{11}{The FASTQ file format}{subsection.2.3.2}{}}
 \newlabel{enumIt:fastqRaw}{{2}{11}{The FASTQ file format}{Item.15}{}}
@@ -122,6 +122,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Local versus global alignment}{13}{section.3.2}\protected@file@percent }
 \newlabel{S:localVSglobalAlignment}{{3.2}{13}{Local versus global alignment}{section.3.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Commonly used algorithms}{13}{section.3.3}\protected@file@percent }
+\citation{NW}
 \citation{SW}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of DNA alignment algorithms\relax }}{14}{table.caption.29}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Needleman-Wunsch}{14}{subsection.3.3.1}\protected@file@percent }
@@ -132,7 +133,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Data dependencies in the $H$ matrix\relax }}{16}{figure.caption.32}\protected@file@percent }
 \newlabel{fig:DatDep}{{3.1}{16}{Data dependencies in the $H$ matrix\relax }{figure.caption.32}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces \centering  Example of a populated scoring matrix\relax }}{17}{table.caption.33}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces \centering  Example of a traceback in S-W\relax }}{17}{table.caption.34}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces \centering  A traceback in S-W. For example, the 13 in the blue colored cell is based on the cell with value 10 in on the left-up diagonal (match). Therefore, the path will jump to the cell with value 10. This is repeated until a 0 cell is hit.\relax }}{17}{table.caption.34}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}Problem definition}{18}{section.3.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Mapping to a reference genome}{18}{subsection.3.4.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Mapping to a reference genome. The direction of the read is represented by arrows\relax }}{18}{figure.caption.35}\protected@file@percent }
@@ -322,7 +323,7 @@
 \bibcite{fpgaworkings}{{7}{b}{{fpg}}{{}}}
 \bibcite{11}{{11}{}{{}}{{}}}
 \bibcite{8}{{8}{}{{}}{{}}}
-\bibcite{}{{}{}{{}}{{}}}
+\bibcite{IGV}{{IGV}{}{{}}{{}}}
 \bibcite{Nucleotide}{{Nuc}{}{{}}{{}}}
 \bibcite{9}{{9}{}{{}}{{}}}
 \bibcite{10}{{10}{}{{}}{{}}}
@@ -333,12 +334,13 @@
 \bibcite{Crick}{{18}{1953}{{L.~Pauling}}{{}}}
 \bibcite{SeqCost}{{19}{2006}{{Mardis}}{{}}}
 \bibcite{FPGAacc2}{{20}{2012}{{Nathaniel~McVicar}}{{}}}
-\bibcite{pptHowest}{{21}{2019}{{Nollet}}{{}}}
-\bibcite{fpgaImpl}{{22}{2011}{{Olson}}{{}}}
-\bibcite{fpga100x}{{23}{2011}{{O.O.~Storaasli}}{{}}}
-\bibcite{Mendel}{{24}{2011}{{Ross}}{{}}}
-\bibcite{NIPT}{{25}{2016}{{S.~Drury}}{{}}}
-\bibcite{SW}{{26}{1981}{{Smith and Waterman}}{{}}}
-\bibcite{sdsoc}{{27}{2018}{{Vergel}}{{}}}
-\bibcite{Vermij}{{28}{2011}{{Vermij}}{{}}}
+\bibcite{NW}{{21}{1970}{{Needleman and Wunsch}}{{}}}
+\bibcite{pptHowest}{{22}{2019}{{Nollet}}{{}}}
+\bibcite{fpgaImpl}{{23}{2011}{{Olson}}{{}}}
+\bibcite{fpga100x}{{24}{2011}{{O.O.~Storaasli}}{{}}}
+\bibcite{Mendel}{{25}{2011}{{Ross}}{{}}}
+\bibcite{NIPT}{{26}{2016}{{S.~Drury}}{{}}}
+\bibcite{SW}{{27}{1981}{{Smith and Waterman}}{{}}}
+\bibcite{sdsoc}{{28}{2018}{{Vergel}}{{}}}
+\bibcite{Vermij}{{29}{2011}{{Vermij}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers

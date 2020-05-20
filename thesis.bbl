@@ -38,14 +38,14 @@ Human karyotype.
 \newblock
   https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
 
-\bibitem[, ]{}
+\bibitem[IGV, ]{IGV}
 Igv download page.
 \newblock http://software.broadinstitute.org/software/igv/.
 
 \bibitem[Nuc, ]{Nucleotide}
 Nucleotide chemical structure (modified).
 \newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP_chemical_structure.png/1024px-DAMP_chemical_structure.png.
+  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP\_chemical\_structure.png/1024px-DAMP\_chemical\_structure.png.
 
 \bibitem[9, ]{9}
 Online bioinformatics tools.
@@ -92,6 +92,12 @@ Mardis, E.~R. (2006).
 \bibitem[Nathaniel~McVicar, 2012]{FPGAacc2}
 Nathaniel~McVicar, e.~a. (2012).
 \newblock Fpga acceleration of short read alignment.
+
+\bibitem[Needleman and Wunsch, 1970]{NW}
+Needleman, S.~B. and Wunsch, C.~D. (1970).
+\newblock A general method applicable to the search for similarities in the
+  amino acid sequence of two proteins.
+\newblock {\em Journal of Molecular Biology}, 48:443--53.
 
 \bibitem[Nollet, 2019]{pptHowest}
 Nollet, F. (2019).
