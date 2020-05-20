@@ -33,17 +33,13 @@ The power of the CPU lies in its flexibility: it can be very easily programmed w
 	\label{fig:cpu}
 \end{figure}
 
-Since the original implementations of the S-W algorithm on CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x~\cite{2}.
+Since the original implementations of the S-W algorithm are on a CPU, it became clear that a CPU was not the most suitable platform since it consists of a lot of operations that can be done in parallel. However, since the rise of SIMD, CPU's speed for parallel operations have improved substantially. \emph{SIMD} stands for \emph{Single Instruction Multiple Data} and makes it possible to manipulate more than 1 attribute of data with a single instruction, although be it the same instruction on all the data. CLC bio, a Danish company specialized in bioinformatics, has been able to achieve impressive speedups with a software implementation using SIMD, closing in on 200x~\cite{2}.
 %src:https://web.archive.org/web/20070811101052/http://www.clccell.com/download.html
-
-Nowadays, MIT has published \emph{diagonalsw}, which is an implementation of S-W using the SIMD instruction set and is licensed under the open-source MIT license.
 
 \subsection{GPU}
 
 A GPU or \emph{Graphical Processing Unit} is a semiconductor technology which is specialized in video encoding and decoding. Since video encoding and decoding are actually glorified matrix manipulations, a GPU could also be used to manipulate all kinds of matrices. Since the Smith-Waterman algorithm is a big matrix fill in, it leads researchers to believe that it could be accelerated on a GPU. In 1997, an implementation of S-W on a GPU was published which achieved a speedup of 2x over all previous software implementations~\cite{gpuImpl}.
 %src:  https://archive.org/details/computationalsci0000iccs_y9o8/page/230
-
-At the time of writing, 11 different implementations for Smith-Waterman have been reported, 3 of which reporting a speedup over 30 times.
 
 \subsection{FPGA}
 
@@ -72,7 +68,7 @@ A few companies have also made some implementations on FPGA in the past, e.g. Cr
 %timelogics: http://www.timelogic.com/
 
 A master's thesis from 2011 by Vermij E.~\cite{Vermij} %cit
- has a detailed analysis of an FPGA based Smith-Waterman implementation. In other papers, it was found that the performance per Watt level for an FPGA implementation is better than a GPU or CPU by a factor of 12-21 times.
+ has a detailed analysis of an FPGA based Smith-Waterman implementation. In other~\cite{FPGAeff} papers, it was found that the performance per Watt level for an FPGA implementation is better than a GPU or CPU by a factor of 12-21 times.
 
 \section{Hardware selection}
 
@@ -87,7 +83,7 @@ As the hardware the ZCU 104 evaluation kit was selected, which has an MPSoC onbo
 
 Reasons for choosing the ZCU 104 evaluation kit:
 \begin{enumerate}
-	\item An MPSoC is present, which will be used the host to application;
+	\item An MPSoC is present, which will be used to the host application;
 	\item Both a USB and Ethernet interface is available, which makes it easy to communicate with the target board;
 	\item An operating system can be run on the board (a Red Hat Linux distribution). This means we won't have to worry about implementing FAT or Ethernet stacks;
 	\item 16 times 2 gigabytes of RAM is available, which can come in handy when implementing big structures, like the alignment matrix;
