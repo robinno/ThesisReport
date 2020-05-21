@@ -68,6 +68,13 @@ Alexandrov, V. (2006).
 \newblock In {\em Computational science - ICCS 2006 : 6th international
   conference, Reading, UK, May 28-31, 2006 ; proceedings}. Berlin: Springer.
 
+\bibitem[Benkrid, 2012]{FPGAeff}
+Benkrid, K. (2012).
+\newblock High performance biological pairwise sequence alignment: Fpga versus
+  gpu versus cell be versus gpp.
+\newblock {\em International Journal of Reconfigurable Computing}, 2012:Article
+  ID 752910.
+
 \bibitem[Dahm, 2008]{Miescher}
 Dahm, R. (2008).
 \newblock Discovering dna: Friedrich miescher and the early years of nucleic
@@ -88,6 +95,10 @@ L.~Pauling, R.~C. (1953).
 Mardis, E.~R. (2006).
 \newblock Anticipating the 1,000 dollar genome.
 \newblock {\em Genome Biology}, 7:112.
+
+\bibitem[Mart\'inek, 2020]{martinek}
+Mart\'inek, T. (2020).
+\newblock Xilinx vivado hls.
 
 \bibitem[Nathaniel~McVicar, 2012]{FPGAacc2}
 Nathaniel~McVicar, e.~a. (2012).

@@ -23,22 +23,22 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces An overview of the hardware available on the ZCU 104 MPSoC evaluation kit\relax }}{26}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The concept of the implementation: the sequences is mapped to the whole genome\relax }}{32}{figure.caption.53}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The created types to store the sequence and the reference\relax }}{33}{figure.caption.57}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces An organisation chart of the split up functionalities\relax }}{35}{figure.caption.58}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the genome information.\relax }}{35}{figure.caption.59}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the read information\relax }}{35}{figure.caption.60}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{36}{figure.caption.61}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{38}{figure.caption.65}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{40}{figure.caption.69}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Close-up of a few reads in the IGV analysing software. Notice how the color coded bases are substitutions, whereas the matched bases are not shown. Moreover, a gap and insertion is also visible\relax }}{41}{figure.caption.70}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{42}{figure.caption.71}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The concept of the implementation: the sequences is mapped to the whole genome\relax }}{30}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The created types to store the sequence and the reference\relax }}{31}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces An organisation chart of the split up functionalities\relax }}{33}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The type created to store the genome information.\relax }}{33}{figure.caption.48}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The type created to store the read information\relax }}{33}{figure.caption.49}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The type created to store the mapping information, together with the read\relax }}{34}{figure.caption.50}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces The type created to store the information for every cell in the alignment matrix\relax }}{36}{figure.caption.54}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces The layout of the IGV analysing software\relax }}{38}{figure.caption.58}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Close-up of a few reads in the IGV analysing software. Notice how the color coded bases are substitutions, whereas the matched bases are not shown. Moreover, a gap and insertion is also visible\relax }}{39}{figure.caption.59}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{40}{figure.caption.60}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{43}{figure.caption.73}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found by Vermij E.~\cite {Vermij}\relax }}{44}{figure.caption.74}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Data dependencies for generating a cell in the alignment matrix\relax }}{45}{figure.caption.75}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Schematic of a system using DMA\relax }}{46}{figure.caption.77}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{49}{figure.caption.82}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces a TCF profile of the software implementation\relax }}{41}{figure.caption.62}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The optimal processing found by Vermij E.~\cite {Vermij}\relax }}{42}{figure.caption.63}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Data dependencies for generating a cell in the alignment matrix\relax }}{43}{figure.caption.64}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Schematic of a system using DMA\relax }}{44}{figure.caption.66}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{47}{figure.caption.71}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{51}{figure.caption.85}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{52}{figure.caption.87}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{49}{figure.caption.74}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{50}{figure.caption.76}%

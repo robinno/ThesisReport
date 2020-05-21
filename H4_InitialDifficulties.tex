@@ -7,54 +7,14 @@
 \chapter{HLS and SDSoC learning tools}
 \label{ch:InitDiff}
 
-\textit{Disclaimer: The purpose of this chapter is to show the learning tools I used to achieve a suitable implementation for the genome mapping problem. New programming techniques such as HLS, SDSoC \dots were familiarized. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
+\textit{Disclaimer: The purpose of this chapter is to show the learning tools I used to achieve a suitable implementation for the genome mapping problem. New programming techniques such as HLS and SDSoC were familiarized. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
 
 \section{Using Vivado HLS and Xilinx SDK}
 
 \subsection{Learning HLS in examples}
 \label{HLS}
 
-To learn HLS, I used learning materials from Mr. Martinek, who teaches HLS at the Brno University of Technology. It contains a theory part,  and also hands-on lab examples. These labs were worth exploring in this thesis since they contain most concepts of HLS.
-
-\paragraph{Lab1: BASIC WORKFLOW} 
-\begin{itemize}
-	\item How to start a new project;
-	\item What the difference is between a source and a test bench;
-	\item The properties of the available IDE when designing in HLS;
-	\item How to simulate the sources using the test benches;
-	\item Generate Gantt charts and how to analyze them;
-	\item Where to fiend the resulting VHDL code;
-	\item What the co-simulation is and why it is used;
-	\item Where to view the resulting simulation waveforms;
-	\item How to export your design as an IP;
-	\item It is possible to compare multiple solutions for a problem;
-	\item How to set a directive (such as unrolling a loop).
-\end{itemize}
-
-\paragraph{lab2: EXPLORING DATA TYPES using an FIR filter}
-\begin{itemize}
-	\item When to use the floating point or fixed point representation;
-	\item How to enable saturation when using fixed point;
-	\item How to do calculations that normally would result in an overflow using a fixed point. This can be done by lowering the resolution (dropping LSBs) so the result can still be stored in the same bit width.
-\end{itemize}
-
-\paragraph{lab3: INTERFACES} 
-\begin{itemize}
-	\item The basic argument-level interfaces and their differences, such as ap\_vld, ap\_none, and ap\_hs;
-	\item A block-level interface of a pipelined component (pipeline in the top function).
-\end{itemize}
-
-
-\paragraph{lab4: ARRAYS}
-\begin{itemize}
-	\item Sequential running of a design;
-	\item How to pipeline an internal loop;
-	\item What a rewind parameter is;
-	\item How to do top-function pipelining;
-	\item The array-map technique;
-	\item How to partition arrays (cyclic and complete);
-	\item How to reshape arrays
-\end{itemize}
+To learn HLS, I used learning materials sent to my by, who works at the Brno University of Technology~\cite{martinek}. It contains a theory part,  and also hands-on lab examples. These labs were worth exploring in this thesis since they contain most concepts of HLS.
 
 \subsection{Learning how to program target board}
 
@@ -71,42 +31,4 @@ As mentioned earlier, in this implementation we will work on a Linux distributio
 
 \subsection{Learning process on matrix multiplication example in SDSoC}
 
-To learn MPSoC and the SDSoC IDE, Xilinx' online available materials were used available at their GitHub page, which includes some hands-on assignments. The assignments use a matrix multiplication example, preinstalled with SDSoC. A weblink to this GitHub page can be found in the references~\cite{sdsoc}.%cit
-
-\paragraph{lab1: INTRODUCTION}
-\begin{itemize}
-	\item Basic workflow: how to create a project, select platform, configure bare-metal or using an operating system, loading the examples;
-	\item Working with hardware accelerators: mark a function for hardware, data motion network report;
-	\item How to run the project
-\end{itemize}
-
-\paragraph{lab2: PERFORMANCE ESTIMATION} 
-\begin{itemize}
-	\item Analyse the software solutions;
-	\item How to view rescource utilization after comilation; 
-	\item Comparing software and hardware implementations
-\end{itemize}
-
-\paragraph{lab3: DMA}
-\begin{itemize}
-	\item There are directives to configure the way data is transferred between the software processor and the programmable logic:
-	\begin{enumerate}
-		\item ACP: Hardware functions have cache-coherent access to DDR via the PS L2 cache.
-		\item AFI (HP):    Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
-		\item GP: The processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
-	\end{enumerate}
-	This lab also covers how to set these directives.
-	
-	\item How to find more info on errors by using the log files
-	
-	\item the difference between the malloc() and sds\_alloc() functions. The hardware functions can only access the physical address space and not the virtual one used by the software. Therefore, the sds\_alloc() function was created to skip this virtual memory translation in software.
-\end{itemize}
-
-\paragraph{lab4: DIRECTIVES} This lab covers how to set directives to speed up the hardware functions. Which directives to set and what they do, was already covered in the HLS labs at~\ref{HLS}.
-
-\paragraph{lab5: TASK-LEVEL PIPELINING} By using task-level pipelining I was able to achieve a speedup of 3 times with a 32x32 matrix multiplication.
-
-\paragraph{lab6: DEBUG} In this lab the onboard debugging is covered.
-
-\paragraph{lab7: HARDWARE DEBUG} 
-Using the trace feature in the SDSoC, it is possible to analyze what the application is doing? (software, hardware, transfer, or receive).
+To learn MPSoC and the SDSoC IDE, Xilinx' online available materials were used available at their GitHub page, which includes some hands-on assignments. The assignments use a matrix multiplication example, preinstalled with SDSoC. A weblink to this GitHub page can be found in the references~\cite{sdsoc}.
