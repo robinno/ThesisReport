@@ -12,7 +12,7 @@ This chapter will cover an approach to genome mapping using the Smith-Waterman a
 \section{The concept}
 For genome mapping a sequence of 75 to 300 bases in length should be mapped to the reference genome. The idea behind this mapping and the applications is thoroughly described in chapter \ref{ch:algoverzicht}.
 
-In this implementation, a mapping with "pure" Smith-Waterman was chosen. For sequencing applications where only a small part of the genome is sequenced, the read should only be mapped to these small candidate locations. The most computationally demanding task is when the alignment should be done with the whole genome. In this thesis, the alignment of the sequence is done with the whole genome. However, the concept is also applicable for read alignment to a selected region of a genome or a set of genomes from different organisms.
+In some implementations of the genome mapping problem, there is often a specific algorithm that can find some candidate locations, where a small S-W is then performed. However, in this implementation, it was chosen to compare the sequences with the whole genome instead of only a few candidate locations. This will yield more precise results, but is also more computationally demanding. However, the current implementation is also applicable for read alignment to a selected region of a genome or a set of genomes from different organisms.
 
 \begin{figure}[H]
 	\centering
@@ -20,7 +20,6 @@ In this implementation, a mapping with "pure" Smith-Waterman was chosen. For seq
 	\caption{The concept of the implementation: the sequences is mapped to the whole genome}
 	\label{fig:concept}
 \end{figure}
-
 
 \section{General overview of the implementation}
 
@@ -64,7 +63,7 @@ To index these "arrays" of bases, a new type was created for both the sequence i
 		\item matrix for during the alignment. The amount of memory that should be allocated to this matrix is equal to the size of the sequence times the size of the reference.
 	\end{enumerate}
 	\item Initialize the first row and first column of the matrix on $0$, to prevent edge cases when performing the Smith-Waterman Algorithm;
-	\item Load the reference genome from the fasta file;
+	\item Load the reference genome from the FASTA file;
 	\item Open the FASTQ file for loading unmapped reads, and the SAM file to store the reads once they are mapped;
 	\item For every read in the FASTQ file, we perform the following operations:
 	\begin{enumerate}
@@ -73,7 +72,7 @@ To index these "arrays" of bases, a new type was created for both the sequence i
 		\item write the mapped read to the SAM file;
 	\end{enumerate}
 	\item Close the FASTQ and SAM files;
-	\item free the reserved memory again
+	\item Free the reserved memory again.
 \end{enumerate}
 
 \section{Details of the implementation}
@@ -148,7 +147,7 @@ In this case, the code was also split up into functions for better readability:
 	\item Loading the sequence, which is stored in a text-based format in the FASTQ file, so it should be transformed to the SEQUENCE type. In a sequence, a base may be suddenly marked with an 'N' character, which means after the primary processing the process was unable to identify the base. Because of the way the sequencing machines work, this mostly happens at the end of the sequence. So, it was decided to only cut the sequence short at the moment an 'N' character is registered.
 	
 	For example, if the sequence were $ACGGCGCATTACNNAN$, the interface will only store $ACGGCGCATTAC$. This is justified by the fact that we are statistically certain that this sequence will be matched correctly from the moment the read is more than 15-20 bases long. The statistical proof itself will not be covered in this thesis.
-	\item loading the qualities. Found on the fourth line for each read, the qualities for each base are stored. The information is stored in an array with the same length as the sequence.
+	\item Loading the qualities. Found on the fourth line for each read, the qualities for each base are stored. The information is stored in an array with the same length as the sequence.
 \end{enumerate}
 
 
@@ -205,7 +204,12 @@ A naive approach to implementing the S-W algorithm might be to have the alignmen
 	\label{fig:CellType}
 \end{figure}
 
-The cell stores the place it originates from, using a \emph{DIRECTION} attribute. There are 4 possible directions a value can originate from: zero (coded as 0), diagonal (1), up (2), left (3).
+The cell stores the place it originates from, using a \emph{DIRECTION} attribute. There are 4 possible directions a value can originate from: zero (coded as 0), diagonal (1), up (2), left (3). In case the value from 2 directions is equal, the following priorities are followed: 
+\begin{enumerate}
+	\item If the maximum value is zero, the direction will always be (0).
+	\item If the maximum from the diagonal is equal to up or left, the diagonal will be chosen (1), which indicates a match.
+	\item If the values up and left are equal, the priority will go to the "up" direction (2).
+\end{enumerate}
 
 Furthermore, it stores the value using a special type \emph{CELL\_VALUE}. The size of values this type can store should be greater than the length of the sequence times the similarity score. Keep in mind that to calculate the maximum, this value-type should be able to go negative.
 
@@ -285,7 +289,7 @@ By converting the fastQ files (given by the SRA of the NCBI) using one of these 
 
 \subsection{Results}
 
-We will compare the results from the sample data using the online Bowtie application and the implementation described in this chapter.
+We will compare the results from our implementation with the sample data using the Galaxy online tool, where the Bowtie algorithm was used for the genome mapping.
 
 After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure~\ref{fig:IGVcomparison}
 
@@ -298,7 +302,7 @@ After running the software implementation overnight with the unmapped sequences 
 
 It can be observed that the implementation is working correctly since the reading depth graphs are approximately the same (indicated by an arrow). Furthermore, IGV was able to detect and identify consistent substitutions or indels in the reads.
 
-If you look closely to figure~\ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
+If you look closely to figure~\ref{fig:IGVcomparison}, some small differences between the exact reads are visible. This will probably be because both the algorithm and the parameters were a bit different, such as gap penalty and similarity score. However, the important part is that the reading depths are the same, as well as the consistently mutated bases marked in the genome (indicated by an asterisk).
 
 
 \paragraph{The implications for the coronavirus data}
