@@ -43,3 +43,4 @@
 \contentsline {figure}{\numberline {8.1}{\ignorespaces A comparison of the data obtained by Galaxy (top) and the data obtained by the implementation discussed in this chapter (bottom)\relax }}{49}{figure.caption.74}%
 \contentsline {figure}{\numberline {8.2}{\ignorespaces The latency analyzer in SDSoC. We can see the number of clock cycles spent in the software and the hardware variant of the implementation, as well as the speedup. The speedup is calculated 2 times, since we run the fillIn function twice, once for the forward and once for the reverse sequence. The resource utilization of the FPGA hardware is also visible in this picture\relax }}{50}{figure.caption.76}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces The used directory structure in the implementation. Directories are colored in yellow.\relax }}{54}{figure.caption.80}%

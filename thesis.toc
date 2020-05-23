@@ -103,4 +103,6 @@
 \contentsline {paragraph}{Hardware speedup}{49}{section*.75}%
 \contentsline {paragraph}{Future work - recommendations for improving the current implementation}{50}{section*.77}%
 \contentsline {paragraph}{Future work - recommendations for re-evaluating the alignment method}{51}{section*.78}%
-\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{54}{appendix.A}%
+\contentsline {chapter}{\numberline {A}Implementation code}{54}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Filesystem organization}{54}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Code}{55}{section.A.2}%

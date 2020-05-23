@@ -65,4 +65,6 @@
 \BOOKMARK [2][-]{subsection.7.3.2}{Unrolling pragmas}{section.7.3}% 65
 \BOOKMARK [2][-]{subsection.7.3.3}{Comparison with the software}{section.7.3}% 66
 \BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 67
-\BOOKMARK [0][-]{appendix.A}{Uitleg over de appendices}{}% 68
+\BOOKMARK [0][-]{appendix.A}{Implementation code}{}% 68
+\BOOKMARK [1][-]{section.A.1}{Filesystem organization}{appendix.A}% 69
+\BOOKMARK [1][-]{section.A.2}{Code}{appendix.A}% 70
