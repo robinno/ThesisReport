@@ -5,7 +5,12 @@ Repeated entry---line 161 of file bibliografie.bib
  : @misc{mendel
  :             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 193 of file bibliografie.bib
+I was expecting a `,' or a `}'---line 178 of file bibliografie.bib
+ :  
+ :  howpublished = {https://en.wikipedia.org/wiki/DNA}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 194 of file bibliografie.bib
  : @misc{11
  :         ,
 I'm skipping whatever remains of this entry
@@ -39,4 +44,4 @@ Warning--empty year in IGV
 Warning--empty year in Nucleotide
 Warning--empty year in 9
 Warning--empty year in 10
-(There were 2 error messages)
+(There were 3 error messages)

@@ -75,8 +75,8 @@
 \contentsline {subsubsection}{\numberline {6.3.2.2}Allocating memory}{35}{subsubsection.6.3.2.2}%
 \contentsline {subsection}{\numberline {6.3.3}The alignment}{36}{subsection.6.3.3}%
 \contentsline {subsubsection}{\numberline {6.3.3.1}Parameters and types}{36}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.3.2}Code structure}{36}{subsubsection.6.3.3.2}%
-\contentsline {paragraph}{The alignment layer}{36}{section*.55}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}Code structure}{37}{subsubsection.6.3.3.2}%
+\contentsline {paragraph}{The alignment layer}{37}{section*.55}%
 \contentsline {paragraph}{The fill in layer}{37}{section*.56}%
 \contentsline {paragraph}{The cell generation layer}{37}{section*.57}%
 \contentsline {section}{\numberline {6.4}Implementation results}{38}{section.6.4}%
@@ -103,3 +103,4 @@
 \contentsline {paragraph}{Hardware speedup}{49}{section*.75}%
 \contentsline {paragraph}{Future work - recommendations for improving the current implementation}{50}{section*.77}%
 \contentsline {paragraph}{Future work - recommendations for re-evaluating the alignment method}{51}{section*.78}%
+\contentsline {chapter}{\numberline {A}Uitleg over de appendices}{54}{appendix.A}%

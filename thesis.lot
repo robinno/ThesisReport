@@ -15,3 +15,4 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{\ignorespaces The 3 newly created arrays to house the data needed for generating the next diagonal of cells. The '?' in the cD array (red) represents cells currently being generated. Notice that all the information needed to generate the new cell is present in the other 2 arrays\relax }}{43}{table.caption.65}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }

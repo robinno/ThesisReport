@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  21 MAY 2020 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  23 MAY 2020 17:05
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -886,7 +886,7 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 
 pdfTeX warning: pdflatex.exe (file ./private/cover_fiiw_brugge.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<private/cover_fiiw_brugge.pdf, id=271, 597.55246pt x 845.07718pt>
+<private/cover_fiiw_brugge.pdf, id=275, 597.55246pt x 845.07718pt>
 File: private/cover_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/cover_fiiw_brugge.pdf>
 Package pdftex.def Info: private/cover_fiiw_brugge.pdf  used on input line 134.
@@ -943,7 +943,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 9.85492pt on input line 3.
-<fig/vut.png, id=296, 299.61937pt x 170.88844pt>
+<fig/vut.png, id=300, 299.61937pt x 170.88844pt>
 File: fig/vut.png Graphic file (type png)
 <use fig/vut.png>
 Package pdftex.def Info: fig/vut.png  used on input line 24.
@@ -970,7 +970,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
-<fig/kul.png, id=298, 1111.7535pt x 397.485pt>
+<fig/kul.png, id=302, 1111.7535pt x 397.485pt>
 File: fig/kul.png Graphic file (type png)
 <use fig/kul.png>
 Package pdftex.def Info: fig/kul.png  used on input line 28.
@@ -1035,7 +1035,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 11.
-<fig/introduction/costPerMegabase.jpg, id=567, 602.25pt x 451.6875pt>
+<fig/introduction/costPerMegabase.jpg, id=572, 602.25pt x 451.6875pt>
 File: fig/introduction/costPerMegabase.jpg Graphic file (type jpg)
 <use fig/introduction/costPerMegabase.jpg>
 Package pdftex.def Info: fig/introduction/costPerMegabase.jpg  used on input li
@@ -1056,7 +1056,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 12.
-<fig/background/GregorMendel.jpg, id=597, 486.81876pt x 571.13374pt>
+<fig/background/GregorMendel.jpg, id=602, 486.81876pt x 571.13374pt>
 File: fig/background/GregorMendel.jpg Graphic file (type jpg)
 <use fig/background/GregorMendel.jpg>
 Package pdftex.def Info: fig/background/GregorMendel.jpg  used on input line 19
@@ -1065,18 +1065,18 @@ Package pdftex.def Info: fig/background/GregorMendel.jpg  used on input line 19
 [4
 
  <./fig/background/GregorMendel.jpg>]
-<fig/background/Nucleotide.png, id=612, 824.07875pt x 430.60875pt>
+<fig/background/Nucleotide.png, id=617, 824.07875pt x 430.60875pt>
 File: fig/background/Nucleotide.png Graphic file (type png)
 <use fig/background/Nucleotide.png>
 Package pdftex.def Info: fig/background/Nucleotide.png  used on input line 43.
 (pdftex.def)             Requested size: 320.0935pt x 167.25996pt.
-<fig/background/DoubleHelix.png, id=615, 246.6816pt x 229.8186pt>
+<fig/background/DoubleHelix.png, id=620, 246.6816pt x 229.8186pt>
 File: fig/background/DoubleHelix.png Graphic file (type png)
 <use fig/background/DoubleHelix.png>
 Package pdftex.def Info: fig/background/DoubleHelix.png  used on input line 61.
 
 (pdftex.def)             Requested size: 128.0387pt x 119.28894pt.
-<fig/background/DNAstructure.png, id=618, 803.0pt x 936.49875pt>
+<fig/background/DNAstructure.png, id=623, 803.0pt x 936.49875pt>
 File: fig/background/DNAstructure.png Graphic file (type png)
 <use fig/background/DNAstructure.png>
 Package pdftex.def Info: fig/background/DNAstructure.png  used on input line 73
@@ -1088,33 +1088,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
  [5 <./fig/background/Nucleotide.png> <./fig/background/DoubleHelix.png>] [6 <.
 /fig/background/DNAstructure.png>]
-<fig/background/karyotype.png, id=635, 289.08pt x 311.12234pt>
+<fig/background/karyotype.png, id=640, 289.08pt x 311.12234pt>
 File: fig/background/karyotype.png Graphic file (type png)
 <use fig/background/karyotype.png>
 Package pdftex.def Info: fig/background/karyotype.png  used on input line 107.
 (pdftex.def)             Requested size: 213.39568pt x 229.66673pt.
 
 [7 <./fig/background/karyotype.png (PNG copy)>]
-<fig/background/HG.png, id=642, 1008.76875pt x 75.8835pt>
+<fig/background/HG.png, id=647, 1008.76875pt x 75.8835pt>
 File: fig/background/HG.png Graphic file (type png)
 <use fig/background/HG.png>
 Package pdftex.def Info: fig/background/HG.png  used on input line 125.
 (pdftex.def)             Requested size: 426.79135pt x 32.10474pt.
-<fig/background/enzymCopying.png, id=645, 205.9695pt x 174.05025pt>
+<fig/background/enzymCopying.png, id=650, 205.9695pt x 174.05025pt>
 File: fig/background/enzymCopying.png Graphic file (type png)
 <use fig/background/enzymCopying.png>
 Package pdftex.def Info: fig/background/enzymCopying.png  used on input line 14
 5.
 (pdftex.def)             Requested size: 128.0387pt x 108.19418pt.
  [8 <./fig/background/HG.png>]
-<fig/background/NGS.png, id=654, 216.20775pt x 216.20775pt>
+<fig/background/NGS.png, id=659, 216.20775pt x 216.20775pt>
 File: fig/background/NGS.png Graphic file (type png)
 <use fig/background/NGS.png>
 Package pdftex.def Info: fig/background/NGS.png  used on input line 161.
 (pdftex.def)             Requested size: 213.39568pt x 213.39641pt.
 
 [9 <./fig/background/enzymCopying.png>]
-<fig/background/ImProc.jpg, id=666, 505.89pt x 159.59625pt>
+<fig/background/ImProc.jpg, id=671, 505.89pt x 159.59625pt>
 File: fig/background/ImProc.jpg Graphic file (type jpg)
 <use fig/background/ImProc.jpg>
 Package pdftex.def Info: fig/background/ImProc.jpg  used on input line 172.
@@ -1134,7 +1134,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--102
  []
 
 [14] [15]
-<fig/ExisMethods/Dependencies_SW.png, id=714, 352.31625pt x 342.27875pt>
+<fig/ExisMethods/Dependencies_SW.png, id=719, 352.31625pt x 342.27875pt>
 File: fig/ExisMethods/Dependencies_SW.png Graphic file (type png)
 <use fig/ExisMethods/Dependencies_SW.png>
 Package pdftex.def Info: fig/ExisMethods/Dependencies_SW.png  used on input lin
@@ -1143,7 +1143,7 @@ e 192.
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
 (Font)              scaled to size 5.39996pt on input line 205.
  [16 <./fig/ExisMethods/Dependencies_SW.png>] [17]
-<fig/problemDefinition/MappingRefGen.png, id=729, 823.075pt x 212.795pt>
+<fig/problemDefinition/MappingRefGen.png, id=734, 823.075pt x 212.795pt>
 File: fig/problemDefinition/MappingRefGen.png Graphic file (type png)
 <use fig/problemDefinition/MappingRefGen.png>
 Package pdftex.def Info: fig/problemDefinition/MappingRefGen.png  used on input
@@ -1156,14 +1156,14 @@ LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/sl' tried instead on input line 366.
 LaTeX Font Info:    Font shape `OT1/phv/b/sl' will be
 (Font)              scaled to size 9.85492pt on input line 366.
-<fig/clinicalAppl/trisomy-21.png, id=760, 451.6875pt x 267.24844pt>
+<fig/clinicalAppl/trisomy-21.png, id=765, 451.6875pt x 267.24844pt>
 File: fig/clinicalAppl/trisomy-21.png Graphic file (type png)
 <use fig/clinicalAppl/trisomy-21.png>
 Package pdftex.def Info: fig/clinicalAppl/trisomy-21.png  used on input line 37
 3.
 (pdftex.def)             Requested size: 213.39568pt x 126.25923pt.
  [21 <./fig/clinicalAppl/trisomy-21.png>]
-<fig/clinicalAppl/NIPTkadering.jpg, id=770, 474.573pt x 530.58224pt>
+<fig/clinicalAppl/NIPTkadering.jpg, id=775, 474.573pt x 530.58224pt>
 File: fig/clinicalAppl/NIPTkadering.jpg Graphic file (type jpg)
 <use fig/clinicalAppl/NIPTkadering.jpg>
 Package pdftex.def Info: fig/clinicalAppl/NIPTkadering.jpg  used on input line 
@@ -1171,7 +1171,7 @@ Package pdftex.def Info: fig/clinicalAppl/NIPTkadering.jpg  used on input line
 (pdftex.def)             Requested size: 213.39568pt x 238.58168pt.
 ) (H4_ELbackground.tex [22 <./fig/clinicalAppl/NIPTkadering.jpg>]
 Chapter 4.
-<fig/elBackground/effVSflex.jpg, id=781, 461.3235pt x 130.086pt>
+<fig/elBackground/effVSflex.jpg, id=786, 461.3235pt x 130.086pt>
 File: fig/elBackground/effVSflex.jpg Graphic file (type jpg)
 <use fig/elBackground/effVSflex.jpg>
 Package pdftex.def Info: fig/elBackground/effVSflex.jpg  used on input line 19.
@@ -1180,18 +1180,18 @@ Package pdftex.def Info: fig/elBackground/effVSflex.jpg  used on input line 19.
 [23
 
  <./fig/elBackground/effVSflex.jpg>]
-<fig/elBackground/CPU.png, id=788, 385.44pt x 145.54375pt>
+<fig/elBackground/CPU.png, id=793, 385.44pt x 145.54375pt>
 File: fig/elBackground/CPU.png Graphic file (type png)
 <use fig/elBackground/CPU.png>
 Package pdftex.def Info: fig/elBackground/CPU.png  used on input line 31.
 (pdftex.def)             Requested size: 320.0935pt x 120.86789pt.
  [24 <./fig/elBackground/CPU.png>]
-<fig/elBackground/FPGA.png, id=800, 378.58362pt x 210.13892pt>
+<fig/elBackground/FPGA.png, id=805, 378.58362pt x 210.13892pt>
 File: fig/elBackground/FPGA.png Graphic file (type png)
 <use fig/elBackground/FPGA.png>
 Package pdftex.def Info: fig/elBackground/FPGA.png  used on input line 58.
 (pdftex.def)             Requested size: 320.0935pt x 177.67941pt.
-<fig/elBackground/hardware.jpg, id=808, 442.65375pt x 328.8285pt>
+<fig/elBackground/hardware.jpg, id=813, 442.65375pt x 328.8285pt>
 File: fig/elBackground/hardware.jpg Graphic file (type jpg)
 <use fig/elBackground/hardware.jpg>
 Package pdftex.def Info: fig/elBackground/hardware.jpg  used on input line 79.
@@ -1204,7 +1204,7 @@ Chapter 5.
 
 ]) (H5_RMaccelerated.tex [29]
 Chapter 6.
-<fig/systemImplementation/pureSWconcept.png, id=848, 554.07pt x 182.6825pt>
+<fig/systemImplementation/pureSWconcept.png, id=853, 554.07pt x 182.6825pt>
 File: fig/systemImplementation/pureSWconcept.png Graphic file (type png)
 <use fig/systemImplementation/pureSWconcept.png>
 Package pdftex.def Info: fig/systemImplementation/pureSWconcept.png  used on in
@@ -1213,98 +1213,97 @@ put line 19.
 [30
 
  <./fig/systemImplementation/pureSWconcept.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
 
-<fig/systemImplementation/RefAndSeqTypes.png, id=854, 382.42876pt x 302.12875pt
+<fig/systemImplementation/RefAndSeqTypes.png, id=859, 382.42876pt x 302.12875pt
 >
 File: fig/systemImplementation/RefAndSeqTypes.png Graphic file (type png)
 <use fig/systemImplementation/RefAndSeqTypes.png>
 Package pdftex.def Info: fig/systemImplementation/RefAndSeqTypes.png  used on i
-nput line 49.
+nput line 48.
 (pdftex.def)             Requested size: 149.37958pt x 118.01413pt.
 
-Overfull \hbox (12.78474pt too wide) in paragraph at lines 54--55
+Overfull \hbox (12.78474pt too wide) in paragraph at lines 53--54
 []\OT1/phv/m/n/10.95 To in-dex these "ar-rays" of bases, a new type was cre-ate
 d for both the se-quence in-dex-ing (\OT1/phv/m/sl/10.95 SEQ[]INDEX\OT1/phv/m/n
 /10.95 )
  []
 
 [31 <./fig/systemImplementation/RefAndSeqTypes.png>]
-<fig/systemImplementation/organigram.png, id=865, 452.69125pt x 332.24126pt>
+<fig/systemImplementation/organigram.png, id=870, 452.69125pt x 332.24126pt>
 File: fig/systemImplementation/organigram.png Graphic file (type png)
 <use fig/systemImplementation/organigram.png>
 Package pdftex.def Info: fig/systemImplementation/organigram.png  used on input
- line 90.
+ line 89.
 (pdftex.def)             Requested size: 213.39568pt x 156.61473pt.
  [32]
-<fig/systemImplementation/GenomeType.png, id=885, 221.82875pt x 61.22874pt>
+<fig/systemImplementation/GenomeType.png, id=890, 221.82875pt x 61.22874pt>
 File: fig/systemImplementation/GenomeType.png Graphic file (type png)
 <use fig/systemImplementation/GenomeType.png>
 Package pdftex.def Info: fig/systemImplementation/GenomeType.png  used on input
- line 105.
+ line 104.
 (pdftex.def)             Requested size: 149.37958pt x 41.23137pt.
-<fig/systemImplementation/ReadType.png, id=886, 221.82875pt x 72.27pt>
+<fig/systemImplementation/ReadType.png, id=891, 221.82875pt x 72.27pt>
 File: fig/systemImplementation/ReadType.png Graphic file (type png)
 <use fig/systemImplementation/ReadType.png>
 Package pdftex.def Info: fig/systemImplementation/ReadType.png  used on input l
-ine 114.
+ine 113.
 (pdftex.def)             Requested size: 149.37958pt x 48.66655pt.
-<fig/systemImplementation/mappedReadType.png, id=887, 221.82875pt x 161.60374pt
+<fig/systemImplementation/mappedReadType.png, id=892, 221.82875pt x 161.60374pt
 >
 File: fig/systemImplementation/mappedReadType.png Graphic file (type png)
 <use fig/systemImplementation/mappedReadType.png>
 Package pdftex.def Info: fig/systemImplementation/mappedReadType.png  used on i
-nput line 124.
+nput line 123.
 (pdftex.def)             Requested size: 149.37958pt x 108.82382pt.
  [33 <./fig/systemImplementation/organigram.png> <./fig/systemImplementation/Ge
 nomeType.png> <./fig/systemImplementation/ReadType.png>] [34 <./fig/systemImple
 mentation/mappedReadType.png>] [35]
-<fig/systemImplementation/CellType.png, id=922, 231.86626pt x 111.41624pt>
+<fig/systemImplementation/CellType.png, id=927, 231.86626pt x 111.41624pt>
 File: fig/systemImplementation/CellType.png Graphic file (type png)
 <use fig/systemImplementation/CellType.png>
 Package pdftex.def Info: fig/systemImplementation/CellType.png  used on input l
-ine 203.
+ine 202.
 (pdftex.def)             Requested size: 149.37958pt x 71.78047pt.
- [36 <./fig/systemImplementation/CellType.png>]
+ [36 <./fig/systemImplementation/CellType.png>] [37]
 
-Package natbib Warning: Citation `12' on page 37 undefined on input line 248.
+Package natbib Warning: Citation `12' on page 38 undefined on input line 252.
 
-[37]
-<fig/softwareResults/IGVlayout.png, id=948, 780.9175pt x 410.53375pt>
+<fig/softwareResults/IGVlayout.png, id=955, 780.9175pt x 410.53375pt>
 File: fig/softwareResults/IGVlayout.png Graphic file (type png)
 <use fig/softwareResults/IGVlayout.png>
 Package pdftex.def Info: fig/softwareResults/IGVlayout.png  used on input line 
-253.
+257.
 (pdftex.def)             Requested size: 426.79135pt x 224.36601pt.
-<fig/softwareResults/IGVcloseup.jpg, id=949, 545.6385pt x 135.50626pt>
+<fig/softwareResults/IGVcloseup.jpg, id=956, 545.6385pt x 135.50626pt>
 File: fig/softwareResults/IGVcloseup.jpg Graphic file (type jpg)
 <use fig/softwareResults/IGVcloseup.jpg>
 Package pdftex.def Info: fig/softwareResults/IGVcloseup.jpg  used on input line
- 268.
+ 272.
 (pdftex.def)             Requested size: 341.43437pt x 84.79457pt.
- [38 <./fig/softwareResults/IGVlayout.png>]
+[38 <./fig/softwareResults/IGVlayout.png>]
 
-Package natbib Warning: Citation `NCBI' on page 39 undefined on input line 280.
+Package natbib Warning: Citation `NCBI' on page 39 undefined on input line 284.
 
 
-<fig/softwareResults/comparison.jpg, id=958, 963.6pt x 426.84468pt>
+<fig/softwareResults/comparison.jpg, id=966, 963.6pt x 426.84468pt>
 File: fig/softwareResults/comparison.jpg Graphic file (type jpg)
 <use fig/softwareResults/comparison.jpg>
 Package pdftex.def Info: fig/softwareResults/comparison.jpg  used on input line
- 294.
+ 298.
 (pdftex.def)             Requested size: 426.79135pt x 189.04973pt.
 [39 <./fig/softwareResults/IGVcloseup.jpg>]) (H6_implementation.tex [40 <./fig/
 softwareResults/comparison.jpg>]
 Chapter 7.
-<fig/speedup/softwareFunctionUsage.jpg, id=973, 576.35326pt x 151.767pt>
+<fig/speedup/softwareFunctionUsage.jpg, id=981, 576.35326pt x 151.767pt>
 File: fig/speedup/softwareFunctionUsage.jpg Graphic file (type jpg)
 <use fig/speedup/softwareFunctionUsage.jpg>
 Package pdftex.def Info: fig/speedup/softwareFunctionUsage.jpg  used on input l
 ine 17.
 (pdftex.def)             Requested size: 320.0935pt x 84.28725pt.
-<fig/speedup/PE.jpg, id=976, 362.5545pt x 194.52675pt>
+<fig/speedup/PE.jpg, id=984, 362.5545pt x 194.52675pt>
 File: fig/speedup/PE.jpg Graphic file (type jpg)
 <use fig/speedup/PE.jpg>
 Package pdftex.def Info: fig/speedup/PE.jpg  used on input line 33.
@@ -1327,7 +1326,7 @@ File: omlphv.fd
 LaTeX Font Info:    Font shape `OML/phv/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 78.
  [43]
-<fig/speedup/dma.png, id=1000, 334.24875pt x 399.4925pt>
+<fig/speedup/dma.png, id=1008, 334.24875pt x 399.4925pt>
 File: fig/speedup/dma.png Graphic file (type png)
 <use fig/speedup/dma.png>
 Package pdftex.def Info: fig/speedup/dma.png  used on input line 116.
@@ -1339,7 +1338,7 @@ L[]CONTIGUOUS or NON[]PHYSICAL[]CONTIGUOUS.
  []
 
 [45] [46]
-<fig/speedup/speedup.jpg, id=1019, 461.92575pt x 260.172pt>
+<fig/speedup/speedup.jpg, id=1027, 461.92575pt x 260.172pt>
 File: fig/speedup/speedup.jpg Graphic file (type jpg)
 <use fig/speedup/speedup.jpg>
 Package pdftex.def Info: fig/speedup/speedup.jpg  used on input line 206.
@@ -1365,8 +1364,8 @@ achine-learning-fpga-
  []
 
 
-Overfull \hbox (284.90802pt too wide) in paragraph at lines 24--27
-[]\OT1/phv/m/n/10.95 Double stranded dna with coloured bases.  https://upload.w
+Overfull \hbox (289.27318pt too wide) in paragraph at lines 24--27
+[]\OT1/phv/m/n/10.95 Double stranded DNA with coloured bases.  https://upload.w
 ikimedia.org/wikipedia/commons/thumb/1/14/Double[]stranded[]DNA[]with[]coloured
 []bases.png/1024px-
  []
@@ -1393,16 +1392,23 @@ hterra.com/papers/modernmicroprocessors/sequential2.png.
 [52
 
 ]
-Underfull \hbox (badness 2707) in paragraph at lines 124--127
+Underfull \hbox (badness 1803) in paragraph at lines 118--121
 []\OT1/phv/m/n/10.95 O.O. Storaasli, D. S. (2011).  Ac-cel-er-at-ing genome se-
-quenc-ing 100x with fp-gas.
+quenc-ing 100x with FP-GAs.
+ []
+
+) (bijlage1.tex [53]
+Appendix A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--10
+
  []
 
 )
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=1062, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=1074, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf  used on input line 175.
@@ -1423,7 +1429,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=1065, page=1, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=1077, page=1, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf, page 1>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
@@ -1434,7 +1440,9 @@ File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
 e 175.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[53]
+[54
+
+]
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf, page 1>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
@@ -1450,7 +1458,7 @@ File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
 e 175.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [54 <./private/back_fiiw_brugge.pdf>]
+ [55 <./private/back_fiiw_brugge.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1460,14 +1468,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 131DE722110C5933589343CC34F9EDE3;4745.
+(rerunfilecheck)             Checksum: 9D02F3F2E09A7A38D42D5B347BE3EA1B;4807.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 23410 strings out of 492484
- 401812 string characters out of 3131051
+ 23419 strings out of 492484
+ 401919 string characters out of 3131051
  634012 words of memory out of 3000000
- 27006 multiletter control sequences out of 15000+200000
+ 27008 multiletter control sequences out of 15000+200000
  591449 words of font info for 122 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,67p,859b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1482,9 +1490,9 @@ s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (69 pages, 2603446 bytes).
+Output written on thesis.pdf (70 pages, 2606646 bytes).
 PDF statistics:
- 1192 PDF objects out of 1200 (max. 8388607)
- 338 named destinations out of 1000 (max. 500000)
- 732 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1205 PDF objects out of 1440 (max. 8388607)
+ 343 named destinations out of 1000 (max. 500000)
+ 740 words of extra memory for PDF output out of 10000 (max. 10000000)
 

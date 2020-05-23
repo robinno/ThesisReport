@@ -18,19 +18,19 @@ Bioinformatics company.
 \newblock http://www.timelogic.com/.
 
 \bibitem[dna, a]{dnachemical}
-Dna chemical structure.
+{DNA} chemical structure.
 
 \bibitem[dna, b]{dna}
-Double stranded dna with coloured bases.
+Double stranded {DNA} with coloured bases.
 \newblock
   https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double\_stranded\_DNA\_with\_coloured\_bases.png/1024px-Double\_stranded\_DNA\_with\_coloured\_bases.png.
 
 \bibitem[fpg, b]{fpgaworkings}
-Fpga diagram.
+{FPGA} diagram.
 \newblock https://evergreen.loyola.edu/dhhoe/www/FPGA\_diagram.png.
 
 \bibitem[11, ]{11}
-Genome of coronavirus, ncbi.
+Genome of coronavirus, {NCBI}.
 \newblock https://www.ncbi.nlm.nih.gov/sra/SRX7852918.
 
 \bibitem[8, ]{8}
@@ -39,7 +39,7 @@ Human karyotype.
   https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
 
 \bibitem[IGV, ]{IGV}
-Igv download page.
+{IGV} download page.
 \newblock http://software.broadinstitute.org/software/igv/.
 
 \bibitem[Nuc, ]{Nucleotide}
@@ -70,8 +70,8 @@ Alexandrov, V. (2006).
 
 \bibitem[Benkrid, 2012]{FPGAeff}
 Benkrid, K. (2012).
-\newblock High performance biological pairwise sequence alignment: Fpga versus
-  gpu versus cell be versus gpp.
+\newblock High performance biological pairwise sequence alignment: {FPGA}
+  versus {GPU} versus {Cell BE} versus {GPP}.
 \newblock {\em International Journal of Reconfigurable Computing}, 2012:Article
   ID 752910.
 
@@ -85,12 +85,6 @@ Dahm, R. (2008).
 James~Arram, e.~a. (2015).
 \newblock Leveraging fpgas for accelerating short read alignment.
 
-\bibitem[L.~Pauling, 1953]{Crick}
-L.~Pauling, R.~C. (1953).
-\newblock A proposed structure for the nucleic acids.
-\newblock {\em Proceedings of the National Academy of Sciences of the United
-  States of America}, 39:84--97.
-
 \bibitem[Mardis, 2006]{SeqCost}
 Mardis, E.~R. (2006).
 \newblock Anticipating the 1,000 dollar genome.
@@ -98,11 +92,11 @@ Mardis, E.~R. (2006).
 
 \bibitem[Mart\'inek, 2020]{martinek}
 Mart\'inek, T. (2020).
-\newblock Xilinx vivado hls.
+\newblock Xilinx vivado {HLS}.
 
 \bibitem[Nathaniel~McVicar, 2012]{FPGAacc2}
 Nathaniel~McVicar, e.~a. (2012).
-\newblock Fpga acceleration of short read alignment.
+\newblock {FPGA} acceleration of short read alignment.
 
 \bibitem[Needleman and Wunsch, 1970]{NW}
 Needleman, S.~B. and Wunsch, C.~D. (1970).
@@ -113,7 +107,7 @@ Needleman, S.~B. and Wunsch, C.~D. (1970).
 \bibitem[Nollet, 2019]{pptHowest}
 Nollet, F. (2019).
 \newblock powerpoint: Howest cursus 'nieuwste ontwikkelingen in de
-  biotechnologie' 2019-2020 hoofdstuk sanger and ngs (dutch).
+  biotechnologie' 2019-2020 hoofdstuk sanger and {NGS} (dutch).
 
 \bibitem[Olson, 2011]{fpgaImpl}
 Olson, C.~B. (2011).
@@ -122,16 +116,22 @@ Olson, C.~B. (2011).
 
 \bibitem[O.O.~Storaasli, 2011]{fpga100x}
 O.O.~Storaasli, D.~S. (2011).
-\newblock Accelerating genome sequencing 100x with fpgas.
+\newblock Accelerating genome sequencing 100x with {FPGAs}.
 \newblock http://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf.
 
-\bibitem[Ross, 2011]{Mendel}
-Ross, J. R.~J. (2011).
+\bibitem[Pauling and Corey, 1953]{Crick}
+Pauling, L. and Corey, R. (1953).
+\newblock A proposed structure for the nucleic acids.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 39:84--97.
+
+\bibitem[Reid and Ross, 2011]{Mendel}
+Reid, J. and Ross, J. (2011).
 \newblock Mendel's genes: towards a full molecular characterization.
 \newblock {\em Genetics}, 189:3--10.
 
-\bibitem[S.~Drury, 2016]{NIPT}
-S.~Drury, M.~Hill, L.~C. (2016).
+\bibitem[S.~Drury and Chitty, 2016]{NIPT}
+S.~Drury, M.~H. and Chitty, L. (2016).
 \newblock {\em Cell-Free Fetal DNA Testing for Prenatal Diagnosis}.
 \newblock Elsevier, Inc.
 
