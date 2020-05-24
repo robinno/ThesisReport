@@ -9,37 +9,29 @@ Repeated entry---line 184 of file bibliografie.bib
  : @misc{mendel
  :             ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 201 of file bibliografie.bib
+I was expecting a `,' or a `}'---line 203 of file bibliografie.bib
  :  
  :  howpublished = {https://en.wikipedia.org/wiki/DNA}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 222 of file bibliografie.bib
+I was expecting a `,' or a `}'---line 225 of file bibliografie.bib
  :  
  :  howpublished = {http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "8"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "10"
-Warning--I didn't find a database entry for "2"
-Warning--I didn't find a database entry for "3"
-Warning--I didn't find a database entry for "4"
-Warning--I didn't find a database entry for "12"
-Warning--I didn't find a database entry for "9"
 Warning--to sort, need author or key in Nucleotide
 Warning--to sort, need author or key in dna
 Warning--to sort, need author or key in dnachemical
+Warning--to sort, need author or key in Karyotype
 Warning--to sort, need author or key in IGV
-Warning--to sort, need author or key in DNAcopy
 Warning--to sort, need author or key in fpgacomparison
+Warning--to sort, need author or key in Lighterra
 Warning--to sort, need author or key in fpgaworkings
 Warning--to sort, need author or key in SAM
 Warning--to sort, need author or key in Down
+Warning--to sort, need author or key in CLCbio
+Warning--to sort, need author or key in Cray
+Warning--to sort, need author or key in Timelogics
 Warning--to sort, need author or key in NCBI
-Warning--empty year in fpgacomparison
-Warning--empty year in dnachemical
-Warning--empty year in dna
-Warning--empty year in fpgaworkings
-Warning--empty year in Nucleotide
+Warning--to sort, need author or key in Galaxy
 (There were 4 error messages)

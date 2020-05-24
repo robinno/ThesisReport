@@ -1,47 +1,78 @@
 \begin{thebibliography}{}
 
-\bibitem[fpg, a]{fpgacomparison}
-Azure machine learning fpga comparison.
-\newblock
-  https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
-
-\bibitem[dna, a]{dnachemical}
-{DNA} chemical structure.
-
-\bibitem[dna, b]{dna}
-Double stranded {DNA} with coloured bases.
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double\_stranded\_DNA\_with\_coloured\_bases.png/1024px-Double\_stranded\_DNA\_with\_coloured\_bases.png.
-
-\bibitem[fpg, b]{fpgaworkings}
-{FPGA} diagram.
-\newblock https://evergreen.loyola.edu/dhhoe/www/FPGA\_diagram.png.
-
-\bibitem[Nuc, ]{Nucleotide}
-Nucleotide chemical structure (modified).
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP\_chemical\_structure.png/1024px-DAMP\_chemical\_structure.png.
-
 \bibitem[SAM, 2020]{SAM}
  (2020).
 \newblock {\em Sequence Alignment/Map Format Specification}.
 \newblock The SAM/BAM Format Specification Working Group.
 
-\bibitem[DNA, 2020]{DNAcopy}
+\bibitem[CLC, 2020]{CLCbio}
  (April 2020).
-\newblock Copying of dna.
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/DNA\_replication\_split\_horizontal.svg/1024px-DNA\_replication\_split\_horizontal.svg.png.
+\newblock Bioinformatics company.
+\newblock http://www.clccell.com/download.html.
+
+\bibitem[Cra, 2020]{Cray}
+ (April 2020).
+\newblock Bioinformatics company.
+\newblock https://www.cray.com/.
+
+\bibitem[Tim, 2020]{Timelogics}
+ (April 2020).
+\newblock Bioinformatics company.
+\newblock http://www.timelogic.com/.
+
+\bibitem[fpg, 2020b]{fpgaworkings}
+ (April 2020b).
+\newblock {FPGA} diagram.
+\newblock https://evergreen.loyola.edu/dhhoe/www/FPGA\_diagram.png.
 
 \bibitem[NCB, 2020]{NCBI}
  (April 2020).
 \newblock Genome of coronavirus, {NCBI}.
 \newblock https://www.ncbi.nlm.nih.gov/sra/SRX7852918.
 
+\bibitem[Kar, 2020]{Karyotype}
+ (April 2020).
+\newblock Human karyotype.
+\newblock
+  https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
+
 \bibitem[IGV, 2020]{IGV}
  (April 2020).
 \newblock {IGV} download page.
 \newblock http://software.broadinstitute.org/software/igv/.
+
+\bibitem[Nuc, 2020]{Nucleotide}
+ (April 2020).
+\newblock Nucleotide chemical structure (modified).
+\newblock
+  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP\_chemical\_structure.png/1024px-DAMP\_chemical\_structure.png.
+
+\bibitem[Gal, 2020]{Galaxy}
+ (April 2020).
+\newblock Online bioinformatics tools.
+\newblock https://usegalaxy.org/.
+
+\bibitem[Lig, 2020]{Lighterra}
+ (April 2020).
+\newblock Sequential working of microprocessor.
+\newblock
+  http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png.
+
+\bibitem[fpg, 2020a]{fpgacomparison}
+ (March 2020a).
+\newblock Azure machine learning fpga comparison.
+\newblock
+  https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
+
+\bibitem[dna, 2020a]{dnachemical}
+ (March 2020a).
+\newblock {DNA} chemical structure.
+
+\bibitem[dna, 2020b]{dna}
+ (May 2020b).
+\newblock Double stranded {DNA} with coloured bases.
+\newblock
+  https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double\_stranded\_DNA\_with\_coloured\_bases.png/1024px-Double\_stranded\_DNA\_with\_coloured\_bases.png.
 
 \bibitem[Dow, 2020]{Down}
  (May 2020).
@@ -74,7 +105,7 @@ James~Arram, e.~a. (2015).
 
 \bibitem[Keirsbilck and Luccofier, 2015]{niptArtikel}
 Keirsbilck, J.~V. and Luccofier, A. (2015).
-\newblock Evolutie van de prenatale screening naar aneuploïdie in het eerste
+\newblock Evolutie van de prenatale screening naar aneuplo\"idie in het eerste
   trimester: van leeftijd tot nipt (dutch).
 \newblock {\em azlink}, 3:8--9.
 
