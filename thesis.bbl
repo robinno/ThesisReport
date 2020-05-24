@@ -5,18 +5,6 @@ Azure machine learning fpga comparison.
 \newblock
   https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
 
-\bibitem[2, ]{2}
-Bioinformatics company.
-\newblock http://www.clccell.com/download.html.
-
-\bibitem[3, ]{3}
-Bioinformatics company.
-\newblock https://www.cray.com/.
-
-\bibitem[4, ]{4}
-Bioinformatics company.
-\newblock http://www.timelogic.com/.
-
 \bibitem[dna, a]{dnachemical}
 {DNA} chemical structure.
 
@@ -29,37 +17,36 @@ Double stranded {DNA} with coloured bases.
 {FPGA} diagram.
 \newblock https://evergreen.loyola.edu/dhhoe/www/FPGA\_diagram.png.
 
-\bibitem[11, ]{11}
-Genome of coronavirus, {NCBI}.
-\newblock https://www.ncbi.nlm.nih.gov/sra/SRX7852918.
-
-\bibitem[8, ]{8}
-Human karyotype.
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
-
-\bibitem[IGV, ]{IGV}
-{IGV} download page.
-\newblock http://software.broadinstitute.org/software/igv/.
-
 \bibitem[Nuc, ]{Nucleotide}
 Nucleotide chemical structure (modified).
 \newblock
   https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP\_chemical\_structure.png/1024px-DAMP\_chemical\_structure.png.
 
-\bibitem[9, ]{9}
-Online bioinformatics tools.
-\newblock https://usegalaxy.org/.
-
-\bibitem[10, ]{10}
-Sequential working of microprocessor.
-\newblock
-  http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png.
-
 \bibitem[SAM, 2020]{SAM}
  (2020).
 \newblock {\em Sequence Alignment/Map Format Specification}.
 \newblock The SAM/BAM Format Specification Working Group.
+
+\bibitem[DNA, 2020]{DNAcopy}
+ (April 2020).
+\newblock Copying of dna.
+\newblock
+  https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/DNA\_replication\_split\_horizontal.svg/1024px-DNA\_replication\_split\_horizontal.svg.png.
+
+\bibitem[NCB, 2020]{NCBI}
+ (April 2020).
+\newblock Genome of coronavirus, {NCBI}.
+\newblock https://www.ncbi.nlm.nih.gov/sra/SRX7852918.
+
+\bibitem[IGV, 2020]{IGV}
+ (April 2020).
+\newblock {IGV} download page.
+\newblock http://software.broadinstitute.org/software/igv/.
+
+\bibitem[Dow, 2020]{Down}
+ (May 2020).
+\newblock Down syndrome.
+\newblock https://en.wikipedia.org/wiki/Down\_syndrome.
 
 \bibitem[Alexandrov, 2006]{gpuImpl}
 Alexandrov, V. (2006).
@@ -84,6 +71,12 @@ Dahm, R. (2008).
 \bibitem[James~Arram, 2015]{FPGAacc}
 James~Arram, e.~a. (2015).
 \newblock Leveraging fpgas for accelerating short read alignment.
+
+\bibitem[Keirsbilck and Luccofier, 2015]{niptArtikel}
+Keirsbilck, J.~V. and Luccofier, A. (2015).
+\newblock Evolutie van de prenatale screening naar aneuploïdie in het eerste
+  trimester: van leeftijd tot nipt (dutch).
+\newblock {\em azlink}, 3:8--9.
 
 \bibitem[Mardis, 2006]{SeqCost}
 Mardis, E.~R. (2006).
@@ -134,6 +127,13 @@ Reid, J. and Ross, J. (2011).
 S.~Drury, M.~H. and Chitty, L. (2016).
 \newblock {\em Cell-Free Fetal DNA Testing for Prenatal Diagnosis}.
 \newblock Elsevier, Inc.
+
+\bibitem[Scheinin, 2014]{SWG}
+Scheinin, I. (2014).
+\newblock Dna copy number analysis of fresh and formalin-fixed specimens by
+  shallow whole-genome sequencing with identification and exclusion of
+  problematic regions in the genome assembly.
+\newblock {\em Genome Res.}, 24.
 
 \bibitem[Smith and Waterman, 1981]{SW}
 Smith, T.~F. and Waterman, M.~S. (1981).

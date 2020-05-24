@@ -36,35 +36,32 @@
 \BOOKMARK [1][-]{section.4.2}{Hardware selection}{chapter.4}% 36
 \BOOKMARK [2][-]{subsection.4.2.1}{Recent advances in High-Level Synthesis}{section.4.2}% 37
 \BOOKMARK [2][-]{subsection.4.2.2}{Platform communication}{section.4.2}% 38
-\BOOKMARK [0][-]{chapter.5}{HLS and SDSoC learning tools}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Using Vivado HLS and Xilinx SDK}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.1.1}{Learning HLS in examples}{section.5.1}% 41
-\BOOKMARK [2][-]{subsection.5.1.2}{Learning how to program target board}{section.5.1}% 42
-\BOOKMARK [1][-]{section.5.2}{SDSoC}{chapter.5}% 43
-\BOOKMARK [2][-]{subsection.5.2.1}{Learning process on matrix multiplication example in SDSoC}{section.5.2}% 44
-\BOOKMARK [0][-]{chapter.6}{Software implementation of the Smith-Waterman algorithm}{}% 45
-\BOOKMARK [1][-]{section.6.1}{The concept}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.2}{General overview of the implementation}{chapter.6}% 47
-\BOOKMARK [2][-]{subsection.6.2.1}{Parameters and Types}{section.6.2}% 48
-\BOOKMARK [2][-]{subsection.6.2.2}{The code structure}{section.6.2}% 49
-\BOOKMARK [1][-]{section.6.3}{Details of the implementation}{chapter.6}% 50
-\BOOKMARK [2][-]{subsection.6.3.1}{File interfaces}{section.6.3}% 51
-\BOOKMARK [2][-]{subsection.6.3.2}{Memory management}{section.6.3}% 52
-\BOOKMARK [2][-]{subsection.6.3.3}{The alignment}{section.6.3}% 53
-\BOOKMARK [1][-]{section.6.4}{Implementation results}{chapter.6}% 54
-\BOOKMARK [2][-]{subsection.6.4.1}{The IGV software}{section.6.4}% 55
-\BOOKMARK [2][-]{subsection.6.4.2}{Sample data}{section.6.4}% 56
-\BOOKMARK [2][-]{subsection.6.4.3}{Results}{section.6.4}% 57
-\BOOKMARK [0][-]{chapter.7}{Accelerating the software implementation using HLS}{}% 58
-\BOOKMARK [1][-]{section.7.1}{Analysing software performance}{chapter.7}% 59
-\BOOKMARK [1][-]{section.7.2}{Recoding parts of the software to be more hardware friendly}{chapter.7}% 60
-\BOOKMARK [2][-]{subsection.7.2.1}{Recoding the Cell generation layer}{section.7.2}% 61
-\BOOKMARK [2][-]{subsection.7.2.2}{Recoding the FillIn layer}{section.7.2}% 62
-\BOOKMARK [1][-]{section.7.3}{Hardware acceleration}{chapter.7}% 63
-\BOOKMARK [2][-]{subsection.7.3.1}{DMA}{section.7.3}% 64
-\BOOKMARK [2][-]{subsection.7.3.2}{Unrolling pragmas}{section.7.3}% 65
-\BOOKMARK [2][-]{subsection.7.3.3}{Comparison with the software}{section.7.3}% 66
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future research}{}% 67
-\BOOKMARK [0][-]{appendix.A}{Implementation code}{}% 68
-\BOOKMARK [1][-]{section.A.1}{Filesystem organization}{appendix.A}% 69
-\BOOKMARK [1][-]{section.A.2}{Code}{appendix.A}% 70
+\BOOKMARK [1][-]{section.4.3}{HLS and SDSoC learning tools}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{Using Vivado HLS and Xilinx SDK}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{SDSoC}{section.4.3}% 41
+\BOOKMARK [0][-]{chapter.5}{Software implementation of the Smith-Waterman algorithm}{}% 42
+\BOOKMARK [1][-]{section.5.1}{The concept}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{General overview of the implementation}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.2.1}{Parameters and Types}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.2}{The code structure}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Details of the implementation}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.3.1}{File interfaces}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.2}{Memory management}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.3}{The alignment}{section.5.3}% 50
+\BOOKMARK [1][-]{section.5.4}{Implementation results}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.4.1}{The IGV software}{section.5.4}% 52
+\BOOKMARK [2][-]{subsection.5.4.2}{Sample data}{section.5.4}% 53
+\BOOKMARK [2][-]{subsection.5.4.3}{Results}{section.5.4}% 54
+\BOOKMARK [0][-]{chapter.6}{Accelerating the software implementation using HLS}{}% 55
+\BOOKMARK [1][-]{section.6.1}{Analysing software performance}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.2}{Recoding parts of the software to be more hardware friendly}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.2.1}{Recoding the Cell generation layer}{section.6.2}% 58
+\BOOKMARK [2][-]{subsection.6.2.2}{Recoding the FillIn layer}{section.6.2}% 59
+\BOOKMARK [1][-]{section.6.3}{Hardware acceleration}{chapter.6}% 60
+\BOOKMARK [2][-]{subsection.6.3.1}{DMA}{section.6.3}% 61
+\BOOKMARK [2][-]{subsection.6.3.2}{Unrolling pragmas}{section.6.3}% 62
+\BOOKMARK [2][-]{subsection.6.3.3}{Comparison with the software}{section.6.3}% 63
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future research}{}% 64
+\BOOKMARK [0][-]{appendix.A}{Implementation code}{}% 65
+\BOOKMARK [1][-]{section.A.1}{Filesystem organization}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.2}{Code}{appendix.A}% 67

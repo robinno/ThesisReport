@@ -338,13 +338,6 @@ SRR11   0   MN98   25   254   7M   *   0   0   GTTAAAG   BBBBBCB
 \end{lcverbatim}
 In this example:
 \begin{itemize}
-	\item The name of the sequence is $SRR11$
-	\item The read is matched in the $[5' -> 3']$ direction
-	\item The match is found at the 25th base of the reference genome
-	\item The mapping quality is 254
-	\item CIGAR = $7M$, so a perfect match
-	\item The sequence is $GTTAAAG$ with quality $BBBBBCB$
-	
 	\item \textbf{Qname}: the name of the sequence: $SRR11$.
 	\item \textbf{FLAG}: this read is matched in the $[5' -> 3']$ direction.
 	\item \textbf{Rname}: the name of the reference genome us $MN98$.
@@ -352,7 +345,6 @@ In this example:
 	\item \textbf{MapQ}: the mapping quality is 254.
 	\item \textbf{CIGAR}: $7M$, so a perfect match.
 	\item \textbf{Rnext, Pnext and Tlen}: data not provided.
-	
 	\item \textbf{Seq and Qual}: the sequence is $GTTAAAG$ with quality $BBBBBCB$.
 \end{itemize}
 
@@ -365,22 +357,21 @@ We will discuss two clinical applications as examples to genome mapping.
 \begin{enumerate}
 	\item \textbf{\emph{NIPT} (non-invasive prenatal testing), a test for detecting genetic defects in a foetus.}\newline
 	During or after conception, DNA can be lost or gained in the fertilized egg cell. This can result in a severe syndrome of the child. For example, Down syndrome is caused by a trisomy of chromosome 21. Normally all chromosomes are present twice in each cell, one from the mother and the other from the father. In Down syndrome patients something went wrong during cell division at the very early stage of development, and the fetus has in its cells three times chromosome 21. 
-	Because chromosome 21 is quite small and does not contain that many genes, the child can survive, though with typical mental and clinical problems.
+	Because chromosome 21 is quite small and does not contain that many genes, the child can survive, though with typical mental and clinical problems~\cite{Down}.
 	
 	\begin{figure}[H]
-		%src: http://www.anatomybox.com/wp-content/uploads/2011/07/Trisomy-21-male.png
-		\centering
-		\includegraphics[width=0.5\textwidth]{clinicalAppl/trisomy-21.png}
-		\caption{Trisomy 21 karyotype. The trisomy of chromosome-21 is indicated by an arrow~\cite{11}.}
+			\centering
+		\includegraphics[width=0.45\textwidth]{clinicalAppl/trisomy21.jpg}
+		\caption{Chromosomes of a patient with trisomy 21 (Down Syndrome). The trisomy of chromosome-21 is encircled~\cite{niptArtikel}.}
 		\label{fig:tri21}
 	\end{figure}
 	
 	
 	Before high throughput DNA sequencing technologies were available like they are today, testing if a fetus has a trisomy-21 could only be done by taking a small amount of amniotic fluid (fluid around the fetus). However, to obtain this fluid there was a need for a risky invasive procedure (called \emph{amniocentesis}) leading sometimes to termination of the pregnancy.
 	
-	It is known that small amounts of DNA of the fetus are present in the blood of the mother, in the cell-free DNA (\emph{cfDNA}) which we find in the blood plasma (the clear, aqueous part of the blood). The blood plasma is used by our body to transport 'waste', including DNA from cells that were broken down. When fetal cells die, which is a normal process, the building blocks of these cells are transported in the plasma of the blood from the mother, included small DNA fragments from the fetus.
+	It is known that small amounts of DNA of the fetus are present in the blood of the mother, in the cell-free DNA (\emph{cfDNA}) which we find in the blood plasma (the clear, aqueous part of the blood). The blood plasma is used by our body to transport 'waste', including DNA from cells that were broken down. When fetal cells die, which is a normal process, the building blocks of these cells are transported in the plasma of the blood from the mother, included small DNA fragments from the fetus~\cite{NIPT}.
 	
-	\emph{NIPT} (non-invasive prenatal testing) is used to analyze DNA derived from the mother's blood. A large number of short cfDNA fragments are sequenced at random.  Then, each sequence is mapped to the whole human genome to find out where it comes from. Finally, the distribution of these reads is calculated. If we observe a higher frequency of reads as compared to normal individuals coming from chromosome-21, it is almost certain that the fetus has Down's syndrome.
+	\emph{NIPT} (non-invasive prenatal testing) is used to analyze DNA derived from the mother's blood. A large number of short cfDNA fragments are sequenced at random.  Then, each sequence is mapped to the whole human genome to find out where it comes from. Finally, the distribution of these reads is calculated. If we observe a higher frequency of reads as compared to normal individuals coming from chromosome-21, it is almost certain that the fetus has Down's syndrome~\cite{NIPT}.
 	
 	\begin{figure}[H]
 		%src: https://mail.google.com/mail/u/0/#search/nipt/FMfcgxwHMsQcgsbNLGvDkDqXLjxnNdWR?projector=1&messagePartId=0.1
@@ -390,10 +381,12 @@ We will discuss two clinical applications as examples to genome mapping.
 		\label{fig:NIPT}
 	\end{figure}
 	
-	Using the same method, we can also find other defects in the number of chromosomes. For example trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome).
+	Using the same method, we can also find other defects in the number of chromosomes. For example trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome)~\cite{NIPT}.
 	
 	\item \textbf{Shallow whole-genome sequencing of tumor DNA.}\newline
 	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be loss or gain of large DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
 	
-	A relatively new technique to detect all gains and losses of DNA material in one single experiment is shallow whole-genome sequencing. The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are.
+	A relatively new technique to detect all gains and losses of DNA material in one single experiment is shallow whole-genome sequencing. The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are~\cite{SWG}.
+	
+	This technique is currently being optimized and validated in the laboratory of the AZ Sint-Jan hospital (in Bruges, Belgium) for analysis of DNA gains or losses important for diagnosis, follow-up and therapy of leukemia's, lymphoma's and some solid tumor types.
 \end{enumerate}

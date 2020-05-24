@@ -102,3 +102,32 @@ Initially, it seemed important that there is good communication between the boar
 
 In the end, no direct communication with the board was implemented. It seemed sufficient to just load the reads with the genome on an SD card, and insert this in the board. After the mapping process, the mapped reads are available on the same SD card. However, if this program would be used in practice, it doesn't seem practical to constantly change out the SD card. Therefore, another solution should be found. A possible solution could be by using the Ethernet stack available as part of the OS, so we could easily use FTP for on and offloading from and to the board.
 
+\section{HLS and SDSoC learning tools}
+\label{ch:InitDiff}
+
+\textit{Disclaimer: The purpose of this section is to show the learning tools I used to achieve a suitable implementation for the genome mapping problem. New programming techniques such as HLS and SDSoC were familiarized. This chapter might be less applicable if the reader is interested in the science and implementation approach of the genome mapping problem, but can be of interest if the reader is also new to the mentioned programming techniques.}
+
+\subsection{Using Vivado HLS and Xilinx SDK}
+
+\paragraph{Learning HLS in examples}
+\label{HLS}
+
+To learn HLS, I used learning materials sent to my by, who works at the Brno University of Technology~\cite{martinek}. It contains a theory part,  and also hands-on lab examples. These labs were worth exploring in this thesis since they contain most concepts of HLS.
+
+\paragraph{Learning how to program target board}
+
+At first, the Xilinx SDK was used to program the board. However, it was found to be unpractical to use, because after programming a "Hello World" application it became clear that it would be bare-metal. This would mean there would be a need to implement a FAT or Ethernet stack ourselves.
+Therefore the SDSoC IDE was used for programming the target board, which structures the application on top of an operating system. This operating system takes care of the Ethernet and FAT stacks.
+
+\subsection{SDSoC}
+
+SDSoC is an IDE developed by Xilinx which is specialized in programming MPSoCs. It is based on the Eclipse IDE, so most of its features are familiar to most programmers. 
+
+The power of SDSoC lays in the ability to transfer functions from software to programmable logic easily. It can be done with just the click of a button. Then, the functions marked for hardware (written in C) will be fitted in the programmable logic using the HLS compiler. However, the syntax is not always accepted since HLS cannot implement every possible programming technique in C yet.
+
+As mentioned earlier, in this implementation we will work on a Linux distribution.
+
+\paragraph{Learning process on matrix multiplication example in SDSoC}
+
+To learn MPSoC and the SDSoC IDE, Xilinx' online available materials were used available at their GitHub page, which includes some hands-on assignments. The assignments use a matrix multiplication example, preinstalled with SDSoC. A weblink to this GitHub page can be found in the references~\cite{sdsoc}.
+
