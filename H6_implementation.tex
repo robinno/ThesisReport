@@ -149,7 +149,7 @@ The bitwidth of (packed) data on the AXI but must be a power of 2, to interface 
 \subsection{Unrolling pragmas}
 Which loops are unrolled and how, is best described in pseudocode, which is found hereunder:
 
-\begin{lcverbatim}
+\begin{lstlisting}
 Create the current maximum (=0) and the position of the maximum;
 Create the 3 arrays (pD, ppD, and cD) of size seqMax;
 
@@ -187,7 +187,7 @@ for currentColumn from 2 to (refLength + seqLength): //The fillIn loop
       pD[i] = cD[i];
 
 return the position of the maximum;
-\end{lcverbatim}
+\end{lstlisting}
 
 \paragraph{The unroll pragma} transforms the loop to multiples copies of the loop body in the FPGA hardware, which allows the loop iterations to be executed in parallel. Since no parameters are given to this pragma, the loops will be unrolled fully, so the whole loop will be executed in parallel. Note that the number of iterations of the loop should be known at compile time.
 

@@ -93,7 +93,7 @@
 \contentsline {subsection}{\numberline {6.3.1}DMA}{42}{subsection.6.3.1}%
 \contentsline {paragraph}{The data\_pack pragma}{43}{section*.70}%
 \contentsline {subsection}{\numberline {6.3.2}Unrolling pragmas}{44}{subsection.6.3.2}%
-\contentsline {paragraph}{The unroll pragma}{45}{section*.71}%
+\contentsline {paragraph}{The unroll pragma}{44}{section*.71}%
 \contentsline {paragraph}{The loop\_tripcount pragma}{45}{section*.72}%
 \contentsline {paragraph}{The pipeline pragma}{45}{section*.73}%
 \contentsline {subsection}{\numberline {6.3.3}Comparison with the software}{45}{subsection.6.3.3}%

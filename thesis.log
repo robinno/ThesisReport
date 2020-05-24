@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  24 MAY 2020 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  25 MAY 2020 00:29
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1372,8 +1372,11 @@ Overfull \hbox (5.3006pt too wide) in paragraph at lines 141--142
 L[]CONTIGUOUS or NON[]PHYSICAL[]CONTIGUOUS.
  []
 
-[43] [44]
-<fig/speedup/speedup.jpg, id=1014, 461.92575pt x 260.172pt>
+[43]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 153.
+ [44]
+<fig/speedup/speedup.jpg, id=1053, 461.92575pt x 260.172pt>
 File: fig/speedup/speedup.jpg Graphic file (type jpg)
 <use fig/speedup/speedup.jpg>
 Package pdftex.def Info: fig/speedup/speedup.jpg  used on input line 206.
@@ -1429,7 +1432,7 @@ quenc-ing 100x with FP-GAs.
 
 ) (bijlage1.tex [51]
 Appendix A.
-<fig/code/dirStructure.png, id=1063, 647.41875pt x 573.14125pt>
+<fig/code/dirStructure.png, id=1101, 647.41875pt x 573.14125pt>
 File: fig/code/dirStructure.png Graphic file (type png)
 <use fig/code/dirStructure.png>
 Package pdftex.def Info: fig/code/dirStructure.png  used on input line 11.
@@ -1441,10 +1444,8 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 ) [52
 
- <./fig/code/dirStructure.png>] (sourceCode/PARAMS.h
-LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 1.
-) (sourceCode/TYPES.h [53]) [54]
+ <./fig/code/dirStructure.png>] (sourceCode/PARAMS.h) (sourceCode/TYPES.h [53])
+ [54]
 (sourceCode/main.c) (sourceCode/top/top.h) (sourceCode/top/impl/top.c [55]
 [56]) (sourceCode/top/displayInfo.h) (sourceCode/top/impl/displayInfo.c
 [57]) (sourceCode/top/Perf_counter.h) (sourceCode/top/impl/Perf_counter.c
@@ -1468,7 +1469,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=2626, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=2664, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf  used on input line 214.
@@ -1489,7 +1490,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<private/back_fiiw_brugge.pdf, id=2629, page=1, 597.55246pt x 845.07718pt>
+<private/back_fiiw_brugge.pdf, id=2667, page=1, 597.55246pt x 845.07718pt>
 File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
 <use private/back_fiiw_brugge.pdf, page 1>
 Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
@@ -1530,10 +1531,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 25907 strings out of 492484
- 440158 string characters out of 3131051
- 944863 words of memory out of 3000000
- 27882 multiletter control sequences out of 15000+200000
+ 25947 strings out of 492484
+ 440753 string characters out of 3131051
+ 944000 words of memory out of 3000000
+ 27884 multiletter control sequences out of 15000+200000
  594062 words of font info for 127 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,67p,859b,2024s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1548,9 +1549,9 @@ s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on thesis.pdf (95 pages, 2843382 bytes).
+Output written on thesis.pdf (95 pages, 2849798 bytes).
 PDF statistics:
- 3100 PDF objects out of 3580 (max. 8388607)
- 1856 named destinations out of 2073 (max. 500000)
+ 3145 PDF objects out of 3580 (max. 8388607)
+ 1894 named destinations out of 2073 (max. 500000)
  737 words of extra memory for PDF output out of 10000 (max. 10000000)
 
