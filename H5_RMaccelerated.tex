@@ -7,17 +7,17 @@
 \chapter{Software implementation of the Smith-Waterman algorithm}
 \label{ch:SoftwareImpl}
 
-This chapter will cover an approach to genome mapping using the Smith-Waterman algorithm. This is a computationally very demanding task, but is more precise than heuristic methods such as FASTA and BLAST.
+This chapter will cover an approach to genome mapping using the Smith-Waterman algorithm. The algorithm is a very arduous task for the computer, but it is more precise than heuristic methods such as FASTA and BLAST.
 
 \section{The concept}
 For genome mapping a sequence of 75 to 300 bases in length should be mapped to the reference genome. The idea behind this mapping and the applications is thoroughly described in chapter \ref{ch:algoverzicht}.
 
-In some implementations of the genome mapping problem, there is often a specific algorithm that can find some candidate locations, where a small S-W is then performed. However, in this implementation, it was chosen to compare the sequences with the whole genome instead of only a few candidate locations. This will yield more precise results, but is also more computationally demanding. However, the current implementation is also applicable for read alignment to a selected region of a genome or a set of genomes from different organisms.
+In some implementations of the genome mapping problem, there is often a specific algorithm that can find some candidate locations. A small S-W is then performed on these candidate locations to find the best fitting one. However, in this implementation, it was decided to compare the sequences with the whole genome instead of only a few candidate locations. This will yield more precise results, but it is also more computationally demanding. However, the current implementation is also applicable for read alignment to a selected region of a genome or a set of genomes from different organisms.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{systemImplementation/pureSWconcept.png}
-	\caption{The concept of the implementation: the sequences is mapped to the whole genome}
+	\caption{The concept of the implementation: the sequences get mapped to the whole genome}
 	\label{fig:concept}
 \end{figure}
 
@@ -169,8 +169,8 @@ The allocation of memory in a C program is usually done using the "malloc" funct
 
 The original idea for the project was to be able to accelerate certain functions using the programmable hardware available in the SoC chip. Since this hardware should be able to access the data in the memory, there two options:
 \begin{enumerate}
-	\item Build a copy of the address translator on the hardware. This would require a lot of work and would slow the whole process of looking things up in memory down.
-	\item Let the software interface the physical memory so that we don't use the virtual addresses. This solution was used in the final implementation
+	\item First option: build a copy of the address translator on the hardware. This would require a lot of work and would slow the whole process of looking up things in memory.
+	\item Second option: let the software interface the physical memory directly, so that we don't use virtual addresses. This solution was used in the final implementation.
 \end{enumerate}
 
 Luckily, Xilinx has published a library with an \emph{sds\_alloc} function. This does the same as the malloc function in the C language but in physical memory instead of the virtual memory.
@@ -195,7 +195,7 @@ The sds\_alloc function returns a pointer to the first address in memory that ha
 \subsubsection{Parameters and types}
 \label{expl:AlignmentParams}
 
-A naive approach to implementing the S-W algorithm might be to have the alignment matrix filled in by the values only. If we would use this approach, it would quickly become clear that the backtracking is impossible, since we also need to know where the value originates from. Also, when generating the CIGAR-string, it is good to know which direction it originates from, as it implies a match (M), insertion (I), or a deletion (D). Since all this information should be stored in the alignment matrix, it seemed a good idea to create a new type. This type was called \emph{CELL}.
+A naive approach to implementing the Smith-Waterman algorithm might be to have the alignment matrix filled in by the values only. If we would use this approach, it would quickly become clear that the backtracking is impossible, since we also need to know where the value originates from. Also, when generating the CIGAR-string, it is good to know which direction it originates from, as it implies a match (M), insertion (I), or a deletion (D). Since all this information should be stored in the alignment matrix, it seemed a good idea to create a new type. This type was called \emph{CELL}.
 
 \begin{figure}[H]
 	\centering
@@ -204,7 +204,7 @@ A naive approach to implementing the S-W algorithm might be to have the alignmen
 	\label{fig:CellType}
 \end{figure}
 
-The cell stores the place it originates from, using a \emph{DIRECTION} attribute. There are 4 possible directions a value can originate from: zero (coded as 0), diagonal (1), up (2), left (3). In case the value from 2 directions is equal, the following priorities are followed: 
+The CELL type stores the place it originates from, using a \emph{DIRECTION} attribute. There are 4 possible directions a value can originate from: zero (coded as 0), diagonal (1), up (2), left (3). In case the value from 2 directions is equal, the following priorities have been followed: 
 \begin{enumerate}
 	\item If the maximum value is zero, the direction will always be (0).
 	\item If the maximum from the diagonal is equal to up or left, the diagonal will be chosen (1), which indicates a match.
@@ -219,31 +219,31 @@ Furthermore, it stores the value using a special type \emph{CELL\_VALUE}. The si
 
 The alignment layer does everything in the alignment of the sequence that has nothing to do with the matrix fill in. That functionality is outsourced to a separate function.
 
-Also, for the CIGAR string, a certain threshold was programmed in. The CIGAR string of a matched read consists of multiple parts. For example: $6M1I7M$ consists of 3 parts; $6M$, $1I$ and $7M$. By limiting the number of parts that are allowed we can define a threshold by which a sequence is considered as "aligned". If both the forward and reverse sequences go over this limit, the sequence will be marked as "unmatched".
+Also, for the CIGAR string (which indicates the matches, insertions and deletions), a certain threshold was programmed in. The CIGAR string of a matched read consists of multiple parts. For example: $6M1I7M$ consists of 3 parts; $6M$, $1I$ and $7M$. By limiting the number of parts that are allowed, we can define a threshold by which a sequence is considered as "aligned". If both the forward and reverse sequences go over this limit, the sequence will be marked as "unmatched".
 
 \begin{enumerate}
 	\item Fill in the matrix using the forward direction of the sequence.
 	\item Store the maximum value of the matrix.
 	\item Generate the CIGAR string for this forward direction. We have to do this so early because you need the full matrix for the CIGAR generation, and we want to reuse the memory for the matrix according to the reverse sequence.
 	\item Check if the CIGAR limit has been exceeded. If not, then store the position of the map. 
-	\item Reverse the sequence
+	\item Reverse the sequence.
 	\item Repeat for the reverse sequence.
 	\item Check for the limit of the CIGAR. If it was exceeded in both forward and reverse sequence, mark it as unmatched.
 	\item Check which read fit best (the forward or reverse one) by comparing the maximum values in the mapping. Assign the best one to the MAPPED\_READ type.
 \end{enumerate}
 
 \paragraph{The fill in layer}
-This is probably the easiest layer of them all, but will also be one of the most computationally demanding ones. It skims over every cell in the matrix, except for the first row and first column, and uses the cell generation layer to generate the cell on that specific spot. Also, while having an iteration that goes over every cell, it is a good idea to use this iteration to find the maximum cell in the matrix, which is the starting point for the backtracking.
+This is probably the easiest layer of them all, but it will also be one of the most computationally demanding ones. It skims over every CELL in the matrix, except for the first row and first column, and uses the CELL generation layer to generate the cell on that specific spot. Also, while having an iteration that goes over every CELL, it is a good idea to use this iteration to find the maximum CELL in the matrix, which is the starting point for the backtracking.
 
-\paragraph{The cell generation layer}
+\paragraph{The CELL generation layer}
 This layer consists of 3 parts:
 \begin{enumerate}
-	\item Generate the 3 values originating from diagonal, up, and left cells, using the formulas described by the S-W algorithm. For this step, the parameters $s$ (for the similarity score) and $gp$ (for the gap penalty) were created. For testing, These were mostly kept on $s=3$ and $gp=2$, but can be easily changed according to one's needs.
+	\item Generate the 3 values originating from diagonal, up, and left cells, using the formulas described by the S-W algorithm. For this step, the parameters $s$ (for the similarity score) and $gp$ (for the gap penalty) were created. For testing, These were mostly kept on $s=3$ and $gp=2$, but can be easily changed according to the application.
 	\item Determine which of these three values is the greatest. If all negative, choose 0.
 	\item Assign the correct value and direction of the newly generated cell.
 \end{enumerate}
 
-This layer must be efficiently coded, and since it runs for every cell (and there are a lot of cells), it can be expected to be the core of the program.
+This layer must be efficiently coded, and since it runs for every CELL (and there are a lot of CELLs), it can be expected to be the core of the program.
 
 \section{Implementation results}
 
@@ -284,14 +284,14 @@ The genome of the coronavirus was found easily online with reference number MN98
 The FASTQ files obtained from a DNA sequence for the coronavirus used in this thesis were found in the SRA (sequence read archive) of the NCBI, submitted by the University of Washington.\cite{NCBI}
 %src: https://www.ncbi.nlm.nih.gov/sra/SRX7852918
 
-Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing~\cite{Galaxy}. %src ook zetten naar galaxy
-By converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference to match our results against. As the application to compare to, the Bowtie 2 algorithm was chosen, which is based on the S-W algorithm.
+Of course, when fitting these fastQ files through the implementation from this thesis, we have to be able to compare it with an implementation which is considered as correct. Therefore, an online tool (Galaxy) was used where a lot of existing bioinformatical algorithms and programs can be performed on given sample data using cloud computing~\cite{Galaxy}. %src ook zetten naar galaxy
+By converting the fastQ files (given by the SRA of the NCBI) using one of these available applications, we can get a pretty good reference for matching against our results. As the application to compare to, the \emph{Bowtie} algorithm was chosen, which is based on the S-W algorithm.
 
 \subsection{Results}
 
-We will compare the results from our implementation with the sample data using the Galaxy online tool, where the Bowtie algorithm was used for the genome mapping.
+We will compare the results of our implementation with the sample data, using the Galaxy online tool, where the Bowtie algorithm was used for the genome mapping.
 
-After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both these mapped reads and the dataset obtained by using the Galaxy online tool were imported into IGV for comparison, which can be seen in figure~\ref{fig:IGVcomparison}
+After running the software implementation overnight with the unmapped sequences from the coronavirus, we obtained a dataset of mapped reads. Both of these mapped reads and the dataset obtained by using the Galaxy online tool, were imported into IGV for comparison, which can be seen in figure~\ref{fig:IGVcomparison}
 
 \begin{figure}[H]
 	\centering

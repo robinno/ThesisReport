@@ -19,7 +19,7 @@ In the SDSoC environment, it is possible to analyze the software running on the 
 	\label{fig:softwareFunctionUsage}
 \end{figure}
 
-When examining this analysis, we should keep in mind that the generateCell, coordToAddr, and sim functions are inline functions used in the FillInMatrix method. Just as suspected the software spends almost all of its time in these methods, so it's worth it to try to accelerate these functions.
+When examining this analysis, we should keep in mind that the generateCell, coordToAddr, and sim functions are inline functions used in the FillInMatrix method. Just as suspected the software spends almost all of its time in these methods, so it's worth trying to accelerate these functions.
 
 \section{Recoding parts of the software to be more hardware friendly}
 
@@ -35,7 +35,7 @@ In 2011, Vermij E. (Delft University of Technology, The Netherlands) studied RVE
 	\label{fig:PE}
 \end{figure}
 
-It seemed like a good idea to reimplement the generatecell function, using this newly found scheme. However, it is also important to keep track of where the value comes from. Therefore, the following (new) code was adopted for generating a cell:
+It seemed like a good idea to reimplement the generatecell function, using this newly found scheme. However, it is also important to keep track of where the value comes from. Therefore, the following (new) code was adopted for generating a CELL:
 
 \begin{lcverbatim}
 //calculate the possible  values
@@ -105,7 +105,7 @@ Note that by programming the Fill in Layer this way, there is no need to read ce
 
 \section{Hardware acceleration}
 
-When accelerating the application, it was chosen to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see Section~\ref{swAnalyse}). Therefore, they were merged into 1 convenient function, which will be transferred to the programmable hardware. 
+When accelerating the application, it was decided to implement the FillIn and cell generation layer in hardware, since they are the functions where most computational time is spent (see Section~\ref{swAnalyse}). Therefore, they were merged into 1 convenient function, which will be transferred to the programmable hardware. 
 
 \subsection{DMA}
 
@@ -132,7 +132,7 @@ The following pragmas were used for the DMA:
 	\item \textbf{access\_pattern} can be either SEQUENTIAL or RANDOM. It specifies the data access pattern by the hardware to the memory. If SEQUENTIAL is used, the interface will be a stream (e.g. ap\_fifo). On the other hand, when RANDOM is used, a RAM interface will be generated.
 	\item \textbf{sys\_port} can be ACP, AFI, GP or MIG. It specifies on which level the memory is interfaces. 
 	\begin{itemize}
-		\item ACP: Lets hardware functions have cache-coherent access to DDR using the PS L2 cache.
+		\item ACP: Allows hardware functions to have cache-coherent access to DDR using the PS L2 cache.
 		\item AFI: Hardware functions have fast non-cache coherent access to DDR via the PS memory controller.
 		\item GP: The processor directly writes/reads data to/from hardware function. This would be inefficient for large data transfers.
 		\item MIG: Hardware functions access DDR from PL via a MIG IP memory controller.
@@ -147,7 +147,7 @@ The following pragmas were used for the DMA:
 The bitwidth of (packed) data on the AXI but must be a power of 2, to interface with the memory. Therefore, it was chosen to change the CELL\_VALUE type to an int16\_t and the direction to uint16\_t. This is however quite wasteful towards memory usage. It can be optimized by remodeling some of the code, but due to time constraints, this was not implemented.
 
 \subsection{Unrolling pragmas}
-Which loops are unrolled and how, is best described in pseudocode, which is found hereunder:
+Which loops are unrolled and how, is best described in pseudocode, which is found below:
 
 \begin{lstlisting}
 Create the current maximum (=0) and the position of the maximum;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  26 MAY 2020 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.12.8)  26 MAY 2020 19:42
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -330,4 +330,1548 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substitut
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen131
+\AM@pageheight=\dimen132
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.def"
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@global@opts=\toks21
+\AM@pagecnt=\count118
+\AM@toc@title=\toks22
+\c@AM@survey=\count119
+\AM@templatesizebox=\box30
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pslatex\pslatex.sty"
+Package: pslatex 1996/07/24 v1.2 pslatex emulation (DPC)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptmcm/m/n on input line 65.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ptmcm/m/it on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/pzccm/m/n on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/psycm/m/n on input line 68.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 74.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 75.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 75.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2019-11-07 L3 programming layer (loader) 
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"
+Package: expl3 2019-11-07 L3 programming layer (code)
+\c_max_int=\count120
+\l_tmpa_int=\count121
+\l_tmpb_int=\count122
+\g_tmpa_int=\count123
+\g_tmpb_int=\count124
+\l__seq_internal_a_int=\count125
+\l__seq_internal_b_int=\count126
+\g__kernel_prg_map_int=\count127
+\c__ior_term_noprompt_ior=\count128
+\c_log_iow=\count129
+\l_iow_line_count_int=\count130
+\l__iow_line_target_int=\count131
+\l__iow_one_indent_int=\count132
+\l__iow_indent_int=\count133
+\c_zero_dim=\dimen133
+\c_max_dim=\dimen134
+\l_tmpa_dim=\dimen135
+\l_tmpb_dim=\dimen136
+\g_tmpa_dim=\dimen137
+\g_tmpb_dim=\dimen138
+\c_zero_skip=\skip49
+\c_max_skip=\skip50
+\l_tmpa_skip=\skip51
+\l_tmpb_skip=\skip52
+\g_tmpa_skip=\skip53
+\g_tmpb_skip=\skip54
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count134
+\l__intarray_loop_int=\count135
+\c__intarray_sp_dim=\dimen139
+\g__intarray_font_int=\count136
+\c__fp_leading_shift_int=\count137
+\c__fp_middle_shift_int=\count138
+\c__fp_trailing_shift_int=\count139
+\c__fp_big_leading_shift_int=\count140
+\c__fp_big_middle_shift_int=\count141
+\c__fp_big_trailing_shift_int=\count142
+\c__fp_Bigg_leading_shift_int=\count143
+\c__fp_Bigg_middle_shift_int=\count144
+\c__fp_Bigg_trailing_shift_int=\count145
+\c__kernel_randint_max_int=\count146
+\g__fp_array_int=\count147
+\l__fp_array_loop_int=\count148
+\l__sort_length_int=\count149
+\l__sort_min_int=\count150
+\l__sort_top_int=\count151
+\l__sort_max_int=\count152
+\l__sort_true_max_int=\count153
+\l__sort_block_int=\count154
+\l__sort_begin_int=\count155
+\l__sort_end_int=\count156
+\l__sort_A_int=\count157
+\l__sort_B_int=\count158
+\l__sort_C_int=\count159
+\l__str_internal_int=\count160
+\c__str_replacement_char_int=\count161
+\l__tl_analysis_normal_int=\count162
+\l__tl_analysis_index_int=\count163
+\l__tl_analysis_nesting_int=\count164
+\l__tl_analysis_type_int=\count165
+\l__regex_internal_a_int=\count166
+\l__regex_internal_b_int=\count167
+\l__regex_internal_c_int=\count168
+\l__regex_balance_int=\count169
+\l__regex_group_level_int=\count170
+\l__regex_mode_int=\count171
+\c__regex_cs_in_class_mode_int=\count172
+\c__regex_cs_mode_int=\count173
+\l__regex_catcodes_int=\count174
+\l__regex_default_catcodes_int=\count175
+\c__regex_catcode_D_int=\count176
+\c__regex_catcode_S_int=\count177
+\c__regex_catcode_L_int=\count178
+\c__regex_catcode_O_int=\count179
+\c__regex_catcode_A_int=\count180
+\c__regex_all_catcodes_int=\count181
+\l__regex_show_lines_int=\count182
+\l__regex_min_state_int=\count183
+\l__regex_max_state_int=\count184
+\l__regex_left_state_int=\count185
+\l__regex_right_state_int=\count186
+\l__regex_capturing_group_int=\count187
+\l__regex_min_pos_int=\count188
+\l__regex_max_pos_int=\count189
+\l__regex_curr_pos_int=\count190
+\l__regex_start_pos_int=\count191
+\l__regex_success_pos_int=\count192
+\l__regex_curr_char_int=\count193
+\l__regex_curr_catcode_int=\count194
+\l__regex_last_char_int=\count195
+\l__regex_case_changed_char_int=\count196
+\l__regex_curr_state_int=\count197
+\l__regex_step_int=\count198
+\l__regex_min_active_int=\count199
+\l__regex_max_active_int=\count266
+\l__regex_replacement_csnames_int=\count267
+\l__regex_match_count_int=\count268
+\l__regex_min_submatch_int=\count269
+\l__regex_submatch_int=\count270
+\l__regex_zeroth_submatch_int=\count271
+\g__regex_trace_regex_int=\count272
+\c_empty_box=\box31
+\l_tmpa_box=\box32
+\l_tmpb_box=\box33
+\g_tmpa_box=\box34
+\g_tmpb_box=\box35
+\l__box_top_dim=\dimen140
+\l__box_bottom_dim=\dimen141
+\l__box_left_dim=\dimen142
+\l__box_right_dim=\dimen143
+\l__box_top_new_dim=\dimen144
+\l__box_bottom_new_dim=\dimen145
+\l__box_left_new_dim=\dimen146
+\l__box_right_new_dim=\dimen147
+\l__box_internal_box=\box36
+\l__coffin_internal_box=\box37
+\l__coffin_internal_dim=\dimen148
+\l__coffin_offset_x_dim=\dimen149
+\l__coffin_offset_y_dim=\dimen150
+\l__coffin_x_dim=\dimen151
+\l__coffin_y_dim=\dimen152
+\l__coffin_x_prime_dim=\dimen153
+\l__coffin_y_prime_dim=\dimen154
+\c_empty_coffin=\box38
+\l__coffin_aligned_coffin=\box39
+\l__coffin_aligned_internal_coffin=\box40
+\l_tmpa_coffin=\box41
+\l_tmpb_coffin=\box42
+\g_tmpa_coffin=\box43
+\g_tmpb_coffin=\box44
+\l__coffin_bounding_shift_dim=\dimen155
+\l__coffin_left_corner_dim=\dimen156
+\l__coffin_right_corner_dim=\dimen157
+\l__coffin_bottom_corner_dim=\dimen158
+\l__coffin_top_corner_dim=\dimen159
+\l__coffin_scaled_total_height_dim=\dimen160
+\l__coffin_scaled_width_dim=\dimen161
+\c__coffin_empty_coffin=\box45
+\l__coffin_display_coffin=\box46
+\l__coffin_display_coord_coffin=\box47
+\l__coffin_display_pole_coffin=\box48
+\l__coffin_display_offset_dim=\dimen162
+\l__coffin_display_x_dim=\dimen163
+\l__coffin_display_y_dim=\dimen164
+\g__char_data_ior=\read2
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3deprecation.def"
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box49
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2019-10-11 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count274
+\g__xparse_grabber_int=\count275
+\l__xparse_m_args_int=\count276
+\l__xparse_v_nesting_int=\count277
+)
+Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"
+File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/sectsty\sectsty.sty"
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.sty"
+Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count278
+\FV@InFile=\read3
+\FV@TabBox=\box50
+\c@FancyVerbLine=\count279
+\FV@StepNumber=\count280
+\FV@OutFile=\write3
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/newverbs\newverbs.sty"
+Package: newverbs 2019/09/09 v1.4 Define new 'verb' commands and short verb. ch
+aracters
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\shortvrb.sty"
+Package: shortvrb 2019/11/10 v2.1k Standard LaTeX documentation package (FMi)
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box51
+\extrarowheight=\dimen166
+\NC@list=\toks23
+\extratabsurround=\skip55
+\backup@length=\skip56
+\ar@cellbox=\box52
+)
+\everycr=\toks24
+\minrowclearance=\skip57
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
+Package: subcaption 2019/09/01 v1.3a Sub-captions (AR)
+\c@subfigure=\count281
+\c@subtable=\count282
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks25
+\float@box=\box53
+\@float@everytoks=\toks26
+\@floatcapt=\box54
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen167
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen168
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+\big@size=\dimen169
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count289
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip17
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks28
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks29
+\eqnshift@=\dimen170
+\alignsep@=\dimen171
+\tagshift@=\dimen172
+\tagwidth@=\dimen173
+\totwidth@=\dimen174
+\lineht@=\dimen175
+\@envbody=\toks30
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen176
+\WF@size=\dimen177
+\c@WF@wrappedlines=\count296
+\WF@box=\box57
+\WF@everypar=\toks32
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/minibox\minibox.sty"
+Package: minibox 2013/06/21 v0.2a Another type of box.
+\l_minibox_rule_dim=\dimen178
+\l_minibox_pad_dim=\dimen179
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip61
+\multirow@cntb=\count297
+\multirow@dima=\skip62
+\bigstrutjot=\dimen180
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyphenat\hyphenat.sty"
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language78
+LaTeX Info: Redefining \_ on input line 43.
+) (fiiw.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/parallel\parallel.sty"
+Package: parallel 2003/04/13, setting two texts parallel (me)
+
+`parallel': setting two texts parallel, (beta 4) 2003/04/13.
+\ParallelLWidth=\dimen181
+\ParallelRWidth=\dimen182
+\ParallelTextWidth=\dimen183
+\ParallelLeftMargin=\dimen184
+\ParallelUserMidSkip=\dimen185
+\ParallelMainMidSkip=\dimen186
+\ParallelLBox=\box58
+\ParallelRBox=\box59
+\ParallelBoxVar=\box60
+\ParallelLTok=\box61
+\ParallelRTok=\box62
+\ParallelBoolVar=\count298
+\ParallelBoolMid=\count299
+\ParallelWhichBox=\count300
+\ParallelMainMode=\count301
+\ParallelFNMode=\count302
+\ParallelLFNCounter=\count303
+\ParallelRFNCounter=\count304
+\ParallelMaxFN=\count305
+\ParallelFNNumMode=\count306
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/textpos\textpos.sty"
+Package: textpos 2019/04/15 v1.9.1
+
+Package: textpos 2019/04/15 1.9.1, absolute positioning of text on the page
+\TP@textbox=\box63
+\TPHorizModule=\dimen187
+\TPVertModule=\dimen188
+\TP@margin=\dimen189
+\TP@absmargin=\dimen190
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen191
+\TP@tbargs=\toks33
+\TP@prevdepth=\dimen192
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 36.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 37.
+
+) (thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 174.
+LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
+ 174.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omspzccm.fd"
+File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
+)
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 174.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=645.87756pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-9.68535pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count307
+\scratchdimen=\dimen193
+\scratchbox=\box64
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen194
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks35
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+42.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 460.
+)
+\c@lstlisting=\count313
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring OFF on input line 174.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\refcount.sty"
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count314
+)
+LaTeX Info: Redefining \ref on input line 174.
+LaTeX Info: Redefining \pageref on input line 174.
+LaTeX Info: Redefining \nameref on input line 174.
+
+(thesis.out) (thesis.out)
+\@outlinefile=\write4
+\openout4 = `thesis.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 84.
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifxetex.sty"
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+))
+
+pdfTeX warning: pdflatex.exe (file ./private/cover_fiiw_brugge.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<private/cover_fiiw_brugge.pdf, id=271, 597.55246pt x 845.07718pt>
+File: private/cover_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/cover_fiiw_brugge.pdf>
+Package pdftex.def Info: private/cover_fiiw_brugge.pdf  used on input line 177.
+
+(pdftex.def)             Requested size: 597.50787pt x 845.07512pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 35.99976pt on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 15.55188pt on input line 177.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 15.55188pt on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 177.
+[1
+
+{C:/Users/robin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./private/c
+over_fiiw_brugge.pdf>]
+LaTeX Font Info:    Trying to load font information for OMS+phv on input line 1
+77.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omsphv.fd"
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--177
+
+ []
+
+[2
+
+]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 177.
+ (voorwoord.tex
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 3.
+<fig/vut.png, id=296, 299.61937pt x 170.88844pt>
+File: fig/vut.png Graphic file (type png)
+<use fig/vut.png>
+Package pdftex.def Info: fig/vut.png  used on input line 24.
+(pdftex.def)             Requested size: 128.0387pt x 73.02687pt.
+LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
+ 25.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1ptmcm.fd"
+File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
+ 25.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlptmcm.fd"
+File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
+ 25.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omxpsycm.fd"
+File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+<fig/kul.png, id=298, 1111.7535pt x 397.485pt>
+File: fig/kul.png Graphic file (type png)
+<use fig/kul.png>
+Package pdftex.def Info: fig/kul.png  used on input line 28.
+(pdftex.def)             Requested size: 128.0387pt x 45.77348pt.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 177.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 177.
+ [3
+
+
+ <./fig/vut.png> <./fig/kul.png>] (samenvatting.tex
+Overfull \hbox (27.73296pt too wide) in paragraph at lines 7--8
+\OT1/phv/m/n/10.95 DNA gese-quenced, en dit groeit ex-po-nen-tieel. Gezien er m
+eer vraag is naar goede aligner-ing-stech-nieken,
+ []
+
+
+Overfull \hbox (4.14192pt too wide) in paragraph at lines 7--8
+\OT1/phv/m/n/10.95 Maar, meestal wor-den deze nieuwe tech-nieken enkel ge-pro-g
+ram-meerd op de stan-daard-pro-ces-soren
+ []
+
+[4
+
+]) [5] (abstract.tex
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/phv/m/sl' will be
+(Font)              scaled to size 9.85492pt on input line 3.
+
+Overfull \hbox (11.3544pt too wide) in paragraph at lines 5--6
+[]\OT1/phv/m/n/10.95 A full genome can-not be de-ter-mined im-me-di-ately, be-c
+ause the ma-chines that de-ter-mine this se-quence
+ []
+
+
+Overfull \hbox (20.36043pt too wide) in paragraph at lines 15--16
+\OT1/phv/m/n/10.95 run-ning the soft-ware im-ple-men-ta-tion with the un-mapped
+ se-quences from the SARS-CoV-2 (coro-n-avirus)
+ []
+
+[6
+
+]) [7] (thesis.toc [8
+
+] [9])
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [10] (thesis.lof
+Overfull \hbox (14.6278pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/phv/m/n/10.95 A short part of a DNA molecule con-tain-ing a $\OT
+1/ptmcm/m/n/10.95 [5[] \OMS/pzccm/m/n/10.95   \OML/ptmcm/m/it/10.95 ACTG \OMS/p
+zccm/m/n/10.95   \OT1/ptmcm/m/n/10.95 3[]]$ \OT1/phv/m/n/10.95 (left) and a com
+-ple-men-tary 
+ []
+
+
+Overfull \hbox (36.91774pt too wide) in paragraph at lines 17--17
+ [][] [][]\OT1/phv/m/n/10.95 Chromosomes of a pa-tient with tri-somy 21 (Down S
+yn-drome). The tri-somy of chromosome-21 
+ []
+
+[11
+
+])
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
+
+ [12] (thesis.lot)
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+ (afkortingen.tex [13
+
+]
+Overfull \hbox (1.26106pt too wide) in paragraph at lines 5--35
+\OT1/phv/b/n/10.95 GPU \OT1/phv/m/n/10.95 - \OT1/phv/m/sl/10.95 Graph-i-cal Pro
+-cess-ing Unit \OT1/phv/m/n/10.95 - A semi-con-duc-tor tech-nol-ogy that is spe
+-cial-ized in video en-cod-ing
+ []
+
+
+Overfull \hbox (17.63036pt too wide) in paragraph at lines 5--35
+\OT1/phv/b/n/10.95 MPSoC \OT1/phv/m/n/10.95 - \OT1/phv/m/sl/10.95 Multi-Process
+or Sys-tem on Chip \OT1/phv/m/n/10.95 - An in-te-grated cir-cuit that con-taint
+s mul-ti-ple mi-cro-pro-ces-sors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--35
+
+ []
+
+[14
+
+]) [15] (H1_Inleiding.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 9.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 9.
+
+Overfull \hbox (19.10094pt too wide) in paragraph at lines 10--11
+\OT1/phv/m/n/10.95 emerg-ing field within bi-ol-ogy. How-ever, ge-nomic ap-pli-
+ca-tions are of-ten very com-pu-ta-tion-ally de-mand-ing,
+ []
+
+<fig/introduction/costPerMegabase.jpg, id=574, 602.25pt x 451.6875pt>
+File: fig/introduction/costPerMegabase.jpg Graphic file (type jpg)
+<use fig/introduction/costPerMegabase.jpg>
+Package pdftex.def Info: fig/introduction/costPerMegabase.jpg  used on input li
+ne 16.
+(pdftex.def)             Requested size: 213.39568pt x 160.05037pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 17.
+
+Overfull \hbox (11.3544pt too wide) in paragraph at lines 21--22
+[]\OT1/phv/m/n/10.95 A full genome can-not be de-ter-mined im-me-di-ately, be-c
+ause the ma-chines that de-ter-mine this se-quence
+ []
+
+[1
+
+
+ <./fig/introduction/costPerMegabase.jpg>]
+Overfull \hbox (15.75835pt too wide) in paragraph at lines 31--32
+ []\OT1/phv/b/n/10.95 Chapter []4[]:[] \OT1/phv/m/n/10.95 The the-o-ret-i-cal b
+ack-ground on ex-ist-ing im-ple-men-ta-tions of the Smith-Waterman al-go-rithm
+ []
+
+) (H2_MBbackground.tex [2]
+Chapter 2.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 12.
+<fig/background/GregorMendel.jpg, id=598, 486.81876pt x 571.13374pt>
+File: fig/background/GregorMendel.jpg Graphic file (type jpg)
+<use fig/background/GregorMendel.jpg>
+Package pdftex.def Info: fig/background/GregorMendel.jpg  used on input line 19
+.
+(pdftex.def)             Requested size: 85.35696pt x 100.1329pt.
+[3
+
+ <./fig/background/GregorMendel.jpg>]
+<fig/background/Nucleotide.png, id=612, 824.07875pt x 430.60875pt>
+File: fig/background/Nucleotide.png Graphic file (type png)
+<use fig/background/Nucleotide.png>
+Package pdftex.def Info: fig/background/Nucleotide.png  used on input line 43.
+(pdftex.def)             Requested size: 320.0935pt x 167.25996pt.
+<fig/background/DoubleHelix.png, id=615, 246.6816pt x 229.8186pt>
+File: fig/background/DoubleHelix.png Graphic file (type png)
+<use fig/background/DoubleHelix.png>
+Package pdftex.def Info: fig/background/DoubleHelix.png  used on input line 61.
+
+(pdftex.def)             Requested size: 128.0387pt x 119.28894pt.
+<fig/background/DNAstructure.png, id=618, 803.0pt x 936.49875pt>
+File: fig/background/DNAstructure.png Graphic file (type png)
+<use fig/background/DNAstructure.png>
+Package pdftex.def Info: fig/background/DNAstructure.png  used on input line 73
+.
+(pdftex.def)             Requested size: 213.39568pt x 248.87119pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+ [4 <./fig/background/Nucleotide.png> <./fig/background/DoubleHelix.png>] [5 <.
+/fig/background/DNAstructure.png>]
+<fig/background/karyotype.png, id=636, 289.08pt x 311.12234pt>
+File: fig/background/karyotype.png Graphic file (type png)
+<use fig/background/karyotype.png>
+Package pdftex.def Info: fig/background/karyotype.png  used on input line 105.
+(pdftex.def)             Requested size: 213.39568pt x 229.66673pt.
+
+[6 <./fig/background/karyotype.png (PNG copy)>]
+<fig/background/HG.png, id=643, 1008.76875pt x 75.8835pt>
+File: fig/background/HG.png Graphic file (type png)
+<use fig/background/HG.png>
+Package pdftex.def Info: fig/background/HG.png  used on input line 123.
+(pdftex.def)             Requested size: 426.79135pt x 32.10474pt.
+<fig/background/enzymCopying.png, id=646, 205.9695pt x 174.05025pt>
+File: fig/background/enzymCopying.png Graphic file (type png)
+<use fig/background/enzymCopying.png>
+Package pdftex.def Info: fig/background/enzymCopying.png  used on input line 14
+3.
+(pdftex.def)             Requested size: 128.0387pt x 108.19418pt.
+ [7 <./fig/background/HG.png>]
+<fig/background/NGS.png, id=657, 216.20775pt x 216.20775pt>
+File: fig/background/NGS.png Graphic file (type png)
+<use fig/background/NGS.png>
+Package pdftex.def Info: fig/background/NGS.png  used on input line 159.
+(pdftex.def)             Requested size: 213.39568pt x 213.39641pt.
+
+[8 <./fig/background/enzymCopying.png>]
+<fig/background/ImProc.jpg, id=671, 505.89pt x 159.59625pt>
+File: fig/background/ImProc.jpg Graphic file (type jpg)
+<use fig/background/ImProc.jpg>
+Package pdftex.def Info: fig/background/ImProc.jpg  used on input line 170.
+(pdftex.def)             Requested size: 426.79135pt x 134.64438pt.
+ [9 <./fig/background/NGS.png> <./fig/background/ImProc.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+) (H3_Methods.tex [10]
+Chapter 3.
+[11
+
+] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[13] [14]
+<fig/ExisMethods/Dependencies_SW.png, id=719, 352.31625pt x 342.27875pt>
+File: fig/ExisMethods/Dependencies_SW.png Graphic file (type png)
+<use fig/ExisMethods/Dependencies_SW.png>
+Package pdftex.def Info: fig/ExisMethods/Dependencies_SW.png  used on input lin
+e 192.
+(pdftex.def)             Requested size: 213.39568pt x 207.3169pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 5.39996pt on input line 205.
+ [15 <./fig/ExisMethods/Dependencies_SW.png>] [16]
+<fig/problemDefinition/MappingRefGen.png, id=734, 823.075pt x 212.795pt>
+File: fig/problemDefinition/MappingRefGen.png Graphic file (type png)
+<use fig/problemDefinition/MappingRefGen.png>
+Package pdftex.def Info: fig/problemDefinition/MappingRefGen.png  used on input
+ line 275.
+(pdftex.def)             Requested size: 405.45047pt x 104.82243pt.
+ [17 <./fig/problemDefinition/MappingRefGen.png>] [18]
+Overfull \hbox (8.60289pt too wide) in paragraph at lines 353--354
+\OT1/phv/m/n/10.95 In vir-tu-ally all se-quenc-ing ap-pli-ca-tions DNA align-me
+nt and ref-er-ence map-ping is needed. Ap-pli-ca-tions
+ []
+
+[19]
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 358.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 358.
+LaTeX Font Info:    Font shape `OT1/phv/b/sl' will be
+(Font)              scaled to size 9.85492pt on input line 358.
+<fig/clinicalAppl/trisomy21.jpg, id=766, 336.25626pt x 246.9225pt>
+File: fig/clinicalAppl/trisomy21.jpg Graphic file (type jpg)
+<use fig/clinicalAppl/trisomy21.jpg>
+Package pdftex.def Info: fig/clinicalAppl/trisomy21.jpg  used on input line 364
+.
+(pdftex.def)             Requested size: 192.0548pt x 141.02985pt.
+ [20 <./fig/clinicalAppl/trisomy21.jpg>]
+<fig/clinicalAppl/NIPTkadering.jpg, id=778, 474.573pt x 530.58224pt>
+File: fig/clinicalAppl/NIPTkadering.jpg Graphic file (type jpg)
+<use fig/clinicalAppl/NIPTkadering.jpg>
+Package pdftex.def Info: fig/clinicalAppl/NIPTkadering.jpg  used on input line 
+379.
+(pdftex.def)             Requested size: 213.39568pt x 238.58168pt.
+) (H4_ELbackground.tex [21 <./fig/clinicalAppl/NIPTkadering.jpg>]
+Chapter 4.
+<fig/elBackground/effVSflex.jpg, id=791, 461.3235pt x 130.086pt>
+File: fig/elBackground/effVSflex.jpg Graphic file (type jpg)
+<use fig/elBackground/effVSflex.jpg>
+Package pdftex.def Info: fig/elBackground/effVSflex.jpg  used on input line 19.
+
+(pdftex.def)             Requested size: 320.0935pt x 90.26161pt.
+[22
+
+ <./fig/elBackground/effVSflex.jpg>]
+<fig/elBackground/CPU.png, id=799, 385.44pt x 145.54375pt>
+File: fig/elBackground/CPU.png Graphic file (type png)
+<use fig/elBackground/CPU.png>
+Package pdftex.def Info: fig/elBackground/CPU.png  used on input line 31.
+(pdftex.def)             Requested size: 320.0935pt x 120.86789pt.
+
+Overfull \hbox (15.79755pt too wide) in paragraph at lines 41--43
+\OT1/phv/m/n/10.95 en-cod-ing and de-cod-ing. Since video en-cod-ing and de-cod
+-ing are ac-tu-ally glo-ri-fied ma-trix ma-nip-u-la-tions,
+ []
+
+[23 <./fig/elBackground/CPU.png>]
+<fig/elBackground/FPGA.png, id=811, 378.58362pt x 210.13892pt>
+File: fig/elBackground/FPGA.png Graphic file (type png)
+<use fig/elBackground/FPGA.png>
+Package pdftex.def Info: fig/elBackground/FPGA.png  used on input line 58.
+(pdftex.def)             Requested size: 320.0935pt x 177.67941pt.
+
+Overfull \hbox (20.84238pt too wide) in paragraph at lines 70--72
+[]\OT1/phv/m/n/10.95 A mas-ter's the-sis from 2011 by Ver-mij E. [[]] has a de-
+tailed anal-y-sis of an FPGA based Smith-Waterman
+ []
+
+
+Overfull \hbox (31.7228pt too wide) in paragraph at lines 75--76
+\OT1/phv/m/n/10.95 MP-SoC (or \OT1/phv/m/sl/10.95 Multi-Processor Sys-tem on Ch
+ip\OT1/phv/m/n/10.95 ) is an in-te-grated cir-cuit that con-tains mul-ti-ple mi
+-cro-pro-ces-sors.
+ []
+
+<fig/elBackground/hardware.jpg, id=819, 442.65375pt x 328.8285pt>
+File: fig/elBackground/hardware.jpg Graphic file (type jpg)
+<use fig/elBackground/hardware.jpg>
+Package pdftex.def Info: fig/elBackground/hardware.jpg  used on input line 79.
+(pdftex.def)             Requested size: 320.0935pt x 237.79497pt.
+[24 <./fig/elBackground/FPGA.png>] [25 <./fig/elBackground/hardware.jpg>]
+Overfull \hbox (4.10895pt too wide) in paragraph at lines 115--116
+ []\OT1/phv/b/n/10.95 Learning HLS in ex-am-ples[] \OT1/phv/m/n/10.95 To learn 
+HLS, I used learn-ing ma-te-ri-als sent to me by Tom[]a[]s Mart[]nek,
+ []
+
+
+Overfull \hbox (7.22818pt too wide) in paragraph at lines 119--121
+\OT1/phv/m/n/10.95 How-ever, it was found to be un-prac-ti-cal to use, be-cause
+ af-ter pro-gram-ming a "Hello World" ap-pli-ca-tion
+ []
+
+[26]
+Overfull \hbox (3.69585pt too wide) in paragraph at lines 132--133
+ []\OT1/phv/b/n/10.95 Learning pro-cess on ma-trix mul-ti-pli-ca-tion ex-am-ple
+ in SD-SoC[] \OT1/phv/m/n/10.95 To learn MP-SoC and the SD-SoC
+ []
+
+) (H5_RMaccelerated.tex [27]
+Chapter 5.
+<fig/systemImplementation/pureSWconcept.png, id=857, 554.07pt x 182.6825pt>
+File: fig/systemImplementation/pureSWconcept.png Graphic file (type png)
+<use fig/systemImplementation/pureSWconcept.png>
+Package pdftex.def Info: fig/systemImplementation/pureSWconcept.png  used on in
+put line 19.
+(pdftex.def)             Requested size: 256.07741pt x 84.43079pt.
+[28
+
+ <./fig/systemImplementation/pureSWconcept.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+
+ []
+
+<fig/systemImplementation/RefAndSeqTypes.png, id=864, 382.42876pt x 302.12875pt
+>
+File: fig/systemImplementation/RefAndSeqTypes.png Graphic file (type png)
+<use fig/systemImplementation/RefAndSeqTypes.png>
+Package pdftex.def Info: fig/systemImplementation/RefAndSeqTypes.png  used on i
+nput line 48.
+(pdftex.def)             Requested size: 149.37958pt x 118.01413pt.
+
+Overfull \hbox (12.78474pt too wide) in paragraph at lines 53--54
+[]\OT1/phv/m/n/10.95 To in-dex these "ar-rays" of bases, a new type was cre-ate
+d for both the se-quence in-dex-ing (\OT1/phv/m/sl/10.95 SEQ[]-IN-DEX\OT1/phv/m
+/n/10.95 )
+ []
+
+[29 <./fig/systemImplementation/RefAndSeqTypes.png>]
+<fig/systemImplementation/organigram.png, id=875, 452.69125pt x 332.24126pt>
+File: fig/systemImplementation/organigram.png Graphic file (type png)
+<use fig/systemImplementation/organigram.png>
+Package pdftex.def Info: fig/systemImplementation/organigram.png  used on input
+ line 89.
+(pdftex.def)             Requested size: 213.39568pt x 156.61473pt.
+ [30]
+<fig/systemImplementation/GenomeType.png, id=895, 221.82875pt x 61.22874pt>
+File: fig/systemImplementation/GenomeType.png Graphic file (type png)
+<use fig/systemImplementation/GenomeType.png>
+Package pdftex.def Info: fig/systemImplementation/GenomeType.png  used on input
+ line 104.
+(pdftex.def)             Requested size: 149.37958pt x 41.23137pt.
+<fig/systemImplementation/ReadType.png, id=896, 221.82875pt x 72.27pt>
+File: fig/systemImplementation/ReadType.png Graphic file (type png)
+<use fig/systemImplementation/ReadType.png>
+Package pdftex.def Info: fig/systemImplementation/ReadType.png  used on input l
+ine 113.
+(pdftex.def)             Requested size: 149.37958pt x 48.66655pt.
+<fig/systemImplementation/mappedReadType.png, id=897, 221.82875pt x 161.60374pt
+>
+File: fig/systemImplementation/mappedReadType.png Graphic file (type png)
+<use fig/systemImplementation/mappedReadType.png>
+Package pdftex.def Info: fig/systemImplementation/mappedReadType.png  used on i
+nput line 123.
+(pdftex.def)             Requested size: 149.37958pt x 108.82382pt.
+ [31 <./fig/systemImplementation/organigram.png> <./fig/systemImplementation/Ge
+nomeType.png> <./fig/systemImplementation/ReadType.png>] [32 <./fig/systemImple
+mentation/mappedReadType.png>]
+Overfull \hbox (6.97746pt too wide) in paragraph at lines 170--171
+[]\OT1/phv/m/n/10.95 The orig-i-nal idea for the project was to be able to ac-c
+el-er-ate cer-tain func-tions us-ing the pro-grammable
+ []
+
+[33]
+<fig/systemImplementation/CellType.png, id=931, 231.86626pt x 111.41624pt>
+File: fig/systemImplementation/CellType.png Graphic file (type png)
+<use fig/systemImplementation/CellType.png>
+Package pdftex.def Info: fig/systemImplementation/CellType.png  used on input l
+ine 202.
+(pdftex.def)             Requested size: 149.37958pt x 71.78047pt.
+ [34 <./fig/systemImplementation/CellType.png>]
+Overfull \hbox (6.04631pt too wide) in paragraph at lines 222--223
+[]\OT1/phv/m/n/10.95 Also, for the CIGAR string (which in-di-cates the matches,
+ in-ser-tions and dele-tions), a cer-tain thresh-old
+ []
+
+
+Overfull \hbox (6.92232pt too wide) in paragraph at lines 241--242
+[]\OT1/phv/m/n/10.95 Generate the 3 val-ues orig-i-nat-ing from di-ag-o-nal, up
+, and left cells, us-ing the for-mu-las de-scribed
+ []
+
+[35]
+<fig/softwareResults/IGVlayout.png, id=961, 780.9175pt x 410.53375pt>
+File: fig/softwareResults/IGVlayout.png Graphic file (type png)
+<use fig/softwareResults/IGVlayout.png>
+Package pdftex.def Info: fig/softwareResults/IGVlayout.png  used on input line 
+257.
+(pdftex.def)             Requested size: 426.79135pt x 224.36601pt.
+<fig/softwareResults/IGVcloseup.jpg, id=962, 545.6385pt x 135.50626pt>
+File: fig/softwareResults/IGVcloseup.jpg Graphic file (type jpg)
+<use fig/softwareResults/IGVcloseup.jpg>
+Package pdftex.def Info: fig/softwareResults/IGVcloseup.jpg  used on input line
+ 272.
+(pdftex.def)             Requested size: 341.43437pt x 84.79457pt.
+ [36 <./fig/softwareResults/IGVlayout.png>]
+Overfull \hbox (22.41985pt too wide) in paragraph at lines 294--295
+[]\OT1/phv/m/n/10.95 After run-ning the soft-ware im-ple-men-ta-tion overnight 
+with the un-mapped se-quences from the coro-n-avirus,
+ []
+
+<fig/softwareResults/comparison.jpg, id=973, 963.6pt x 426.84468pt>
+File: fig/softwareResults/comparison.jpg Graphic file (type jpg)
+<use fig/softwareResults/comparison.jpg>
+Package pdftex.def Info: fig/softwareResults/comparison.jpg  used on input line
+ 298.
+(pdftex.def)             Requested size: 426.79135pt x 189.04973pt.
+[37 <./fig/softwareResults/IGVcloseup.jpg>]) (H6_implementation.tex [38 <./fig/
+softwareResults/comparison.jpg>]
+Chapter 6.
+<fig/speedup/softwareFunctionUsage.jpg, id=988, 576.35326pt x 151.767pt>
+File: fig/speedup/softwareFunctionUsage.jpg Graphic file (type jpg)
+<use fig/speedup/softwareFunctionUsage.jpg>
+Package pdftex.def Info: fig/speedup/softwareFunctionUsage.jpg  used on input l
+ine 17.
+(pdftex.def)             Requested size: 320.0935pt x 84.28725pt.
+<fig/speedup/PE.jpg, id=991, 362.5545pt x 194.52675pt>
+File: fig/speedup/PE.jpg Graphic file (type jpg)
+<use fig/speedup/PE.jpg>
+Package pdftex.def Info: fig/speedup/PE.jpg  used on input line 33.
+(pdftex.def)             Requested size: 320.0935pt x 171.75395pt.
+[39
+
+ <./fig/speedup/softwareFunctionUsage.jpg>]
+File: fig/ExisMethods/Dependencies_SW.png Graphic file (type png)
+<use fig/ExisMethods/Dependencies_SW.png>
+Package pdftex.def Info: fig/ExisMethods/Dependencies_SW.png  used on input lin
+e 64.
+(pdftex.def)             Requested size: 128.0387pt x 124.39014pt.
+ [40 <./fig/speedup/PE.jpg>]
+LaTeX Font Info:    Trying to load font information for OML+phv on input line 7
+8.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\omlphv.fd"
+File: omlphv.fd 
+)
+LaTeX Font Info:    Font shape `OML/phv/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 78.
+ [41]
+<fig/speedup/dma.png, id=1016, 334.24875pt x 399.4925pt>
+File: fig/speedup/dma.png Graphic file (type png)
+<use fig/speedup/dma.png>
+Package pdftex.def Info: fig/speedup/dma.png  used on input line 116.
+(pdftex.def)             Requested size: 106.69783pt x 127.52322pt.
+ [42 <./fig/speedup/dma.png>]
+Overfull \hbox (2.87604pt too wide) in paragraph at lines 132--133
+[]\OT1/phv/b/n/10.95 access[]-pat-tern \OT1/phv/m/n/10.95 can be ei-ther SE-QUE
+N-TIAL or RAN-DOM. It spec-i-fies the data ac-cess pat-tern
+ []
+
+
+Overfull \hbox (5.3006pt too wide) in paragraph at lines 141--142
+[]\OT1/phv/b/n/10.95 mem[]-at-tribute \OT1/phv/m/n/10.95 can be ei-ther PHYS-I-
+CAL[]-CON-TIGU-OUS or NON[]-PHYS-I-CAL[]-CON-TIGU-OUS.
+ []
+
+[43]
+LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 153.
+
+Overfull \hbox (2.4244pt too wide) in paragraph at lines 192--193
+ []\OT1/phv/b/n/10.95 The un-roll pragma[] \OT1/phv/m/n/10.95 trans-forms the l
+oop to mul-ti-ples copies of the loop body in the FPGA hard-ware,
+ []
+
+[44]
+<fig/speedup/speedup.jpg, id=1073, 461.92575pt x 260.172pt>
+File: fig/speedup/speedup.jpg Graphic file (type jpg)
+<use fig/speedup/speedup.jpg>
+Package pdftex.def Info: fig/speedup/speedup.jpg  used on input line 206.
+(pdftex.def)             Requested size: 341.43437pt x 192.31384pt.
+) (H8_conclusions.tex [45 <./fig/speedup/speedup.jpg>]
+Chapter 7.
+File: fig/softwareResults/comparison.jpg Graphic file (type jpg)
+<use fig/softwareResults/comparison.jpg>
+Package pdftex.def Info: fig/softwareResults/comparison.jpg  used on input line
+ 28.
+(pdftex.def)             Requested size: 426.79135pt x 189.04973pt.
+[46
+
+]
+File: fig/speedup/speedup.jpg Graphic file (type jpg)
+<use fig/speedup/speedup.jpg>
+Package pdftex.def Info: fig/speedup/speedup.jpg  used on input line 41.
+(pdftex.def)             Requested size: 341.43437pt x 192.31384pt.
+ [47]
+Overfull \hbox (14.30309pt too wide) in paragraph at lines 57--58
+\OT1/phv/m/n/10.95 hard-ware. In the cur-rent im-ple-men-ta-tion this was not i
+m-ple-mented since the pro-grammable
+ []
+
+
+Overfull \hbox (8.46788pt too wide) in paragraph at lines 63--64
+[]\OT1/phv/m/n/10.95 In a se-quence, a base po-si-tion may be sud-denly marked 
+with an 'N' char-ac-ter, which rep-re-sents
+ []
+
+[48]
+Overfull \hbox (11.531pt too wide) in paragraph at lines 76--77
+ []\OT1/phv/b/n/10.95 Future work - rec-om-men-da-tions for re-evaluating the a
+lign-ment method[] \OT1/phv/m/n/10.95 In the field of align-ment
+ []
+
+) (thesis.bbl [49]
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+[]\OT1/phv/m/n/10.95 (March 2020a).  Azure ma-chine learn-ing FPGA com-par-i-so
+n.
+ []
+
+[50
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+[]\OT1/phv/m/n/10.95 Vergel, R. (2018).  \OT1/phv/m/sl/10.95 Get-ting started w
+ith SD-SoC\OT1/phv/m/n/10.95 .  Xil-inx Inc.
+ []
+
+) (bijlage1.tex [51]
+Appendix A.
+<fig/code/dirStructure.png, id=1121, 647.41875pt x 573.14125pt>
+File: fig/code/dirStructure.png Graphic file (type png)
+<use fig/code/dirStructure.png>
+Package pdftex.def Info: fig/code/dirStructure.png  used on input line 11.
+(pdftex.def)             Requested size: 341.43437pt x 302.2592pt.
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+) [52
+
+ <./fig/code/dirStructure.png>] (sourceCode/PARAMS.h
+Overfull \hbox (156.41458pt too wide) in paragraph at lines 16--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (53.81354pt too wide) in paragraph at lines 21--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][]  
+ []
+
+) (sourceCode/TYPES.h
+Overfull \hbox (97.01398pt too wide) in paragraph at lines 11--13
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[53]
+Overfull \hbox (10.6131pt too wide) in paragraph at lines 61--62
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+) (sourceCode/main.c [54]) (sourceCode/top/top.h
+Overfull \hbox (10.6131pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+) (sourceCode/top/impl/top.c
+Overfull \hbox (102.41403pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][]  
+ []
+
+[55]
+Overfull \hbox (26.81326pt too wide) in paragraph at lines 63--64
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (26.81326pt too wide) in paragraph at lines 74--75
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (37.61337pt too wide) in paragraph at lines 78--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][]  
+ []
+
+[56]
+Overfull \hbox (5.21304pt too wide) in paragraph at lines 87--88
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (5.21304pt too wide) in paragraph at lines 88--89
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+) (sourceCode/top/displayInfo.h) (sourceCode/top/impl/displayInfo.c [57])
+(sourceCode/top/Perf_counter.h) (sourceCode/top/impl/Perf_counter.c [58])
+(sourceCode/RescManagement/FileMng/ConversionFunctions.h)
+(sourceCode/RescManagement/FileMng/impl/ConversionFunctions.c [59])
+(sourceCode/RescManagement/FileMng/FASTA_interface.h)
+(sourceCode/RescManagement/FileMng/impl/FASTA_interface.c [60]
+Overfull \hbox (10.6131pt too wide) in paragraph at lines 38--39
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+) (sourceCode/RescManagement/FileMng/FASTQ_interface.h [61])
+(sourceCode/RescManagement/FileMng/impl/FASTQ_interface.c [62] [63])
+(sourceCode/RescManagement/FileMng/SAM_interface.h [64])
+(sourceCode/RescManagement/FileMng/impl/SAM_interface.c)
+(sourceCode/RescManagement/MemoryMng/initMem.h [65])
+(sourceCode/RescManagement/MemoryMng/impl/initMem.c [66])
+(sourceCode/Alignment/align.h
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 10--11
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (64.61365pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (21.41321pt too wide) in paragraph at lines 17--18
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (5.21304pt too wide) in paragraph at lines 43--45
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (5.21304pt too wide) in paragraph at lines 47--48
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[67]
+Overfull \hbox (21.41321pt too wide) in paragraph at lines 49--50
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (37.61337pt too wide) in paragraph at lines 60--61
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][]  
+ []
+
+) (sourceCode/Alignment/impl/align.c [68] [69]
+Overfull \hbox (10.6131pt too wide) in paragraph at lines 143--144
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][]  
+ []
+
+[70] [71]
+Overfull \hbox (129.4143pt too wide) in paragraph at lines 250--251
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][]  
+ []
+
+[72]
+Overfull \hbox (97.01398pt too wide) in paragraph at lines 272--273
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+  
+ []
+
+) (sourceCode/Alignment/displayForDebug.h
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+[73]) (sourceCode/Alignment/impl/displayForDebug.c [74])
+(sourceCode/Alignment/smithWaterman.h
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+) (sourceCode/Alignment/impl/smithWaterman.c [75] [76])
+(sourceCode/Alignment/smithWatermanHW.h
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 16--17
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (16.01315pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (156.41458pt too wide) in paragraph at lines 22--23
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (10.6131pt too wide) in paragraph at lines 23--24
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (275.21579pt too wide) in paragraph at lines 24--26
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][]  
+ []
+
+) (sourceCode/Alignment/impl/smithWatermanHW.c [77] [78]))
+
+pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<private/back_fiiw_brugge.pdf, id=2715, 597.55246pt x 845.07718pt>
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf  used on input line 218.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf  used on input line 218.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./private/back_fiiw_brugge.pdf): PDF inclusi
+on: found PDF version <1.7>, but at most version <1.5> allowed
+<private/back_fiiw_brugge.pdf, id=2718, page=1, 597.55246pt x 845.07718pt>
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf, page 1>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
+e 218.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf, page 1>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
+e 218.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[79]
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf, page 1>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
+e 218.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf, page 1>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
+e 218.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: private/back_fiiw_brugge.pdf Graphic file (type pdf)
+<use private/back_fiiw_brugge.pdf, page 1>
+Package pdftex.def Info: private/back_fiiw_brugge.pdf , page1 used on input lin
+e 218.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [80 <./private/back_fiiw_brugge.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+ (thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 923E4B20D0584D2E3B4FF52D85372619;4669.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+ ) 
+Here is how much of TeX's memory you used:
+ 26002 strings out of 492484
+ 441545 string characters out of 3131051
+ 960990 words of memory out of 3000000
+ 27931 multiletter control sequences out of 15000+200000
+ 594062 words of font info for 127 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,18n,67p,853b,2022s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/
+ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on thesis.pdf (95 pages, 2851589 bytes).
+PDF statistics:
+ 3166 PDF objects out of 3580 (max. 8388607)
+ 1898 named destinations out of 2073 (max. 500000)
+ 737 words of extra memory for PDF output out of 10000 (max. 10000000)
+

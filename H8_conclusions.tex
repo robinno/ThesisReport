@@ -54,11 +54,11 @@ the following optimizations could improve the proposed implementation:
 \begin{itemize}
 	\item Parallelize the algorithm even more. This can be achieved in the following ways:
 	\begin{itemize}
-		\item Map the forward and the reverse sequence in parallel. However, this will require double the memory space (for the fill-in matrix) and double the rescources of the programmable hardware. In the current implementation this was not implemented since the programmable hardware is already utilized for more than 50\%.
+		\item Map the forward and the reverse sequence in parallel. However, this will require double the memory space (for the fill-in matrix) and double the resources of the programmable hardware. In the current implementation this was not implemented since the programmable hardware is already utilized for more than 50\%.
 		\item Parallelize the mapping of multiple sequences at the same time. Each sequence is completely independent of the other sequences, so their mapping could also be executed concurrently. This was not implemented in the current implementation, for the same reasons.
 	\end{itemize}
 	
-	\item Treat the alignement gap opening and extension separately. In the current implementation, the gap penalty is treated linearly. However, the S-W algorithm could be refined to include an affine gap penalty. More info on the gap penalty can be found at Subsection~\ref{expl:SWanalyse}.
+	\item Treat the alignment gap opening and extension separately. In the current implementation, the gap penalty is treated linearly. However, the Smith-Waterman algorithm could be refined to include an affine gap penalty. More info on the gap penalty can be found at Subsection~\ref{expl:SWanalyse}.
 	
 	\item In a sequence, a base position may be suddenly marked with an 'N' character, which represents a base that was unidentified in the primary processing. In this thesis, it was decided to cut the sequence short at the moment an 'N' character is registered. However, a possible improvement might be to keep these unidentified bases in the alignment as a "generic" base and in this way improve the accuracy of the alignment. More info on the current implementation can be found at Subsection~\ref{codeStructure}.
 	
@@ -67,7 +67,7 @@ the following optimizations could improve the proposed implementation:
 	
 	Some of these types could be fixed using the std\_logic\_vector from VHDL, for example for the BASE and DIR type. However, these types are also used in software-implemented parts of the application, so a separate type would be needed for the hardware and software part.
 	
-	\item If this implementation would be used in practice, there would be a need to find an easier way to on and offload data to board. Currently,  this is accomplished by changing out the SD card, which could easily be improved using FTP since an Ethernet stack is, which are already implemented by the operating system. The speed the data would be transferred at, is not important since we can assume the time it takes to map the sequence takes far longer. 
+	\item If this implementation would be used in practice, there would be a need to find an easier way to on and offload data to board. Currently,  this is accomplished by changing out the SD card, which could easily be improved using FTP since an Ethernet stack is, which are already implemented by the operating system. The speed at which the data is transferred, is not important since we can assume that the time it takes to map the sequence takes much longer. 
 	
 \end{itemize}
 

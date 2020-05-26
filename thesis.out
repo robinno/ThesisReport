@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Smith-Waterman}{section.3.3}% 26
 \BOOKMARK [1][-]{section.3.4}{Problem definition}{chapter.3}% 27
 \BOOKMARK [2][-]{subsection.3.4.1}{Mapping to a reference genome}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.2}{The sam and bam file format}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.2}{The SAM and BAM file format}{section.3.4}% 29
 \BOOKMARK [2][-]{subsection.3.4.3}{Clinical application}{section.3.4}% 30
 \BOOKMARK [0][-]{chapter.4}{Platforms for accelerating the Smith-Waterman algorithm}{}% 31
 \BOOKMARK [1][-]{section.4.1}{Overview of possible hardware}{chapter.4}% 32

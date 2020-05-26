@@ -1,10 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[SAM, 2020]{SAM}
- (2020).
-\newblock {\em Sequence Alignment/Map Format Specification}.
-\newblock The SAM/BAM Format Specification Working Group.
-
 \bibitem[CLC, 2020]{CLCbio}
  (April 2020).
 \newblock Bioinformatics company.
@@ -33,8 +28,7 @@
 \bibitem[Kar, 2020]{Karyotype}
  (April 2020).
 \newblock Human karyotype.
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Karyotype.png/800px-Karyotype.png.
+\newblock https://en.wikipedia.org/wiki/Human\_genome.
 
 \bibitem[IGV, 2020]{IGV}
  (April 2020).
@@ -44,8 +38,7 @@
 \bibitem[Nuc, 2020]{Nucleotide}
  (April 2020).
 \newblock Nucleotide chemical structure (modified).
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DAMP\_chemical\_structure.png/1024px-DAMP\_chemical\_structure.png.
+\newblock https://en.wikipedia.org/wiki/Nucleotide.
 
 \bibitem[Gal, 2020]{Galaxy}
  (April 2020).
@@ -55,24 +48,26 @@
 \bibitem[Lig, 2020]{Lighterra}
  (April 2020).
 \newblock Sequential working of microprocessor.
-\newblock
-  http://www.lighterra.com/papers/modernmicroprocessors/sequential2.png.
+\newblock http://www.lighterra.com/.
 
 \bibitem[fpg, 2020a]{fpgacomparison}
  (March 2020a).
 \newblock Azure machine learning {FPGA} comparison.
-\newblock
-  https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
+\newblock https://docs.microsoft.com/en-us/azure.
 
 \bibitem[dna, 2020a]{dnachemical}
  (March 2020a).
 \newblock {DNA} chemical structure.
 
+\bibitem[SAM, 2020]{SAM}
+ (March 2020).
+\newblock {\em Sequence Alignment/Map Format Specification}.
+\newblock The SAM/BAM Format Specification Working Group.
+
 \bibitem[dna, 2020b]{dna}
  (May 2020b).
 \newblock Double stranded {DNA} with coloured bases.
-\newblock
-  https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Double\_stranded\_DNA\_with\_coloured\_bases.png/1024px-Double\_stranded\_DNA\_with\_coloured\_bases.png.
+\newblock https://en.wikipedia.org/wiki/DNA.
 
 \bibitem[Dow, 2020]{Down}
  (May 2020).
@@ -95,13 +90,18 @@ Benkrid, K. (2012).
 
 \bibitem[Dahm, 2008]{Miescher}
 Dahm, R. (2008).
-\newblock Discovering dna: Friedrich miescher and the early years of nucleic
+\newblock Discovering {DNA}: Friedrich miescher and the early years of nucleic
   acid research.
 \newblock {\em Human Genetics}, 122:565--81.
 
+\bibitem[Drury et~al., 2016]{NIPT}
+Drury, S., Hill, M., and Chitty, L. (2016).
+\newblock {\em Cell-Free Fetal DNA Testing for Prenatal Diagnosis}.
+\newblock Elsevier, Inc.
+
 \bibitem[James~Arram, 2015]{FPGAacc}
 James~Arram, e.~a. (2015).
-\newblock Leveraging fpgas for accelerating short read alignment.
+\newblock Leveraging {FPGAs} for accelerating short read alignment.
 
 \bibitem[Keirsbilck and Luccofier, 2015]{niptArtikel}
 Keirsbilck, J.~V. and Luccofier, A. (2015).
@@ -138,11 +138,6 @@ Olson, C.~B. (2011).
 \newblock An {FPGA} acceleration of short read human genome mapping.
 \newblock Master's thesis, University of Washington.
 
-\bibitem[O.O.~Storaasli, 2011]{fpga100x}
-O.O.~Storaasli, D.~S. (2011).
-\newblock Accelerating genome sequencing 100x with {FPGAs}.
-\newblock http://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf.
-
 \bibitem[Pauling and Corey, 1953]{Crick}
 Pauling, L. and Corey, R. (1953).
 \newblock A proposed structure for the nucleic acids.
@@ -154,14 +149,9 @@ Reid, J. and Ross, J. (2011).
 \newblock Mendel's genes: towards a full molecular characterization.
 \newblock {\em Genetics}, 189:3--10.
 
-\bibitem[S.~Drury and Chitty, 2016]{NIPT}
-S.~Drury, M.~H. and Chitty, L. (2016).
-\newblock {\em Cell-Free Fetal DNA Testing for Prenatal Diagnosis}.
-\newblock Elsevier, Inc.
-
 \bibitem[Scheinin, 2014]{SWG}
 Scheinin, I. (2014).
-\newblock Dna copy number analysis of fresh and formalin-fixed specimens by
+\newblock {DNA} copy number analysis of fresh and formalin-fixed specimens by
   shallow whole-genome sequencing with identification and exclusion of
   problematic regions in the genome assembly.
 \newblock {\em Genome Res.}, 24.
@@ -170,6 +160,11 @@ Scheinin, I. (2014).
 Smith, T.~F. and Waterman, M.~S. (1981).
 \newblock Identification of common molecular subsequences.
 \newblock {\em Journal of Molecular Biology}, 147:195--197.
+
+\bibitem[Storaasli and Strenski, 2011]{fpga100x}
+Storaasli, O. and Strenski, D. (2011).
+\newblock Accelerating genome sequencing 100x with {FPGAs}.
+\newblock http://ft.ornl.gov/~olaf/pubs/RSSIOlafDave.pdf.
 
 \bibitem[Vergel, 2018]{sdsoc}
 Vergel, R. (2018).
