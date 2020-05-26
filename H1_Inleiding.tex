@@ -7,14 +7,14 @@
 \chapter{Introduction}
 
 \section{Introduction}
-Over the last few decades, biologists have made major steps in trying to understand life; animals, humans, and plants. Since the rise of DNA sequencing techniques, genomics has become an emerging field within biology. However, genomic applications are often very computationally demanding, due to the size of the involved datasets, for example when analyzing the 3 billion base pairs of the human genome.
+Over the last few decades, biologists have made major steps in trying to understand life: animals, humans, and plants. Since the rise of DNA sequencing techniques, genomics has become an emerging field within biology. However, genomic applications are often very computationally demanding, due to the size of the involved datasets, for example when analyzing the 3 billion base pairs of the human genome.
 
 One fundamental application in genomics is short read genome mapping, which attempts to locate a short read of DNA on the full genome. If enough of such short reads are mapped, some interesting results can be achieved. For example, if enough reads are mapped, we can extrapolate the full genome of the organism. Even the amount of reads in one place (referred to as the reading depth) can give useful information, e.g. the presence of a trisomy of chromosome-21 in Down syndrome patients.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{introduction/costPerMegabase.jpg}
-	\caption{Megabase means 1 million nucleotide bases. In this graph we can see that the cost of sequencing decreases significantly overtime, hence the demand of sequencing increases. This increases is more than Moore's law, which is the reason we that mapping techniques should improve to keep up with the demand~\cite{SeqCost}.}
+	\caption{Megabase means 1 million nucleotide bases. In this graph we can see that the cost of sequencing decreases significantly over time, hence the demand of sequencing increases. This increases is more than Moore's law, which is the reason that mapping techniques should improve to keep up with the demand~\cite{SeqCost}.}
 	\label{fig:costMb}
 \end{figure}
 
@@ -28,8 +28,7 @@ The further chapters of this thesis are organized as follows:
 
 \paragraph{Chapter~\ref{ch:MBbackground}:} The theoretical background in genetics, molecular biology, and DNA, as well as the sequencing technology.
 \paragraph{Chapter~\ref{ch:algoverzicht}:} The theoretical background regarding alignment, existing alignment algorithms, as well as the problem statement with some example clinical applications.
-\paragraph{Chapter~\ref{ch:Platforms}:} The theoretical background on existing implementations of the Smith-Waterman algorithm on different kinds of hardware, as well as the hardware selection process.
-\paragraph{Chapter~\ref{ch:InitDiff}:} A chapter which covers the difficulties I had when learning the required programming techniques, covering High-Level Synthesis and SDSoC. 
+\paragraph{Chapter~\ref{ch:Platforms}:} The theoretical background on existing implementations of the Smith-Waterman algorithm on different kinds of hardware, as well as the hardware selection process. This chapter also covers the difficulties I had when learning the required programming techniques, covering High-Level Synthesis and SDSoC.
 \paragraph{Chapter~\ref{ch:SoftwareImpl}:} A detailed description of the developed software implementation, as well as the results achieved with this implementation.
 \paragraph{Chapter~\ref{ch:HardwareImpl}:} The analysis of the software implementation and where to accelerate using FPGA hardware. Also, the comparison between the accelerated version and the software version.
 \paragraph{Chapter~\ref{ch:Conclusions}:} Conclusion and future work.

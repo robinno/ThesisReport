@@ -77,7 +77,7 @@ The most used algorithms are often categorized in 2 ways:
 	\item dynamic algorithms versus heuristic algorithms: dynamic algorithms are exact but slow and computationally demanding, whereas heuristic algorithms are faster but are approximations and the best alignment is not guaranteed.
 \end{itemize}
 
-Hereunder is a schematic view of some algorithms that are used in practice:
+A schematic view of some algorithms that are used in practice can be found below:
 
 \begin{table}[H]
 	\begin{tabular}{lllll}
@@ -94,13 +94,13 @@ Hereunder is a schematic view of some algorithms that are used in practice:
 Keep in mind, a lot of other claimed "algorithms" (for example BFAST, ...), are accelerated versions of the Smith-Waterman algorithm.
 
 \subsection{Needleman-Wunsch}
-Needleman and Wunch proposed a new algorithm for genetic sequence alignment in 1970, now known as the \emph{Needleman-Wunsch} (N-W) algorithm~\cite{NW}. Since this algorithm is meant for global alignment, which is seldomly used in practice, further discussion of the algorithm will not be done. However, N-W has a lot of similarities with the Smith-Waterman algorithm, discussed in the next section.
+Needleman and Wunch proposed a new algorithm for genetic sequence alignment in 1970, now known as the \emph{Needleman-Wunsch} (N-W) algorithm~\cite{NW}. Since this algorithm is meant for global alignment, which is rarely used in practice, further discussion of the algorithm will not be done. However, N-W has a lot of similarities with the Smith-Waterman algorithm, discussed in the next section.
 
 \subsection{Smith-Waterman}
 \label{expl:SWanalyse}
 The \emph{Smith-Waterman} (S-W) algorithm was first proposed by Temple F. Smith and Michael S. Waterman in 1981\cite{SW}. It is a variation on the N-W algorithm, adapted for local alignment. It is a dynamic programming technique, so an optimal local alignment is guaranteed. \\
 
-The core of the algorithm is a matrix fillup with data dependencies on the previous cells. Hereunder an analysis of the algorithm:
+The core of the algorithm is a matrix fillup with data dependencies on the previous cells. An analysis of the algorithm can be found below:
 
 \begin{enumerate}
 	\item Symbols used in the analysis:
@@ -266,7 +266,7 @@ From the DNA sequencing machines, we get a big amount of reads in the FASTQ form
 
 In most cases, the first step in the analysis of the reads is knowing from which part of the genome it's derived. Typically, the read is compared with the whole genome in a local alignment, for example using the Smith-Waterman algorithm. As an output, we would get the position in the human genome and an alignment with its score (how well the sequence fits in that spot). This practice is commonly referred to as \emph{Mapping to reference genome}.
 
-Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in Subsection~\ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, It leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in Chapter~\ref{ch:Platforms}) since S-W is heavily parallelizable.
+Since the reads from DNA sequencing machines are 75 to 300 bases long, and the whole human genome is approximately 3 billion bases, this comparison is computationally a very intensive task. If we analyze the S-W algorithm (as we have done in Subsection~\ref{expl:SWanalyse}), we can see that the value of each cell in the matrix is only dependent on the left-upmost 3 cells. Therefore, it leads us to believe that this algorithm can be accelerated on other hardware solutions such as an FPGA (which will be discussed in Chapter~\ref{ch:Platforms}) since S-W is heavily parallelizable.
 
 In most clinical applications where mapping to a human reference genome is used, the number of reads to be compared with the genome is in the millions.
 
@@ -287,10 +287,10 @@ We have no way of knowing in which direction the read is taken, both the forward
 Please note, in most normal cases we can assume the distribution of reads is practically uniform. Therefore, each base in the human genome will be covered by a statistically expected amount of reads. This amount is referred to as the \emph{reading depth}.
 
 
-\subsection{The sam and bam file format}
+\subsection{The SAM and BAM file format}
 \label{expl:SAM}
 
-As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There exist a lot of tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section~\cite{SAM}.
+As a convention, the output of mapping algorithms is in a \emph{SAM} (Sequence Alignment Map) or \emph{BAM} (Binary Alignment Map) file format. The BAM file format is just a compressed version of the SAM format, but the SAM format is more readable, which makes it easier for troubleshooting. There are many tools to transform a SAM to BAM file already, so in this thesis, we will focus on the SAM format. A SAM file consists of two sections: a header and an alignment section~\cite{SAM}.
 
 %src:http://samtools.github.io/hts-specs/SAMv1.pdf
 
@@ -340,7 +340,7 @@ In this example:
 \begin{itemize}
 	\item \textbf{Qname}: the name of the sequence: $SRR11$.
 	\item \textbf{FLAG}: this read is matched in the $[5' -> 3']$ direction.
-	\item \textbf{Rname}: the name of the reference genome us $MN98$.
+	\item \textbf{Rname}: the name of the reference genome is $MN98$.
 	\item \textbf{Pos}: the match is found at the 25th base of the reference genome.
 	\item \textbf{MapQ}: the mapping quality is 254.
 	\item \textbf{CIGAR}: $7M$, so a perfect match.
@@ -350,7 +350,7 @@ In this example:
 
 \subsection{Clinical application}
 
-In virtually all sequencing applications DNA alignment and reference mapping is needed. Applications which involve whole genome sequencing are particullarly hampered by a long computational analysis time.
+In virtually all sequencing applications DNA alignment and reference mapping is needed. Applications which involve whole genome sequencing in particular are hampered by a long computational analysis time.
 
 We will discuss two clinical applications as examples to genome mapping.
 
@@ -367,7 +367,7 @@ We will discuss two clinical applications as examples to genome mapping.
 	\end{figure}
 	
 	
-	Before high throughput DNA sequencing technologies were available like they are today, testing if a fetus has a trisomy-21 could only be done by taking a small amount of amniotic fluid (fluid around the fetus). However, to obtain this fluid there was a need for a risky invasive procedure (called \emph{amniocentesis}) leading sometimes to termination of the pregnancy.
+	Before high throughput DNA sequencing technologies were available like they are today, testing if a fetus has a trisomy-21 could only be done by taking a small amount of amniotic fluid (fluid around the fetus). However, to obtain this fluid there was a need for a risky invasive procedure (called \emph{amniocentesis}) leading sometimes to the termination of the pregnancy.
 	
 	It is known that small amounts of DNA of the fetus are present in the blood of the mother, in the cell-free DNA (\emph{cfDNA}) which we find in the blood plasma (the clear, aqueous part of the blood). The blood plasma is used by our body to transport 'waste', including DNA from cells that were broken down. When fetal cells die, which is a normal process, the building blocks of these cells are transported in the plasma of the blood from the mother, included small DNA fragments from the fetus~\cite{NIPT}.
 	
@@ -384,7 +384,7 @@ We will discuss two clinical applications as examples to genome mapping.
 	Using the same method, we can also find other defects in the number of chromosomes. For example trisomy 18 (Edwards syndrome), trisomy 13 (Patau syndrome), or even in the sex chromosomes, such as XXY (Klinefelter syndrome) or lack of a second X or a Y chromosome (Turner syndrome)~\cite{NIPT}.
 	
 	\item \textbf{Shallow whole-genome sequencing of tumor DNA.}\newline
-	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be loss or gain of large DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
+	It is a known fact that damaged DNA can lead to tumor development. This damage can be single bases changes but can also be a loss or gain of large DNA sequences where important genes are located. When someone is diagnosed with cancer, the knowledge of which DNA regions are lost or gained can be important to decide on treatment. 
 	
 	A relatively new technique to detect all gains and losses of DNA material in one single experiment is shallow whole-genome sequencing. The technique is performed as follows: DNA from the tumor is fragmented (it is broken in small pieces, eg. by a fragmentase enzyme or by high-frequency sound). These pieces are sequenced randomly, and with a mapping algorithm to the reference genome, the over- or underrepresentation of reads (as compared with a normal sample) indicates if regions of the DNA have changed, and which regions these are~\cite{SWG}.
 	

@@ -60,7 +60,7 @@
 
 \bibitem[fpg, 2020a]{fpgacomparison}
  (March 2020a).
-\newblock Azure machine learning fpga comparison.
+\newblock Azure machine learning {FPGA} comparison.
 \newblock
   https://docs.microsoft.com/en-us/azure/machine-learning/service/media/concept-accelerate-with-fpgas/azure-machine-learning-fpga-comparison.png.
 
@@ -135,7 +135,7 @@ Nollet, F. (2019).
 
 \bibitem[Olson, 2011]{fpgaImpl}
 Olson, C.~B. (2011).
-\newblock An fpga acceleration of short read human genome mapping.
+\newblock An {FPGA} acceleration of short read human genome mapping.
 \newblock Master's thesis, University of Washington.
 
 \bibitem[O.O.~Storaasli, 2011]{fpga100x}
